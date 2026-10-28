@@ -1,5 +1,7 @@
 # Portal de Iniciativas y Evidencias VcM · Diplomado USS
 
+> 🌐 **Acceso al Portal en Vivo:** [https://oyarcefranco.github.io/sistema-acceso-proyectos-diplomado/](https://oyarcefranco.github.io/sistema-acceso-proyectos-diplomado/)
+
 Sistema web interactivo diseñado para que académicos internos y externos que cursan el **Diplomado en Vinculación con el Medio (USS)** accedan de forma ágil, intuitiva y centralizada a la información, indicadores y evidencias documentales (encuestas validadas e informes de cierre) para su trabajo final.
 
 ---
