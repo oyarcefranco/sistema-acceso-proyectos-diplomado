@@ -1,0 +1,42 @@
+[
+  {
+    "rut": "12.345.678-5",
+    "nombre": "Dr. Franco Oyarce",
+    "rol": "Académico Evaluador",
+    "tipo": "Interno",
+    "facultad": "Facultad de Medicina y Ciencia",
+    "email": "franco.oyarce@uss.cl"
+  },
+  {
+    "rut": "15.421.890-K",
+    "nombre": "Dra. Carolina Morales Silva",
+    "rol": "Académica Evaluadora",
+    "tipo": "Interna",
+    "facultad": "Facultad de Odontología y Ciencias de la Rehabilitación",
+    "email": "carolina.morales@uss.cl"
+  },
+  {
+    "rut": "16.892.341-3",
+    "nombre": "Mg. Roberto González Parra",
+    "rol": "Académico Evaluador",
+    "tipo": "Externo",
+    "facultad": "Pontificia Universidad Católica de Chile",
+    "email": "rgonzalez@externo.cl"
+  },
+  {
+    "rut": "17.654.321-7",
+    "nombre": "Dra. Marcela Valenzuela Riquelme",
+    "rol": "Académica Evaluadora",
+    "tipo": "Externa",
+    "facultad": "Universidad de Concepción",
+    "email": "mvalenzuela@externo.cl"
+  },
+  {
+    "rut": "19.876.543-0",
+    "nombre": "Prof. Cristóbal Alarcón Muñoz",
+    "rol": "Coordinador de Indicadores VcM",
+    "tipo": "Interno",
+    "facultad": "Dirección General de VcM",
+    "email": "cristobal.alarcon@uss.cl"
+  }
+]

@@ -1,0 +1,1140 @@
+[
+  {
+    "id": "pth-mas-personas-mayores",
+    "tipo": "PTH",
+    "nombre": "Más Personas Mayores Activas",
+    "sigla": "PTH-MPMA",
+    "descripcion": "Iniciativa orientada a promover la autonomía funcional, calidad de vida y participación social comunitaria de las personas mayores mediante programas interdisciplinarios de salud, actividad física y estimulación cognitiva.",
+    "color": {
+      "primary": "from-amber-600 to-orange-700",
+      "badge": "bg-amber-100 text-amber-800 border-amber-200",
+      "accent": "text-amber-600"
+    },
+    "excelResumen": "/documentos/pth-mas-personas-mayores/listado_proyectos_2024_2025.xlsx",
+    "totales": {
+      "proyectos": 7,
+      "organizaciones": 28,
+      "estudiantes": 485,
+      "academicos": 34
+    },
+    "lineasDeAccion": [
+      "Salud Integral y Funcionalidad",
+      "Bienestar Emocional y Cognitivo",
+      "Inclusión Digital y Participación Social"
+    ],
+    "proyectos": [
+      {
+        "id": "PRY-PMA-2024-01",
+        "codigo": "VCM-24-0891",
+        "nombre": "Evaluación Integral y Promoción de la Movilidad en Clubes de Adulto Mayor",
+        "ano": 2024,
+        "lineaAccion": "Salud Integral y Funcionalidad",
+        "sede": "Santiago (Los Leones)",
+        "indicadores": {
+          "organizaciones": 5,
+          "estudiantes": 68,
+          "academicos": 6
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-24-0891.pdf",
+            "tamano": "1.4 MB",
+            "fecha": "Nov 2024"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-24-0891.pdf",
+            "tamano": "980 KB",
+            "fecha": "Dic 2024"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "/documentos/pth-mas-personas-mayores/informes-cierre/Informe_Cierre_VCM-24-0891.pdf",
+            "tamano": "2.1 MB",
+            "fecha": "Ene 2025"
+          }
+        }
+      },
+      {
+        "id": "PRY-PMA-2024-02",
+        "codigo": "VCM-24-0943",
+        "nombre": "Estimulación Cognitiva y Envejecimiento Positivo en Centros Diurnos",
+        "ano": 2024,
+        "lineaAccion": "Bienestar Emocional y Cognitivo",
+        "sede": "Concepción",
+        "indicadores": {
+          "organizaciones": 4,
+          "estudiantes": 52,
+          "academicos": 5
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-24-0943.pdf",
+            "tamano": "1.1 MB",
+            "fecha": "Nov 2024"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-24-0943.pdf",
+            "tamano": "850 KB",
+            "fecha": "Dic 2024"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "/documentos/pth-mas-personas-mayores/informes-cierre/Informe_Cierre_VCM-24-0943.pdf",
+            "tamano": "1.8 MB",
+            "fecha": "Ene 2025"
+          }
+        }
+      },
+      {
+        "id": "PRY-PMA-2024-03",
+        "codigo": "VCM-24-1102",
+        "nombre": "Alfabetización Digital y Ciberseguridad para Personas Mayores",
+        "ano": 2024,
+        "lineaAccion": "Inclusión Digital y Participación Social",
+        "sede": "Valdivia",
+        "indicadores": {
+          "organizaciones": 3,
+          "estudiantes": 45,
+          "academicos": 4
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-24-1102.pdf",
+            "tamano": "1.3 MB",
+            "fecha": "Dic 2024"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-24-1102.pdf",
+            "tamano": "720 KB",
+            "fecha": "Dic 2024"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "/documentos/pth-mas-personas-mayores/informes-cierre/Informe_Cierre_VCM-24-1102.pdf",
+            "tamano": "2.4 MB",
+            "fecha": "Feb 2025"
+          }
+        }
+      },
+      {
+        "id": "PRY-PMA-2025-01",
+        "codigo": "VCM-25-0120",
+        "nombre": "Rehabilitación Kinésica Comunitaria y Prevención de Caídas",
+        "ano": 2025,
+        "lineaAccion": "Salud Integral y Funcionalidad",
+        "sede": "Santiago (Bellavista)",
+        "indicadores": {
+          "organizaciones": 6,
+          "estudiantes": 95,
+          "academicos": 7
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0120.pdf",
+            "tamano": "1.2 MB",
+            "fecha": "Ago 2025"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-25-0120.pdf",
+            "tamano": "910 KB",
+            "fecha": "Sep 2025"
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución 2025",
+            "archivo": null,
+            "tamano": null,
+            "fecha": null
+          }
+        }
+      },
+      {
+        "id": "PRY-PMA-2025-02",
+        "codigo": "VCM-25-0215",
+        "nombre": "Programa Intergeneracional de Memoria y Narrativas Locales",
+        "ano": 2025,
+        "lineaAccion": "Bienestar Emocional y Cognitivo",
+        "sede": "De la Patagonia (Puerto Montt)",
+        "indicadores": {
+          "organizaciones": 4,
+          "estudiantes": 60,
+          "academicos": 4
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0215.pdf",
+            "tamano": "1.0 MB",
+            "fecha": "Oct 2025"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-25-0215.pdf",
+            "tamano": "650 KB",
+            "fecha": "Oct 2025"
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución 2025",
+            "archivo": null,
+            "tamano": null,
+            "fecha": null
+          }
+        }
+      },
+      {
+        "id": "PRY-PMA-2025-03",
+        "codigo": "VCM-25-0310",
+        "nombre": "Redes de Apoyo y Liderazgo de Personas Mayores en Zonas Rurales",
+        "ano": 2025,
+        "lineaAccion": "Inclusión Digital y Participación Social",
+        "sede": "Concepción",
+        "indicadores": {
+          "organizaciones": 3,
+          "estudiantes": 75,
+          "academicos": 4
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0310.pdf",
+            "tamano": "1.5 MB",
+            "fecha": "Nov 2025"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "En proceso de validación",
+            "archivo": null,
+            "tamano": null,
+            "fecha": null
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución 2025",
+            "archivo": null,
+            "tamano": null,
+            "fecha": null
+          }
+        }
+      },
+      {
+        "id": "PRY-PMA-2025-04",
+        "codigo": "VCM-25-0402",
+        "nombre": "Nutrición Saludable y Prevención de Sarcopenia en Atención Primaria",
+        "ano": 2025,
+        "lineaAccion": "Salud Integral y Funcionalidad",
+        "sede": "Santiago (Los Leones)",
+        "indicadores": {
+          "organizaciones": 3,
+          "estudiantes": 90,
+          "academicos": 4
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0402.pdf",
+            "tamano": "1.3 MB",
+            "fecha": "Dic 2025"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-25-0402.pdf",
+            "tamano": "890 KB",
+            "fecha": "Dic 2025"
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución 2025",
+            "archivo": null,
+            "tamano": null,
+            "fecha": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "pth-mas-azul",
+    "tipo": "PTH",
+    "nombre": "Más Azul",
+    "sigla": "PTH-MA",
+    "descripcion": "Programa centrado en la conservación, gestión sustentable y gobernanza participativa de los ecosistemas acuáticos continentales y costeros de Chile (lagos, ríos, humedales y zonas litorales).",
+    "color": {
+      "primary": "from-sky-600 to-blue-800",
+      "badge": "bg-sky-100 text-sky-800 border-sky-200",
+      "accent": "text-sky-600"
+    },
+    "excelResumen": "/documentos/pth-mas-azul/listado_proyectos_2024_2025.xlsx",
+    "totales": {
+      "proyectos": 6,
+      "organizaciones": 22,
+      "estudiantes": 390,
+      "academicos": 28
+    },
+    "lineasDeAccion": [
+      "Monitoreo Ambiental y Calidad del Agua",
+      "Educación Ambiental y Ciencia Ciudadana",
+      "Restauración de Cuencas y Gestión Hídrica"
+    ],
+    "proyectos": [
+      {
+        "id": "PRY-AZL-2024-01",
+        "codigo": "VCM-24-0712",
+        "nombre": "Monitoreo Comunitario de Calidad de Agua en la Cuenca del Lago Llanquihue",
+        "ano": 2024,
+        "lineaAccion": "Monitoreo Ambiental y Calidad del Agua",
+        "sede": "De la Patagonia (Puerto Montt)",
+        "indicadores": {
+          "organizaciones": 5,
+          "estudiantes": 70,
+          "academicos": 5
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-azul/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-24-0712.pdf",
+            "tamano": "1.7 MB",
+            "fecha": "Nov 2024"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-azul/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-24-0712.pdf",
+            "tamano": "1.2 MB",
+            "fecha": "Dic 2024"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "/documentos/pth-mas-azul/informes-cierre/Informe_Cierre_VCM-24-0712.pdf",
+            "tamano": "3.1 MB",
+            "fecha": "Ene 2025"
+          }
+        }
+      },
+      {
+        "id": "PRY-AZL-2024-02",
+        "codigo": "VCM-24-0789",
+        "nombre": "Programa de Ciencia Ciudadana y Protección de Humedales Urbanos",
+        "ano": 2024,
+        "lineaAccion": "Educación Ambiental y Ciencia Ciudadana",
+        "sede": "Valdivia",
+        "indicadores": {
+          "organizaciones": 4,
+          "estudiantes": 65,
+          "academicos": 5
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-azul/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-24-0789.pdf",
+            "tamano": "1.3 MB",
+            "fecha": "Dic 2024"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-azul/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-24-0789.pdf",
+            "tamano": "890 KB",
+            "fecha": "Dic 2024"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "/documentos/pth-mas-azul/informes-cierre/Informe_Cierre_VCM-24-0789.pdf",
+            "tamano": "2.8 MB",
+            "fecha": "Feb 2025"
+          }
+        }
+      },
+      {
+        "id": "PRY-AZL-2024-03",
+        "codigo": "VCM-24-0835",
+        "nombre": "Eficiencia Hídrica y Buenas Prácticas en Sistemas de Agua Potable Rural (APR)",
+        "ano": 2024,
+        "lineaAccion": "Restauración de Cuencas y Gestión Hídrica",
+        "sede": "Concepción",
+        "indicadores": {
+          "organizaciones": 3,
+          "estudiantes": 55,
+          "academicos": 4
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-azul/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-24-0835.pdf",
+            "tamano": "1.5 MB",
+            "fecha": "Dic 2024"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-azul/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-24-0835.pdf",
+            "tamano": "950 KB",
+            "fecha": "Ene 2025"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "/documentos/pth-mas-azul/informes-cierre/Informe_Cierre_VCM-24-0835.pdf",
+            "tamano": "2.2 MB",
+            "fecha": "Mar 2025"
+          }
+        }
+      },
+      {
+        "id": "PRY-AZL-2025-01",
+        "codigo": "VCM-25-0155",
+        "nombre": "Red de Sensores Comunitarios para Calidad Lacustre",
+        "ano": 2025,
+        "lineaAccion": "Monitoreo Ambiental y Calidad del Agua",
+        "sede": "De la Patagonia (Puerto Varas)",
+        "indicadores": {
+          "organizaciones": 4,
+          "estudiantes": 80,
+          "academicos": 5
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-azul/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0155.pdf",
+            "tamano": "1.4 MB",
+            "fecha": "Oct 2025"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-azul/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-25-0155.pdf",
+            "tamano": "780 KB",
+            "fecha": "Nov 2025"
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución 2025",
+            "archivo": null,
+            "tamano": null,
+            "fecha": null
+          }
+        }
+      },
+      {
+        "id": "PRY-AZL-2025-02",
+        "codigo": "VCM-25-0240",
+        "nombre": "Educación Costera y Restauración de Dunas en el Litoral Central",
+        "ano": 2025,
+        "lineaAccion": "Educación Ambiental y Ciencia Ciudadana",
+        "sede": "Santiago (Los Leones)",
+        "indicadores": {
+          "organizaciones": 3,
+          "estudiantes": 60,
+          "academicos": 5
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-azul/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0240.pdf",
+            "tamano": "1.2 MB",
+            "fecha": "Nov 2025"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "En proceso de validación",
+            "archivo": null,
+            "tamano": null,
+            "fecha": null
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución 2025",
+            "archivo": null,
+            "tamano": null,
+            "fecha": null
+          }
+        }
+      },
+      {
+        "id": "PRY-AZL-2025-03",
+        "codigo": "VCM-25-0320",
+        "nombre": "Restauración Ribereña con Especies Nativas en la Cuenca del Río Biobío",
+        "ano": 2025,
+        "lineaAccion": "Restauración de Cuencas y Gestión Hídrica",
+        "sede": "Concepción",
+        "indicadores": {
+          "organizaciones": 3,
+          "estudiantes": 60,
+          "academicos": 4
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-azul/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0320.pdf",
+            "tamano": "1.3 MB",
+            "fecha": "Dic 2025"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-azul/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-25-0320.pdf",
+            "tamano": "820 KB",
+            "fecha": "Dic 2025"
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución 2025",
+            "archivo": null,
+            "tamano": null,
+            "fecha": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "pth-mas-parques",
+    "tipo": "PTH",
+    "nombre": "Más Parques",
+    "sigla": "PTH-MP",
+    "descripcion": "Estrategia para la puesta en valor, diseño participativo y conservación de áreas verdes urbanas y periurbanas, favoreciendo la biodiversidad y el espacio público saludable.",
+    "color": {
+      "primary": "from-emerald-600 to-green-800",
+      "badge": "bg-emerald-100 text-emerald-800 border-emerald-200",
+      "accent": "text-emerald-600"
+    },
+    "excelResumen": "/documentos/pth-mas-parques/listado_proyectos_2024_2025.xlsx",
+    "totales": {
+      "proyectos": 5,
+      "organizaciones": 18,
+      "estudiantes": 310,
+      "academicos": 22
+    },
+    "lineasDeAccion": [
+      "Biodiversidad y Conservación Urbana",
+      "Diseño Participativo de Áreas Verdes",
+      "Educación y Uso Comunitario del Parque"
+    ],
+    "proyectos": [
+      {
+        "id": "PRY-PRQ-2024-01",
+        "codigo": "VCM-24-0551",
+        "nombre": "Catastro de Flora Nativa y Reforestación Comunitaria en Parques Periurbanos",
+        "ano": 2024,
+        "lineaAccion": "Biodiversidad y Conservación Urbana",
+        "sede": "Santiago (Los Leones)",
+        "indicadores": {
+          "organizaciones": 4,
+          "estudiantes": 75,
+          "academicos": 5
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-parques/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-24-0551.pdf",
+            "tamano": "1.6 MB",
+            "fecha": "Nov 2024"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-parques/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-24-0551.pdf",
+            "tamano": "920 KB",
+            "fecha": "Dic 2024"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "/documentos/pth-mas-parques/informes-cierre/Informe_Cierre_VCM-24-0551.pdf",
+            "tamano": "3.4 MB",
+            "fecha": "Ene 2025"
+          }
+        }
+      },
+      {
+        "id": "PRY-PRQ-2024-02",
+        "codigo": "VCM-24-0610",
+        "nombre": "Cocreación de Senderos Accesibles y Plazas Barriales",
+        "ano": 2024,
+        "lineaAccion": "Diseño Participativo de Áreas Verdes",
+        "sede": "Valdivia",
+        "indicadores": {
+          "organizaciones": 3,
+          "estudiantes": 50,
+          "academicos": 4
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-parques/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-24-0610.pdf",
+            "tamano": "1.2 MB",
+            "fecha": "Dic 2024"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-parques/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-24-0610.pdf",
+            "tamano": "840 KB",
+            "fecha": "Ene 2025"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "/documentos/pth-mas-parques/informes-cierre/Informe_Cierre_VCM-24-0610.pdf",
+            "tamano": "2.6 MB",
+            "fecha": "Feb 2025"
+          }
+        }
+      },
+      {
+        "id": "PRY-PRQ-2025-01",
+        "codigo": "VCM-25-0180",
+        "nombre": "Jardines Polinizadores y Restauración Ecológica Escolar",
+        "ano": 2025,
+        "lineaAccion": "Biodiversidad y Conservación Urbana",
+        "sede": "Concepción",
+        "indicadores": {
+          "organizaciones": 4,
+          "estudiantes": 65,
+          "academicos": 4
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-parques/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0180.pdf",
+            "tamano": "1.1 MB",
+            "fecha": "Oct 2025"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-parques/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-25-0180.pdf",
+            "tamano": "730 KB",
+            "fecha": "Nov 2025"
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución 2025",
+            "archivo": null,
+            "tamano": null,
+            "fecha": null
+          }
+        }
+      },
+      {
+        "id": "PRY-PRQ-2025-02",
+        "codigo": "VCM-25-0290",
+        "nombre": "Infraestructura Verde y Drenaje Sostenible en Espacios Comunitarios",
+        "ano": 2025,
+        "lineaAccion": "Diseño Participativo de Áreas Verdes",
+        "sede": "Santiago (Bellavista)",
+        "indicadores": {
+          "organizaciones": 4,
+          "estudiantes": 70,
+          "academicos": 5
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-parques/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0290.pdf",
+            "tamano": "1.5 MB",
+            "fecha": "Nov 2025"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "En proceso de validación",
+            "archivo": null,
+            "tamano": null,
+            "fecha": null
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución 2025",
+            "archivo": null,
+            "tamano": null,
+            "fecha": null
+          }
+        }
+      },
+      {
+        "id": "PRY-PRQ-2025-03",
+        "codigo": "VCM-25-0370",
+        "nombre": "Aulas Abiertas y Rutas de Aprendizaje en Áreas Silvestres Protegidas",
+        "ano": 2025,
+        "lineaAccion": "Educación y Uso Comunitario del Parque",
+        "sede": "De la Patagonia (Puerto Montt)",
+        "indicadores": {
+          "organizaciones": 3,
+          "estudiantes": 50,
+          "academicos": 4
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-parques/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0370.pdf",
+            "tamano": "1.4 MB",
+            "fecha": "Dic 2025"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-parques/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-25-0370.pdf",
+            "tamano": "880 KB",
+            "fecha": "Dic 2025"
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución 2025",
+            "archivo": null,
+            "tamano": null,
+            "fecha": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "pth-mas-turismo-sostenible",
+    "tipo": "PTH",
+    "nombre": "Más Turismo Sostenible",
+    "sigla": "PTH-MTS",
+    "descripcion": "Potenciamiento de destinos emergentes mediante el desarrollo de experiencias turísticas regenerativas, articulación con emprendedores locales y preservación del patrimonio biocultural.",
+    "color": {
+      "primary": "from-teal-600 to-cyan-800",
+      "badge": "bg-teal-100 text-teal-800 border-teal-200",
+      "accent": "text-teal-600"
+    },
+    "excelResumen": "/documentos/pth-mas-turismo-sostenible/listado_proyectos_2024_2025.xlsx",
+    "totales": {
+      "proyectos": 5,
+      "organizaciones": 24,
+      "estudiantes": 340,
+      "academicos": 25
+    },
+    "lineasDeAccion": [
+      "Patrimonio Biocultural y Rutas Temáticas",
+      "Gestión de Destinos y Emprendimiento Local",
+      "Hospitalidad y Calidad del Servicio Turístico"
+    ],
+    "proyectos": [
+      {
+        "id": "PRY-TUR-2024-01",
+        "codigo": "VCM-24-0412",
+        "nombre": "Diseño de la Ruta Turística del Alerce y Patrimonio Ancestral",
+        "ano": 2024,
+        "lineaAccion": "Patrimonio Biocultural y Rutas Temáticas",
+        "sede": "De la Patagonia (Puerto Montt)",
+        "indicadores": {
+          "organizaciones": 6,
+          "estudiantes": 80,
+          "academicos": 6
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-turismo-sostenible/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-24-0412.pdf",
+            "tamano": "1.8 MB",
+            "fecha": "Nov 2024"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-turismo-sostenible/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-24-0412.pdf",
+            "tamano": "1.1 MB",
+            "fecha": "Dic 2024"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "/documentos/pth-mas-turismo-sostenible/informes-cierre/Informe_Cierre_VCM-24-0412.pdf",
+            "tamano": "3.7 MB",
+            "fecha": "Ene 2025"
+          }
+        }
+      },
+      {
+        "id": "PRY-TUR-2024-02",
+        "codigo": "VCM-24-0480",
+        "nombre": "Capacitación en Huella de Carbono y Sellos Verdes para Guías Locales",
+        "ano": 2024,
+        "lineaAccion": "Gestión de Destinos y Emprendimiento Local",
+        "sede": "Valdivia",
+        "indicadores": {
+          "organizaciones": 5,
+          "estudiantes": 60,
+          "academicos": 5
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-turismo-sostenible/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-24-0480.pdf",
+            "tamano": "1.3 MB",
+            "fecha": "Dic 2024"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-turismo-sostenible/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-24-0480.pdf",
+            "tamano": "900 KB",
+            "fecha": "Dic 2024"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "/documentos/pth-mas-turismo-sostenible/informes-cierre/Informe_Cierre_VCM-24-0480.pdf",
+            "tamano": "2.5 MB",
+            "fecha": "Feb 2025"
+          }
+        }
+      },
+      {
+        "id": "PRY-TUR-2025-01",
+        "codigo": "VCM-25-0140",
+        "nombre": "Gastronomía Tradicional y Cadena de Valor Agroecológica",
+        "ano": 2025,
+        "lineaAccion": "Patrimonio Biocultural y Rutas Temáticas",
+        "sede": "Concepción",
+        "indicadores": {
+          "organizaciones": 4,
+          "estudiantes": 70,
+          "academicos": 5
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-turismo-sostenible/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0140.pdf",
+            "tamano": "1.2 MB",
+            "fecha": "Oct 2025"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-turismo-sostenible/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-25-0140.pdf",
+            "tamano": "780 KB",
+            "fecha": "Nov 2025"
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución 2025",
+            "archivo": null,
+            "tamano": null,
+            "fecha": null
+          }
+        }
+      },
+      {
+        "id": "PRY-TUR-2025-02",
+        "codigo": "VCM-25-0220",
+        "nombre": "Estrategia Digital y Visibilidad para Alojamientos Sustentables",
+        "ano": 2025,
+        "lineaAccion": "Gestión de Destinos y Emprendimiento Local",
+        "sede": "Santiago (Los Leones)",
+        "indicadores": {
+          "organizaciones": 5,
+          "estudiantes": 75,
+          "academicos": 5
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-turismo-sostenible/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0220.pdf",
+            "tamano": "1.4 MB",
+            "fecha": "Nov 2025"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "En proceso de validación",
+            "archivo": null,
+            "tamano": null,
+            "fecha": null
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución 2025",
+            "archivo": null,
+            "tamano": null,
+            "fecha": null
+          }
+        }
+      },
+      {
+        "id": "PRY-TUR-2025-03",
+        "codigo": "VCM-25-0380",
+        "nombre": "Observatorio de Carga Turística y Sustentabilidad Territorial",
+        "ano": 2025,
+        "lineaAccion": "Hospitalidad y Calidad del Servicio Turístico",
+        "sede": "De la Patagonia (Cochamó)",
+        "indicadores": {
+          "organizaciones": 4,
+          "estudiantes": 55,
+          "academicos": 4
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-turismo-sostenible/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0380.pdf",
+            "tamano": "1.6 MB",
+            "fecha": "Dic 2025"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-turismo-sostenible/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-25-0380.pdf",
+            "tamano": "920 KB",
+            "fecha": "Dic 2025"
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución 2025",
+            "archivo": null,
+            "tamano": null,
+            "fecha": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "pth-mas-sinergia-territorial",
+    "tipo": "PTH",
+    "nombre": "Más Sinergia Territorial",
+    "sigla": "PTH-MST",
+    "descripcion": "Articulación multisectorial entre la academia, municipios, organizaciones de la sociedad civil y el sector productivo para resolver brechas territoriales críticas y descentralización.",
+    "color": {
+      "primary": "from-indigo-600 to-purple-800",
+      "badge": "bg-indigo-100 text-indigo-800 border-indigo-200",
+      "accent": "text-indigo-600"
+    },
+    "excelResumen": "/documentos/pth-mas-sinergia-territorial/listado_proyectos_2024_2025.xlsx",
+    "totales": {
+      "proyectos": 5,
+      "organizaciones": 26,
+      "estudiantes": 370,
+      "academicos": 27
+    },
+    "lineasDeAccion": [
+      "Gobernanza Local y Fortalecimiento Municipal",
+      "Desarrollo Económico Local y Empleo",
+      "Innovación Social y Cohesión Comunitaria"
+    ],
+    "proyectos": [
+      {
+        "id": "PRY-SNT-2024-01",
+        "codigo": "VCM-24-0301",
+        "nombre": "Asistencia Técnica en Instrumentos de Planificación Comunal (PLADECO)",
+        "ano": 2024,
+        "lineaAccion": "Gobernanza Local y Fortalecimiento Municipal",
+        "sede": "Santiago (Bellavista)",
+        "indicadores": {
+          "organizaciones": 6,
+          "estudiantes": 85,
+          "academicos": 6
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-sinergia-territorial/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-24-0301.pdf",
+            "tamano": "1.9 MB",
+            "fecha": "Nov 2024"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-sinergia-territorial/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-24-0301.pdf",
+            "tamano": "1.2 MB",
+            "fecha": "Dic 2024"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "/documentos/pth-mas-sinergia-territorial/informes-cierre/Informe_Cierre_VCM-24-0301.pdf",
+            "tamano": "3.8 MB",
+            "fecha": "Ene 2025"
+          }
+        }
+      },
+      {
+        "id": "PRY-SNT-2024-02",
+        "codigo": "VCM-24-0390",
+        "nombre": "Encadenamiento Productivo para Cooperativas Agrícolas Campesinas",
+        "ano": 2024,
+        "lineaAccion": "Desarrollo Económico Local y Empleo",
+        "sede": "Concepción",
+        "indicadores": {
+          "organizaciones": 5,
+          "estudiantes": 70,
+          "academicos": 5
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-sinergia-territorial/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-24-0390.pdf",
+            "tamano": "1.4 MB",
+            "fecha": "Dic 2024"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-sinergia-territorial/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-24-0390.pdf",
+            "tamano": "980 KB",
+            "fecha": "Dic 2024"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "/documentos/pth-mas-sinergia-territorial/informes-cierre/Informe_Cierre_VCM-24-0390.pdf",
+            "tamano": "2.9 MB",
+            "fecha": "Feb 2025"
+          }
+        }
+      },
+      {
+        "id": "PRY-SNT-2025-01",
+        "codigo": "VCM-25-0110",
+        "nombre": "Mesa Territorial de Soluciones Hídricas y Desarrollo Rural",
+        "ano": 2025,
+        "lineaAccion": "Gobernanza Local y Fortalecimiento Municipal",
+        "sede": "Valdivia",
+        "indicadores": {
+          "organizaciones": 5,
+          "estudiantes": 75,
+          "academicos": 5
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-sinergia-territorial/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0110.pdf",
+            "tamano": "1.3 MB",
+            "fecha": "Oct 2025"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-sinergia-territorial/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-25-0110.pdf",
+            "tamano": "850 KB",
+            "fecha": "Nov 2025"
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución 2025",
+            "archivo": null,
+            "tamano": null,
+            "fecha": null
+          }
+        }
+      },
+      {
+        "id": "PRY-SNT-2025-02",
+        "codigo": "VCM-25-0250",
+        "nombre": "Incubación de Microemprendimientos Femeninos y Liderazgo Barrial",
+        "ano": 2025,
+        "lineaAccion": "Innovación Social y Cohesión Comunitaria",
+        "sede": "Santiago (Los Leones)",
+        "indicadores": {
+          "organizaciones": 5,
+          "estudiantes": 70,
+          "academicos": 5
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-sinergia-territorial/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0250.pdf",
+            "tamano": "1.5 MB",
+            "fecha": "Nov 2025"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "En proceso de validación",
+            "archivo": null,
+            "tamano": null,
+            "fecha": null
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución 2025",
+            "archivo": null,
+            "tamano": null,
+            "fecha": null
+          }
+        }
+      },
+      {
+        "id": "PRY-SNT-2025-03",
+        "codigo": "VCM-25-0340",
+        "nombre": "Red de Jóvenes Agentes de Cambio para el Desarrollo Comunitario",
+        "ano": 2025,
+        "lineaAccion": "Innovación Social y Cohesión Comunitaria",
+        "sede": "De la Patagonia (Puerto Montt)",
+        "indicadores": {
+          "organizaciones": 5,
+          "estudiantes": 70,
+          "academicos": 6
+        },
+        "documentos": {
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-sinergia-territorial/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0340.pdf",
+            "tamano": "1.2 MB",
+            "fecha": "Dic 2025"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": true,
+            "estado": "Validado",
+            "archivo": "/documentos/pth-mas-sinergia-territorial/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-25-0340.pdf",
+            "tamano": "890 KB",
+            "fecha": "Dic 2025"
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución 2025",
+            "archivo": null,
+            "tamano": null,
+            "fecha": null
+          }
+        }
+      }
+    ]
+  }
+]
