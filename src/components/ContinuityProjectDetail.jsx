@@ -297,3 +297,4 @@ export default function ContinuityProjectDetail({ project, onBack, onOpenDocumen
     </div>
   );
 }
+
