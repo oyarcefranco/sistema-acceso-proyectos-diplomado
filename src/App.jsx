@@ -3,8 +3,10 @@ import Header from './components/Header';
 import LoginModal from './components/LoginModal';
 import PTHSelector from './components/PTHSelector';
 import InitiativeDetail from './components/InitiativeDetail';
+import ContinuityProjectDetail from './components/ContinuityProjectDetail';
 import PDFModalViewer from './components/PDFModalViewer';
 import iniciativasData from './data/iniciativas.json';
+import proyectosContinuidadData from './data/proyectosContinuidad.json';
 
 export default function App() {
   const [currentUser, setCurrentUser] = useState(() => {
@@ -49,12 +51,24 @@ export default function App() {
         {currentUser && !selectedInitiative && (
           <PTHSelector
             iniciativas={iniciativasData}
+            proyectosContinuidad={proyectosContinuidadData}
             onSelectInitiative={setSelectedInitiative}
+            onSelectContinuityProject={setSelectedInitiative}
             user={currentUser}
           />
         )}
 
-        {currentUser && selectedInitiative && (
+        {/* Vista Detalle de Proyecto de Continuidad */}
+        {currentUser && selectedInitiative && selectedInitiative.tipo === 'Proyecto de Continuidad' && (
+          <ContinuityProjectDetail
+            project={selectedInitiative}
+            onBack={() => setSelectedInitiative(null)}
+            onOpenDocument={setActiveDocument}
+          />
+        )}
+
+        {/* Vista Detalle de Programa Territorial Hito (PTH) */}
+        {currentUser && selectedInitiative && selectedInitiative.tipo !== 'Proyecto de Continuidad' && (
           <InitiativeDetail
             pth={selectedInitiative}
             onBack={() => setSelectedInitiative(null)}

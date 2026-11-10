@@ -7,12 +7,14 @@ import {
   Network, 
   ArrowRight, 
   Sparkles, 
-  FileSpreadsheet, 
   Building2, 
   FileText,
   Clock,
   Layers,
-  GraduationCap
+  GraduationCap,
+  History,
+  MapPin,
+  CheckCircle2
 } from 'lucide-react';
 
 const iconMap = {
@@ -23,9 +25,15 @@ const iconMap = {
   'pth-mas-sinergia-territorial': Network,
 };
 
-export default function PTHSelector({ iniciativas, onSelectInitiative, user }) {
+export default function PTHSelector({ 
+  iniciativas, 
+  proyectosContinuidad = [], 
+  onSelectInitiative, 
+  onSelectContinuityProject, 
+  user 
+}) {
   return (
-    <div className="space-y-8 animate-in fade-in duration-300">
+    <div className="space-y-10 animate-in fade-in duration-300">
       {/* Banner de Bienvenida y Contexto */}
       <div className="bg-gradient-to-r from-uss-navy via-[#00385e] to-uss-blue rounded-3xl p-6 sm:p-8 text-white shadow-xl relative overflow-hidden">
         <div className="absolute -right-10 -bottom-10 w-64 h-64 bg-white/5 rounded-full blur-2xl pointer-events-none"></div>
@@ -38,24 +46,119 @@ export default function PTHSelector({ iniciativas, onSelectInitiative, user }) {
             Bienvenido/a, {user.nombre}
           </h1>
           <p className="mt-2 text-sm sm:text-base text-slate-200 leading-relaxed">
-            Este portal consolida las evidencias oficiales (proyectos 2024–2025, reportes validados de encuestas de estudiantes y organizaciones, informes de cierre y métricas clave) para la evaluación de tu iniciativa asignada.
+            Este portal consolida las evidencias oficiales (proyectos 2024–2025, reportes validados de encuestas, informes de cierre y proyectos de continuidad con trayectoria multianual) para la evaluación de tu iniciativa asignada.
           </p>
 
           <div className="mt-6 flex flex-wrap items-center gap-4 text-xs text-sky-100">
             <div className="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-lg backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
-              <span>5 Programas Territoriales Hito (PTH) Activos</span>
+              <span>5 Programas Territoriales Hito (PTH)</span>
             </div>
             <div className="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-lg backdrop-blur-sm">
-              <FileText className="w-3.5 h-3.5 text-sky-300" />
-              <span>Reportes de Evaluación Validados</span>
+              <History className="w-3.5 h-3.5 text-purple-300" />
+              <span>4 Proyectos de Continuidad (19 Informes de Cierre)</span>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Sección 1: Programas Territoriales Hito (PTH) */}
+      {/* ========================================================= */}
+      {/* SECCIÓN 1: PROYECTOS DE CONTINUIDAD (CON INFORMES REALES) */}
+      {/* ========================================================= */}
       <div>
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+          <div>
+            <div className="flex items-center gap-2">
+              <h2 className="text-lg font-bold text-slate-900 flex items-center gap-2">
+                <History className="w-5 h-5 text-purple-600" />
+                <span>Proyectos Colaborativos Emblemáticos (Proyectos de Continuidad)</span>
+              </h2>
+              <span className="text-[11px] font-bold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-md border border-emerald-200">
+                Informes Disponibles
+              </span>
+            </div>
+            <p className="text-xs text-slate-500 mt-1">
+              Iniciativas de alto impacto territorial ejecutadas durante múltiples años. Cada año cuenta con un ID único e informe de cierre descargable.
+            </p>
+          </div>
+          <span className="text-xs font-semibold text-purple-900 bg-purple-50 border border-purple-200 px-3 py-1 rounded-full self-start sm:self-auto">
+            {proyectosContinuidad.length} Iniciativas · 19 Informes de Cierre
+          </span>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          {proyectosContinuidad.map((proj) => (
+            <div
+              key={proj.id}
+              onClick={() => onSelectContinuityProject && onSelectContinuityProject(proj)}
+              className="group bg-white rounded-2xl border-2 border-slate-200 hover:border-purple-600 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden cursor-pointer transform hover:-translate-y-1 relative"
+            >
+              {/* Barra lateral de acento púrpura */}
+              <div className="absolute top-0 left-0 bottom-0 w-2.5 bg-gradient-to-b from-purple-600 to-indigo-700" />
+
+              <div className="p-6 pl-7">
+                {/* Metadatos superiores */}
+                <div className="flex items-start justify-between gap-3 mb-3">
+                  <div className="flex flex-wrap items-center gap-1.5">
+                    <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-md bg-purple-50 text-purple-700 border border-purple-200 flex items-center gap-1">
+                      <History className="w-3 h-3" />
+                      Continuidad
+                    </span>
+                    <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 border border-slate-200 flex items-center gap-1">
+                      <MapPin className="w-3 h-3 text-slate-400" />
+                      {proj.sede}
+                    </span>
+                  </div>
+                  <span className="text-[11px] font-extrabold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded border border-emerald-200">
+                    {proj.totalVersiones} Años
+                  </span>
+                </div>
+
+                {/* Título limpio sin sede */}
+                <h3 className="text-base font-bold text-slate-900 group-hover:text-purple-700 transition-colors leading-snug">
+                  {proj.nombre}
+                </h3>
+
+                <p className="text-xs text-slate-600 mt-2 line-clamp-2 leading-relaxed">
+                  {proj.descripcion}
+                </p>
+
+                {/* Desglose de IDs y Años */}
+                <div className="mt-4 pt-3 border-t border-slate-100">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block mb-2">
+                    Versiones anuales con Informe de Cierre:
+                  </span>
+                  <div className="flex flex-wrap items-center gap-1.5">
+                    {proj.versiones.map((v) => (
+                      <span
+                        key={v.id}
+                        className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-50 text-slate-700 text-[11px] font-medium border border-slate-200"
+                      >
+                        <span className="font-bold text-slate-900">{v.ano}:</span>
+                        <span className="font-mono text-[10px] text-purple-700">{v.codigo}</span>
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Footer de la tarjeta */}
+              <div className="bg-slate-50/90 px-6 pl-7 py-3.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-purple-900 group-hover:text-purple-700">
+                <span className="flex items-center gap-1.5">
+                  <FileText className="w-3.5 h-3.5 text-purple-600" />
+                  <span>Ver Desglose de Informes ({proj.totalVersiones} PDFs)</span>
+                </span>
+                <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ========================================================= */}
+      {/* SECCIÓN 2: PROGRAMAS TERRITORIALES HITO (PTH)            */}
+      {/* ========================================================= */}
+      <div className="pt-4 border-t border-slate-200">
         <div className="flex items-center justify-between mb-4">
           <div>
             <h2 className="text-lg font-bold text-slate-900 flex items-center gap-2">
@@ -63,7 +166,7 @@ export default function PTHSelector({ iniciativas, onSelectInitiative, user }) {
               Programas Territoriales Hito (PTH)
             </h2>
             <p className="text-xs text-slate-500 mt-0.5">
-              Selecciona el PTH para acceder a su expediente completo de proyectos y evidencias.
+              Programas transversales con proyectos 2024–2025, encuestas validadas e indicadores de gestión.
             </p>
           </div>
           <span className="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">
@@ -132,55 +235,6 @@ export default function PTHSelector({ iniciativas, onSelectInitiative, user }) {
               </div>
             );
           })}
-        </div>
-      </div>
-
-      {/* Sección 2: Próximas Iniciativas (Proyectos Colaborativos y Fondos Externos) */}
-      <div className="pt-4 border-t border-slate-200">
-        <h2 className="text-base font-bold text-slate-900 mb-1 flex items-center gap-2">
-          <Clock className="w-4 h-4 text-slate-400" />
-          Otras Iniciativas a Evaluar (En Preparación)
-        </h2>
-        <p className="text-xs text-slate-500 mb-4">
-          La jefatura indicará próximamente los proyectos específicos de estas dos categorías para su habilitación en el portal.
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {/* Card Proyectos Colaborativos Emblemáticos */}
-          <div className="bg-slate-100/70 rounded-2xl p-5 border border-dashed border-slate-300 flex items-start gap-4 opacity-80">
-            <div className="w-10 h-10 rounded-xl bg-slate-200 flex items-center justify-center text-slate-500 flex-shrink-0">
-              <Building2 className="w-5 h-5" />
-            </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <h3 className="text-sm font-bold text-slate-800">Proyectos Colaborativos Emblemáticos</h3>
-                <span className="text-[10px] font-semibold bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full border border-amber-200">
-                  Próximamente
-                </span>
-              </div>
-              <p className="text-xs text-slate-600 mt-1">
-                Iniciativas de alta envergadura y articulación territorial que serán asignadas según indicaciones de la Dirección.
-              </p>
-            </div>
-          </div>
-
-          {/* Card Proyecto con Fondos Externos */}
-          <div className="bg-slate-100/70 rounded-2xl p-5 border border-dashed border-slate-300 flex items-start gap-4 opacity-80">
-            <div className="w-10 h-10 rounded-xl bg-slate-200 flex items-center justify-center text-slate-500 flex-shrink-0">
-              <GraduationCap className="w-5 h-5" />
-            </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <h3 className="text-sm font-bold text-slate-800">Proyecto con Fondos Externos</h3>
-                <span className="text-[10px] font-semibold bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full border border-amber-200">
-                  Próximamente
-                </span>
-              </div>
-              <p className="text-xs text-slate-600 mt-1">
-                Proyecto adjudicado con financiamiento externo nacional/internacional en espera de documentación formal.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </div>

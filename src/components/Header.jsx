@@ -40,7 +40,14 @@ export default function Header({ user, currentInitiative, onSelectInitiative, on
               {currentInitiative && (
                 <>
                   <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
-                  <span className="font-semibold text-slate-800 bg-slate-100 px-2 py-0.5 rounded-md">
+                  <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${
+                    currentInitiative.tipo === 'Proyecto de Continuidad'
+                      ? 'bg-purple-100 text-purple-800'
+                      : 'bg-sky-100 text-sky-800'
+                  }`}>
+                    {currentInitiative.tipo === 'Proyecto de Continuidad' ? 'Continuidad' : 'PTH'}
+                  </span>
+                  <span className="font-semibold text-slate-800 bg-slate-100 px-2 py-0.5 rounded-md truncate max-w-[280px]">
                     {currentInitiative.nombre}
                   </span>
                 </>

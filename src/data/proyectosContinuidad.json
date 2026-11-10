@@ -1,0 +1,455 @@
+[
+  {
+    "id": "pc-garantias-salud-reinsercion",
+    "tipo": "Proyecto de Continuidad",
+    "nombre": "Garantías en Salud y Promoción de Vida Sana para Personas en Proceso de Reinserción del CET",
+    "sede": "Concepción",
+    "descripcion": "Proyecto de intervención integral en salud y reinserción social para personas del Centro de Educación y Trabajo (CET) de Gendarmería en Concepción, con participación interdisciplinaria de carreras de salud y ciencias sociales.",
+    "periodoTrayectoria": "2021 – 2025 (4 versiones anuales)",
+    "totalVersiones": 4,
+    "carrerasParticipantes": [
+      "ANIMACIÓN DIGITAL - Concepción",
+      "D.EN NUTRIC.CLÍNICA DEL ADULTO - Concepción",
+      "ENFERMERÍA - Concepción",
+      "NUTRICIÓN Y DIETÉTICA - Concepción",
+      "OBSTETRICIA - Concepción",
+      "ODONTOLOGÍA - Concepción",
+      "PEDAGOGÍA EN EDUCACIÓN FÍSICA - Concepción",
+      "QUÍMICA Y FARMACIA - Concepción",
+      "TECNOLOGÍA MÉDICA - Concepción",
+      "TRABAJO SOCIAL - Concepción"
+    ],
+    "versiones": [
+      {
+        "id": "ID_2057",
+        "idNumero": "2057",
+        "codigo": "ID 2057",
+        "ano": 2021,
+        "periodo": "01 de Julio de 2021 a 31 de Diciembre de 2021",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "sede": "Concepción",
+        "paginas": 20,
+        "tamano": "3.3 MB",
+        "carreras": [
+          "ENFERMERÍA - Concepción",
+          "NUTRICIÓN Y DIETÉTICA - Concepción",
+          "QUÍMICA Y FARMACIA - Concepción"
+        ],
+        "archivo": "documentos/continuidad/ID_2057/Informe_cierre.pdf",
+        "nombreDescarga": "Informe_Cierre_ID_2057_2021.pdf"
+      },
+      {
+        "id": "ID_2671",
+        "idNumero": "2671",
+        "codigo": "ID 2671",
+        "ano": 2022,
+        "periodo": "01 de Agosto de 2022 a 30 de Diciembre de 2022",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "sede": "Concepción",
+        "paginas": 19,
+        "tamano": "3.2 MB",
+        "carreras": [
+          "ENFERMERÍA - Concepción",
+          "NUTRICIÓN Y DIETÉTICA - Concepción",
+          "ODONTOLOGÍA - Concepción",
+          "TRABAJO SOCIAL - Concepción"
+        ],
+        "archivo": "documentos/continuidad/ID_2671/informe_cierre.pdf",
+        "nombreDescarga": "Informe_Cierre_ID_2671_2022.pdf"
+      },
+      {
+        "id": "ID_3015",
+        "idNumero": "3015",
+        "codigo": "ID 3015",
+        "ano": 2023,
+        "periodo": "01 de Mayo de 2023 a 30 de Diciembre de 2023",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "sede": "Concepción",
+        "paginas": 20,
+        "tamano": "3.34 MB",
+        "carreras": [
+          "ENFERMERÍA - Concepción",
+          "NUTRICIÓN Y DIETÉTICA - Concepción",
+          "ODONTOLOGÍA - Concepción",
+          "PEDAGOGÍA EN EDUCACIÓN FÍSICA - Concepción",
+          "TRABAJO SOCIAL - Concepción"
+        ],
+        "archivo": "documentos/continuidad/ID_3015/informe_cierre.pdf",
+        "nombreDescarga": "Informe_Cierre_ID_3015_2023.pdf"
+      },
+      {
+        "id": "ID_4397",
+        "idNumero": "4397",
+        "codigo": "ID 4397",
+        "ano": 2025,
+        "periodo": "15 de Abril de 2025 a 15 de Diciembre de 2025",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "sede": "Concepción",
+        "paginas": 25,
+        "tamano": "4.32 MB",
+        "carreras": [
+          "ANIMACIÓN DIGITAL - Concepción",
+          "D.EN NUTRIC.CLÍNICA DEL ADULTO - Concepción",
+          "ENFERMERÍA - Concepción",
+          "NUTRICIÓN Y DIETÉTICA - Concepción",
+          "OBSTETRICIA - Concepción",
+          "ODONTOLOGÍA - Concepción",
+          "TECNOLOGÍA MÉDICA - Concepción"
+        ],
+        "archivo": "documentos/continuidad/ID_4397/informe_cierre.pdf",
+        "nombreDescarga": "Informe_Cierre_ID_4397_2025.pdf"
+      }
+    ]
+  },
+  {
+    "id": "pc-mas-salud-bomberos",
+    "tipo": "Proyecto de Continuidad",
+    "nombre": "Más Salud para Bomberos",
+    "sede": "Patagonia",
+    "descripcion": "Iniciativa territorial enfocada en la evaluación kinesiológica, nutricional, fonoaudiológica y psicológica de voluntarios de cuerpos de bomberos, previniendo riesgos cardiovasculares y musculoesqueléticos asociados al servicio.",
+    "periodoTrayectoria": "2022 – 2025 (5 versiones anuales)",
+    "totalVersiones": 5,
+    "carrerasParticipantes": [
+      "ENFERMERÍA - Patagonia",
+      "FONOAUDIOLOGÍA - Patagonia",
+      "INGENIERÍA COMERCIAL - Patagonia",
+      "KINESIOLOGÍA - Patagonia",
+      "NUTRICIÓN Y DIETÉTICA - Patagonia",
+      "PSICOLOGIA ADVANCE - Patagonia",
+      "PSICOLOGÍA - Patagonia",
+      "QUÍMICA Y FARMACIA - Patagonia",
+      "TECNOLOGÍA MÉDICA - Patagonia"
+    ],
+    "versiones": [
+      {
+        "id": "ID_2451",
+        "idNumero": "2451",
+        "codigo": "ID 2451",
+        "ano": 2022,
+        "periodo": "10 de Mayo de 2022 a 20 de Diciembre de 2022",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "sede": "Patagonia",
+        "paginas": 21,
+        "tamano": "3.53 MB",
+        "carreras": [
+          "ENFERMERÍA - Patagonia",
+          "KINESIOLOGÍA - Patagonia",
+          "NUTRICIÓN Y DIETÉTICA - Patagonia"
+        ],
+        "archivo": "documentos/continuidad/ID_2451/informe_cierre.pdf",
+        "nombreDescarga": "Informe_Cierre_ID_2451_2022.pdf"
+      },
+      {
+        "id": "ID_2765",
+        "idNumero": "2765",
+        "codigo": "ID 2765",
+        "ano": 2022,
+        "periodo": "01 de Agosto de 2022 a 31 de Marzo de 2023",
+        "tipo": "Proyecto con Fondos Externos Adjudicados",
+        "sede": "Patagonia",
+        "paginas": 1,
+        "tamano": "2.03 MB",
+        "carreras": [],
+        "archivo": "documentos/continuidad/ID_2765/informe_cierre.pdf",
+        "nombreDescarga": "Informe_Cierre_ID_2765_2022.pdf"
+      },
+      {
+        "id": "ID_2986",
+        "idNumero": "2986",
+        "codigo": "ID 2986",
+        "ano": 2023,
+        "periodo": "06 de Mayo de 2023 a 15 de Diciembre de 2023",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "sede": "Patagonia",
+        "paginas": 29,
+        "tamano": "5.41 MB",
+        "carreras": [
+          "ENFERMERÍA - Patagonia",
+          "FONOAUDIOLOGÍA - Patagonia",
+          "INGENIERÍA COMERCIAL - Patagonia",
+          "KINESIOLOGÍA - Patagonia",
+          "NUTRICIÓN Y DIETÉTICA - Patagonia",
+          "PSICOLOGIA ADVANCE - Patagonia",
+          "PSICOLOGÍA - Patagonia",
+          "QUÍMICA Y FARMACIA - Patagonia",
+          "TECNOLOGÍA MÉDICA - Patagonia"
+        ],
+        "archivo": "documentos/continuidad/ID_2986/informe_cierre.pdf",
+        "nombreDescarga": "Informe_Cierre_ID_2986_2023.pdf"
+      },
+      {
+        "id": "ID_3473",
+        "idNumero": "3473",
+        "codigo": "ID 3473",
+        "ano": 2024,
+        "periodo": "12 de Abril de 2024 a 12 de Diciembre de 2024",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "sede": "Patagonia",
+        "paginas": 22,
+        "tamano": "4.0 MB",
+        "carreras": [
+          "ENFERMERÍA - Patagonia",
+          "KINESIOLOGÍA - Patagonia",
+          "NUTRICIÓN Y DIETÉTICA - Patagonia",
+          "PSICOLOGIA ADVANCE - Patagonia",
+          "PSICOLOGÍA - Patagonia",
+          "TECNOLOGÍA MÉDICA - Patagonia"
+        ],
+        "archivo": "documentos/continuidad/ID_3473/informe_cierre.pdf",
+        "nombreDescarga": "Informe_Cierre_ID_3473_2024.pdf"
+      },
+      {
+        "id": "ID_4267",
+        "idNumero": "4267",
+        "codigo": "ID 4267",
+        "ano": 2025,
+        "periodo": "16 de Abril de 2025 a 30 de Noviembre de 2025",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "sede": "Patagonia",
+        "paginas": 22,
+        "tamano": "3.9 MB",
+        "carreras": [
+          "ENFERMERÍA - Patagonia",
+          "KINESIOLOGÍA - Patagonia",
+          "NUTRICIÓN Y DIETÉTICA - Patagonia",
+          "PSICOLOGÍA - Patagonia"
+        ],
+        "archivo": "documentos/continuidad/ID_4267/informe_cierre.pdf",
+        "nombreDescarga": "Informe_Cierre_ID_4267_2025.pdf"
+      }
+    ]
+  },
+  {
+    "id": "pc-programa-adulto-mayor",
+    "tipo": "Proyecto de Continuidad",
+    "nombre": "Programa del Adulto Mayor (PAMUSS)",
+    "sede": "Valdivia",
+    "descripcion": "Programa histórico de atención comunitaria, envejecimiento activo, estimulación psicofisiológica y acompañamiento integral a personas mayores de la Región de Los Ríos a través de clínicas y talleres interdisciplinarios.",
+    "periodoTrayectoria": "2020 – 2025 (5 versiones anuales)",
+    "totalVersiones": 5,
+    "carrerasParticipantes": [
+      "DERECHO - Valdivia",
+      "ENFERMERÍA - Valdivia",
+      "FONOAUDIOLOGÍA - Valdivia",
+      "KINESIOLOGÍA - Valdivia",
+      "NUTRICIÓN Y DIETÉTICA - Valdivia",
+      "OBSTETRICIA - Valdivia",
+      "ODONTOLOGÍA - Valdivia",
+      "PEDAGOGÍA DE EDUCACIÓN MEDIA EN INGLÉS - Valdivia",
+      "PEDAGOGÍA EN EDUCACIÓN DIFERENCIAL - Valdivia",
+      "PSICOLOGÍA - Valdivia",
+      "TERAPIA OCUPACIONAL - Valdivia"
+    ],
+    "versiones": [
+      {
+        "id": "ID_1742",
+        "idNumero": "1742",
+        "codigo": "ID 1742",
+        "ano": 2020,
+        "periodo": "01 de Octubre de 2020 a 28 de Febrero de 2021",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "sede": "Valdivia",
+        "paginas": 18,
+        "tamano": "3.18 MB",
+        "carreras": [
+          "DERECHO - Valdivia",
+          "ENFERMERÍA - Valdivia",
+          "FONOAUDIOLOGÍA - Valdivia",
+          "NUTRICIÓN Y DIETÉTICA - Valdivia",
+          "PEDAGOGÍA DE EDUCACIÓN MEDIA EN INGLÉS - Valdivia",
+          "PSICOLOGÍA - Valdivia"
+        ],
+        "archivo": "documentos/continuidad/ID_1742/informe_cierre.pdf",
+        "nombreDescarga": "Informe_Cierre_ID_1742_2020.pdf"
+      },
+      {
+        "id": "ID_2115",
+        "idNumero": "2115",
+        "codigo": "ID 2115",
+        "ano": 2021,
+        "periodo": "07 de Junio de 2021 a 31 de Diciembre de 2021",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "sede": "Valdivia",
+        "paginas": 21,
+        "tamano": "3.7 MB",
+        "carreras": [
+          "DERECHO - Valdivia",
+          "ENFERMERÍA - Valdivia",
+          "FONOAUDIOLOGÍA - Valdivia",
+          "KINESIOLOGÍA - Valdivia",
+          "NUTRICIÓN Y DIETÉTICA - Valdivia",
+          "ODONTOLOGÍA - Valdivia",
+          "PSICOLOGÍA - Valdivia"
+        ],
+        "archivo": "documentos/continuidad/ID_2115/informe_cierre.pdf",
+        "nombreDescarga": "Informe_Cierre_ID_2115_2021.pdf"
+      },
+      {
+        "id": "ID_2580",
+        "idNumero": "2580",
+        "codigo": "ID 2580",
+        "ano": 2022,
+        "periodo": "01 de Agosto de 2022 a 31 de Diciembre de 2022",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "sede": "Valdivia",
+        "paginas": 22,
+        "tamano": "3.9 MB",
+        "carreras": [
+          "DERECHO - Valdivia",
+          "ENFERMERÍA - Valdivia",
+          "FONOAUDIOLOGÍA - Valdivia",
+          "NUTRICIÓN Y DIETÉTICA - Valdivia",
+          "OBSTETRICIA - Valdivia",
+          "PEDAGOGÍA DE EDUCACIÓN MEDIA EN INGLÉS - Valdivia",
+          "PSICOLOGÍA - Valdivia",
+          "TERAPIA OCUPACIONAL - Valdivia"
+        ],
+        "archivo": "documentos/continuidad/ID_2580/informe_cierre.pdf",
+        "nombreDescarga": "Informe_Cierre_ID_2580_2022.pdf"
+      },
+      {
+        "id": "ID_2974",
+        "idNumero": "2974",
+        "codigo": "ID 2974",
+        "ano": 2023,
+        "periodo": "01 de Mayo de 2023 a 31 de Diciembre de 2023",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "sede": "Valdivia",
+        "paginas": 21,
+        "tamano": "3.62 MB",
+        "carreras": [
+          "ENFERMERÍA - Valdivia",
+          "FONOAUDIOLOGÍA - Valdivia",
+          "KINESIOLOGÍA - Valdivia",
+          "NUTRICIÓN Y DIETÉTICA - Valdivia",
+          "PSICOLOGÍA - Valdivia"
+        ],
+        "archivo": "documentos/continuidad/ID_2974/informe_cierre.pdf",
+        "nombreDescarga": "Informe_Cierre_ID_2974_2023.pdf"
+      },
+      {
+        "id": "ID_4406",
+        "idNumero": "4406",
+        "codigo": "ID 4406",
+        "ano": 2025,
+        "periodo": "01 de Abril de 2025 a 28 de Noviembre de 2025",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "sede": "Valdivia",
+        "paginas": 20,
+        "tamano": "3.46 MB",
+        "carreras": [
+          "FONOAUDIOLOGÍA - Valdivia",
+          "KINESIOLOGÍA - Valdivia",
+          "NUTRICIÓN Y DIETÉTICA - Valdivia",
+          "PEDAGOGÍA EN EDUCACIÓN DIFERENCIAL - Valdivia"
+        ],
+        "archivo": "documentos/continuidad/ID_4406/informe_cierre.pdf",
+        "nombreDescarga": "Informe_Cierre_ID_4406_2025.pdf"
+      }
+    ]
+  },
+  {
+    "id": "pc-afectividad-salud-adolescentes",
+    "tipo": "Proyecto de Continuidad",
+    "nombre": "Afectividad y Promoción de la Salud en Adolescentes",
+    "sede": "Santiago",
+    "descripcion": "Programa de intervención educativa en salud afectivo-sexual, autocuidado integral, salud mental y nutrición comunitaria desarrollado en comunidades escolares y liceos emblemáticos.",
+    "periodoTrayectoria": "2021 – 2025 (5 versiones anuales)",
+    "totalVersiones": 5,
+    "carrerasParticipantes": [
+      "MEDICINA - Santiago",
+      "NUTRICIÓN Y DIETÉTICA - Santiago",
+      "OBSTETRICIA - Santiago",
+      "PSICOLOGIA ADVANCE - Santiago"
+    ],
+    "versiones": [
+      {
+        "id": "ID_2050",
+        "idNumero": "2050",
+        "codigo": "ID 2050",
+        "ano": 2021,
+        "periodo": "01 de Junio de 2021 a 21 de Enero de 2022",
+        "tipo": "Proyecto Colaborativo",
+        "sede": "Santiago",
+        "paginas": 16,
+        "tamano": "2.41 MB",
+        "carreras": [
+          "NUTRICIÓN Y DIETÉTICA - Santiago",
+          "OBSTETRICIA - Santiago"
+        ],
+        "archivo": "documentos/continuidad/ID_2050/informe_cierre.pdf",
+        "nombreDescarga": "Informe_Cierre_ID_2050_2021.pdf"
+      },
+      {
+        "id": "ID_2648",
+        "idNumero": "2648",
+        "codigo": "ID 2648",
+        "ano": 2022,
+        "periodo": "01 de Agosto de 2022 a 31 de Diciembre de 2022",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "sede": "Santiago",
+        "paginas": 15,
+        "tamano": "2.37 MB",
+        "carreras": [
+          "NUTRICIÓN Y DIETÉTICA - Santiago",
+          "OBSTETRICIA - Santiago"
+        ],
+        "archivo": "documentos/continuidad/ID_2648/informe_cierre.pdf",
+        "nombreDescarga": "Informe_Cierre_ID_2648_2022.pdf"
+      },
+      {
+        "id": "ID_3211",
+        "idNumero": "3211",
+        "codigo": "ID 3211",
+        "ano": 2023,
+        "periodo": "21 de Agosto de 2023 a 31 de Diciembre de 2023",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "sede": "Santiago",
+        "paginas": 18,
+        "tamano": "3.12 MB",
+        "carreras": [
+          "NUTRICIÓN Y DIETÉTICA - Santiago",
+          "OBSTETRICIA - Santiago",
+          "PSICOLOGIA ADVANCE - Santiago"
+        ],
+        "archivo": "documentos/continuidad/ID_3211/informe_cierre.pdf",
+        "nombreDescarga": "Informe_Cierre_ID_3211_2023.pdf"
+      },
+      {
+        "id": "ID_3623",
+        "idNumero": "3623",
+        "codigo": "ID 3623",
+        "ano": 2024,
+        "periodo": "01 de Abril de 2024 a 20 de Diciembre de 2024",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "sede": "Santiago",
+        "paginas": 17,
+        "tamano": "3.01 MB",
+        "carreras": [
+          "NUTRICIÓN Y DIETÉTICA - Santiago",
+          "OBSTETRICIA - Santiago"
+        ],
+        "archivo": "documentos/continuidad/ID_3623/informe_cierre.pdf",
+        "nombreDescarga": "Informe_Cierre_ID_3623_2024.pdf"
+      },
+      {
+        "id": "ID_4303",
+        "idNumero": "4303",
+        "codigo": "ID 4303",
+        "ano": 2025,
+        "periodo": "01 de Abril de 2025 a 30 de Diciembre de 2025",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "sede": "Santiago",
+        "paginas": 25,
+        "tamano": "4.04 MB",
+        "carreras": [
+          "MEDICINA - Santiago",
+          "NUTRICIÓN Y DIETÉTICA - Santiago",
+          "OBSTETRICIA - Santiago"
+        ],
+        "archivo": "documentos/continuidad/ID_4303/informe_cierre.pdf",
+        "nombreDescarga": "Informe_Cierre_ID_4303_2025.pdf"
+      }
+    ]
+  }
+]
