@@ -4,274 +4,1159 @@
     "tipo": "PTH",
     "nombre": "Más Personas Mayores Activas",
     "sigla": "PTH-MPMA",
-    "descripcion": "Iniciativa orientada a promover la autonomía funcional, calidad de vida y participación social comunitaria de las personas mayores mediante programas interdisciplinarios de salud, actividad física y estimulación cognitiva.",
+    "descripcion": "Iniciativa orientada a promover la autonomía funcional, calidad de vida y participación social comunitaria de las personas mayores mediante programas interdisciplinarios de salud, actividad física, inclusión digital y estimulación cognitiva.",
     "color": {
-      "primary": "from-amber-600 to-orange-700",
-      "badge": "bg-amber-100 text-amber-800 border-amber-200",
-      "accent": "text-amber-600"
+      "primary": "#047857",
+      "secondary": "#059669",
+      "light": "#ecfdf5",
+      "badge": "bg-emerald-100 text-emerald-800 border-emerald-200"
     },
-    "excelResumen": "/documentos/pth-mas-personas-mayores/listado_proyectos_2024_2025.xlsx",
+    "excelResumen": "descargas/Consolidado_Proyectos_PTH_2024_2025.xlsx",
     "totales": {
-      "proyectos": 7,
-      "organizaciones": 28,
-      "estudiantes": 485,
-      "academicos": 34
+      "proyectos": 23,
+      "organizaciones": 44,
+      "estudiantes": 1414,
+      "academicos": 169,
+      "documentos": 37
     },
     "lineasDeAccion": [
-      "Salud Integral y Funcionalidad",
-      "Bienestar Emocional y Cognitivo",
-      "Inclusión Digital y Participación Social"
+      "Calidad de vida",
+      "Integración a la sociedad",
+      "Políticas públicas"
+    ],
+    "reportesGenerales": [
+      {
+        "titulo": "PTH Más personas mayores activas encuesta estudiantes 2024",
+        "tipo": "Estudiantes",
+        "ano": "2024",
+        "archivo": "documentos/pth/pth-mas-personas-mayores/reportes-generales/PTH_Más_personas_mayores_activas_encuesta_estudiantes_2024.pdf",
+        "tamano": "1.2 MB",
+        "paginas": 33
+      },
+      {
+        "titulo": "PTH Más personas mayores activas encuesta estudiantes 2025",
+        "tipo": "Estudiantes",
+        "ano": "2025",
+        "archivo": "documentos/pth/pth-mas-personas-mayores/reportes-generales/PTH_Más_personas_mayores_activas_encuesta_estudiantes_2025.pdf",
+        "tamano": "1013.1 KB",
+        "paginas": 25
+      }
     ],
     "proyectos": [
       {
-        "id": "PRY-PMA-2024-01",
-        "codigo": "VCM-24-0891",
-        "nombre": "Evaluación Integral y Promoción de la Movilidad en Clubes de Adulto Mayor",
+        "id": "PRY-3428",
+        "codigo": "ID 3428",
+        "idNumero": "3428",
+        "nombre": "Acompañamiento integral del paciente oncológico y familia III Versión.",
         "ano": 2024,
-        "lineaAccion": "Salud Integral y Funcionalidad",
-        "sede": "Santiago (Los Leones)",
-        "indicadores": {
-          "organizaciones": 5,
-          "estudiantes": 68,
-          "academicos": 6
-        },
-        "documentos": {
-          "encuestaEstudiantes": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-24-0891.pdf",
-            "tamano": "1.4 MB",
-            "fecha": "Nov 2024"
-          },
-          "encuestaOrganizaciones": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-24-0891.pdf",
-            "tamano": "980 KB",
-            "fecha": "Dic 2024"
-          },
-          "informeCierre": {
-            "disponible": true,
-            "estado": "Finalizado",
-            "archivo": "/documentos/pth-mas-personas-mayores/informes-cierre/Informe_Cierre_VCM-24-0891.pdf",
-            "tamano": "2.1 MB",
-            "fecha": "Ene 2025"
-          }
-        }
-      },
-      {
-        "id": "PRY-PMA-2024-02",
-        "codigo": "VCM-24-0943",
-        "nombre": "Estimulación Cognitiva y Envejecimiento Positivo en Centros Diurnos",
-        "ano": 2024,
-        "lineaAccion": "Bienestar Emocional y Cognitivo",
-        "sede": "Concepción",
-        "indicadores": {
-          "organizaciones": 4,
-          "estudiantes": 52,
-          "academicos": 5
-        },
-        "documentos": {
-          "encuestaEstudiantes": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-24-0943.pdf",
-            "tamano": "1.1 MB",
-            "fecha": "Nov 2024"
-          },
-          "encuestaOrganizaciones": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-24-0943.pdf",
-            "tamano": "850 KB",
-            "fecha": "Dic 2024"
-          },
-          "informeCierre": {
-            "disponible": true,
-            "estado": "Finalizado",
-            "archivo": "/documentos/pth-mas-personas-mayores/informes-cierre/Informe_Cierre_VCM-24-0943.pdf",
-            "tamano": "1.8 MB",
-            "fecha": "Ene 2025"
-          }
-        }
-      },
-      {
-        "id": "PRY-PMA-2024-03",
-        "codigo": "VCM-24-1102",
-        "nombre": "Alfabetización Digital y Ciberseguridad para Personas Mayores",
-        "ano": 2024,
-        "lineaAccion": "Inclusión Digital y Participación Social",
+        "lineaAccion": "Calidad de vida",
         "sede": "Valdivia",
+        "facultad": "Ciencias Para el Cuidado de la Salud",
+        "carreraLider": "ENFERMERÍA",
+        "lider": "",
+        "tipo": "Proyecto Colaborativo con FFCC",
         "indicadores": {
-          "organizaciones": 3,
-          "estudiantes": 45,
-          "academicos": 4
-        },
-        "documentos": {
-          "encuestaEstudiantes": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-24-1102.pdf",
-            "tamano": "1.3 MB",
-            "fecha": "Dic 2024"
-          },
-          "encuestaOrganizaciones": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-24-1102.pdf",
-            "tamano": "720 KB",
-            "fecha": "Dic 2024"
-          },
-          "informeCierre": {
-            "disponible": true,
-            "estado": "Finalizado",
-            "archivo": "/documentos/pth-mas-personas-mayores/informes-cierre/Informe_Cierre_VCM-24-1102.pdf",
-            "tamano": "2.4 MB",
-            "fecha": "Feb 2025"
-          }
-        }
-      },
-      {
-        "id": "PRY-PMA-2025-01",
-        "codigo": "VCM-25-0120",
-        "nombre": "Rehabilitación Kinésica Comunitaria y Prevención de Caídas",
-        "ano": 2025,
-        "lineaAccion": "Salud Integral y Funcionalidad",
-        "sede": "Santiago (Bellavista)",
-        "indicadores": {
-          "organizaciones": 6,
-          "estudiantes": 95,
+          "organizaciones": 2,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 55,
           "academicos": 7
         },
         "documentos": {
-          "encuestaEstudiantes": {
+          "formularioPostulacion": {
             "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0120.pdf",
-            "tamano": "1.2 MB",
-            "fecha": "Ago 2025"
-          },
-          "encuestaOrganizaciones": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-25-0120.pdf",
-            "tamano": "910 KB",
-            "fecha": "Sep 2025"
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_3428.pdf",
+            "tamano": "1.7 MB",
+            "paginas": 13,
+            "nombreDescarga": "Postulacion_ID_3428_2024.pdf"
           },
           "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_3428.pdf",
+            "tamano": "2.8 MB",
+            "paginas": 19,
+            "nombreDescarga": "Informe_Cierre_ID_3428_2024.pdf"
+          },
+          "encuestaEstudiantes": {
             "disponible": false,
-            "estado": "En ejecución 2025",
-            "archivo": null,
-            "tamano": null,
-            "fecha": null
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
           }
         }
       },
       {
-        "id": "PRY-PMA-2025-02",
-        "codigo": "VCM-25-0215",
-        "nombre": "Programa Intergeneracional de Memoria y Narrativas Locales",
-        "ano": 2025,
-        "lineaAccion": "Bienestar Emocional y Cognitivo",
-        "sede": "De la Patagonia (Puerto Montt)",
+        "id": "PRY-3434",
+        "codigo": "ID 3434",
+        "idNumero": "3434",
+        "nombre": "Salud mental en personas mayores",
+        "ano": 2024,
+        "lineaAccion": "Calidad de vida",
+        "sede": "Valdivia",
+        "facultad": "Psicología y Humanidades",
+        "carreraLider": "PSICOLOGÍA",
+        "lider": "",
+        "tipo": "Proyecto Colaborativo con FFCC",
         "indicadores": {
-          "organizaciones": 4,
-          "estudiantes": 60,
-          "academicos": 4
+          "organizaciones": 2,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 10,
+          "academicos": 11
         },
         "documentos": {
-          "encuestaEstudiantes": {
+          "formularioPostulacion": {
             "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0215.pdf",
-            "tamano": "1.0 MB",
-            "fecha": "Oct 2025"
-          },
-          "encuestaOrganizaciones": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-25-0215.pdf",
-            "tamano": "650 KB",
-            "fecha": "Oct 2025"
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_3434.pdf",
+            "tamano": "2.0 MB",
+            "paginas": 16,
+            "nombreDescarga": "Postulacion_ID_3434_2024.pdf"
           },
           "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_3434.pdf",
+            "tamano": "3.0 MB",
+            "paginas": 19,
+            "nombreDescarga": "Informe_Cierre_ID_3434_2024.pdf"
+          },
+          "encuestaEstudiantes": {
             "disponible": false,
-            "estado": "En ejecución 2025",
-            "archivo": null,
-            "tamano": null,
-            "fecha": null
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
           }
         }
       },
       {
-        "id": "PRY-PMA-2025-03",
-        "codigo": "VCM-25-0310",
-        "nombre": "Redes de Apoyo y Liderazgo de Personas Mayores en Zonas Rurales",
-        "ano": 2025,
-        "lineaAccion": "Inclusión Digital y Participación Social",
-        "sede": "Concepción",
+        "id": "PRY-3440",
+        "codigo": "ID 3440",
+        "idNumero": "3440",
+        "nombre": "Fortaleciendo el bienestar y cuidado integral de la persona mayor institucionalizada",
+        "ano": 2024,
+        "lineaAccion": "Calidad de vida",
+        "sede": "Valdivia",
+        "facultad": "Ciencias Para el Cuidado de la Salud",
+        "carreraLider": "ENFERMERÍA",
+        "lider": "",
+        "tipo": "Proyecto Colaborativo con FFCC",
         "indicadores": {
-          "organizaciones": 3,
-          "estudiantes": 75,
-          "academicos": 4
+          "organizaciones": 2,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 35,
+          "academicos": 8
         },
         "documentos": {
-          "encuestaEstudiantes": {
+          "formularioPostulacion": {
             "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0310.pdf",
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_3440.pdf",
+            "tamano": "1.9 MB",
+            "paginas": 15,
+            "nombreDescarga": "Postulacion_ID_3440_2024.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_3440.pdf",
+            "tamano": "2.6 MB",
+            "paginas": 17,
+            "nombreDescarga": "Informe_Cierre_ID_3440_2024.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-3442",
+        "codigo": "ID 3442",
+        "idNumero": "3442",
+        "nombre": "Fortalecimiento de la red social de Personas Mayores del CVT de San José de la Mariquina",
+        "ano": 2024,
+        "lineaAccion": "Calidad de vida",
+        "sede": "Valdivia",
+        "facultad": "Derecho y Ciencias Sociales",
+        "carreraLider": "TRABAJO SOCIAL ADVANCE",
+        "lider": "",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 2,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 19,
+          "academicos": 5
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_3442.pdf",
+            "tamano": "1.9 MB",
+            "paginas": 15,
+            "nombreDescarga": "Postulacion_ID_3442_2024.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_3442.pdf",
+            "tamano": "2.6 MB",
+            "paginas": 18,
+            "nombreDescarga": "Informe_Cierre_ID_3442_2024.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-3568",
+        "codigo": "ID 3568",
+        "idNumero": "3568",
+        "nombre": "Vitalidad Dorada: Salud y bienestar a través de una intervención interdisciplinar.",
+        "ano": 2024,
+        "lineaAccion": "Calidad de vida",
+        "sede": "Valdivia",
+        "facultad": "Medicina y Ciencia",
+        "carreraLider": "TECNOLOGÍA MÉDICA",
+        "lider": "",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 2,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 40,
+          "academicos": 10
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_3568.pdf",
+            "tamano": "2.1 MB",
+            "paginas": 16,
+            "nombreDescarga": "Postulacion_ID_3568_2024.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_3568.pdf",
+            "tamano": "4.4 MB",
+            "paginas": 32,
+            "nombreDescarga": "Informe_Cierre_ID_3568_2024.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-3583",
+        "codigo": "ID 3583",
+        "idNumero": "3583",
+        "nombre": "Programa piloto de atención farmacéutica: una mirada integral desde los fármacos a la alimentación",
+        "ano": 2024,
+        "lineaAccion": "Calidad de vida",
+        "sede": "Valdivia",
+        "facultad": "Medicina y Ciencia",
+        "carreraLider": "QUÍMICA Y FARMACIA",
+        "lider": "",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 2,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 10,
+          "academicos": 3
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_3583.pdf",
+            "tamano": "1.9 MB",
+            "paginas": 15,
+            "nombreDescarga": "Postulacion_ID_3583_2024.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_3583.pdf",
+            "tamano": "2.2 MB",
+            "paginas": 16,
+            "nombreDescarga": "Informe_Cierre_ID_3583_2024.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-3995",
+        "codigo": "ID 3995",
+        "idNumero": "3995",
+        "nombre": "\"Conociendo mis capacidades para mantenerme independiente\"",
+        "ano": 2024,
+        "lineaAccion": "Calidad de vida",
+        "sede": "Valdivia",
+        "facultad": "Odontología y Ciencias de la Rehabilitación",
+        "carreraLider": "TERAPIA OCUPACIONAL",
+        "lider": "",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 2,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 44,
+          "academicos": 1
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_3995.pdf",
             "tamano": "1.5 MB",
-            "fecha": "Nov 2025"
-          },
-          "encuestaOrganizaciones": {
-            "disponible": false,
-            "estado": "En proceso de validación",
-            "archivo": null,
-            "tamano": null,
-            "fecha": null
+            "paginas": 11,
+            "nombreDescarga": "Postulacion_ID_3995_2024.pdf"
           },
           "informeCierre": {
             "disponible": false,
-            "estado": "En ejecución 2025",
-            "archivo": null,
-            "tamano": null,
-            "fecha": null
+            "estado": "En ejecución / Sin informe",
+            "archivo": null
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
           }
         }
       },
       {
-        "id": "PRY-PMA-2025-04",
-        "codigo": "VCM-25-0402",
-        "nombre": "Nutrición Saludable y Prevención de Sarcopenia en Atención Primaria",
-        "ano": 2025,
-        "lineaAccion": "Salud Integral y Funcionalidad",
-        "sede": "Santiago (Los Leones)",
+        "id": "PRY-4002",
+        "codigo": "ID 4002",
+        "idNumero": "4002",
+        "nombre": "Promoviendo la salud integral de personas mayores del ELEAM Los Ríos de Valdivia.",
+        "ano": 2024,
+        "lineaAccion": "Calidad de vida",
+        "sede": "Valdivia",
+        "facultad": "Odontología y Ciencias de la Rehabilitación",
+        "carreraLider": "ODONTOLOGÍA",
+        "lider": "",
+        "tipo": "Proyecto Colaborativo con FFCC",
         "indicadores": {
-          "organizaciones": 3,
-          "estudiantes": 90,
-          "academicos": 4
+          "organizaciones": 2,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 28,
+          "academicos": 1
         },
         "documentos": {
-          "encuestaEstudiantes": {
+          "formularioPostulacion": {
             "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0402.pdf",
-            "tamano": "1.3 MB",
-            "fecha": "Dic 2025"
-          },
-          "encuestaOrganizaciones": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-personas-mayores/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-25-0402.pdf",
-            "tamano": "890 KB",
-            "fecha": "Dic 2025"
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_4002.pdf",
+            "tamano": "1.4 MB",
+            "paginas": 11,
+            "nombreDescarga": "Postulacion_ID_4002_2024.pdf"
           },
           "informeCierre": {
             "disponible": false,
-            "estado": "En ejecución 2025",
-            "archivo": null,
-            "tamano": null,
-            "fecha": null
+            "estado": "En ejecución / Sin informe",
+            "archivo": null
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4003",
+        "codigo": "ID 4003",
+        "idNumero": "4003",
+        "nombre": "La aplicación de la tecnología digital para mejorar la cognición de las personas mayores.",
+        "ano": 2024,
+        "lineaAccion": "Calidad de vida",
+        "sede": "Santiago",
+        "facultad": "Odontología y Ciencias de la Rehabilitación",
+        "carreraLider": "TERAPIA OCUPACIONAL",
+        "lider": "",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 2,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 221,
+          "academicos": 1
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_4003.pdf",
+            "tamano": "2.0 MB",
+            "paginas": 16,
+            "nombreDescarga": "Postulacion_ID_4003_2024.pdf"
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución / Sin informe",
+            "archivo": null
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4211",
+        "codigo": "ID 4211",
+        "idNumero": "4211",
+        "nombre": "Conociendo mis capacidades para mantenerme independiente",
+        "ano": 2025,
+        "lineaAccion": "Calidad de vida",
+        "sede": "Valdivia",
+        "facultad": "Odontología y Ciencias de la Rehabilitación",
+        "carreraLider": "Terapia Ocupacional",
+        "lider": "ACAD-122",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 2,
+          "comunas": 1,
+          "carreras": 3,
+          "estudiantes": 65,
+          "academicos": 11
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_4211.pdf",
+            "tamano": "1.8 MB",
+            "paginas": 14,
+            "nombreDescarga": "Postulacion_ID_4211_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_4211.pdf",
+            "tamano": "2.9 MB",
+            "paginas": 19,
+            "nombreDescarga": "Informe_Cierre_ID_4211_2025.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4235",
+        "codigo": "ID 4235",
+        "idNumero": "4235",
+        "nombre": "Escuela de Cuidadores: Una formación integral para asistentes del cuidado de la Región de los Ríos",
+        "ano": 2025,
+        "lineaAccion": "Políticas públicas",
+        "sede": "Valdivia",
+        "facultad": "Medicina y Ciencia",
+        "carreraLider": "Medicina",
+        "lider": "ACAD-051",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 3,
+          "comunas": 2,
+          "carreras": 7,
+          "estudiantes": 57,
+          "academicos": 13
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_4235.pdf",
+            "tamano": "2.0 MB",
+            "paginas": 15,
+            "nombreDescarga": "Postulacion_ID_4235_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_4235.pdf",
+            "tamano": "3.2 MB",
+            "paginas": 20,
+            "nombreDescarga": "Informe_Cierre_ID_4235_2025.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4406",
+        "codigo": "ID 4406",
+        "idNumero": "4406",
+        "nombre": "Programa del Adulto Mayor de la Universidad San Sebastián 2025",
+        "ano": 2025,
+        "lineaAccion": "Integración a la sociedad",
+        "sede": "Valdivia",
+        "facultad": "Odontología y Ciencias de la Rehabilitación",
+        "carreraLider": "Fonoaudiología",
+        "lider": "ACAD-168",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 2,
+          "comunas": 1,
+          "carreras": 3,
+          "estudiantes": 38,
+          "academicos": 10
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_4406.pdf",
+            "tamano": "2.2 MB",
+            "paginas": 16,
+            "nombreDescarga": "Postulacion_ID_4406_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_4406.pdf",
+            "tamano": "2.9 MB",
+            "paginas": 19,
+            "nombreDescarga": "Informe_Cierre_ID_4406_2025.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4447",
+        "codigo": "ID 4447",
+        "idNumero": "4447",
+        "nombre": "Acompañamiento integral del paciente oncológico y familia IV versión.",
+        "ano": 2025,
+        "lineaAccion": "Calidad de vida",
+        "sede": "Valdivia",
+        "facultad": "Ciencias Para el Cuidado de la Salud",
+        "carreraLider": "Enfermería",
+        "lider": "ACAD-159",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 2,
+          "comunas": 1,
+          "carreras": 7,
+          "estudiantes": 98,
+          "academicos": 16
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_4447.pdf",
+            "tamano": "3.0 MB",
+            "paginas": 23,
+            "nombreDescarga": "Postulacion_ID_4447_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_4447.pdf",
+            "tamano": "3.2 MB",
+            "paginas": 21,
+            "nombreDescarga": "Informe_Cierre_ID_4447_2025.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4509",
+        "codigo": "ID 4509",
+        "idNumero": "4509",
+        "nombre": "Vitalidad Dorada II: Investigación y acción interdisciplinar. Consolidando resultados para el bienestar.",
+        "ano": 2025,
+        "lineaAccion": "Calidad de vida",
+        "sede": "Valdivia",
+        "facultad": "Ciencia",
+        "carreraLider": "Tecnología Médica",
+        "lider": "Sin líder registrado",
+        "tipo": "Proyecto Colaborativo",
+        "indicadores": {
+          "organizaciones": 1,
+          "comunas": 1,
+          "carreras": 3,
+          "estudiantes": 164,
+          "academicos": 10
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": false,
+            "estado": "No disponible",
+            "archivo": null
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución / Sin informe",
+            "archivo": null
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4605",
+        "codigo": "ID 4605",
+        "idNumero": "4605",
+        "nombre": "Centinela nos acerca a Las Coloradas",
+        "ano": 2025,
+        "lineaAccion": "Integración a la sociedad",
+        "sede": "Valdivia",
+        "facultad": "Ciencias de la Rehabilitación y la calidad de vida",
+        "carreraLider": "Fonoaudiología",
+        "lider": "ACAD-130",
+        "tipo": "Proyecto Colaborativo",
+        "indicadores": {
+          "organizaciones": 1,
+          "comunas": 1,
+          "carreras": 2,
+          "estudiantes": 3,
+          "academicos": 3
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": false,
+            "estado": "No disponible",
+            "archivo": null
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución / Sin informe",
+            "archivo": null
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4631",
+        "codigo": "ID 4631",
+        "idNumero": "4631",
+        "nombre": "Torrencial: Más personas mayores activas, v2",
+        "ano": 2025,
+        "lineaAccion": "Calidad de vida",
+        "sede": "Valdivia",
+        "facultad": "Ciencias de la Rehabilitación y la calidad de vida",
+        "carreraLider": "Nutrición y Dietética",
+        "lider": "ACAD-182",
+        "tipo": "Proyecto Colaborativo",
+        "indicadores": {
+          "organizaciones": 1,
+          "comunas": 1,
+          "carreras": 2,
+          "estudiantes": 28,
+          "academicos": 3
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": false,
+            "estado": "No disponible",
+            "archivo": null
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución / Sin informe",
+            "archivo": null
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4692",
+        "codigo": "ID 4692",
+        "idNumero": "4692",
+        "nombre": "Valdivia Sonríe con CARITAS",
+        "ano": 2025,
+        "lineaAccion": "Calidad de vida",
+        "sede": "Valdivia",
+        "facultad": "Odontología",
+        "carreraLider": "Odontología",
+        "lider": "ACAD-172",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 1,
+          "comunas": 1,
+          "carreras": 2,
+          "estudiantes": 33,
+          "academicos": 10
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_4692.pdf",
+            "tamano": "3.1 MB",
+            "paginas": 26,
+            "nombreDescarga": "Postulacion_ID_4692_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_4692.pdf",
+            "tamano": "2.9 MB",
+            "paginas": 20,
+            "nombreDescarga": "Informe_Cierre_ID_4692_2025.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4709",
+        "codigo": "ID 4709",
+        "idNumero": "4709",
+        "nombre": "Más AMA Valdivia, con una sonrisa a la vida del Adulto Mayor",
+        "ano": 2025,
+        "lineaAccion": "Calidad de vida",
+        "sede": "Valdivia",
+        "facultad": "Odontología",
+        "carreraLider": "Odontología",
+        "lider": "ACAD-085",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 1,
+          "comunas": 1,
+          "carreras": 4,
+          "estudiantes": 47,
+          "academicos": 10
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_4709.pdf",
+            "tamano": "2.4 MB",
+            "paginas": 20,
+            "nombreDescarga": "Postulacion_ID_4709_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_4709.pdf",
+            "tamano": "3.5 MB",
+            "paginas": 24,
+            "nombreDescarga": "Informe_Cierre_ID_4709_2025.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4746",
+        "codigo": "ID 4746",
+        "idNumero": "4746",
+        "nombre": "Fortalecimiento de la red social de Personas Mayores del Condominio de Viviendas Tuteladas de la comuna  Río Bueno",
+        "ano": 2025,
+        "lineaAccion": "Calidad de vida",
+        "sede": "Valdivia",
+        "facultad": "Derecho y Ciencias Sociales",
+        "carreraLider": "Trabajo Social Advance",
+        "lider": "ACAD-028",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 1,
+          "comunas": 1,
+          "carreras": 2,
+          "estudiantes": 3,
+          "academicos": 4
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_4746.pdf",
+            "tamano": "2.3 MB",
+            "paginas": 19,
+            "nombreDescarga": "Postulacion_ID_4746_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_4746.pdf",
+            "tamano": "2.2 MB",
+            "paginas": 15,
+            "nombreDescarga": "Informe_Cierre_ID_4746_2025.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4786",
+        "codigo": "ID 4786",
+        "idNumero": "4786",
+        "nombre": "Más sonrisas y salud integral en personas mayores del ELEAM Los Ríos de Valdivia.",
+        "ano": 2025,
+        "lineaAccion": "Calidad de vida",
+        "sede": "Valdivia",
+        "facultad": "Odontología",
+        "carreraLider": "Odontología",
+        "lider": "ACAD-114",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 1,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 45,
+          "academicos": 5
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_4786.pdf",
+            "tamano": "1.4 MB",
+            "paginas": 11,
+            "nombreDescarga": "Postulacion_ID_4786_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_4786.pdf",
+            "tamano": "2.0 MB",
+            "paginas": 14,
+            "nombreDescarga": "Informe_Cierre_ID_4786_2025.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4832",
+        "codigo": "ID 4832",
+        "idNumero": "4832",
+        "nombre": "RED CuiDEM: Fortaleciendo la Atención Integral a Personas con Demencia en Valdivia (Apoyo al GES 85).",
+        "ano": 2025,
+        "lineaAccion": "Calidad de vida",
+        "sede": "Valdivia",
+        "facultad": "Medicina",
+        "carreraLider": "Medicina",
+        "lider": "ACAD-016",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 2,
+          "comunas": 1,
+          "carreras": 3,
+          "estudiantes": 124,
+          "academicos": 4
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_4832.pdf",
+            "tamano": "2.0 MB",
+            "paginas": 16,
+            "nombreDescarga": "Postulacion_ID_4832_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_4832.pdf",
+            "tamano": "3.4 MB",
+            "paginas": 27,
+            "nombreDescarga": "Informe_Cierre_ID_4832_2025.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4835",
+        "codigo": "ID 4835",
+        "idNumero": "4835",
+        "nombre": "Fortaleciendo el bienestar y cuidado integral de la persona mayor institucionalizada 2025.",
+        "ano": 2025,
+        "lineaAccion": "Calidad de vida",
+        "sede": "Valdivia",
+        "facultad": "Ciencias Para el Cuidado de la Salud",
+        "carreraLider": "Enfermería",
+        "lider": "ACAD-040",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 2,
+          "comunas": 1,
+          "carreras": 4,
+          "estudiantes": 141,
+          "academicos": 10
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_4835.pdf",
+            "tamano": "1.9 MB",
+            "paginas": 15,
+            "nombreDescarga": "Postulacion_ID_4835_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_4835.pdf",
+            "tamano": "2.5 MB",
+            "paginas": 16,
+            "nombreDescarga": "Informe_Cierre_ID_4835_2025.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4930",
+        "codigo": "ID 4930",
+        "idNumero": "4930",
+        "nombre": "Tejiendo Bienestar para un Envejecimiento Saludable",
+        "ano": 2025,
+        "lineaAccion": "Calidad de vida",
+        "sede": "Santiago",
+        "facultad": "Ciencias Para el Cuidado de la Salud",
+        "carreraLider": "Obstetricia",
+        "lider": "ACAD-147",
+        "tipo": "Proyecto Colaborativo",
+        "indicadores": {
+          "organizaciones": 6,
+          "comunas": 4,
+          "carreras": 2,
+          "estudiantes": 106,
+          "academicos": 13
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": false,
+            "estado": "No disponible",
+            "archivo": null
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución / Sin informe",
+            "archivo": null
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
           }
         }
       }
@@ -281,239 +1166,633 @@
     "id": "pth-mas-azul",
     "tipo": "PTH",
     "nombre": "Más Azul",
-    "sigla": "PTH-MA",
-    "descripcion": "Programa centrado en la conservación, gestión sustentable y gobernanza participativa de los ecosistemas acuáticos continentales y costeros de Chile (lagos, ríos, humedales y zonas litorales).",
+    "sigla": "PTH-MAZ",
+    "descripcion": "Programa enfocado en la conservación, monitoreo ambiental, protección del patrimonio hídrico y gestión comunitaria de cuencas lacustres y costeras de la Patagonia y macrozona sur de Chile.",
     "color": {
-      "primary": "from-sky-600 to-blue-800",
-      "badge": "bg-sky-100 text-sky-800 border-sky-200",
-      "accent": "text-sky-600"
+      "primary": "#0284c7",
+      "secondary": "#0369a1",
+      "light": "#f0f9ff",
+      "badge": "bg-sky-100 text-sky-800 border-sky-200"
     },
-    "excelResumen": "/documentos/pth-mas-azul/listado_proyectos_2024_2025.xlsx",
+    "excelResumen": "descargas/Consolidado_Proyectos_PTH_2024_2025.xlsx",
     "totales": {
-      "proyectos": 6,
-      "organizaciones": 22,
-      "estudiantes": 390,
-      "academicos": 28
+      "proyectos": 11,
+      "organizaciones": 68,
+      "estudiantes": 531,
+      "academicos": 44,
+      "documentos": 34
     },
     "lineasDeAccion": [
-      "Monitoreo Ambiental y Calidad del Agua",
-      "Educación Ambiental y Ciencia Ciudadana",
-      "Restauración de Cuencas y Gestión Hídrica"
+      "Ciencia y Tecnología",
+      "Educación Ambiental",
+      "Política Pública"
+    ],
+    "reportesGenerales": [
+      {
+        "titulo": "PTH Más azul encuesta estudiantes 2025 1",
+        "tipo": "Estudiantes",
+        "ano": "2025",
+        "archivo": "documentos/pth/pth-mas-azul/reportes-generales/PTH_Más_azul_encuesta_estudiantes_2025_1.pdf",
+        "tamano": "1013.1 KB",
+        "paginas": 25
+      },
+      {
+        "titulo": "PTH Más azul Encuesta organizaciones 2024",
+        "tipo": "Organizaciones",
+        "ano": "2024",
+        "archivo": "documentos/pth/pth-mas-azul/reportes-generales/PTH_Más_azul_Encuesta_organizaciones_2024.pdf",
+        "tamano": "629.5 KB",
+        "paginas": 17
+      },
+      {
+        "titulo": "PTH Más azul Encuesta organizaciones 2025",
+        "tipo": "Organizaciones",
+        "ano": "2025",
+        "archivo": "documentos/pth/pth-mas-azul/reportes-generales/PTH_Más_azul_Encuesta_organizaciones_2025.pdf",
+        "tamano": "541.2 KB",
+        "paginas": 13
+      },
+      {
+        "titulo": "PTH Más azul estudiantes 2024 1",
+        "tipo": "Estudiantes",
+        "ano": "2024",
+        "archivo": "documentos/pth/pth-mas-azul/reportes-generales/PTH_Más_azul_estudiantes_2024_1.pdf",
+        "tamano": "1.2 MB",
+        "paginas": 33
+      }
     ],
     "proyectos": [
       {
-        "id": "PRY-AZL-2024-01",
-        "codigo": "VCM-24-0712",
-        "nombre": "Monitoreo Comunitario de Calidad de Agua en la Cuenca del Lago Llanquihue",
+        "id": "PRY-3480",
+        "codigo": "ID 3480",
+        "idNumero": "3480",
+        "nombre": "Evaluación técnica, económica y de interacción social del Huillín-Guardián.",
         "ano": 2024,
-        "lineaAccion": "Monitoreo Ambiental y Calidad del Agua",
-        "sede": "De la Patagonia (Puerto Montt)",
+        "lineaAccion": "Ciencia y Tecnología",
+        "sede": "Patagonia",
+        "facultad": "Ingeniería, Arquitectura y Diseño",
+        "carreraLider": "INGENIERÍA CIVIL INDUSTRIAL",
+        "lider": "",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 2,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 10,
+          "academicos": 4
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-azul/postulacion/Postulacion_ID_3480.pdf",
+            "tamano": "1.7 MB",
+            "paginas": 13,
+            "nombreDescarga": "Postulacion_ID_3480_2024.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-azul/cierre/Informe_Cierre_ID_3480.pdf",
+            "tamano": "3.0 MB",
+            "paginas": 23,
+            "nombreDescarga": "Informe_Cierre_ID_3480_2024.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "esEspecifico": true,
+            "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_3480.pdf",
+            "tamano": "1.2 MB",
+            "paginas": 33,
+            "nombreDescarga": "Encuesta_Estudiantes_ID_3480_2024.pdf"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-3485",
+        "codigo": "ID 3485",
+        "idNumero": "3485",
+        "nombre": "Vigías del Mar 2.0",
+        "ano": 2024,
+        "lineaAccion": "Ciencia y Tecnología",
+        "sede": "Patagonia",
+        "facultad": "Medicina y Ciencia",
+        "carreraLider": "ENFERMERÍA",
+        "lider": "",
+        "tipo": "Proyecto Colaborativo con FFCC",
         "indicadores": {
           "organizaciones": 5,
-          "estudiantes": 70,
-          "academicos": 5
-        },
-        "documentos": {
-          "encuestaEstudiantes": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-azul/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-24-0712.pdf",
-            "tamano": "1.7 MB",
-            "fecha": "Nov 2024"
-          },
-          "encuestaOrganizaciones": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-azul/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-24-0712.pdf",
-            "tamano": "1.2 MB",
-            "fecha": "Dic 2024"
-          },
-          "informeCierre": {
-            "disponible": true,
-            "estado": "Finalizado",
-            "archivo": "/documentos/pth-mas-azul/informes-cierre/Informe_Cierre_VCM-24-0712.pdf",
-            "tamano": "3.1 MB",
-            "fecha": "Ene 2025"
-          }
-        }
-      },
-      {
-        "id": "PRY-AZL-2024-02",
-        "codigo": "VCM-24-0789",
-        "nombre": "Programa de Ciencia Ciudadana y Protección de Humedales Urbanos",
-        "ano": 2024,
-        "lineaAccion": "Educación Ambiental y Ciencia Ciudadana",
-        "sede": "Valdivia",
-        "indicadores": {
-          "organizaciones": 4,
-          "estudiantes": 65,
-          "academicos": 5
-        },
-        "documentos": {
-          "encuestaEstudiantes": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-azul/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-24-0789.pdf",
-            "tamano": "1.3 MB",
-            "fecha": "Dic 2024"
-          },
-          "encuestaOrganizaciones": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-azul/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-24-0789.pdf",
-            "tamano": "890 KB",
-            "fecha": "Dic 2024"
-          },
-          "informeCierre": {
-            "disponible": true,
-            "estado": "Finalizado",
-            "archivo": "/documentos/pth-mas-azul/informes-cierre/Informe_Cierre_VCM-24-0789.pdf",
-            "tamano": "2.8 MB",
-            "fecha": "Feb 2025"
-          }
-        }
-      },
-      {
-        "id": "PRY-AZL-2024-03",
-        "codigo": "VCM-24-0835",
-        "nombre": "Eficiencia Hídrica y Buenas Prácticas en Sistemas de Agua Potable Rural (APR)",
-        "ano": 2024,
-        "lineaAccion": "Restauración de Cuencas y Gestión Hídrica",
-        "sede": "Concepción",
-        "indicadores": {
-          "organizaciones": 3,
-          "estudiantes": 55,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 10,
           "academicos": 4
         },
         "documentos": {
-          "encuestaEstudiantes": {
+          "formularioPostulacion": {
             "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-azul/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-24-0835.pdf",
-            "tamano": "1.5 MB",
-            "fecha": "Dic 2024"
-          },
-          "encuestaOrganizaciones": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-azul/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-24-0835.pdf",
-            "tamano": "950 KB",
-            "fecha": "Ene 2025"
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-azul/postulacion/Postulacion_ID_3485.pdf",
+            "tamano": "1.8 MB",
+            "paginas": 13,
+            "nombreDescarga": "Postulacion_ID_3485_2024.pdf"
           },
           "informeCierre": {
             "disponible": true,
             "estado": "Finalizado",
-            "archivo": "/documentos/pth-mas-azul/informes-cierre/Informe_Cierre_VCM-24-0835.pdf",
-            "tamano": "2.2 MB",
-            "fecha": "Mar 2025"
+            "archivo": "documentos/pth/pth-mas-azul/cierre/Informe_Cierre_ID_3485.pdf",
+            "tamano": "2.4 MB",
+            "paginas": 17,
+            "nombreDescarga": "Informe_Cierre_ID_3485_2024.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "esEspecifico": true,
+            "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_3485.pdf",
+            "tamano": "1.1 MB",
+            "paginas": 33,
+            "nombreDescarga": "Encuesta_Estudiantes_ID_3485_2024.pdf"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
           }
         }
       },
       {
-        "id": "PRY-AZL-2025-01",
-        "codigo": "VCM-25-0155",
-        "nombre": "Red de Sensores Comunitarios para Calidad Lacustre",
-        "ano": 2025,
-        "lineaAccion": "Monitoreo Ambiental y Calidad del Agua",
-        "sede": "De la Patagonia (Puerto Varas)",
+        "id": "PRY-3557",
+        "codigo": "ID 3557",
+        "idNumero": "3557",
+        "nombre": "Caracterización participativa de las descargas residuales del Hospital de Puerto Montt para apoyar la formación científica de estudiantes de Química y Farmacia y Medicina Veterinaria de la sede de La Patagonia",
+        "ano": 2024,
+        "lineaAccion": "Ciencia y Tecnología",
+        "sede": "Patagonia",
+        "facultad": "Medicina y Ciencia",
+        "carreraLider": "QUÍMICA Y FARMACIA",
+        "lider": "",
+        "tipo": "Proyecto Colaborativo con FFCC",
         "indicadores": {
-          "organizaciones": 4,
-          "estudiantes": 80,
-          "academicos": 5
+          "organizaciones": 2,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 64,
+          "academicos": 4
         },
         "documentos": {
-          "encuestaEstudiantes": {
+          "formularioPostulacion": {
             "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-azul/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0155.pdf",
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-azul/postulacion/Postulacion_ID_3557.pdf",
             "tamano": "1.4 MB",
-            "fecha": "Oct 2025"
-          },
-          "encuestaOrganizaciones": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-azul/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-25-0155.pdf",
-            "tamano": "780 KB",
-            "fecha": "Nov 2025"
+            "paginas": 11,
+            "nombreDescarga": "Postulacion_ID_3557_2024.pdf"
           },
           "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-azul/cierre/Informe_Cierre_ID_3557.pdf",
+            "tamano": "2.0 MB",
+            "paginas": 13,
+            "nombreDescarga": "Informe_Cierre_ID_3557_2024.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "esEspecifico": true,
+            "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_3557.pdf",
+            "tamano": "1.2 MB",
+            "paginas": 33,
+            "nombreDescarga": "Encuesta_Estudiantes_ID_3557_2024.pdf"
+          },
+          "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "En ejecución 2025",
-            "archivo": null,
-            "tamano": null,
-            "fecha": null
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
           }
         }
       },
       {
-        "id": "PRY-AZL-2025-02",
-        "codigo": "VCM-25-0240",
-        "nombre": "Educación Costera y Restauración de Dunas en el Litoral Central",
-        "ano": 2025,
-        "lineaAccion": "Educación Ambiental y Ciencia Ciudadana",
-        "sede": "Santiago (Los Leones)",
+        "id": "PRY-3574",
+        "codigo": "ID 3574",
+        "idNumero": "3574",
+        "nombre": "Desperdicio Cero",
+        "ano": 2024,
+        "lineaAccion": "Educación Ambiental",
+        "sede": "Patagonia",
+        "facultad": "Ciencias Para el Cuidado de la Salud",
+        "carreraLider": "NUTRICIÓN Y DIETÉTICA",
+        "lider": "",
+        "tipo": "Proyecto Colaborativo con FFCC",
         "indicadores": {
-          "organizaciones": 3,
-          "estudiantes": 60,
+          "organizaciones": 39,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 10,
+          "academicos": 3
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-azul/postulacion/Postulacion_ID_3574.pdf",
+            "tamano": "2.3 MB",
+            "paginas": 19,
+            "nombreDescarga": "Postulacion_ID_3574_2024.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-azul/cierre/Informe_Cierre_ID_3574.pdf",
+            "tamano": "2.8 MB",
+            "paginas": 20,
+            "nombreDescarga": "Informe_Cierre_ID_3574_2024.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-3781",
+        "codigo": "ID 3781",
+        "idNumero": "3781",
+        "nombre": "Sistema de monitoreo sobre la calidad del agua en el Lago Puyehue",
+        "ano": 2024,
+        "lineaAccion": "Ciencia y Tecnología",
+        "sede": "Patagonia",
+        "facultad": "Ingeniería, Arquitectura y Diseño",
+        "carreraLider": "INGENIERÍA CIVIL INDUSTRIAL",
+        "lider": "",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 2,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 69,
+          "academicos": 1
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-azul/postulacion/Postulacion_ID_3781.pdf",
+            "tamano": "1.8 MB",
+            "paginas": 14,
+            "nombreDescarga": "Postulacion_ID_3781_2024.pdf"
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución / Sin informe",
+            "archivo": null
+          },
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "esEspecifico": true,
+            "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_3781.pdf",
+            "tamano": "1.2 MB",
+            "paginas": 33,
+            "nombreDescarga": "Encuesta_Estudiantes_ID_3781_2024.pdf"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": true,
+            "estado": "Validado",
+            "esEspecifico": true,
+            "archivo": "documentos/pth/pth-mas-azul/encuestas-organizaciones/Encuesta_Organizaciones_ID_3781.pdf",
+            "tamano": "623.4 KB",
+            "paginas": 17,
+            "nombreDescarga": "Encuesta_Organizaciones_ID_3781_2024.pdf"
+          }
+        }
+      },
+      {
+        "id": "PRY-3970",
+        "codigo": "ID 3970",
+        "idNumero": "3970",
+        "nombre": "Laboratorio científico al aíre libre: Humedal Urbano Luis Ebel como modelo de enseñanza para la ciencia y la educación medioambiental",
+        "ano": 2024,
+        "lineaAccion": "Educación Ambiental",
+        "sede": "Patagonia",
+        "facultad": "Ciencias de la Naturaleza",
+        "carreraLider": "MEDICINA VETERINARIA",
+        "lider": "",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 2,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 92,
+          "academicos": 1
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-azul/postulacion/Postulacion_ID_3970.pdf",
+            "tamano": "1.4 MB",
+            "paginas": 11,
+            "nombreDescarga": "Postulacion_ID_3970_2024.pdf"
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución / Sin informe",
+            "archivo": null
+          },
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "esEspecifico": true,
+            "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_3970.pdf",
+            "tamano": "1.2 MB",
+            "paginas": 33,
+            "nombreDescarga": "Encuesta_Estudiantes_ID_3970_2024.pdf"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4242",
+        "codigo": "ID 4242",
+        "idNumero": "4242",
+        "nombre": "Estrategias para la mitigación de la contaminación por plásticos en el Seno de Reloncaví: Integrando investigación internacional y políticas públicas para la conservación ambiental.",
+        "ano": 2025,
+        "lineaAccion": "Ciencia y Tecnología",
+        "sede": "Patagonia",
+        "facultad": "Ingeniería, Arquitectura y Diseño",
+        "carreraLider": "Ingeniería Civil Industrial",
+        "lider": "ACAD-041",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 2,
+          "comunas": 6,
+          "carreras": 4,
+          "estudiantes": 154,
           "academicos": 5
         },
         "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-azul/postulacion/Postulacion_ID_4242.pdf",
+            "tamano": "2.4 MB",
+            "paginas": 19,
+            "nombreDescarga": "Postulacion_ID_4242_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-azul/cierre/Informe_Cierre_ID_4242.pdf",
+            "tamano": "3.6 MB",
+            "paginas": 27,
+            "nombreDescarga": "Informe_Cierre_ID_4242_2025.pdf"
+          },
           "encuestaEstudiantes": {
             "disponible": true,
             "estado": "Validado",
-            "archivo": "/documentos/pth-mas-azul/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0240.pdf",
-            "tamano": "1.2 MB",
-            "fecha": "Nov 2025"
+            "esEspecifico": true,
+            "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_4242.pdf",
+            "tamano": "990.2 KB",
+            "paginas": 25,
+            "nombreDescarga": "Encuesta_Estudiantes_ID_4242_2025.pdf"
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "En proceso de validación",
-            "archivo": null,
-            "tamano": null,
-            "fecha": null
-          },
-          "informeCierre": {
-            "disponible": false,
-            "estado": "En ejecución 2025",
-            "archivo": null,
-            "tamano": null,
-            "fecha": null
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
           }
         }
       },
       {
-        "id": "PRY-AZL-2025-03",
-        "codigo": "VCM-25-0320",
-        "nombre": "Restauración Ribereña con Especies Nativas en la Cuenca del Río Biobío",
+        "id": "PRY-4261",
+        "codigo": "ID 4261",
+        "idNumero": "4261",
+        "nombre": "Lagoenlinea 2.0: Un enfoque integral para la gestión y conservación de los ecosistemas lacustres.",
         "ano": 2025,
-        "lineaAccion": "Restauración de Cuencas y Gestión Hídrica",
-        "sede": "Concepción",
+        "lineaAccion": "Ciencia y Tecnología",
+        "sede": "Patagonia",
+        "facultad": "Ingeniería, Arquitectura y Diseño",
+        "carreraLider": "Ingeniería Civil Industrial",
+        "lider": "ACAD-041",
+        "tipo": "Proyecto Colaborativo con FFCC",
         "indicadores": {
           "organizaciones": 3,
-          "estudiantes": 60,
+          "comunas": 5,
+          "carreras": 4,
+          "estudiantes": 16,
           "academicos": 4
         },
         "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-azul/postulacion/Postulacion_ID_4261.pdf",
+            "tamano": "2.6 MB",
+            "paginas": 22,
+            "nombreDescarga": "Postulacion_ID_4261_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-azul/cierre/Informe_Cierre_ID_4261.pdf",
+            "tamano": "3.9 MB",
+            "paginas": 30,
+            "nombreDescarga": "Informe_Cierre_ID_4261_2025.pdf"
+          },
           "encuestaEstudiantes": {
             "disponible": true,
             "estado": "Validado",
-            "archivo": "/documentos/pth-mas-azul/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0320.pdf",
-            "tamano": "1.3 MB",
-            "fecha": "Dic 2025"
+            "esEspecifico": true,
+            "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_4261.pdf",
+            "tamano": "1.0 MB",
+            "paginas": 25,
+            "nombreDescarga": "Encuesta_Estudiantes_ID_4261_2025.pdf"
           },
           "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4437",
+        "codigo": "ID 4437",
+        "idNumero": "4437",
+        "nombre": "Desperdicio Cero II: Patagonia Sustentabilidad en Acción",
+        "ano": 2025,
+        "lineaAccion": "Educación Ambiental",
+        "sede": "Patagonia",
+        "facultad": "Ciencias Para el Cuidado de la Salud",
+        "carreraLider": "Nutrición y Dietética",
+        "lider": "ACAD-200",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 1,
+          "comunas": 2,
+          "carreras": 3,
+          "estudiantes": 21,
+          "academicos": 10
+        },
+        "documentos": {
+          "formularioPostulacion": {
             "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-azul/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-25-0320.pdf",
-            "tamano": "820 KB",
-            "fecha": "Dic 2025"
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-azul/postulacion/Postulacion_ID_4437.pdf",
+            "tamano": "4.1 MB",
+            "paginas": 34,
+            "nombreDescarga": "Postulacion_ID_4437_2025.pdf"
           },
           "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-azul/cierre/Informe_Cierre_ID_4437.pdf",
+            "tamano": "3.9 MB",
+            "paginas": 28,
+            "nombreDescarga": "Informe_Cierre_ID_4437_2025.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "esEspecifico": true,
+            "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_4437.pdf",
+            "tamano": "945.2 KB",
+            "paginas": 25,
+            "nombreDescarga": "Encuesta_Estudiantes_ID_4437_2025.pdf"
+          },
+          "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "En ejecución 2025",
-            "archivo": null,
-            "tamano": null,
-            "fecha": null
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4463",
+        "codigo": "ID 4463",
+        "idNumero": "4463",
+        "nombre": "Impacto de la permisología en la implementación de infraestructura verde en la región de los lagos: una exploración interdisciplinaria",
+        "ano": 2025,
+        "lineaAccion": "Política Pública",
+        "sede": "Patagonia",
+        "facultad": "Derecho y Ciencias Sociales",
+        "carreraLider": "Administración Pública",
+        "lider": "ACAD-104",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 2,
+          "comunas": 14,
+          "carreras": 5,
+          "estudiantes": 30,
+          "academicos": 5
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-azul/postulacion/Postulacion_ID_4463.pdf",
+            "tamano": "1.8 MB",
+            "paginas": 13,
+            "nombreDescarga": "Postulacion_ID_4463_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-azul/cierre/Informe_Cierre_ID_4463.pdf",
+            "tamano": "3.0 MB",
+            "paginas": 21,
+            "nombreDescarga": "Informe_Cierre_ID_4463_2025.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4735",
+        "codigo": "ID 4735",
+        "idNumero": "4735",
+        "nombre": "Ecos del Sur: Relatos de Hualaihué",
+        "ano": 2025,
+        "lineaAccion": "Educación Ambiental",
+        "sede": "Patagonia",
+        "facultad": "Educación",
+        "carreraLider": "Pedagogía en Inglés",
+        "lider": "ACAD-094",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 8,
+          "comunas": 1,
+          "carreras": 2,
+          "estudiantes": 55,
+          "academicos": 3
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-azul/postulacion/Postulacion_ID_4735.pdf",
+            "tamano": "2.1 MB",
+            "paginas": 15,
+            "nombreDescarga": "Postulacion_ID_4735_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-azul/cierre/Informe_Cierre_ID_4735.pdf",
+            "tamano": "2.2 MB",
+            "paginas": 15,
+            "nombreDescarga": "Informe_Cierre_ID_4735_2025.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "esEspecifico": true,
+            "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_4735.pdf",
+            "tamano": "972.7 KB",
+            "paginas": 25,
+            "nombreDescarga": "Encuesta_Estudiantes_ID_4735_2025.pdf"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
           }
         }
       }
@@ -523,203 +1802,559 @@
     "id": "pth-mas-parques",
     "tipo": "PTH",
     "nombre": "Más Parques",
-    "sigla": "PTH-MP",
-    "descripcion": "Estrategia para la puesta en valor, diseño participativo y conservación de áreas verdes urbanas y periurbanas, favoreciendo la biodiversidad y el espacio público saludable.",
+    "sigla": "PTH-MPQ",
+    "descripcion": "Iniciativa dedicada a la puesta en valor, conservación de la biodiversidad, diseño de infraestructura de bajo impacto y educación comunitaria en parques urbanos y áreas naturales protegidas de la Patagonia y el país.",
     "color": {
-      "primary": "from-emerald-600 to-green-800",
-      "badge": "bg-emerald-100 text-emerald-800 border-emerald-200",
-      "accent": "text-emerald-600"
+      "primary": "#15803d",
+      "secondary": "#166534",
+      "light": "#f0fdf4",
+      "badge": "bg-green-100 text-green-800 border-green-200"
     },
-    "excelResumen": "/documentos/pth-mas-parques/listado_proyectos_2024_2025.xlsx",
+    "excelResumen": "descargas/Consolidado_Proyectos_PTH_2024_2025.xlsx",
     "totales": {
-      "proyectos": 5,
-      "organizaciones": 18,
-      "estudiantes": 310,
-      "academicos": 22
+      "proyectos": 10,
+      "organizaciones": 23,
+      "estudiantes": 486,
+      "academicos": 68,
+      "documentos": 24
     },
     "lineasDeAccion": [
-      "Biodiversidad y Conservación Urbana",
-      "Diseño Participativo de Áreas Verdes",
-      "Educación y Uso Comunitario del Parque"
+      "Planificación, diseño y tecnología",
+      "Promoción de la conservación",
+      "Turismo sustentable"
+    ],
+    "reportesGenerales": [
+      {
+        "titulo": "PTH Más parques encuesta estudiantes 2024 2",
+        "tipo": "Estudiantes",
+        "ano": "2024",
+        "archivo": "documentos/pth/pth-mas-parques/reportes-generales/PTH_Más_parques_encuesta_estudiantes_2024_2.pdf",
+        "tamano": "1.2 MB",
+        "paginas": 33
+      },
+      {
+        "titulo": "PTH Más parques encuesta estudiantes 2025 2",
+        "tipo": "Estudiantes",
+        "ano": "2025",
+        "archivo": "documentos/pth/pth-mas-parques/reportes-generales/PTH_Más_parques_encuesta_estudiantes_2025_2.pdf",
+        "tamano": "1013.1 KB",
+        "paginas": 25
+      },
+      {
+        "titulo": "PTH Más parques Encuesta organizaciones 2024 1",
+        "tipo": "Organizaciones",
+        "ano": "2024",
+        "archivo": "documentos/pth/pth-mas-parques/reportes-generales/PTH_Más_parques_Encuesta_organizaciones_2024_1.pdf",
+        "tamano": "629.5 KB",
+        "paginas": 17
+      },
+      {
+        "titulo": "PTH Más parques Encuesta organizaciones 2025 1",
+        "tipo": "Organizaciones",
+        "ano": "2025",
+        "archivo": "documentos/pth/pth-mas-parques/reportes-generales/PTH_Más_parques_Encuesta_organizaciones_2025_1.pdf",
+        "tamano": "541.2 KB",
+        "paginas": 13
+      }
     ],
     "proyectos": [
       {
-        "id": "PRY-PRQ-2024-01",
-        "codigo": "VCM-24-0551",
-        "nombre": "Catastro de Flora Nativa y Reforestación Comunitaria en Parques Periurbanos",
+        "id": "PRY-3393",
+        "codigo": "ID 3393",
+        "idNumero": "3393",
+        "nombre": "Observatorio Socioecológico de los Parques de la Patagonia: Caso PN Alerce Andino",
         "ano": 2024,
-        "lineaAccion": "Biodiversidad y Conservación Urbana",
-        "sede": "Santiago (Los Leones)",
+        "lineaAccion": "Turismo sustentable",
+        "sede": "Patagonia",
+        "facultad": "Ciencias de la Naturaleza",
+        "carreraLider": "INGENIERÍA EN GESTIÓN DE EXPEDICIONES Y ECOTURISMO",
+        "lider": "",
+        "tipo": "Proyecto Colaborativo con FFCC",
         "indicadores": {
           "organizaciones": 4,
-          "estudiantes": 75,
-          "academicos": 5
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 41,
+          "academicos": 9
         },
         "documentos": {
-          "encuestaEstudiantes": {
+          "formularioPostulacion": {
             "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-parques/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-24-0551.pdf",
-            "tamano": "1.6 MB",
-            "fecha": "Nov 2024"
-          },
-          "encuestaOrganizaciones": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-parques/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-24-0551.pdf",
-            "tamano": "920 KB",
-            "fecha": "Dic 2024"
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-parques/postulacion/Postulacion_ID_3393.pdf",
+            "tamano": "1.9 MB",
+            "paginas": 14,
+            "nombreDescarga": "Postulacion_ID_3393_2024.pdf"
           },
           "informeCierre": {
             "disponible": true,
             "estado": "Finalizado",
-            "archivo": "/documentos/pth-mas-parques/informes-cierre/Informe_Cierre_VCM-24-0551.pdf",
-            "tamano": "3.4 MB",
-            "fecha": "Ene 2025"
-          }
-        }
-      },
-      {
-        "id": "PRY-PRQ-2024-02",
-        "codigo": "VCM-24-0610",
-        "nombre": "Cocreación de Senderos Accesibles y Plazas Barriales",
-        "ano": 2024,
-        "lineaAccion": "Diseño Participativo de Áreas Verdes",
-        "sede": "Valdivia",
-        "indicadores": {
-          "organizaciones": 3,
-          "estudiantes": 50,
-          "academicos": 4
-        },
-        "documentos": {
-          "encuestaEstudiantes": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-parques/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-24-0610.pdf",
-            "tamano": "1.2 MB",
-            "fecha": "Dic 2024"
-          },
-          "encuestaOrganizaciones": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-parques/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-24-0610.pdf",
-            "tamano": "840 KB",
-            "fecha": "Ene 2025"
-          },
-          "informeCierre": {
-            "disponible": true,
-            "estado": "Finalizado",
-            "archivo": "/documentos/pth-mas-parques/informes-cierre/Informe_Cierre_VCM-24-0610.pdf",
+            "archivo": "documentos/pth/pth-mas-parques/cierre/Informe_Cierre_ID_3393.pdf",
             "tamano": "2.6 MB",
-            "fecha": "Feb 2025"
-          }
-        }
-      },
-      {
-        "id": "PRY-PRQ-2025-01",
-        "codigo": "VCM-25-0180",
-        "nombre": "Jardines Polinizadores y Restauración Ecológica Escolar",
-        "ano": 2025,
-        "lineaAccion": "Biodiversidad y Conservación Urbana",
-        "sede": "Concepción",
-        "indicadores": {
-          "organizaciones": 4,
-          "estudiantes": 65,
-          "academicos": 4
-        },
-        "documentos": {
+            "paginas": 17,
+            "nombreDescarga": "Informe_Cierre_ID_3393_2024.pdf"
+          },
           "encuestaEstudiantes": {
             "disponible": true,
             "estado": "Validado",
-            "archivo": "/documentos/pth-mas-parques/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0180.pdf",
+            "esEspecifico": true,
+            "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_3393.pdf",
             "tamano": "1.1 MB",
-            "fecha": "Oct 2025"
+            "paginas": 33,
+            "nombreDescarga": "Encuesta_Estudiantes_ID_3393_2024.pdf"
           },
           "encuestaOrganizaciones": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-parques/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-25-0180.pdf",
-            "tamano": "730 KB",
-            "fecha": "Nov 2025"
-          },
-          "informeCierre": {
             "disponible": false,
-            "estado": "En ejecución 2025",
-            "archivo": null,
-            "tamano": null,
-            "fecha": null
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
           }
         }
       },
       {
-        "id": "PRY-PRQ-2025-02",
-        "codigo": "VCM-25-0290",
-        "nombre": "Infraestructura Verde y Drenaje Sostenible en Espacios Comunitarios",
-        "ano": 2025,
-        "lineaAccion": "Diseño Participativo de Áreas Verdes",
-        "sede": "Santiago (Bellavista)",
+        "id": "PRY-3527",
+        "codigo": "ID 3527",
+        "idNumero": "3527",
+        "nombre": "Turberas de Púlpito: diseño de infraestructuras de bajo impacto en humedales protegidos",
+        "ano": 2024,
+        "lineaAccion": "Planificación, diseño y tecnología",
+        "sede": "Patagonia",
+        "facultad": "Ingeniería, Arquitectura y Diseño",
+        "carreraLider": "ARQUITECTURA",
+        "lider": "",
+        "tipo": "Proyecto Colaborativo con FFCC",
         "indicadores": {
           "organizaciones": 4,
-          "estudiantes": 70,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 13,
           "academicos": 5
         },
         "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-parques/postulacion/Postulacion_ID_3527.pdf",
+            "tamano": "1.5 MB",
+            "paginas": 11,
+            "nombreDescarga": "Postulacion_ID_3527_2024.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-parques/cierre/Informe_Cierre_ID_3527.pdf",
+            "tamano": "2.3 MB",
+            "paginas": 16,
+            "nombreDescarga": "Informe_Cierre_ID_3527_2024.pdf"
+          },
           "encuestaEstudiantes": {
             "disponible": true,
             "estado": "Validado",
-            "archivo": "/documentos/pth-mas-parques/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0290.pdf",
-            "tamano": "1.5 MB",
-            "fecha": "Nov 2025"
+            "esEspecifico": true,
+            "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_3527.pdf",
+            "tamano": "623.4 KB",
+            "paginas": 17,
+            "nombreDescarga": "Encuesta_Estudiantes_ID_3527_2024.pdf"
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "En proceso de validación",
-            "archivo": null,
-            "tamano": null,
-            "fecha": null
-          },
-          "informeCierre": {
-            "disponible": false,
-            "estado": "En ejecución 2025",
-            "archivo": null,
-            "tamano": null,
-            "fecha": null
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
           }
         }
       },
       {
-        "id": "PRY-PRQ-2025-03",
-        "codigo": "VCM-25-0370",
-        "nombre": "Aulas Abiertas y Rutas de Aprendizaje en Áreas Silvestres Protegidas",
-        "ano": 2025,
-        "lineaAccion": "Educación y Uso Comunitario del Parque",
-        "sede": "De la Patagonia (Puerto Montt)",
+        "id": "PRY-3827",
+        "codigo": "ID 3827",
+        "idNumero": "3827",
+        "nombre": "\"TE FALTA SUR\", creando conciencia sobre el impacto que el contacto con la naturaleza (Vitamina \"N\") genera en la salud y bienestar de las personas",
+        "ano": 2024,
+        "lineaAccion": "Promoción de la conservación",
+        "sede": "Patagonia",
+        "facultad": "Ingeniería, Arquitectura y Diseño",
+        "carreraLider": "ARQUITECTURA",
+        "lider": "",
+        "tipo": "Proyecto Colaborativo con FFCC",
         "indicadores": {
-          "organizaciones": 3,
-          "estudiantes": 50,
-          "academicos": 4
+          "organizaciones": 2,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 43,
+          "academicos": 2
         },
         "documentos": {
-          "encuestaEstudiantes": {
+          "formularioPostulacion": {
             "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-parques/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0370.pdf",
-            "tamano": "1.4 MB",
-            "fecha": "Dic 2025"
-          },
-          "encuestaOrganizaciones": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-parques/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-25-0370.pdf",
-            "tamano": "880 KB",
-            "fecha": "Dic 2025"
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-parques/postulacion/Postulacion_ID_3827.pdf",
+            "tamano": "1.9 MB",
+            "paginas": 14,
+            "nombreDescarga": "Postulacion_ID_3827_2024.pdf"
           },
           "informeCierre": {
             "disponible": false,
-            "estado": "En ejecución 2025",
-            "archivo": null,
-            "tamano": null,
-            "fecha": null
+            "estado": "En ejecución / Sin informe",
+            "archivo": null
+          },
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "esEspecifico": true,
+            "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_3827.pdf",
+            "tamano": "1.2 MB",
+            "paginas": 33,
+            "nombreDescarga": "Encuesta_Estudiantes_ID_3827_2024.pdf"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4436",
+        "codigo": "ID 4436",
+        "idNumero": "4436",
+        "nombre": "PUERTO MONTT 2050. Prospectivas y proyectos de infraestructura verde y cultural para la construcción participativa de la Visión de Ciudad",
+        "ano": 2025,
+        "lineaAccion": "Planificación, diseño y tecnología",
+        "sede": "Patagonia",
+        "facultad": "Ingeniería, Arquitectura y Diseño",
+        "carreraLider": "Arquitectura",
+        "lider": "ACAD-063",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 4,
+          "comunas": 1,
+          "carreras": 2,
+          "estudiantes": 176,
+          "academicos": 32
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-parques/postulacion/Postulacion_ID_4436.pdf",
+            "tamano": "2.5 MB",
+            "paginas": 19,
+            "nombreDescarga": "Postulacion_ID_4436_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-parques/cierre/Informe_Cierre_ID_4436.pdf",
+            "tamano": "4.8 MB",
+            "paginas": 32,
+            "nombreDescarga": "Informe_Cierre_ID_4436_2025.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "esEspecifico": true,
+            "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_4436.pdf",
+            "tamano": "984.5 KB",
+            "paginas": 25,
+            "nombreDescarga": "Encuesta_Estudiantes_ID_4436_2025.pdf"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4576",
+        "codigo": "ID 4576",
+        "idNumero": "4576",
+        "nombre": "Vive consciente, Educación Financiera y emprendimiento para todos.",
+        "ano": 2025,
+        "lineaAccion": "Promoción de la conservación",
+        "sede": "Patagonia",
+        "facultad": "Educación",
+        "carreraLider": "Programa de Formación Pedagógica Para Licenciados Y/ Profesionales",
+        "lider": "ACAD-133",
+        "tipo": "Proyecto Colaborativo",
+        "indicadores": {
+          "organizaciones": 1,
+          "comunas": 1,
+          "carreras": 4,
+          "estudiantes": 18,
+          "academicos": 4
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": false,
+            "estado": "No disponible",
+            "archivo": null
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución / Sin informe",
+            "archivo": null
+          },
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "esEspecifico": true,
+            "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_4576.pdf",
+            "tamano": "989.9 KB",
+            "paginas": 25,
+            "nombreDescarga": "Encuesta_Estudiantes_ID_4576_2025.pdf"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4733",
+        "codigo": "ID 4733",
+        "idNumero": "4733",
+        "nombre": "Fortalecimiento del programa piloto de separación de residuos orgánicos y compostaje mediante una alianza entre la Universidad San Sebastián y la Ilustre Municipalidad de Puerto Montt",
+        "ano": 2025,
+        "lineaAccion": "Planificación, diseño y tecnología",
+        "sede": "Patagonia",
+        "facultad": "Ciencia",
+        "carreraLider": "Química y Farmacia",
+        "lider": "ACAD-042",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 1,
+          "comunas": 1,
+          "carreras": 2,
+          "estudiantes": 157,
+          "academicos": 3
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-parques/postulacion/Postulacion_ID_4733.pdf",
+            "tamano": "2.3 MB",
+            "paginas": 19,
+            "nombreDescarga": "Postulacion_ID_4733_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-parques/cierre/Informe_Cierre_ID_4733.pdf",
+            "tamano": "2.4 MB",
+            "paginas": 17,
+            "nombreDescarga": "Informe_Cierre_ID_4733_2025.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "esEspecifico": true,
+            "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_4733.pdf",
+            "tamano": "506.6 KB",
+            "paginas": 13,
+            "nombreDescarga": "Encuesta_Estudiantes_ID_4733_2025.pdf"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4829",
+        "codigo": "ID 4829",
+        "idNumero": "4829",
+        "nombre": "Observatorio Socioecológico de los Parques de la Patagonia - Caso PN Hornopirén",
+        "ano": 2025,
+        "lineaAccion": "Turismo sustentable",
+        "sede": "Patagonia",
+        "facultad": "Economía, Negocio y Gobierno",
+        "carreraLider": "Ingeniería en Gestión de Expediciones y Ecoturismo",
+        "lider": "ACAD-005",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 4,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 26,
+          "academicos": 4
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-parques/postulacion/Postulacion_ID_4829.pdf",
+            "tamano": "1.6 MB",
+            "paginas": 12,
+            "nombreDescarga": "Postulacion_ID_4829_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-parques/cierre/Informe_Cierre_ID_4829.pdf",
+            "tamano": "1.9 MB",
+            "paginas": 13,
+            "nombreDescarga": "Informe_Cierre_ID_4829_2025.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "esEspecifico": true,
+            "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_4829.pdf",
+            "tamano": "952.0 KB",
+            "paginas": 25,
+            "nombreDescarga": "Encuesta_Estudiantes_ID_4829_2025.pdf"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4925",
+        "codigo": "ID 4925",
+        "idNumero": "4925",
+        "nombre": "Arquitectura para aves | Sistemas estructurales aplicados",
+        "ano": 2025,
+        "lineaAccion": "Planificación, diseño y tecnología",
+        "sede": "Patagonia",
+        "facultad": "Arquitectura, Arte y Diseño",
+        "carreraLider": "Arquitectura",
+        "lider": "ACAD-008",
+        "tipo": "Proyecto Colaborativo",
+        "indicadores": {
+          "organizaciones": 1,
+          "comunas": 1,
+          "carreras": 2,
+          "estudiantes": 8,
+          "academicos": 4
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": false,
+            "estado": "No disponible",
+            "archivo": null
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución / Sin informe",
+            "archivo": null
+          },
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "esEspecifico": true,
+            "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_4925.pdf",
+            "tamano": "506.7 KB",
+            "paginas": 13,
+            "nombreDescarga": "Encuesta_Estudiantes_ID_4925_2025.pdf"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4927",
+        "codigo": "ID 4927",
+        "idNumero": "4927",
+        "nombre": "Día de los Cerros 2025: Jornada de Croquis Patrimonial, de Casa Pauly al Cerro Campanario.",
+        "ano": 2025,
+        "lineaAccion": "Promoción de la conservación",
+        "sede": "Patagonia",
+        "facultad": "Arquitectura, Arte y Diseño",
+        "carreraLider": "Arquitectura",
+        "lider": "ACAD-008",
+        "tipo": "Proyecto Colaborativo",
+        "indicadores": {
+          "organizaciones": 1,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 2,
+          "academicos": 2
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": false,
+            "estado": "No disponible",
+            "archivo": null
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución / Sin informe",
+            "archivo": null
+          },
+          "encuestaEstudiantes": {
+            "disponible": true,
+            "estado": "Validado",
+            "esEspecifico": true,
+            "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_4927.pdf",
+            "tamano": "506.5 KB",
+            "paginas": 13,
+            "nombreDescarga": "Encuesta_Estudiantes_ID_4927_2025.pdf"
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4935",
+        "codigo": "ID 4935",
+        "idNumero": "4935",
+        "nombre": "Turberas de Púlpito: workshop internacional \"Raíces y Oficios\"",
+        "ano": 2025,
+        "lineaAccion": "Planificación, diseño y tecnología",
+        "sede": "Patagonia",
+        "facultad": "Arquitectura, Arte y Diseño",
+        "carreraLider": "Arquitectura",
+        "lider": "ACAD-008",
+        "tipo": "Proyecto Colaborativo",
+        "indicadores": {
+          "organizaciones": 1,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 2,
+          "academicos": 3
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": false,
+            "estado": "No disponible",
+            "archivo": null
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución / Sin informe",
+            "archivo": null
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
           }
         }
       }
@@ -730,202 +2365,413 @@
     "tipo": "PTH",
     "nombre": "Más Turismo Sostenible",
     "sigla": "PTH-MTS",
-    "descripcion": "Potenciamiento de destinos emergentes mediante el desarrollo de experiencias turísticas regenerativas, articulación con emprendedores locales y preservación del patrimonio biocultural.",
+    "descripcion": "Programa orientado al desarrollo de modelos turísticos sustentables, gobernanza de destinos, valorización del patrimonio biocultural y fortalecimiento de la hospitalidad comunitaria y el empleo local.",
     "color": {
-      "primary": "from-teal-600 to-cyan-800",
-      "badge": "bg-teal-100 text-teal-800 border-teal-200",
-      "accent": "text-teal-600"
+      "primary": "#d97706",
+      "secondary": "#b45309",
+      "light": "#fffbeb",
+      "badge": "bg-amber-100 text-amber-800 border-amber-200"
     },
-    "excelResumen": "/documentos/pth-mas-turismo-sostenible/listado_proyectos_2024_2025.xlsx",
+    "excelResumen": "descargas/Consolidado_Proyectos_PTH_2024_2025.xlsx",
     "totales": {
-      "proyectos": 5,
-      "organizaciones": 24,
-      "estudiantes": 340,
-      "academicos": 25
+      "proyectos": 8,
+      "organizaciones": 40,
+      "estudiantes": 426,
+      "academicos": 37,
+      "documentos": 12
     },
     "lineasDeAccion": [
-      "Patrimonio Biocultural y Rutas Temáticas",
-      "Gestión de Destinos y Emprendimiento Local",
-      "Hospitalidad y Calidad del Servicio Turístico"
+      "Innovación y tecnología",
+      "Patrimonio cultural y ambiental",
+      "Política pública y planificación"
     ],
+    "reportesGenerales": [],
     "proyectos": [
       {
-        "id": "PRY-TUR-2024-01",
-        "codigo": "VCM-24-0412",
-        "nombre": "Diseño de la Ruta Turística del Alerce y Patrimonio Ancestral",
+        "id": "PRY-3456",
+        "codigo": "ID 3456",
+        "idNumero": "3456",
+        "nombre": "EVALUACIÓN DE SOSTENIBILIDAD PARA LA GESTIÓN DE DESTINOS TURÍSTICOS",
         "ano": 2024,
-        "lineaAccion": "Patrimonio Biocultural y Rutas Temáticas",
-        "sede": "De la Patagonia (Puerto Montt)",
+        "lineaAccion": "Política pública y planificación",
+        "sede": "Santiago",
+        "facultad": "Ciencias de la Naturaleza",
+        "carreraLider": "INGENIERÍA EN GESTIÓN DE EXPEDICIONES Y ECOTURISMO",
+        "lider": "",
+        "tipo": "Proyecto Colaborativo con FFCC",
         "indicadores": {
-          "organizaciones": 6,
-          "estudiantes": 80,
-          "academicos": 6
-        },
-        "documentos": {
-          "encuestaEstudiantes": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-turismo-sostenible/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-24-0412.pdf",
-            "tamano": "1.8 MB",
-            "fecha": "Nov 2024"
-          },
-          "encuestaOrganizaciones": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-turismo-sostenible/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-24-0412.pdf",
-            "tamano": "1.1 MB",
-            "fecha": "Dic 2024"
-          },
-          "informeCierre": {
-            "disponible": true,
-            "estado": "Finalizado",
-            "archivo": "/documentos/pth-mas-turismo-sostenible/informes-cierre/Informe_Cierre_VCM-24-0412.pdf",
-            "tamano": "3.7 MB",
-            "fecha": "Ene 2025"
-          }
-        }
-      },
-      {
-        "id": "PRY-TUR-2024-02",
-        "codigo": "VCM-24-0480",
-        "nombre": "Capacitación en Huella de Carbono y Sellos Verdes para Guías Locales",
-        "ano": 2024,
-        "lineaAccion": "Gestión de Destinos y Emprendimiento Local",
-        "sede": "Valdivia",
-        "indicadores": {
-          "organizaciones": 5,
-          "estudiantes": 60,
-          "academicos": 5
-        },
-        "documentos": {
-          "encuestaEstudiantes": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-turismo-sostenible/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-24-0480.pdf",
-            "tamano": "1.3 MB",
-            "fecha": "Dic 2024"
-          },
-          "encuestaOrganizaciones": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-turismo-sostenible/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-24-0480.pdf",
-            "tamano": "900 KB",
-            "fecha": "Dic 2024"
-          },
-          "informeCierre": {
-            "disponible": true,
-            "estado": "Finalizado",
-            "archivo": "/documentos/pth-mas-turismo-sostenible/informes-cierre/Informe_Cierre_VCM-24-0480.pdf",
-            "tamano": "2.5 MB",
-            "fecha": "Feb 2025"
-          }
-        }
-      },
-      {
-        "id": "PRY-TUR-2025-01",
-        "codigo": "VCM-25-0140",
-        "nombre": "Gastronomía Tradicional y Cadena de Valor Agroecológica",
-        "ano": 2025,
-        "lineaAccion": "Patrimonio Biocultural y Rutas Temáticas",
-        "sede": "Concepción",
-        "indicadores": {
-          "organizaciones": 4,
-          "estudiantes": 70,
-          "academicos": 5
-        },
-        "documentos": {
-          "encuestaEstudiantes": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-turismo-sostenible/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0140.pdf",
-            "tamano": "1.2 MB",
-            "fecha": "Oct 2025"
-          },
-          "encuestaOrganizaciones": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-turismo-sostenible/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-25-0140.pdf",
-            "tamano": "780 KB",
-            "fecha": "Nov 2025"
-          },
-          "informeCierre": {
-            "disponible": false,
-            "estado": "En ejecución 2025",
-            "archivo": null,
-            "tamano": null,
-            "fecha": null
-          }
-        }
-      },
-      {
-        "id": "PRY-TUR-2025-02",
-        "codigo": "VCM-25-0220",
-        "nombre": "Estrategia Digital y Visibilidad para Alojamientos Sustentables",
-        "ano": 2025,
-        "lineaAccion": "Gestión de Destinos y Emprendimiento Local",
-        "sede": "Santiago (Los Leones)",
-        "indicadores": {
-          "organizaciones": 5,
-          "estudiantes": 75,
-          "academicos": 5
-        },
-        "documentos": {
-          "encuestaEstudiantes": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-turismo-sostenible/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0220.pdf",
-            "tamano": "1.4 MB",
-            "fecha": "Nov 2025"
-          },
-          "encuestaOrganizaciones": {
-            "disponible": false,
-            "estado": "En proceso de validación",
-            "archivo": null,
-            "tamano": null,
-            "fecha": null
-          },
-          "informeCierre": {
-            "disponible": false,
-            "estado": "En ejecución 2025",
-            "archivo": null,
-            "tamano": null,
-            "fecha": null
-          }
-        }
-      },
-      {
-        "id": "PRY-TUR-2025-03",
-        "codigo": "VCM-25-0380",
-        "nombre": "Observatorio de Carga Turística y Sustentabilidad Territorial",
-        "ano": 2025,
-        "lineaAccion": "Hospitalidad y Calidad del Servicio Turístico",
-        "sede": "De la Patagonia (Cochamó)",
-        "indicadores": {
-          "organizaciones": 4,
-          "estudiantes": 55,
+          "organizaciones": 12,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 135,
           "academicos": 4
         },
         "documentos": {
-          "encuestaEstudiantes": {
+          "formularioPostulacion": {
             "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-turismo-sostenible/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0380.pdf",
-            "tamano": "1.6 MB",
-            "fecha": "Dic 2025"
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-turismo-sostenible/postulacion/Postulacion_ID_3456.pdf",
+            "tamano": "2.4 MB",
+            "paginas": 17,
+            "nombreDescarga": "Postulacion_ID_3456_2024.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-turismo-sostenible/cierre/Informe_Cierre_ID_3456.pdf",
+            "tamano": "2.9 MB",
+            "paginas": 22,
+            "nombreDescarga": "Informe_Cierre_ID_3456_2024.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
           },
           "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-3501",
+        "codigo": "ID 3501",
+        "idNumero": "3501",
+        "nombre": "RUTA TURÍSTICA INTERACTIVA: FORTALECIMIENTO DE LA IDENTIDAD DE UN DESTINO, APLICADO A TAGUA TAGUA - ALMAHUE",
+        "ano": 2024,
+        "lineaAccion": "Patrimonio cultural y ambiental",
+        "sede": "Santiago",
+        "facultad": "Ciencias de la Naturaleza",
+        "carreraLider": "INGENIERÍA EN GESTIÓN DE EXPEDICIONES Y ECOTURISMO",
+        "lider": "",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 6,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 33,
+          "academicos": 5
+        },
+        "documentos": {
+          "formularioPostulacion": {
             "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-turismo-sostenible/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-25-0380.pdf",
-            "tamano": "920 KB",
-            "fecha": "Dic 2025"
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-turismo-sostenible/postulacion/Postulacion_ID_3501.pdf",
+            "tamano": "2.3 MB",
+            "paginas": 14,
+            "nombreDescarga": "Postulacion_ID_3501_2024.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-turismo-sostenible/cierre/Informe_Cierre_ID_3501.pdf",
+            "tamano": "2.4 MB",
+            "paginas": 16,
+            "nombreDescarga": "Informe_Cierre_ID_3501_2024.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-3645",
+        "codigo": "ID 3645",
+        "idNumero": "3645",
+        "nombre": "Elaboración de acciones de buenas de prácticas constructivas sustentables para alojamientos de montaña, que identifiquen e incorporen acciones en su materialidad que puedan ser utilizadas por Direcciones de Obras Municipales u otras instituciones de indole nacional. Caso Pueblo Farellones",
+        "ano": 2024,
+        "lineaAccion": "Innovación y tecnología",
+        "sede": "Santiago",
+        "facultad": "Ciencias de la Naturaleza",
+        "carreraLider": "INGENIERÍA EN GESTIÓN DE EXPEDICIONES Y ECOTURISMO",
+        "lider": "",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 2,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 42,
+          "academicos": 4
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-turismo-sostenible/postulacion/Postulacion_ID_3645.pdf",
+            "tamano": "1.8 MB",
+            "paginas": 13,
+            "nombreDescarga": "Postulacion_ID_3645_2024.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-turismo-sostenible/cierre/Informe_Cierre_ID_3645.pdf",
+            "tamano": "2.1 MB",
+            "paginas": 15,
+            "nombreDescarga": "Informe_Cierre_ID_3645_2024.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4372",
+        "codigo": "ID 4372",
+        "idNumero": "4372",
+        "nombre": "Monitoreo de Sostenibilidad y de Proyectos Turísticos de Destinos",
+        "ano": 2025,
+        "lineaAccion": "Política pública y planificación",
+        "sede": "Santiago",
+        "facultad": "Ciencias de la Naturaleza",
+        "carreraLider": "Ingeniería en Gestión de Expediciones y Ecoturismo",
+        "lider": "ACAD-106",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 7,
+          "comunas": 2,
+          "carreras": 4,
+          "estudiantes": 84,
+          "academicos": 3
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-turismo-sostenible/postulacion/Postulacion_ID_4372.pdf",
+            "tamano": "2.1 MB",
+            "paginas": 15,
+            "nombreDescarga": "Postulacion_ID_4372_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-turismo-sostenible/cierre/Informe_Cierre_ID_4372.pdf",
+            "tamano": "2.2 MB",
+            "paginas": 16,
+            "nombreDescarga": "Informe_Cierre_ID_4372_2025.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4373",
+        "codigo": "ID 4373",
+        "idNumero": "4373",
+        "nombre": "Fortalecimiento de la Gestión Turística Municipal. Fase Avanzada",
+        "ano": 2025,
+        "lineaAccion": "Política pública y planificación",
+        "sede": "Santiago",
+        "facultad": "Ciencias de la Naturaleza",
+        "carreraLider": "Ingeniería en Gestión de Expediciones y Ecoturismo",
+        "lider": "ACAD-106",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 6,
+          "comunas": 5,
+          "carreras": 3,
+          "estudiantes": 30,
+          "academicos": 3
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-turismo-sostenible/postulacion/Postulacion_ID_4373.pdf",
+            "tamano": "2.1 MB",
+            "paginas": 15,
+            "nombreDescarga": "Postulacion_ID_4373_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-turismo-sostenible/cierre/Informe_Cierre_ID_4373.pdf",
+            "tamano": "2.5 MB",
+            "paginas": 19,
+            "nombreDescarga": "Informe_Cierre_ID_4373_2025.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4400",
+        "codigo": "ID 4400",
+        "idNumero": "4400",
+        "nombre": "CERRO EDUCA: HABILITACIÓN DE SENDEROS PARA LA EDUCACIÓN AMBIENTAL",
+        "ano": 2025,
+        "lineaAccion": "Patrimonio cultural y ambiental",
+        "sede": "Santiago",
+        "facultad": "Ciencias de la Naturaleza",
+        "carreraLider": "Ingeniería en Gestión de Expediciones y Ecoturismo",
+        "lider": "ACAD-155",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 2,
+          "comunas": 2,
+          "carreras": 2,
+          "estudiantes": 58,
+          "academicos": 7
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-turismo-sostenible/postulacion/Postulacion_ID_4400.pdf",
+            "tamano": "2.2 MB",
+            "paginas": 18,
+            "nombreDescarga": "Postulacion_ID_4400_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-turismo-sostenible/cierre/Informe_Cierre_ID_4400.pdf",
+            "tamano": "2.9 MB",
+            "paginas": 21,
+            "nombreDescarga": "Informe_Cierre_ID_4400_2025.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4584",
+        "codigo": "ID 4584",
+        "idNumero": "4584",
+        "nombre": "Ruta Turística Interactiva: Fortalecimiento de la identidad de un destino, aplicado a navidad",
+        "ano": 2025,
+        "lineaAccion": "Patrimonio cultural y ambiental",
+        "sede": "Santiago",
+        "facultad": "Economía, Negocio y Gobierno",
+        "carreraLider": "Ingeniería en Gestión de Expediciones y Ecoturismo",
+        "lider": "ACAD-080",
+        "tipo": "Proyecto Colaborativo",
+        "indicadores": {
+          "organizaciones": 4,
+          "comunas": 1,
+          "carreras": 2,
+          "estudiantes": 3,
+          "academicos": 6
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": false,
+            "estado": "No disponible",
+            "archivo": null
           },
           "informeCierre": {
             "disponible": false,
-            "estado": "En ejecución 2025",
-            "archivo": null,
-            "tamano": null,
-            "fecha": null
+            "estado": "En ejecución / Sin informe",
+            "archivo": null
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4954",
+        "codigo": "ID 4954",
+        "idNumero": "4954",
+        "nombre": "Rehabilitación Ecoturística del Parque Ñilhue, sendero y sector Vallecito",
+        "ano": 2025,
+        "lineaAccion": "Patrimonio cultural y ambiental",
+        "sede": "Santiago",
+        "facultad": "Economía, Negocio y Gobierno",
+        "carreraLider": "Ingeniería en Gestión de Expediciones y Ecoturismo",
+        "lider": "ACAD-107",
+        "tipo": "Proyecto Colaborativo",
+        "indicadores": {
+          "organizaciones": 1,
+          "comunas": 1,
+          "carreras": 2,
+          "estudiantes": 41,
+          "academicos": 5
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": false,
+            "estado": "No disponible",
+            "archivo": null
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución / Sin informe",
+            "archivo": null
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
           }
         }
       }
@@ -936,202 +2782,604 @@
     "tipo": "PTH",
     "nombre": "Más Sinergia Territorial",
     "sigla": "PTH-MST",
-    "descripcion": "Articulación multisectorial entre la academia, municipios, organizaciones de la sociedad civil y el sector productivo para resolver brechas territoriales críticas y descentralización.",
+    "descripcion": "Iniciativa estratégica para articular la colaboración multiactor, asistencia técnica municipal, desarrollo productivo local, innovación social y sostenibilidad territorial en diversas regiones de Chile.",
     "color": {
-      "primary": "from-indigo-600 to-purple-800",
-      "badge": "bg-indigo-100 text-indigo-800 border-indigo-200",
-      "accent": "text-indigo-600"
+      "primary": "#6366f1",
+      "secondary": "#4f46e5",
+      "light": "#eef2ff",
+      "badge": "bg-indigo-100 text-indigo-800 border-indigo-200"
     },
-    "excelResumen": "/documentos/pth-mas-sinergia-territorial/listado_proyectos_2024_2025.xlsx",
+    "excelResumen": "descargas/Consolidado_Proyectos_PTH_2024_2025.xlsx",
     "totales": {
-      "proyectos": 5,
-      "organizaciones": 26,
-      "estudiantes": 370,
-      "academicos": 27
+      "proyectos": 12,
+      "organizaciones": 29,
+      "estudiantes": 426,
+      "academicos": 47,
+      "documentos": 17
     },
     "lineasDeAccion": [
-      "Gobernanza Local y Fortalecimiento Municipal",
-      "Desarrollo Económico Local y Empleo",
-      "Innovación Social y Cohesión Comunitaria"
+      "Colaboración y redes",
+      "Innovación y emprendimiento",
+      "Protección del medioambiente"
     ],
+    "reportesGenerales": [],
     "proyectos": [
       {
-        "id": "PRY-SNT-2024-01",
-        "codigo": "VCM-24-0301",
-        "nombre": "Asistencia Técnica en Instrumentos de Planificación Comunal (PLADECO)",
+        "id": "PRY-3605",
+        "codigo": "ID 3605",
+        "idNumero": "3605",
+        "nombre": "LABORATORIOS VIRTUALES PARA LA EDUCACIÓN EN CIENCIAS - REGIÓN DE LOS RÍOS",
         "ano": 2024,
-        "lineaAccion": "Gobernanza Local y Fortalecimiento Municipal",
-        "sede": "Santiago (Bellavista)",
-        "indicadores": {
-          "organizaciones": 6,
-          "estudiantes": 85,
-          "academicos": 6
-        },
-        "documentos": {
-          "encuestaEstudiantes": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-sinergia-territorial/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-24-0301.pdf",
-            "tamano": "1.9 MB",
-            "fecha": "Nov 2024"
-          },
-          "encuestaOrganizaciones": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-sinergia-territorial/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-24-0301.pdf",
-            "tamano": "1.2 MB",
-            "fecha": "Dic 2024"
-          },
-          "informeCierre": {
-            "disponible": true,
-            "estado": "Finalizado",
-            "archivo": "/documentos/pth-mas-sinergia-territorial/informes-cierre/Informe_Cierre_VCM-24-0301.pdf",
-            "tamano": "3.8 MB",
-            "fecha": "Ene 2025"
-          }
-        }
-      },
-      {
-        "id": "PRY-SNT-2024-02",
-        "codigo": "VCM-24-0390",
-        "nombre": "Encadenamiento Productivo para Cooperativas Agrícolas Campesinas",
-        "ano": 2024,
-        "lineaAccion": "Desarrollo Económico Local y Empleo",
-        "sede": "Concepción",
-        "indicadores": {
-          "organizaciones": 5,
-          "estudiantes": 70,
-          "academicos": 5
-        },
-        "documentos": {
-          "encuestaEstudiantes": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-sinergia-territorial/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-24-0390.pdf",
-            "tamano": "1.4 MB",
-            "fecha": "Dic 2024"
-          },
-          "encuestaOrganizaciones": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-sinergia-territorial/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-24-0390.pdf",
-            "tamano": "980 KB",
-            "fecha": "Dic 2024"
-          },
-          "informeCierre": {
-            "disponible": true,
-            "estado": "Finalizado",
-            "archivo": "/documentos/pth-mas-sinergia-territorial/informes-cierre/Informe_Cierre_VCM-24-0390.pdf",
-            "tamano": "2.9 MB",
-            "fecha": "Feb 2025"
-          }
-        }
-      },
-      {
-        "id": "PRY-SNT-2025-01",
-        "codigo": "VCM-25-0110",
-        "nombre": "Mesa Territorial de Soluciones Hídricas y Desarrollo Rural",
-        "ano": 2025,
-        "lineaAccion": "Gobernanza Local y Fortalecimiento Municipal",
+        "lineaAccion": "Colaboración y redes",
         "sede": "Valdivia",
+        "facultad": "Medicina y Ciencia",
+        "carreraLider": "QUÍMICA Y FARMACIA",
+        "lider": "",
+        "tipo": "Proyecto Colaborativo con FFCC",
         "indicadores": {
           "organizaciones": 5,
-          "estudiantes": 75,
-          "academicos": 5
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 17,
+          "academicos": 3
         },
         "documentos": {
-          "encuestaEstudiantes": {
+          "formularioPostulacion": {
             "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-sinergia-territorial/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0110.pdf",
-            "tamano": "1.3 MB",
-            "fecha": "Oct 2025"
-          },
-          "encuestaOrganizaciones": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-sinergia-territorial/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-25-0110.pdf",
-            "tamano": "850 KB",
-            "fecha": "Nov 2025"
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/postulacion/Postulacion_ID_3605.pdf",
+            "tamano": "2.0 MB",
+            "paginas": 14,
+            "nombreDescarga": "Postulacion_ID_3605_2024.pdf"
           },
           "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/cierre/Informe_Cierre_ID_3605.pdf",
+            "tamano": "1.9 MB",
+            "paginas": 13,
+            "nombreDescarga": "Informe_Cierre_ID_3605_2024.pdf"
+          },
+          "encuestaEstudiantes": {
             "disponible": false,
-            "estado": "En ejecución 2025",
-            "archivo": null,
-            "tamano": null,
-            "fecha": null
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
           }
         }
       },
       {
-        "id": "PRY-SNT-2025-02",
-        "codigo": "VCM-25-0250",
-        "nombre": "Incubación de Microemprendimientos Femeninos y Liderazgo Barrial",
+        "id": "PRY-4259",
+        "codigo": "ID 4259",
+        "idNumero": "4259",
+        "nombre": "Centro de biomasa comunitario: innovación local en Corral",
         "ano": 2025,
-        "lineaAccion": "Innovación Social y Cohesión Comunitaria",
-        "sede": "Santiago (Los Leones)",
+        "lineaAccion": "Innovación y emprendimiento",
+        "sede": "Valdivia",
+        "facultad": "Ingeniería",
+        "carreraLider": "INGENIERÍA CIVIL INDUSTRIAL",
+        "lider": "",
+        "tipo": "Proyecto con Fondos Externos Adjudicados",
         "indicadores": {
-          "organizaciones": 5,
-          "estudiantes": 70,
+          "organizaciones": 2,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 45,
+          "academicos": 1
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/postulacion/Postulacion_ID_4259.pdf",
+            "tamano": "1.0 MB",
+            "paginas": 8,
+            "nombreDescarga": "Postulacion_ID_4259_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución / Sin informe",
+            "archivo": null
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4428",
+        "codigo": "ID 4428",
+        "idNumero": "4428",
+        "nombre": "DESCUBRIENDO EL MUNDO FINANCIERO, matemáticas para el futuro",
+        "ano": 2025,
+        "lineaAccion": "Innovación y emprendimiento",
+        "sede": "Valdivia",
+        "facultad": "Educación",
+        "carreraLider": "Programa de Formación Pedagógica Para Licenciados Y/ Profesionales",
+        "lider": "ACAD-143",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 2,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 16,
           "academicos": 5
         },
         "documentos": {
-          "encuestaEstudiantes": {
+          "formularioPostulacion": {
             "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-sinergia-territorial/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0250.pdf",
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/postulacion/Postulacion_ID_4428.pdf",
+            "tamano": "2.1 MB",
+            "paginas": 17,
+            "nombreDescarga": "Postulacion_ID_4428_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/cierre/Informe_Cierre_ID_4428.pdf",
+            "tamano": "2.9 MB",
+            "paginas": 20,
+            "nombreDescarga": "Informe_Cierre_ID_4428_2025.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4432",
+        "codigo": "ID 4432",
+        "idNumero": "4432",
+        "nombre": "ROBÓTICA EDUCATIVA DESDE EL ENFOQUE STEAM: Una oportunidad para reducir brechas de género en el aprendizaje lógico matemático.",
+        "ano": 2025,
+        "lineaAccion": "Colaboración y redes",
+        "sede": "Valdivia",
+        "facultad": "Educación",
+        "carreraLider": "Educación Parvularia",
+        "lider": "ACAD-045",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 2,
+          "comunas": 3,
+          "carreras": 3,
+          "estudiantes": 102,
+          "academicos": 8
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/postulacion/Postulacion_ID_4432.pdf",
+            "tamano": "2.8 MB",
+            "paginas": 23,
+            "nombreDescarga": "Postulacion_ID_4432_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/cierre/Informe_Cierre_ID_4432.pdf",
+            "tamano": "3.1 MB",
+            "paginas": 22,
+            "nombreDescarga": "Informe_Cierre_ID_4432_2025.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4629",
+        "codigo": "ID 4629",
+        "idNumero": "4629",
+        "nombre": "Emerge Chile desde Paillaco y Los Lagos",
+        "ano": 2025,
+        "lineaAccion": "Innovación y emprendimiento",
+        "sede": "Valdivia",
+        "facultad": "Economía, Negocio y Gobierno",
+        "carreraLider": "Ingeniería Comercial",
+        "lider": "ACAD-061",
+        "tipo": "Proyecto Colaborativo",
+        "indicadores": {
+          "organizaciones": 1,
+          "comunas": 2,
+          "carreras": 1,
+          "estudiantes": 39,
+          "academicos": 1
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": false,
+            "estado": "No disponible",
+            "archivo": null
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución / Sin informe",
+            "archivo": null
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4633",
+        "codigo": "ID 4633",
+        "idNumero": "4633",
+        "nombre": "Los pequeños cultivadores: Huertos escolares en Valdivia",
+        "ano": 2025,
+        "lineaAccion": "Protección del medioambiente",
+        "sede": "Valdivia",
+        "facultad": "Ciencias de la Rehabilitación y la calidad de vida",
+        "carreraLider": "Nutrición y Dietética",
+        "lider": "ACAD-182",
+        "tipo": "Proyecto Colaborativo",
+        "indicadores": {
+          "organizaciones": 3,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 2,
+          "academicos": 2
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": false,
+            "estado": "No disponible",
+            "archivo": null
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución / Sin informe",
+            "archivo": null
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4673",
+        "codigo": "ID 4673",
+        "idNumero": "4673",
+        "nombre": "Diagnóstico y educación comunitaria sobre alimentación y uso del agua en población infantil y adulta mayor en sector Rural de la Aguada, comuna de Corral",
+        "ano": 2025,
+        "lineaAccion": "Protección del medioambiente",
+        "sede": "Valdivia",
+        "facultad": "Ciencias de la Rehabilitación y la calidad de vida",
+        "carreraLider": "Nutrición y Dietética",
+        "lider": "ACAD-064",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 3,
+          "comunas": 1,
+          "carreras": 3,
+          "estudiantes": 7,
+          "academicos": 7
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/postulacion/Postulacion_ID_4673.pdf",
+            "tamano": "2.4 MB",
+            "paginas": 20,
+            "nombreDescarga": "Postulacion_ID_4673_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/cierre/Informe_Cierre_ID_4673.pdf",
+            "tamano": "3.3 MB",
+            "paginas": 24,
+            "nombreDescarga": "Informe_Cierre_ID_4673_2025.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4690",
+        "codigo": "ID 4690",
+        "idNumero": "4690",
+        "nombre": "Alimentos Seguros: Prevención y Control de Enfermedades Transmitidas por Alimentos en la Región de Los Ríos.",
+        "ano": 2025,
+        "lineaAccion": "Colaboración y redes",
+        "sede": "Valdivia",
+        "facultad": "Ciencia",
+        "carreraLider": "Tecnología Médica",
+        "lider": "ACAD-150",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 2,
+          "comunas": 1,
+          "carreras": 2,
+          "estudiantes": 15,
+          "academicos": 2
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/postulacion/Postulacion_ID_4690.pdf",
+            "tamano": "1.6 MB",
+            "paginas": 12,
+            "nombreDescarga": "Postulacion_ID_4690_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/cierre/Informe_Cierre_ID_4690.pdf",
+            "tamano": "2.0 MB",
+            "paginas": 15,
+            "nombreDescarga": "Informe_Cierre_ID_4690_2025.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4729",
+        "codigo": "ID 4729",
+        "idNumero": "4729",
+        "nombre": "Innovación cosmética antienvejecimiento sostenible a partir de hongos nativos de la Región de los Ríos: Un espacio de formación científica interdisciplinaria para estudiantes de Educación Media.",
+        "ano": 2025,
+        "lineaAccion": "Colaboración y redes",
+        "sede": "Valdivia",
+        "facultad": "Ciencia",
+        "carreraLider": "Química y Farmacia",
+        "lider": "ACAD-188",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 3,
+          "comunas": 1,
+          "carreras": 2,
+          "estudiantes": 65,
+          "academicos": 5
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/postulacion/Postulacion_ID_4729.pdf",
+            "tamano": "2.5 MB",
+            "paginas": 20,
+            "nombreDescarga": "Postulacion_ID_4729_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/cierre/Informe_Cierre_ID_4729.pdf",
+            "tamano": "2.5 MB",
+            "paginas": 19,
+            "nombreDescarga": "Informe_Cierre_ID_4729_2025.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4745",
+        "codigo": "ID 4745",
+        "idNumero": "4745",
+        "nombre": "Diagnóstico de Sostenibilidad Empresarial en La Región de Los Ríos.",
+        "ano": 2025,
+        "lineaAccion": "Innovación y emprendimiento",
+        "sede": "Valdivia",
+        "facultad": "Economía, Negocio y Gobierno",
+        "carreraLider": "Ingeniería Comercial",
+        "lider": "ACAD-061",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 2,
+          "comunas": 2,
+          "carreras": 2,
+          "estudiantes": 62,
+          "academicos": 4
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": true,
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/postulacion/Postulacion_ID_4745.pdf",
             "tamano": "1.5 MB",
-            "fecha": "Nov 2025"
+            "paginas": 11,
+            "nombreDescarga": "Postulacion_ID_4745_2025.pdf"
+          },
+          "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/cierre/Informe_Cierre_ID_4745.pdf",
+            "tamano": "2.1 MB",
+            "paginas": 15,
+            "nombreDescarga": "Informe_Cierre_ID_4745_2025.pdf"
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "En proceso de validación",
-            "archivo": null,
-            "tamano": null,
-            "fecha": null
-          },
-          "informeCierre": {
-            "disponible": false,
-            "estado": "En ejecución 2025",
-            "archivo": null,
-            "tamano": null,
-            "fecha": null
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
           }
         }
       },
       {
-        "id": "PRY-SNT-2025-03",
-        "codigo": "VCM-25-0340",
-        "nombre": "Red de Jóvenes Agentes de Cambio para el Desarrollo Comunitario",
+        "id": "PRY-4792",
+        "codigo": "ID 4792",
+        "idNumero": "4792",
+        "nombre": "Autismo desde Todos los Ángulos: Educación para la Acción",
         "ano": 2025,
-        "lineaAccion": "Innovación Social y Cohesión Comunitaria",
-        "sede": "De la Patagonia (Puerto Montt)",
+        "lineaAccion": "Colaboración y redes",
+        "sede": "Valdivia",
+        "facultad": "Ciencias de la Rehabilitación y la calidad de vida",
+        "carreraLider": "Nutrición y Dietética",
+        "lider": "ACAD-182",
+        "tipo": "Proyecto Colaborativo",
         "indicadores": {
-          "organizaciones": 5,
-          "estudiantes": 70,
+          "organizaciones": 1,
+          "comunas": 1,
+          "carreras": 1,
+          "estudiantes": 12,
+          "academicos": 3
+        },
+        "documentos": {
+          "formularioPostulacion": {
+            "disponible": false,
+            "estado": "No disponible",
+            "archivo": null
+          },
+          "informeCierre": {
+            "disponible": false,
+            "estado": "En ejecución / Sin informe",
+            "archivo": null
+          },
+          "encuestaEstudiantes": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          }
+        }
+      },
+      {
+        "id": "PRY-4833",
+        "codigo": "ID 4833",
+        "idNumero": "4833",
+        "nombre": "Cuídate y Cuida: hacia un consumidor de alimentos responsable",
+        "ano": 2025,
+        "lineaAccion": "Protección del medioambiente",
+        "sede": "Valdivia",
+        "facultad": "Ciencias de la Rehabilitación y la calidad de vida",
+        "carreraLider": "Nutrición y Dietética",
+        "lider": "ACAD-088",
+        "tipo": "Proyecto Colaborativo con FFCC",
+        "indicadores": {
+          "organizaciones": 3,
+          "comunas": 1,
+          "carreras": 2,
+          "estudiantes": 44,
           "academicos": 6
         },
         "documentos": {
-          "encuestaEstudiantes": {
+          "formularioPostulacion": {
             "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-sinergia-territorial/encuestas-estudiantes/Reporte_Validado_Estudiantes_VCM-25-0340.pdf",
-            "tamano": "1.2 MB",
-            "fecha": "Dic 2025"
-          },
-          "encuestaOrganizaciones": {
-            "disponible": true,
-            "estado": "Validado",
-            "archivo": "/documentos/pth-mas-sinergia-territorial/encuestas-organizaciones/Reporte_Validado_Organizaciones_VCM-25-0340.pdf",
-            "tamano": "890 KB",
-            "fecha": "Dic 2025"
+            "estado": "Disponible",
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/postulacion/Postulacion_ID_4833.pdf",
+            "tamano": "1.7 MB",
+            "paginas": 13,
+            "nombreDescarga": "Postulacion_ID_4833_2025.pdf"
           },
           "informeCierre": {
+            "disponible": true,
+            "estado": "Finalizado",
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/cierre/Informe_Cierre_ID_4833.pdf",
+            "tamano": "2.5 MB",
+            "paginas": 18,
+            "nombreDescarga": "Informe_Cierre_ID_4833_2025.pdf"
+          },
+          "encuestaEstudiantes": {
             "disponible": false,
-            "estado": "En ejecución 2025",
-            "archivo": null,
-            "tamano": null,
-            "fecha": null
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
+          },
+          "encuestaOrganizaciones": {
+            "disponible": false,
+            "estado": "Ver reporte general PTH",
+            "esEspecifico": false,
+            "archivo": null
           }
         }
       }

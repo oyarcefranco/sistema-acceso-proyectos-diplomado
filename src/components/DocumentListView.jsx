@@ -19,7 +19,7 @@ export default function DocumentListView({ pth, docTypeKey, title, docLabel, onO
   const documentItems = useMemo(() => {
     return pth.proyectos
       .map((proyecto) => {
-        const doc = proyecto.documentos[docTypeKey];
+        const doc = proyecto.documentos[docTypeKey] || { disponible: false, estado: 'No registrado' };
         return {
           proyecto,
           doc,

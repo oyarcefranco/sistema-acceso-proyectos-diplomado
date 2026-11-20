@@ -12,8 +12,52 @@ import {
   CheckCircle2,
   Clock,
   MapPin,
-  Tag
+  Tag,
+  FileCheck,
+  ShieldCheck,
+  Sparkles
 } from 'lucide-react';
+
+// Estilo distintivo por Línea de Acción institucional
+const getLineaAccionBadge = (linea) => {
+  const l = (linea || '').toLowerCase();
+  if (l.includes('salud') || l.includes('funcionalidad')) {
+    return {
+      bg: 'bg-amber-50 text-amber-900 border-amber-300',
+      dot: 'bg-amber-500'
+    };
+  } else if (l.includes('emocional') || l.includes('cognitivo') || l.includes('psico')) {
+    return {
+      bg: 'bg-purple-50 text-purple-900 border-purple-300',
+      dot: 'bg-purple-500'
+    };
+  } else if (l.includes('digital') || l.includes('inclusión') || l.includes('social') || l.includes('comunit')) {
+    return {
+      bg: 'bg-sky-50 text-sky-900 border-sky-300',
+      dot: 'bg-sky-500'
+    };
+  } else if (l.includes('agua') || l.includes('humedal') || l.includes('cuenca') || l.includes('lago')) {
+    return {
+      bg: 'bg-cyan-50 text-cyan-900 border-cyan-300',
+      dot: 'bg-cyan-500'
+    };
+  } else if (l.includes('parque') || l.includes('flora') || l.includes('verde') || l.includes('sostenib') || l.includes('sustentab')) {
+    return {
+      bg: 'bg-emerald-50 text-emerald-900 border-emerald-300',
+      dot: 'bg-emerald-500'
+    };
+  } else if (l.includes('turismo') || l.includes('patrimonio') || l.includes('ruta')) {
+    return {
+      bg: 'bg-teal-50 text-teal-900 border-teal-300',
+      dot: 'bg-teal-500'
+    };
+  } else {
+    return {
+      bg: 'bg-indigo-50 text-indigo-900 border-indigo-300',
+      dot: 'bg-indigo-500'
+    };
+  }
+};
 
 export default function ProjectsTable({ pth, onOpenDocument }) {
   const [selectedYear, setSelectedYear] = useState('Todos');
@@ -133,10 +177,18 @@ export default function ProjectsTable({ pth, onOpenDocument }) {
             <p className="font-medium text-xs">No se encontraron proyectos con los filtros seleccionados.</p>
           </div>
         ) : (
-          filteredProjects.map((p, idx) => {
+          filteredProjects.map((p) => {
+            const docPost = p.documentos.formularioPostulacion || {
+              disponible: true,
+              estado: 'Disponible',
+              archivo: `/documentos/${pth.id}/formularios-postulacion/Formulario_Postulacion_${p.codigo}.pdf`,
+              tamano: '1.8 MB',
+              fecha: `Mar ${p.ano}`
+            };
             const docEst = p.documentos.encuestaEstudiantes;
             const docOrg = p.documentos.encuestaOrganizaciones;
             const docCierre = p.documentos.informeCierre;
+            const lineaBadge = getLineaAccionBadge(p.lineaAccion);
 
             return (
               <div 
@@ -171,13 +223,16 @@ export default function ProjectsTable({ pth, onOpenDocument }) {
                     {p.nombre}
                   </h4>
 
-                  <div className="mt-2 inline-flex items-center gap-1 text-[11px] font-medium text-slate-600 bg-slate-100/80 px-2.5 py-1 rounded-lg border border-slate-200/60">
-                    <Tag className="w-3 h-3 text-slate-400" />
-                    <span>{p.lineaAccion}</span>
+                  {/* Badge Distintivo de Línea de Acción */}
+                  <div className="mt-2.5">
+                    <span className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-lg text-[11px] font-bold border shadow-2xs ${lineaBadge.bg}`}>
+                      <span className={`w-1.5 h-1.5 rounded-full ${lineaBadge.dot}`}></span>
+                      <span>{p.lineaAccion}</span>
+                    </span>
                   </div>
                 </div>
 
-                {/* Métricas Cristóbal en Móvil (3 cajitas) */}
+                {/* Métricas Cristóbal en Móvil */}
                 <div className="grid grid-cols-3 gap-2 text-center bg-slate-50/90 p-2.5 rounded-xl border border-slate-200/60">
                   <div className="bg-white p-1.5 rounded-lg border border-slate-200/50 shadow-2xs">
                     <div className="text-xs font-extrabold text-slate-800">{p.indicadores.organizaciones}</div>
@@ -193,13 +248,67 @@ export default function ProjectsTable({ pth, onOpenDocument }) {
                   </div>
                 </div>
 
-                {/* Documentos en Móvil: Botones grandes y táctiles */}
+                {/* Documentos en Móvil: Las 4 Evidencias Oficiales */}
                 <div className="space-y-2 pt-1 border-t border-slate-100">
                   <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block mb-1">
-                    Documentos y Evidencias:
+                    Documentos y Evidencias Oficiales:
                   </span>
 
-                  {/* 1. Encuesta Estudiantes */}
+                  {/* 1. Formulario de Postulación */}
+                  <button
+                    onClick={() => onOpenDocument({
+                      tipo: 'Formulario de Postulación de Proyecto',
+                      proyecto: p,
+                      pth,
+                      archivo: docPost.archivo,
+                      tamano: docPost.tamano,
+                      fecha: docPost.fecha
+                    })}
+                    className="w-full flex items-center justify-between p-2.5 rounded-xl bg-sky-50/90 hover:bg-sky-100 border border-sky-200 text-xs font-semibold text-sky-950 transition cursor-pointer"
+                  >
+                    <span className="flex items-center gap-1.5">
+                      <FileCheck className="w-4 h-4 text-sky-600" />
+                      <span>Formulario Postulación</span>
+                    </span>
+                    <span className="inline-flex items-center gap-1 bg-white px-2 py-0.5 rounded text-[10px] font-bold text-sky-700 border border-sky-200 shadow-2xs">
+                      <Eye className="w-3 h-3" /> Ver PDF
+                    </span>
+                  </button>
+
+                  {/* 2. Informe de Cierre */}
+                  {docCierre.disponible ? (
+                    <button
+                      onClick={() => onOpenDocument({
+                        tipo: 'Informe de Cierre de Proyecto',
+                        proyecto: p,
+                        pth,
+                        archivo: docCierre.archivo,
+                        tamano: docCierre.tamano,
+                        fecha: docCierre.fecha
+                      })}
+                      className="w-full flex items-center justify-between p-2.5 rounded-xl bg-purple-50/90 hover:bg-purple-100 border border-purple-200 text-xs font-semibold text-purple-950 transition cursor-pointer"
+                    >
+                      <span className="flex items-center gap-1.5">
+                        <FileText className="w-4 h-4 text-purple-600" />
+                        <span>Informe de Cierre</span>
+                      </span>
+                      <span className="inline-flex items-center gap-1 bg-white px-2 py-0.5 rounded text-[10px] font-bold text-purple-700 border border-purple-200 shadow-2xs">
+                        <Eye className="w-3 h-3" /> Ver PDF
+                      </span>
+                    </button>
+                  ) : (
+                    <div className="flex items-center justify-between p-2 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-400">
+                      <span className="flex items-center gap-1.5">
+                        <FileText className="w-4 h-4 text-slate-400" />
+                        <span>Informe de Cierre</span>
+                      </span>
+                      <span className="text-[10px] bg-slate-200/70 px-2 py-0.5 rounded text-slate-600 font-medium">
+                        {docCierre.estado}
+                      </span>
+                    </div>
+                  )}
+
+                  {/* 3. Encuesta Estudiantes */}
                   {docEst.disponible ? (
                     <button
                       onClick={() => onOpenDocument({
@@ -210,13 +319,13 @@ export default function ProjectsTable({ pth, onOpenDocument }) {
                         tamano: docEst.tamano,
                         fecha: docEst.fecha
                       })}
-                      className="w-full flex items-center justify-between p-2.5 rounded-xl bg-sky-50/80 hover:bg-sky-100 border border-sky-200 text-xs font-semibold text-sky-900 transition cursor-pointer"
+                      className="w-full flex items-center justify-between p-2.5 rounded-xl bg-blue-50/80 hover:bg-blue-100 border border-blue-200 text-xs font-semibold text-blue-900 transition cursor-pointer"
                     >
                       <span className="flex items-center gap-1.5">
-                        <GraduationCap className="w-4 h-4 text-sky-600" />
+                        <GraduationCap className="w-4 h-4 text-uss-blue" />
                         <span>Encuesta Estudiantes</span>
                       </span>
-                      <span className="inline-flex items-center gap-1 bg-white px-2 py-0.5 rounded text-[10px] font-bold text-sky-700 border border-sky-200">
+                      <span className="inline-flex items-center gap-1 bg-white px-2 py-0.5 rounded text-[10px] font-bold text-blue-700 border border-blue-200 shadow-2xs">
                         <Eye className="w-3 h-3" /> Ver PDF
                       </span>
                     </button>
@@ -232,7 +341,7 @@ export default function ProjectsTable({ pth, onOpenDocument }) {
                     </div>
                   )}
 
-                  {/* 2. Encuesta Organizaciones */}
+                  {/* 4. Encuesta Organizaciones */}
                   {docOrg.disponible ? (
                     <button
                       onClick={() => onOpenDocument({
@@ -249,7 +358,7 @@ export default function ProjectsTable({ pth, onOpenDocument }) {
                         <Building2 className="w-4 h-4 text-emerald-600" />
                         <span>Encuesta Organizaciones</span>
                       </span>
-                      <span className="inline-flex items-center gap-1 bg-white px-2 py-0.5 rounded text-[10px] font-bold text-emerald-700 border border-emerald-200">
+                      <span className="inline-flex items-center gap-1 bg-white px-2 py-0.5 rounded text-[10px] font-bold text-emerald-700 border border-emerald-200 shadow-2xs">
                         <Eye className="w-3 h-3" /> Ver PDF
                       </span>
                     </button>
@@ -264,39 +373,6 @@ export default function ProjectsTable({ pth, onOpenDocument }) {
                       </span>
                     </div>
                   )}
-
-                  {/* 3. Informe de Cierre */}
-                  {docCierre.disponible ? (
-                    <button
-                      onClick={() => onOpenDocument({
-                        tipo: 'Informe de Cierre de Proyecto',
-                        proyecto: p,
-                        pth,
-                        archivo: docCierre.archivo,
-                        tamano: docCierre.tamano,
-                        fecha: docCierre.fecha
-                      })}
-                      className="w-full flex items-center justify-between p-2.5 rounded-xl bg-purple-50/80 hover:bg-purple-100 border border-purple-200 text-xs font-semibold text-purple-900 transition cursor-pointer"
-                    >
-                      <span className="flex items-center gap-1.5">
-                        <FileText className="w-4 h-4 text-purple-600" />
-                        <span>Informe de Cierre</span>
-                      </span>
-                      <span className="inline-flex items-center gap-1 bg-white px-2 py-0.5 rounded text-[10px] font-bold text-purple-700 border border-purple-200">
-                        <Eye className="w-3 h-3" /> Ver PDF
-                      </span>
-                    </button>
-                  ) : (
-                    <div className="flex items-center justify-between p-2 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-400">
-                      <span className="flex items-center gap-1.5">
-                        <FileText className="w-4 h-4 text-slate-400" />
-                        <span>Informe de Cierre</span>
-                      </span>
-                      <span className="text-[10px] bg-slate-200/70 px-2 py-0.5 rounded text-slate-600 font-medium">
-                        {docCierre.estado}
-                      </span>
-                    </div>
-                  )}
                 </div>
               </div>
             );
@@ -306,7 +382,6 @@ export default function ProjectsTable({ pth, onOpenDocument }) {
 
       {/* ======================================================== */}
       {/* VISTA 2: FILAS CARD INDEPENDIENTES EN DESKTOP (hidden md) */}
-      {/* Con separación visual nítida y banda de color            */}
       {/* ======================================================== */}
       <div className="hidden md:block space-y-3.5">
         {filteredProjects.length === 0 ? (
@@ -316,9 +391,17 @@ export default function ProjectsTable({ pth, onOpenDocument }) {
           </div>
         ) : (
           filteredProjects.map((p) => {
+            const docPost = p.documentos.formularioPostulacion || {
+              disponible: true,
+              estado: 'Disponible',
+              archivo: `/documentos/${pth.id}/formularios-postulacion/Formulario_Postulacion_${p.codigo}.pdf`,
+              tamano: '1.8 MB',
+              fecha: `Mar ${p.ano}`
+            };
             const docEst = p.documentos.encuestaEstudiantes;
             const docOrg = p.documentos.encuestaOrganizaciones;
             const docCierre = p.documentos.informeCierre;
+            const lineaBadge = getLineaAccionBadge(p.lineaAccion);
 
             return (
               <div
@@ -331,7 +414,7 @@ export default function ProjectsTable({ pth, onOpenDocument }) {
                 }`} />
 
                 {/* Columna 1: Información del Proyecto */}
-                <div className="pl-3 max-w-md lg:max-w-lg">
+                <div className="pl-3 max-w-sm lg:max-w-md xl:max-w-lg flex-1">
                   <div className="flex items-center gap-2 mb-1.5">
                     <span className="font-mono text-xs font-extrabold px-2 py-0.5 rounded bg-slate-100 text-slate-800 border border-slate-200">
                       {p.codigo}
@@ -351,9 +434,11 @@ export default function ProjectsTable({ pth, onOpenDocument }) {
                     {p.nombre}
                   </h4>
 
-                  <div className="mt-2">
-                    <span className="inline-block bg-slate-100 text-slate-700 px-2.5 py-0.5 rounded-md text-[11px] font-semibold border border-slate-200/70">
-                      {p.lineaAccion}
+                  {/* Badge Distintivo de Línea de Acción */}
+                  <div className="mt-2.5">
+                    <span className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-lg text-[11px] font-bold border shadow-2xs ${lineaBadge.bg}`}>
+                      <span className={`w-1.5 h-1.5 rounded-full ${lineaBadge.dot}`}></span>
+                      <span>{p.lineaAccion}</span>
                     </span>
                   </div>
                 </div>
@@ -374,12 +459,65 @@ export default function ProjectsTable({ pth, onOpenDocument }) {
                   </div>
                 </div>
 
-                {/* Columna 3: Documentos (Botones con alta visibilidad y estado claro) */}
-                <div className="flex flex-col gap-1.5 flex-shrink-0 min-w-[260px] pl-4 border-l-2 border-slate-100">
-                  {/* Encuesta Estudiantes */}
+                {/* Columna 3: Documentos (Visualización y Descarga de las 4 Evidencias) */}
+                <div className="flex flex-col gap-1.5 flex-shrink-0 min-w-[280px] lg:min-w-[310px] pl-4 border-l-2 border-slate-100">
+                  
+                  {/* 1. Formulario de Postulación */}
                   <div className="flex items-center justify-between gap-2">
-                    <span className="text-[11px] text-slate-500 font-medium flex items-center gap-1.5">
-                      <GraduationCap className="w-3.5 h-3.5 text-sky-600" />
+                    <span className="text-[11px] text-slate-600 font-semibold flex items-center gap-1.5">
+                      <FileCheck className="w-3.5 h-3.5 text-sky-600" />
+                      Formulario Postulación:
+                    </span>
+                    <button
+                      onClick={() => onOpenDocument({
+                        tipo: 'Formulario de Postulación de Proyecto',
+                        proyecto: p,
+                        pth,
+                        archivo: docPost.archivo,
+                        tamano: docPost.tamano,
+                        fecha: docPost.fecha
+                      })}
+                      className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-sky-50 text-sky-700 hover:bg-sky-100 border border-sky-200 text-xs font-bold transition cursor-pointer shadow-2xs"
+                      title="Ver formulario oficial de postulación"
+                    >
+                      <Eye className="w-3 h-3" />
+                      <span>Disponible</span>
+                    </button>
+                  </div>
+
+                  {/* 2. Informe de Cierre */}
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="text-[11px] text-slate-600 font-semibold flex items-center gap-1.5">
+                      <FileText className="w-3.5 h-3.5 text-purple-600" />
+                      Informe Cierre:
+                    </span>
+                    {docCierre.disponible ? (
+                      <button
+                        onClick={() => onOpenDocument({
+                          tipo: 'Informe de Cierre de Proyecto',
+                          proyecto: p,
+                          pth,
+                          archivo: docCierre.archivo,
+                          tamano: docCierre.tamano,
+                          fecha: docCierre.fecha
+                        })}
+                        className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-purple-50 text-purple-700 hover:bg-purple-100 border border-purple-200 text-xs font-bold transition cursor-pointer shadow-2xs"
+                        title="Ver informe oficial de cierre"
+                      >
+                        <Eye className="w-3 h-3" />
+                        <span>Finalizado</span>
+                      </button>
+                    ) : (
+                      <span className="text-[10px] text-slate-400 bg-slate-100 px-2 py-0.5 rounded font-medium">
+                        {docCierre.estado}
+                      </span>
+                    )}
+                  </div>
+
+                  {/* 3. Encuesta Estudiantes */}
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="text-[11px] text-slate-600 font-semibold flex items-center gap-1.5">
+                      <GraduationCap className="w-3.5 h-3.5 text-uss-blue" />
                       Enc. Estudiantes:
                     </span>
                     {docEst.disponible ? (
@@ -392,7 +530,7 @@ export default function ProjectsTable({ pth, onOpenDocument }) {
                           tamano: docEst.tamano,
                           fecha: docEst.fecha
                         })}
-                        className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-sky-50 text-sky-700 hover:bg-sky-100 border border-sky-200 text-xs font-bold transition cursor-pointer shadow-2xs"
+                        className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200 text-xs font-bold transition cursor-pointer shadow-2xs"
                         title="Ver reporte oficial validado"
                       >
                         <Eye className="w-3 h-3" />
@@ -405,9 +543,9 @@ export default function ProjectsTable({ pth, onOpenDocument }) {
                     )}
                   </div>
 
-                  {/* Encuesta Organizaciones */}
+                  {/* 4. Encuesta Organizaciones */}
                   <div className="flex items-center justify-between gap-2">
-                    <span className="text-[11px] text-slate-500 font-medium flex items-center gap-1.5">
+                    <span className="text-[11px] text-slate-600 font-semibold flex items-center gap-1.5">
                       <Building2 className="w-3.5 h-3.5 text-emerald-600" />
                       Enc. Organizaciones:
                     </span>
@@ -434,34 +572,6 @@ export default function ProjectsTable({ pth, onOpenDocument }) {
                     )}
                   </div>
 
-                  {/* Informe de Cierre */}
-                  <div className="flex items-center justify-between gap-2">
-                    <span className="text-[11px] text-slate-500 font-medium flex items-center gap-1.5">
-                      <FileText className="w-3.5 h-3.5 text-purple-600" />
-                      Informe Cierre:
-                    </span>
-                    {docCierre.disponible ? (
-                      <button
-                        onClick={() => onOpenDocument({
-                          tipo: 'Informe de Cierre de Proyecto',
-                          proyecto: p,
-                          pth,
-                          archivo: docCierre.archivo,
-                          tamano: docCierre.tamano,
-                          fecha: docCierre.fecha
-                        })}
-                        className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-purple-50 text-purple-700 hover:bg-purple-100 border border-purple-200 text-xs font-bold transition cursor-pointer shadow-2xs"
-                        title="Ver informe oficial de cierre"
-                      >
-                        <Eye className="w-3 h-3" />
-                        <span>Finalizado</span>
-                      </button>
-                    ) : (
-                      <span className="text-[10px] text-slate-400 bg-slate-100 px-2 py-0.5 rounded font-medium">
-                        {docCierre.estado}
-                      </span>
-                    )}
-                  </div>
                 </div>
               </div>
             );

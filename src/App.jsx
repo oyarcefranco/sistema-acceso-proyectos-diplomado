@@ -10,8 +10,15 @@ import proyectosContinuidadData from './data/proyectosContinuidad.json';
 
 export default function App() {
   const [currentUser, setCurrentUser] = useState(() => {
-    const saved = localStorage.getItem('vcm_diplomado_user');
-    return saved ? JSON.parse(saved) : null;
+    try {
+      const sessionUser = sessionStorage.getItem('vcm_diplomado_user');
+      if (sessionUser) return JSON.parse(sessionUser);
+      const localUser = localStorage.getItem('vcm_diplomado_user');
+      if (localUser) return JSON.parse(localUser);
+    } catch (e) {
+      console.warn('Error reading stored user session:', e);
+    }
+    return null;
   });
 
   const [selectedInitiative, setSelectedInitiative] = useState(null);
@@ -19,14 +26,24 @@ export default function App() {
 
   const handleLoginSuccess = (user) => {
     setCurrentUser(user);
-    localStorage.setItem('vcm_diplomado_user', JSON.stringify(user));
+    try {
+      sessionStorage.setItem('vcm_diplomado_user', JSON.stringify(user));
+      localStorage.setItem('vcm_diplomado_user', JSON.stringify(user));
+    } catch (e) {
+      console.warn('Error saving user session:', e);
+    }
   };
 
   const handleLogout = () => {
     setCurrentUser(null);
     setSelectedInitiative(null);
     setActiveDocument(null);
-    localStorage.removeItem('vcm_diplomado_user');
+    try {
+      sessionStorage.removeItem('vcm_diplomado_user');
+      localStorage.removeItem('vcm_diplomado_user');
+    } catch (e) {
+      console.warn('Error removing user session:', e);
+    }
   };
 
   return (

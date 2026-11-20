@@ -2,16 +2,29 @@
  * Utilidades para formateo y validación de RUT chileno
  */
 
+// Normaliza cualquier documento (RUT, pasaporte o documento extranjero)
+export function normalizeDoc(doc) {
+  if (!doc) return '';
+  return String(doc).trim().toUpperCase().replace(/[\.\-\s]/g, '');
+}
+
 // Limpia el RUT dejando solo dígitos y K
 export function cleanRut(rut) {
   if (!rut) return '';
   return String(rut).replace(/[^0-9kK]/g, '').toUpperCase();
 }
 
-// Formatea un RUT a formato estándar: 12.345.678-K
+// Formatea un RUT a formato estándar: 12.345.678-K (solo si es RUT chileno)
 export function formatRut(rut) {
-  const cleaned = cleanRut(rut);
-  if (!cleaned) return '';
+  if (!rut) return '';
+  const str = String(rut).trim();
+  
+  // Si contiene letras antes del final, es pasaporte / documento extranjero
+  const cleaned = cleanRut(str);
+  if (!cleaned) return str;
+  if (/[A-Z]/.test(cleaned.slice(0, -1))) {
+    return str.toUpperCase();
+  }
   
   if (cleaned.length <= 1) return cleaned;
   

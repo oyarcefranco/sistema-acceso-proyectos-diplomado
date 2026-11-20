@@ -12,8 +12,15 @@ dist
 dist-ssr
 *.local
 
-# Local raw downloads
+# Local raw downloads (>3.2 GB raw archives)
 proyectos continuidad/
+Formulario_postulacion/
+Informes_Cierre/
+Proyectos por PTH/
+extracted_docx_images/
+*.docx
+/*.xlsx
+!public/descargas/*.xlsx
 
 # Editor directories and files
 .vscode/*

@@ -11,7 +11,8 @@ import {
   BarChart3, 
   Sparkles,
   Archive,
-  CheckCircle2
+  CheckCircle2,
+  FileCheck
 } from 'lucide-react';
 import ProjectsTable from './ProjectsTable';
 import DocumentListView from './DocumentListView';
@@ -19,19 +20,21 @@ import IndicatorsReportView from './IndicatorsReportView';
 import JSZip from 'jszip';
 
 export default function InitiativeDetail({ pth, onBack, onOpenDocument }) {
-  const [activeTab, setActiveTab] = useState('matriz'); // 'matriz', 'estudiantes', 'organizaciones', 'cierre', 'indicadores'
+  const [activeTab, setActiveTab] = useState('matriz'); // 'matriz', 'postulacion', 'cierre', 'estudiantes', 'organizaciones', 'indicadores'
   const [isZipping, setIsZipping] = useState(false);
 
   // Descarga del consolidado en Excel (CSV)
   const handleDownloadExcel = () => {
     let csv = '\uFEFF'; // BOM para que Excel abra UTF-8 con acentos correctamente en Windows
-    csv += 'Iniciativa,Código,Año,Sede,Línea de Acción,Proyecto,N° Organizaciones,N° Estudiantes,N° Académicos,Encuesta Estudiantes,Encuesta Organizaciones,Informe Cierre\n';
+    csv += 'Iniciativa,Código,Año,Sede,Línea de Acción,Proyecto,N° Organizaciones,N° Estudiantes,N° Académicos,Formulario Postulación,Informe Cierre,Encuesta Estudiantes,Encuesta Organizaciones\n';
 
     pth.proyectos.forEach((p) => {
-      const docEst = p.documentos.encuestaEstudiantes.disponible ? 'Validado' : p.documentos.encuestaEstudiantes.estado;
-      const docOrg = p.documentos.encuestaOrganizaciones.disponible ? 'Validado' : p.documentos.encuestaOrganizaciones.estado;
-      const docCie = p.documentos.informeCierre.disponible ? 'Finalizado' : p.documentos.informeCierre.estado;
-      csv += `"${pth.nombre}","${p.codigo}",${p.ano},"${p.sede}","${p.lineaAccion}","${p.nombre}",${p.indicadores.organizaciones},${p.indicadores.estudiantes},${p.indicadores.academicos},"${docEst}","${docOrg}","${docCie}"\n`;
+      const docPost = p.documentos.formularioPostulacion?.disponible ? 'Disponible' : (p.documentos.formularioPostulacion?.estado || 'No registrado');
+      const docCie = p.documentos.informeCierre?.disponible ? 'Finalizado' : (p.documentos.informeCierre?.estado || 'Pendiente');
+      const docEst = p.documentos.encuestaEstudiantes?.disponible ? 'Validado' : (p.documentos.encuestaEstudiantes?.estado || 'Pendiente');
+      const docOrg = p.documentos.encuestaOrganizaciones?.disponible ? 'Validado' : (p.documentos.encuestaOrganizaciones?.estado || 'Pendiente');
+      
+      csv += `"${pth.nombre}","${p.codigo}",${p.ano},"${p.sede}","${p.lineaAccion}","${p.nombre}",${p.indicadores.organizaciones},${p.indicadores.estudiantes},${p.indicadores.academicos},"${docPost}","${docCie}","${docEst}","${docOrg}"\n`;
     });
 
     const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
@@ -43,7 +46,7 @@ export default function InitiativeDetail({ pth, onBack, onOpenDocument }) {
     URL.revokeObjectURL(url);
   };
 
-  // Descarga del expediente completo en un único archivo ZIP (Solución anti-OneDrive)
+  // Descarga del expediente completo en un único archivo ZIP
   const handleDownloadZip = async () => {
     setIsZipping(true);
     try {
@@ -53,34 +56,46 @@ export default function InitiativeDetail({ pth, onBack, onOpenDocument }) {
 
       // 1. Agregar Planilla Excel/CSV consolidada
       let csv = '\uFEFF';
-      csv += 'Iniciativa,Código,Año,Sede,Línea de Acción,Proyecto,N° Organizaciones,N° Estudiantes,N° Académicos\n';
+      csv += 'Iniciativa,Código,Año,Sede,Línea de Acción,Proyecto,N° Organizaciones,N° Estudiantes,N° Académicos,Formulario Postulación,Informe Cierre,Encuesta Estudiantes,Encuesta Organizaciones\n';
       pth.proyectos.forEach((p) => {
-        csv += `"${pth.nombre}","${p.codigo}",${p.ano},"${p.sede}","${p.lineaAccion}","${p.nombre}",${p.indicadores.organizaciones},${p.indicadores.estudiantes},${p.indicadores.academicos}\n`;
+        csv += `"${pth.nombre}","${p.codigo}",${p.ano},"${p.sede}","${p.lineaAccion}","${p.nombre}",${p.indicadores.organizaciones},${p.indicadores.estudiantes},${p.indicadores.academicos},"Disponible","Finalizado","Validado","Validado"\n`;
       });
       rootFolder.file('00_Listado_Consolidado_Proyectos_e_Indicadores.csv', csv);
 
       // 2. Crear carpetas ordenadas
-      const fEstudiantes = rootFolder.folder('01_Encuestas_Estudiantes_Validadas');
-      const fOrganizaciones = rootFolder.folder('02_Encuestas_Organizaciones_Validadas');
-      const fCierres = rootFolder.folder('03_Informes_de_Cierre');
+      const fPostulaciones = rootFolder.folder('01_Formularios_de_Postulacion');
+      const fCierres = rootFolder.folder('02_Informes_de_Cierre');
+      const fEstudiantes = rootFolder.folder('03_Encuestas_Estudiantes_Validadas');
+      const fOrganizaciones = rootFolder.folder('04_Encuestas_Organizaciones_Validadas');
 
       pth.proyectos.forEach((p) => {
-        if (p.documentos.encuestaEstudiantes.disponible) {
+        // Formularios de Postulación
+        fPostulaciones.file(
+          `${p.codigo}_Formulario_Postulacion_${p.ano}.txt`,
+          `FORMULARIO OFICIAL DE POSTULACIÓN DE PROYECTO VcM\nProyecto: [${p.codigo}] ${p.nombre}\nLínea: ${p.lineaAccion}\nAño: ${p.ano} - Sede: ${p.sede}\nIndicadores comprometidos: ${p.indicadores.organizaciones} organizaciones, ${p.indicadores.estudiantes} estudiantes.\nAprobado por Dirección General de VcM USS.`
+        );
+
+        // Informes de Cierre
+        if (p.documentos.informeCierre?.disponible) {
+          fCierres.file(
+            `${p.codigo}_Informe_Cierre_${p.ano}.txt`,
+            `INFORME DE CIERRE OFICIAL\nProyecto: [${p.codigo}] ${p.nombre}\nLínea: ${p.lineaAccion}\nAño: ${p.ano} - Sede: ${p.sede}\nValidado por Dirección General de VcM USS.`
+          );
+        }
+
+        // Encuestas Estudiantes
+        if (p.documentos.encuestaEstudiantes?.disponible) {
           fEstudiantes.file(
             `${p.codigo}_Reporte_Validado_Estudiantes_${p.ano}.txt`,
             `REPORTE VALIDADO DE ENCUESTA A ESTUDIANTES\nProyecto: [${p.codigo}] ${p.nombre}\nLínea: ${p.lineaAccion}\nAño: ${p.ano} - Sede: ${p.sede}\nEstudiantes participantes: ${p.indicadores.estudiantes}\nValidado por Dirección General de VcM USS.`
           );
         }
-        if (p.documentos.encuestaOrganizaciones.disponible) {
+
+        // Encuestas Organizaciones
+        if (p.documentos.encuestaOrganizaciones?.disponible) {
           fOrganizaciones.file(
             `${p.codigo}_Reporte_Validado_Organizaciones_${p.ano}.txt`,
             `REPORTE VALIDADO DE ENCUESTA A ORGANIZACIONES EXTERNAS\nProyecto: [${p.codigo}] ${p.nombre}\nLínea: ${p.lineaAccion}\nAño: ${p.ano} - Sede: ${p.sede}\nOrganizaciones participantes: ${p.indicadores.organizaciones}\nValidado por Dirección General de VcM USS.`
-          );
-        }
-        if (p.documentos.informeCierre.disponible) {
-          fCierres.file(
-            `${p.codigo}_Informe_Cierre_${p.ano}.txt`,
-            `INFORME DE CIERRE OFICIAL\nProyecto: [${p.codigo}] ${p.nombre}\nLínea: ${p.lineaAccion}\nAño: ${p.ano} - Sede: ${p.sede}\nValidado por Dirección General de VcM USS.`
           );
         }
       });
@@ -171,7 +186,7 @@ export default function InitiativeDetail({ pth, onBack, onOpenDocument }) {
           </div>
         </div>
 
-        {/* Tarjetas de Métricas Globales (Reporte Cristóbal) */}
+        {/* Tarjetas de Métricas Globales */}
         <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 border-t border-slate-100 pt-6">
           <div className="bg-slate-50 p-3.5 sm:p-4 rounded-2xl border border-slate-200/70">
             <div className="flex items-center justify-between text-slate-500 mb-1">
@@ -241,6 +256,31 @@ export default function InitiativeDetail({ pth, onBack, onOpenDocument }) {
           <span>Matriz 360° ({pth.proyectos.length})</span>
         </button>
 
+        {/* REQUERIMIENTO 3A: Pestaña para Formularios de Postulación */}
+        <button
+          onClick={() => setActiveTab('postulacion')}
+          className={`px-3.5 sm:px-4 py-2.5 rounded-xl text-xs font-bold transition flex items-center gap-2 whitespace-nowrap cursor-pointer flex-shrink-0 ${
+            activeTab === 'postulacion'
+              ? 'bg-uss-navy text-white shadow-xs'
+              : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'
+          }`}
+        >
+          <FileCheck className="w-4 h-4 text-sky-400" />
+          <span>Formularios Postulación</span>
+        </button>
+
+        <button
+          onClick={() => setActiveTab('cierre')}
+          className={`px-3.5 sm:px-4 py-2.5 rounded-xl text-xs font-bold transition flex items-center gap-2 whitespace-nowrap cursor-pointer flex-shrink-0 ${
+            activeTab === 'cierre'
+              ? 'bg-uss-navy text-white shadow-xs'
+              : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'
+          }`}
+        >
+          <FileText className="w-4 h-4 text-purple-400" />
+          <span>Informes Cierre</span>
+        </button>
+
         <button
           onClick={() => setActiveTab('estudiantes')}
           className={`px-3.5 sm:px-4 py-2.5 rounded-xl text-xs font-bold transition flex items-center gap-2 whitespace-nowrap cursor-pointer flex-shrink-0 ${
@@ -249,7 +289,7 @@ export default function InitiativeDetail({ pth, onBack, onOpenDocument }) {
               : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'
           }`}
         >
-          <GraduationCap className="w-4 h-4" />
+          <GraduationCap className="w-4 h-4 text-sky-300" />
           <span>Enc. Estudiantes</span>
         </button>
 
@@ -261,20 +301,8 @@ export default function InitiativeDetail({ pth, onBack, onOpenDocument }) {
               : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'
           }`}
         >
-          <Building2 className="w-4 h-4" />
+          <Building2 className="w-4 h-4 text-emerald-400" />
           <span>Enc. Organizaciones</span>
-        </button>
-
-        <button
-          onClick={() => setActiveTab('cierre')}
-          className={`px-3.5 sm:px-4 py-2.5 rounded-xl text-xs font-bold transition flex items-center gap-2 whitespace-nowrap cursor-pointer flex-shrink-0 ${
-            activeTab === 'cierre'
-              ? 'bg-uss-navy text-white shadow-xs'
-              : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'
-          }`}
-        >
-          <FileText className="w-4 h-4" />
-          <span>Informes Cierre</span>
         </button>
 
         <button
@@ -285,7 +313,7 @@ export default function InitiativeDetail({ pth, onBack, onOpenDocument }) {
               : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'
           }`}
         >
-          <BarChart3 className="w-4 h-4" />
+          <BarChart3 className="w-4 h-4 text-amber-400" />
           <span>Indicadores Cristóbal</span>
         </button>
       </div>
@@ -294,6 +322,26 @@ export default function InitiativeDetail({ pth, onBack, onOpenDocument }) {
       <div>
         {activeTab === 'matriz' && (
           <ProjectsTable pth={pth} onOpenDocument={onOpenDocument} />
+        )}
+
+        {activeTab === 'postulacion' && (
+          <DocumentListView
+            pth={pth}
+            docTypeKey="formularioPostulacion"
+            title="Formulario de Postulación de Proyecto"
+            docLabel="Formulario de Postulación"
+            onOpenDocument={onOpenDocument}
+          />
+        )}
+
+        {activeTab === 'cierre' && (
+          <DocumentListView
+            pth={pth}
+            docTypeKey="informeCierre"
+            title="Informe de Cierre de Proyecto"
+            docLabel="Informe de Cierre"
+            onOpenDocument={onOpenDocument}
+          />
         )}
 
         {activeTab === 'estudiantes' && (
@@ -312,16 +360,6 @@ export default function InitiativeDetail({ pth, onBack, onOpenDocument }) {
             docTypeKey="encuestaOrganizaciones"
             title="Reporte Validado Encuesta Organizaciones"
             docLabel="Encuesta Organizaciones"
-            onOpenDocument={onOpenDocument}
-          />
-        )}
-
-        {activeTab === 'cierre' && (
-          <DocumentListView
-            pth={pth}
-            docTypeKey="informeCierre"
-            title="Informe de Cierre de Proyecto"
-            docLabel="Informe de Cierre"
             onOpenDocument={onOpenDocument}
           />
         )}

@@ -1,17 +1,40 @@
 import React, { useState } from 'react';
-import { formatRut, cleanRut, validateRut } from '../utils/rutValidator';
+import { formatRut, cleanRut, validateRut, normalizeDoc } from '../utils/rutValidator';
 import whitelist from '../data/whitelist.json';
-import { ShieldCheck, UserCheck, AlertCircle, Sparkles, Building2, GraduationCap } from 'lucide-react';
+import { 
+  ShieldCheck, 
+  UserCheck, 
+  AlertCircle, 
+  Sparkles, 
+  Building2, 
+  GraduationCap, 
+  Globe, 
+  KeyRound, 
+  Lock, 
+  ShieldAlert,
+  ArrowRight,
+  CheckCircle2
+} from 'lucide-react';
 
 export default function LoginModal({ onLoginSuccess }) {
-  const [rutInput, setRutInput] = useState('');
+  const [docType, setDocType] = useState('rut'); // 'rut', 'pasaporte', 'admin'
+  const [docInput, setDocInput] = useState('');
+  const [adminPassword, setAdminPassword] = useState('');
   const [error, setError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleInputChange = (e) => {
+  const handleDocChange = (e) => {
     const raw = e.target.value;
-    const formatted = formatRut(raw);
-    setRutInput(formatted);
+    if (docType === 'rut') {
+      setDocInput(formatRut(raw));
+    } else {
+      setDocInput(raw.toUpperCase());
+    }
+    if (error) setError('');
+  };
+
+  const handleAdminPasswordChange = (e) => {
+    setAdminPassword(e.target.value);
     if (error) setError('');
   };
 
@@ -19,146 +42,341 @@ export default function LoginModal({ onLoginSuccess }) {
     e?.preventDefault();
     setError('');
 
-    const cleaned = cleanRut(rutInput);
-    if (!cleaned) {
-      setError('Por favor, ingresa tu RUT.');
+    // ========================================================
+    // CASO 1: MODO ADMINISTRADOR (POR CONTRASEÑA)
+    // ========================================================
+    if (docType === 'admin') {
+      const trimmedPwd = adminPassword.trim();
+      if (!trimmedPwd) {
+        setError('Por favor, ingresa la contraseña de administración.');
+        return;
+      }
+
+      // Claves válidas: VcmAdmin2026! o adminVCM2026
+      if (trimmedPwd === 'VcmAdmin2026!' || trimmedPwd === 'adminVCM2026') {
+        setIsSubmitting(true);
+        setTimeout(() => {
+          const adminUser = {
+            rut: 'ADMIN-VCM',
+            rutSinFormato: 'ADMINVCM',
+            nombre: 'Equipo de Dirección y Coordinación VcM',
+            rol: 'Administrador / Equipo VcM',
+            tipo: 'Dirección General VcM',
+            facultad: 'Vicerrectoría de Vinculación con el Medio',
+            email: 'vcm@uss.cl',
+            isAdmin: true
+          };
+          onLoginSuccess(adminUser);
+        }, 250);
+        return;
+      } else {
+        setError('Contraseña de administración incorrecta.');
+        return;
+      }
+    }
+
+    // ========================================================
+    // CASO 2: MODO RUT CHILENO O PASAPORTE / DOC. EXTRANJERO
+    // ========================================================
+    const rawVal = docInput.trim();
+    if (!rawVal) {
+      setError(docType === 'rut' ? 'Por favor, ingresa tu RUT.' : 'Por favor, ingresa tu pasaporte o documento de identidad.');
       return;
     }
 
-    if (!validateRut(cleaned)) {
-      setError('El RUT ingresado no es válido. Revisa los dígitos.');
-      return;
-    }
+    const normInput = normalizeDoc(rawVal);
 
     setIsSubmitting(true);
 
-    // Buscar en la lista blanca
     setTimeout(() => {
-      const user = whitelist.find((u) => cleanRut(u.rut) === cleaned);
+      // Buscar en nómina unificada
+      const user = whitelist.find((u) => {
+        const uRut = normalizeDoc(u.rut);
+        const uRutChileno = normalizeDoc(u.rutChileno);
+        const uRutSin = normalizeDoc(u.rutSinFormato);
+        const uPasaporte = normalizeDoc(u.pasaporte);
+        const uAsignado = normalizeDoc(u.rutAsignado);
+
+        return (
+          normInput === uRut ||
+          normInput === uRutChileno ||
+          normInput === uRutSin ||
+          normInput === uPasaporte ||
+          normInput === uAsignado
+        );
+      });
+
       if (user) {
-        onLoginSuccess(user);
+        // Si el usuario es administrador reconocido (Franco, Consuelo, Cristóbal, etc.)
+        const isAdmin = user.isAdmin || user.rol?.includes('Administrador') || normInput === '123456785';
+        const finalUser = {
+          ...user,
+          isAdmin,
+          rol: isAdmin ? 'Administrador / Equipo VcM' : user.rol
+        };
+        onLoginSuccess(finalUser);
       } else {
-        setError('Este RUT no se encuentra habilitado en la nómina del Diplomado VcM. Si crees que es un error, contacta a la coordinación.');
+        // Mensaje orientador según tipo de documento
+        if (docType === 'rut' && !validateRut(cleanRut(rawVal))) {
+          setError('El RUT ingresado no es válido o no cumple con el formato oficial.');
+        } else {
+          setError(
+            docType === 'rut'
+              ? 'Este RUT no figura en la nómina del Diplomado VcM 2026. Si crees que es un error, contacta a la coordinación.'
+              : 'El documento / pasaporte ingresado no figura en la nómina de estudiantes internacionales. Revisa la escritura o consulta con la coordinación.'
+          );
+        }
         setIsSubmitting(false);
       }
-    }, 300);
+    }, 250);
   };
 
-  const handleQuickLogin = (testUser) => {
-    setRutInput(formatRut(testUser.rut));
+  const handleQuickLogin = (user) => {
     setError('');
     setIsSubmitting(true);
     setTimeout(() => {
-      onLoginSuccess(testUser);
-    }, 200);
+      const isAdmin = user.isAdmin || user.rol?.includes('Administrador');
+      onLoginSuccess({
+        ...user,
+        isAdmin,
+        rol: isAdmin ? 'Administrador / Equipo VcM' : user.rol
+      });
+    }, 150);
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/80 backdrop-blur-sm">
-      <div className="w-full max-w-lg bg-white rounded-2xl shadow-2xl border border-slate-100 overflow-hidden animate-in fade-in zoom-in-95 duration-200">
-        {/* Cabecera institucional */}
-        <div className="bg-gradient-to-r from-uss-navy via-[#003d66] to-uss-blue p-6 text-white text-center relative">
-          <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md mb-3 border border-white/20 shadow-inner">
-            <GraduationCap className="w-8 h-8 text-uss-yellow" />
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-slate-950/80 backdrop-blur-sm overflow-y-auto">
+      <div className="w-full max-w-lg bg-white rounded-3xl shadow-2xl border border-slate-100 overflow-hidden animate-in fade-in zoom-in-95 duration-200 my-auto">
+        
+        {/* Cabecera Institucional con Logo Oficial USS */}
+        <div className="bg-gradient-to-r from-uss-navy-deep via-uss-navy to-uss-blue p-6 sm:p-7 text-white text-center relative overflow-hidden">
+          <div className="absolute -right-8 -top-8 w-40 h-40 bg-white/5 rounded-full blur-xl pointer-events-none"></div>
+          
+          {/* Logo Oficial VcM USS */}
+          <div className="inline-flex items-center justify-center bg-white p-2.5 rounded-2xl shadow-md mb-3.5">
+            <img 
+              src="/logos/logo-vcm-uss.png" 
+              alt="Logo Vinculación con el Medio USS" 
+              className="h-11 sm:h-12 w-auto object-contain"
+              onError={(e) => {
+                // Fallback si por alguna razón falla el render de la imagen
+                e.currentTarget.style.display = 'none';
+              }}
+            />
           </div>
-          <h2 className="text-xl font-bold tracking-tight">Diplomado en Vinculación con el Medio</h2>
+
+          <h2 className="text-xl sm:text-2xl font-extrabold tracking-tight text-white leading-tight">
+            Diplomado en Vinculación con el Medio
+          </h2>
           <p className="text-xs text-sky-200 mt-1 uppercase tracking-wider font-semibold">
-            Portal de Evidencias e Iniciativas para Trabajo Final
+            Portal Oficial de Evidencias para Evaluación Final · Cohorte 2026
           </p>
-          <div className="absolute top-4 right-4 flex items-center gap-1 bg-white/10 text-white/90 text-xs px-2.5 py-1 rounded-full font-medium">
-            <Building2 className="w-3.5 h-3.5" />
-            <span>USS</span>
-          </div>
         </div>
 
-        {/* Cuerpo del formulario */}
-        <div className="p-6 md:p-8">
-          <div className="mb-6 text-center">
-            <h3 className="text-lg font-bold text-slate-900">Acceso Académico</h3>
-            <p className="text-xs text-slate-500 mt-1">
-              Ingresa con tu RUT para consultar la información de los programas e iniciativas que evaluarás.
-            </p>
+        {/* Cuerpo del Modal */}
+        <div className="p-6 sm:p-8">
+          
+          {/* Selector de Tipo de Acceso (RUT / Pasaporte / Admin) */}
+          <div className="flex rounded-xl bg-slate-100 p-1 mb-5 text-xs font-bold border border-slate-200/80">
+            <button
+              type="button"
+              onClick={() => { setDocType('rut'); setError(''); }}
+              className={`flex-1 py-2 px-2 rounded-lg transition-all text-center flex items-center justify-center gap-1.5 cursor-pointer ${
+                docType === 'rut'
+                  ? 'bg-white text-uss-navy shadow-xs border border-slate-200/60 font-extrabold'
+                  : 'text-slate-600 hover:text-slate-900'
+              }`}
+            >
+              <span>RUT Chileno</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => { setDocType('pasaporte'); setError(''); }}
+              className={`flex-1 py-2 px-2 rounded-lg transition-all text-center flex items-center justify-center gap-1.5 cursor-pointer ${
+                docType === 'pasaporte'
+                  ? 'bg-white text-uss-navy shadow-xs border border-slate-200/60 font-extrabold'
+                  : 'text-slate-600 hover:text-slate-900'
+              }`}
+            >
+              <Globe className="w-3.5 h-3.5 text-uss-blue" />
+              <span>Extranjero / Pasaporte</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => { setDocType('admin'); setError(''); }}
+              className={`py-2 px-3 rounded-lg transition-all text-center flex items-center justify-center gap-1 cursor-pointer ${
+                docType === 'admin'
+                  ? 'bg-uss-navy text-white shadow-xs font-extrabold'
+                  : 'text-slate-500 hover:text-slate-800'
+              }`}
+              title="Acceso para Jefatura, Coordinación y Administradores"
+            >
+              <KeyRound className="w-3.5 h-3.5 text-uss-yellow" />
+              <span className="hidden sm:inline">Admin</span>
+            </button>
           </div>
 
+          {/* Formulario de Login */}
           <form onSubmit={handleLogin} className="space-y-4">
-            <div>
-              <label htmlFor="rut-input" className="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1.5">
-                RUT del Académico/a
-              </label>
-              <div className="relative">
-                <input
-                  id="rut-input"
-                  type="text"
-                  value={rutInput}
-                  onChange={handleInputChange}
-                  placeholder="Ej: 12.345.678-5"
-                  maxLength={12}
-                  className="w-full px-4 py-3 text-base font-medium rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-uss-blue focus:border-transparent transition placeholder:text-slate-400 bg-slate-50 focus:bg-white tracking-wide"
-                  autoFocus
-                />
-                <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-slate-400">
-                  <ShieldCheck className="w-5 h-5 text-slate-400" />
+            
+            {/* VISTA A: RUT CHILENO O PASAPORTE */}
+            {docType !== 'admin' && (
+              <div>
+                <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                  {docType === 'rut' ? 'RUT (con o sin puntos/guión)' : 'N° Pasaporte o Documento de Identidad'}
+                </label>
+                <div className="relative">
+                  <input
+                    type="text"
+                    value={docInput}
+                    onChange={handleDocChange}
+                    placeholder={docType === 'rut' ? 'Ej: 17.405.679-K ó 17405679K' : 'Ej: B02454716, D5667285, XE31016...'}
+                    className="w-full px-4 py-3 text-base font-semibold rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-uss-blue focus:border-transparent transition bg-slate-50 focus:bg-white tracking-wide text-slate-900"
+                    autoFocus
+                  />
+                  <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-slate-400">
+                    <ShieldCheck className="w-5 h-5 text-slate-400" />
+                  </div>
+                </div>
+                <p className="text-[11px] text-slate-400 mt-1">
+                  {docType === 'rut'
+                    ? 'Permite acceso tanto a los 140 estudiantes nacionales como al cuerpo docente evaluador.'
+                    : 'Habilitado para los 35 estudiantes extranjeros del diplomado registrados con pasaporte oficial.'}
+                </p>
+              </div>
+            )}
+
+            {/* VISTA B: CONTRASEÑA DE ADMINISTRADOR */}
+            {docType === 'admin' && (
+              <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200/90 space-y-3">
+                <div className="flex items-center gap-2 text-xs font-bold text-uss-navy">
+                  <Lock className="w-4 h-4 text-uss-yellow" />
+                  <span>Modo Administrador / Equipo VcM</span>
+                </div>
+                <p className="text-xs text-slate-600">
+                  Ingresa la contraseña de jefatura para acceder con permisos de auditoría completa y visualización del estado de todos los proyectos y expedientes.
+                </p>
+                <div>
+                  <label className="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1">
+                    Contraseña de Administración
+                  </label>
+                  <input
+                    type="password"
+                    value={adminPassword}
+                    onChange={handleAdminPasswordChange}
+                    placeholder="Contraseña institucional (ej: VcmAdmin2026!)"
+                    className="w-full px-4 py-2.5 text-sm font-medium rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-uss-blue bg-white"
+                    autoFocus
+                  />
                 </div>
               </div>
+            )}
 
-              {error && (
-                <div className="flex items-start gap-2 mt-2.5 p-3 rounded-lg bg-red-50 text-red-700 text-xs border border-red-200 animate-in fade-in duration-150">
-                  <AlertCircle className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                  <span>{error}</span>
-                </div>
-              )}
-            </div>
+            {/* Mensajes de Error */}
+            {error && (
+              <div className="flex items-start gap-2 p-3 rounded-xl bg-red-50 text-red-700 text-xs border border-red-200 animate-in fade-in duration-150">
+                <AlertCircle className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                <span className="leading-snug">{error}</span>
+              </div>
+            )}
 
+            {/* Botón Principal de Envío */}
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full py-3.5 px-4 rounded-xl bg-uss-navy hover:bg-uss-blue text-white font-semibold text-sm transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2 group disabled:opacity-70 cursor-pointer"
+              className="w-full py-3.5 px-4 rounded-xl bg-uss-navy hover:bg-uss-blue text-white font-bold text-sm transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2 group disabled:opacity-70 cursor-pointer"
             >
               {isSubmitting ? (
-                <span>Verificando acceso...</span>
+                <span>Validando credenciales...</span>
               ) : (
                 <>
-                  <UserCheck className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                  <span>Ingresar al Portal</span>
+                  <UserCheck className="w-4 h-4 group-hover:scale-110 transition-transform text-uss-yellow" />
+                  <span>{docType === 'admin' ? 'Ingresar como Administrador' : 'Ingresar al Portal'}</span>
                 </>
               )}
             </button>
           </form>
 
-          {/* Acceso rápido para pruebas durante el desarrollo */}
-          <div className="mt-8 pt-6 border-t border-slate-100">
-            <div className="flex items-center justify-between mb-2">
-              <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider flex items-center gap-1">
-                <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-                Acceso Rápido para Demostración / Pruebas
+          {/* Acceso Rápido para Demostración */}
+          <div className="mt-6 pt-5 border-t border-slate-100">
+            <div className="flex items-center justify-between mb-2.5">
+              <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+                <Sparkles className="w-3.5 h-3.5 text-uss-yellow" />
+                <span>Acceso Rápido para Demostración</span>
               </span>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              {whitelist.slice(0, 4).map((user) => (
-                <button
-                  key={user.rut}
-                  type="button"
-                  onClick={() => handleQuickLogin(user)}
-                  className="text-left p-2.5 rounded-lg border border-slate-200 hover:border-uss-blue/60 hover:bg-sky-50/50 transition text-xs flex flex-col group cursor-pointer"
-                >
-                  <span className="font-semibold text-slate-800 group-hover:text-uss-blue truncate">
-                    {user.nombre}
-                  </span>
-                  <div className="flex items-center justify-between text-[11px] text-slate-500 mt-0.5">
-                    <span className="font-mono text-slate-600">{user.rut}</span>
-                    <span className={`px-1.5 py-0.2 rounded text-[10px] font-medium ${
-                      user.tipo === 'Interno' ? 'bg-blue-100 text-blue-700' : 'bg-purple-100 text-purple-700'
-                    }`}>
-                      {user.tipo}
-                    </span>
-                  </div>
-                </button>
-              ))}
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+              {/* Acceso 1: Admin Franco Oyarce */}
+              <button
+                type="button"
+                onClick={() => handleQuickLogin({
+                  rut: '12.345.678-5',
+                  nombre: 'Dr. Franco Oyarce',
+                  rol: 'Administrador / Equipo VcM',
+                  tipo: 'Dirección General VcM',
+                  facultad: 'Facultad de Medicina y Ciencia',
+                  email: 'franco.oyarce@uss.cl',
+                  isAdmin: true
+                })}
+                className="text-left p-2.5 rounded-xl border border-purple-200 bg-purple-50/60 hover:bg-purple-100/70 transition text-xs flex flex-col group cursor-pointer"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="font-extrabold text-purple-900 truncate">Dr. Franco Oyarce</span>
+                  <span className="text-[9px] font-black bg-purple-200 text-purple-900 px-1.5 py-0.2 rounded">ADMIN</span>
+                </div>
+                <span className="text-[10px] text-purple-700 font-mono mt-0.5">12.345.678-5</span>
+              </button>
+
+              {/* Acceso 2: Estudiante Nacional */}
+              <button
+                type="button"
+                onClick={() => handleQuickLogin({
+                  rut: '17.405.679-K',
+                  nombre: 'Pilar Abuhadba Venegas',
+                  rol: 'Estudiante Diplomado',
+                  tipo: 'Nacional',
+                  email: 'pilar.abuhadba@uss.cl',
+                  isAdmin: false
+                })}
+                className="text-left p-2.5 rounded-xl border border-sky-200 bg-sky-50/60 hover:bg-sky-100/70 transition text-xs flex flex-col group cursor-pointer"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="font-extrabold text-sky-900 truncate">Pilar Abuhadba</span>
+                  <span className="text-[9px] font-bold bg-sky-200 text-sky-900 px-1.5 py-0.2 rounded">NACIONAL</span>
+                </div>
+                <span className="text-[10px] text-sky-700 font-mono mt-0.5">17.405.679-K</span>
+              </button>
+
+              {/* Acceso 3: Estudiante Internacional */}
+              <button
+                type="button"
+                onClick={() => handleQuickLogin({
+                  rut: 'B02454716',
+                  pasaporte: 'B02454716',
+                  nombre: 'Rina Arana de Serrano',
+                  rol: 'Estudiante Diplomado',
+                  tipo: 'Internacional',
+                  email: 'proyeccion01@ieproes.edu.sv',
+                  isAdmin: false
+                })}
+                className="text-left p-2.5 rounded-xl border border-emerald-200 bg-emerald-50/60 hover:bg-emerald-100/70 transition text-xs flex flex-col group cursor-pointer"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="font-extrabold text-emerald-900 truncate">Rina Arana</span>
+                  <span className="text-[9px] font-bold bg-emerald-200 text-emerald-900 px-1.5 py-0.2 rounded">EXTRANJERO</span>
+                </div>
+                <span className="text-[10px] text-emerald-700 font-mono mt-0.5">B02454716</span>
+              </button>
             </div>
-            <p className="text-[11px] text-slate-400 mt-2 text-center">
-              Haz clic en cualquier usuario de prueba para ingresar instantáneamente.
+            
+            <p className="text-[11px] text-slate-400 mt-2.5 text-center">
+              Haz clic en cualquier perfil para ingresar inmediatamente con sus privilegios correspondientes.
             </p>
           </div>
+
         </div>
       </div>
     </div>

@@ -28,29 +28,33 @@ export default function PDFModalViewer({ documentData, onClose }) {
     archivo, 
     tamano, 
     fecha, 
-    isRealPdf, 
-    archivoUrl, 
+    isRealPdf: explicitIsRealPdf, 
+    archivoUrl: explicitArchivoUrl, 
     nombreDescarga 
   } = documentData;
 
+  const resolvedUrl = explicitArchivoUrl || (archivo ? (archivo.startsWith('/') ? archivo : '/' + archivo) : '');
+  const isReal = explicitIsRealPdf !== undefined ? explicitIsRealPdf : (Boolean(resolvedUrl) && resolvedUrl.toLowerCase().endsWith('.pdf'));
+  const effectiveDownloadName = nombreDescarga || (resolvedUrl ? resolvedUrl.split('/').pop() : `${tipo?.replace(/\s+/g, '_') || 'documento'}.pdf`);
+
   const handleDownload = () => {
-    if (isRealPdf && archivoUrl) {
+    if (isReal && resolvedUrl) {
       const link = document.createElement('a');
-      link.href = archivoUrl;
-      link.download = nombreDescarga || archivo.split('/').pop() || 'informe_cierre.pdf';
+      link.href = resolvedUrl;
+      link.download = effectiveDownloadName;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
       return;
     }
 
-    // Para reportes simulados mientras llegan los PDFs de los PTH
-    const content = `UNIVERSIDAD SAN SEBASTIÁN - VINCULACIÓN CON EL MEDIO\nDOCUMENTO OFICIAL VALIDADO\nTipo: ${tipo}\nIniciativa: ${pth.nombre} (${pth.sigla})\nProyecto: [${proyecto.codigo}] ${proyecto.nombre}\nLínea de Acción: ${proyecto.lineaAccion}\nAño de Ejecución: ${proyecto.ano} - Sede: ${proyecto.sede}\nIndicadores: ${proyecto.indicadores.organizaciones} Organizaciones | ${proyecto.indicadores.estudiantes} Estudiantes | ${proyecto.indicadores.academicos} Académicos\nValidación: Dirección General de Vinculación con el Medio (USS)\nFecha Reporte: ${fecha || '2024-2025'}\nArchivo: ${archivo}\n`;
+    // Para reportes simulados si no hay archivo binario PDF asociado
+    const content = `UNIVERSIDAD SAN SEBASTIÁN - VINCULACIÓN CON EL MEDIO\nDOCUMENTO OFICIAL VALIDADO\nTipo: ${tipo}\nIniciativa: ${pth?.nombre || ''} (${pth?.sigla || ''})\nProyecto: [${proyecto?.codigo || ''}] ${proyecto?.nombre || ''}\nLínea de Acción: ${proyecto?.lineaAccion || ''}\nAño de Ejecución: ${proyecto?.ano || ''} - Sede: ${proyecto?.sede || ''}\nIndicadores: ${proyecto?.indicadores?.organizaciones || 0} Organizaciones | ${proyecto?.indicadores?.estudiantes || 0} Estudiantes | ${proyecto?.indicadores?.academicos || 0} Académicos\nValidación: Dirección General de Vinculación con el Medio (USS)\nFecha Reporte: ${fecha || '2024-2025'}\nArchivo: ${archivo || ''}\n`;
     const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = archivo.split('/').pop() || 'reporte_vcm.pdf';
+    link.download = effectiveDownloadName.replace(/\.pdf$/i, '.txt');
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -72,7 +76,7 @@ export default function PDFModalViewer({ documentData, onClose }) {
                 <span className="text-[10px] font-mono text-sky-400 bg-sky-950 px-1.5 py-0.5 rounded border border-sky-800 flex-shrink-0">
                   {proyecto.codigo}
                 </span>
-                {isRealPdf && (
+                {isReal && (
                   <span className="text-[10px] font-bold bg-emerald-900/80 text-emerald-300 px-1.5 py-0.5 rounded border border-emerald-700 flex-shrink-0">
                     PDF Oficial
                   </span>
@@ -85,9 +89,9 @@ export default function PDFModalViewer({ documentData, onClose }) {
           </div>
 
           <div className="flex items-center gap-2 flex-shrink-0">
-            {isRealPdf && archivoUrl && (
+            {isReal && resolvedUrl && (
               <a
-                href={archivoUrl}
+                href={resolvedUrl}
                 target="_blank"
                 rel="noreferrer"
                 className="hidden md:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium transition cursor-pointer"
@@ -118,11 +122,11 @@ export default function PDFModalViewer({ documentData, onClose }) {
         </div>
 
         {/* CUERPO DEL VISOR */}
-        {isRealPdf ? (
+        {isReal && resolvedUrl ? (
           /* Render de PDF Real con IFrame nativo del navegador */
           <div className="flex-1 w-full h-full bg-slate-800 flex flex-col relative">
             <iframe
-              src={archivoUrl}
+              src={resolvedUrl}
               className="w-full flex-1 border-0"
               title={tipo}
             />
@@ -130,15 +134,15 @@ export default function PDFModalViewer({ documentData, onClose }) {
             <div className="bg-slate-900/90 text-slate-400 px-4 py-2 text-[11px] flex items-center justify-between border-t border-slate-800">
               <span className="flex items-center gap-1.5">
                 <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-                <span>Informe de Cierre Oficial USS extraído de la plataforma VcM</span>
+                <span>Documento Oficial USS validado por Dirección General de VcM</span>
               </span>
               <a 
-                href={archivoUrl} 
+                href={resolvedUrl} 
                 target="_blank" 
                 rel="noreferrer" 
                 className="text-sky-400 hover:underline flex items-center gap-1"
               >
-                ¿Problemas para previsualizar? Haz clic aquí
+                ¿Problemas para previsualizar? Haz clic aquí para abrir en pestaña nueva
               </a>
             </div>
           </div>
@@ -149,15 +153,22 @@ export default function PDFModalViewer({ documentData, onClose }) {
               {/* Membrete Oficial */}
               <div>
                 <div className="border-b-2 border-uss-navy pb-4 mb-6 flex items-start justify-between">
-                  <div>
-                    <div className="text-xs font-black uppercase tracking-widest text-uss-navy">
-                      Universidad San Sebastián
-                    </div>
-                    <div className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
-                      Vicerrectoría de Vinculación con el Medio y Proyectos Institucionales
-                    </div>
-                    <div className="text-[10px] text-slate-400 mt-0.5">
-                      Dirección General de Evaluación y Aseguramiento de la Calidad VcM
+                  <div className="flex items-center gap-3">
+                    <img 
+                      src="/logos/logo-vcm-uss.png" 
+                      alt="USS VcM" 
+                      className="h-10 w-auto object-contain hidden sm:block p-1 bg-slate-50 rounded-lg border border-slate-200/80" 
+                    />
+                    <div>
+                      <div className="text-xs font-black uppercase tracking-widest text-uss-navy">
+                        Universidad San Sebastián
+                      </div>
+                      <div className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                        Vicerrectoría de Vinculación con el Medio y Proyectos Institucionales
+                      </div>
+                      <div className="text-[10px] text-slate-400 mt-0.5">
+                        Dirección General de Evaluación y Aseguramiento de la Calidad VcM
+                      </div>
                     </div>
                   </div>
 
@@ -282,6 +293,18 @@ export default function PDFModalViewer({ documentData, onClose }) {
                       <div className="flex justify-between items-center p-2.5 bg-slate-50 rounded-lg border border-slate-100">
                         <span className="text-slate-700">Estado de Rendición Técnica y Financiera:</span>
                         <span className="font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">Aprobada sin reparos</span>
+                      </div>
+                    </div>
+                  )}
+
+                  {(tipo.includes('Postulación') || tipo.includes('Formulario')) && (
+                    <div className="space-y-2 text-xs">
+                      <div className="p-3 bg-slate-50 rounded-lg border border-slate-100 leading-relaxed text-slate-600">
+                        <strong>Fundamentación y Objetivos de la Propuesta:</strong> Proyecto postulado y formalizado bajo los lineamientos del Modelo de Vinculación con el Medio de la USS, integrando actividades curriculares de las carreras participantes en directa colaboración con contrapartes externas del territorio.
+                      </div>
+                      <div className="flex justify-between items-center p-2.5 bg-slate-50 rounded-lg border border-slate-100">
+                        <span className="text-slate-700">Estado de Postulación y Adjudicación:</span>
+                        <span className="font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">Propuesta Aprobada y Formalizada</span>
                       </div>
                     </div>
                   )}

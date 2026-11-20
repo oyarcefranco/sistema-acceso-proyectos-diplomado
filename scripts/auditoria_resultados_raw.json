@@ -1,0 +1,212 @@
+{
+  "whitelist": {
+    "total_excel_students": 175,
+    "total_wl_students": 175,
+    "total_wl_admins": 6,
+    "total_wl": 181,
+    "chilenos_excel": 140,
+    "internacionales_excel": 35,
+    "chilenos_wl": 140,
+    "internacionales_wl": 35,
+    "duplicates_count": 0,
+    "duplicates": [],
+    "login_failures_count": 0,
+    "login_failures": [],
+    "admin_status": {
+      "Franco Oyarce": {
+        "found": true,
+        "details": [
+          {
+            "rut": "12.345.678-5",
+            "nombre": "Dr. Franco Oyarce",
+            "rol": "Administrador General",
+            "tipo": "Nacional",
+            "correo": "franco.oyarce@uss.cl",
+            "email": "franco.oyarce@uss.cl",
+            "facultad": "Facultad de Medicina y Ciencia",
+            "institucion": "Universidad San Sebastián",
+            "sede": "Santiago"
+          }
+        ]
+      },
+      "Consuelo": {
+        "found": true,
+        "details": [
+          {
+            "rut": "11.111.111-1",
+            "nombre": "Consuelo",
+            "rol": "Coordinadora Diplomado VcM / Administradora",
+            "tipo": "Nacional",
+            "correo": "consuelo@uss.cl",
+            "email": "consuelo@uss.cl",
+            "facultad": "Dirección General de VcM",
+            "institucion": "Universidad San Sebastián",
+            "sede": "Santiago"
+          }
+        ]
+      },
+      "Cristóbal Alarcón": {
+        "found": true,
+        "details": [
+          {
+            "rut": "19.876.543-0",
+            "nombre": "Prof. Cristóbal Alarcón Muñoz",
+            "rol": "Coordinador de Indicadores VcM",
+            "tipo": "Nacional",
+            "correo": "cristobal.alarcon@uss.cl",
+            "email": "cristobal.alarcon@uss.cl",
+            "facultad": "Dirección General de VcM",
+            "institucion": "Universidad San Sebastián",
+            "sede": "Santiago"
+          }
+        ]
+      }
+    }
+  },
+  "iniciativas": {
+    "total_pth": 5,
+    "pth_details": [
+      {
+        "id": "pth-mas-personas-mayores",
+        "nombre": "Más Personas Mayores Activas",
+        "sigla": "PTH-MPMA",
+        "count_proyectos": 23,
+        "years": {
+          "2024": 9,
+          "2025": 14
+        }
+      },
+      {
+        "id": "pth-mas-azul",
+        "nombre": "Más Azul",
+        "sigla": "PTH-MAZ",
+        "count_proyectos": 11,
+        "years": {
+          "2024": 6,
+          "2025": 5
+        }
+      },
+      {
+        "id": "pth-mas-parques",
+        "nombre": "Más Parques",
+        "sigla": "PTH-MPQ",
+        "count_proyectos": 10,
+        "years": {
+          "2024": 3,
+          "2025": 7
+        }
+      },
+      {
+        "id": "pth-mas-turismo-sostenible",
+        "nombre": "Más Turismo Sostenible",
+        "sigla": "PTH-MTS",
+        "count_proyectos": 8,
+        "years": {
+          "2024": 3,
+          "2025": 5
+        }
+      },
+      {
+        "id": "pth-mas-sinergia-territorial",
+        "nombre": "Más Sinergia Territorial",
+        "sigla": "PTH-MST",
+        "count_proyectos": 12,
+        "years": {
+          "2024": 1,
+          "2025": 11
+        }
+      }
+    ],
+    "total_proyectos": 64,
+    "projects_by_year": {
+      "2024": 22,
+      "2025": 42,
+      "otro": 0
+    },
+    "projects_missing_linea_count": 0,
+    "projects_missing_linea": [],
+    "indicator_anomalies_count": 0,
+    "indicator_anomalies": []
+  },
+  "documentos_pdf": {
+    "total_declared": 361,
+    "skipped_not_available": 160,
+    "total_checked": 201,
+    "valid_links": 201,
+    "broken_links_count": 0,
+    "broken_links": [],
+    "error_pct": 0.0
+  },
+  "continuidad": {
+    "total_programas": 4,
+    "total_versiones": 19,
+    "version_ids_count": 19,
+    "version_ids": [
+      "2057",
+      "2671",
+      "3015",
+      "4397",
+      "2451",
+      "2765",
+      "2986",
+      "3473",
+      "4267",
+      "1742",
+      "2115",
+      "2580",
+      "2974",
+      "4406",
+      "2050",
+      "2648",
+      "3211",
+      "3623",
+      "4303"
+    ],
+    "anual_matches_count": 0,
+    "anual_matches": [],
+    "carreras_sheet_rows": 41,
+    "sheet_carreras_programs": [
+      ""
+    ]
+  },
+  "planillas_excel": {
+    "consolidado_pth": {
+      "exists": true,
+      "size": 14376,
+      "sheets": [
+        "Proyectos PTH 2024-2025"
+      ],
+      "sheet_info": {
+        "Proyectos PTH 2024-2025": {
+          "max_row": 65,
+          "max_col": 17
+        }
+      },
+      "status": "OK"
+    },
+    "consolidado_continuidad": {
+      "exists": true,
+      "size": 10874,
+      "sheets": [
+        "Resumen Programas",
+        "Detalle 19 Versiones",
+        "Estudiantes x Carrera (Real)"
+      ],
+      "sheet_info": {
+        "Resumen Programas": {
+          "max_row": 5,
+          "max_col": 7
+        },
+        "Detalle 19 Versiones": {
+          "max_row": 20,
+          "max_col": 16
+        },
+        "Estudiantes x Carrera (Real)": {
+          "max_row": 51,
+          "max_col": 7
+        }
+      },
+      "status": "OK"
+    }
+  }
+}
