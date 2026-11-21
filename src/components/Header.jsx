@@ -1,5 +1,6 @@
 import React from 'react';
 import { LogOut, User, ChevronRight, Home, Building, GraduationCap, Shield, ShieldCheck, Globe } from 'lucide-react';
+import { getAssetUrl } from '../utils/assetHelper';
 
 export default function Header({ user, currentInitiative, onSelectInitiative, onLogout }) {
   return (
@@ -15,14 +16,14 @@ export default function Header({ user, currentInitiative, onSelectInitiative, on
               title="Ir al inicio de iniciativas"
             >
               {/* Logo Oficial VcM USS */}
-              <div className="h-9 sm:h-10 px-2 py-1 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center justify-center group-hover:border-uss-blue/60 transition shadow-2xs">
+              <div className="h-9 sm:h-11 px-2.5 py-1 rounded-xl bg-white border border-slate-200/90 flex items-center justify-center group-hover:border-uss-blue/60 transition shadow-2xs">
                 <img 
-                  src="/logos/logo-vcm-uss.png" 
+                  src={getAssetUrl('logos/logo-vcm-uss.png')} 
                   alt="Universidad San Sebastián - Vinculación con el Medio" 
                   className="h-7 sm:h-8 w-auto object-contain"
                   onError={(e) => {
-                    // Fallback
-                    e.currentTarget.style.display = 'none';
+                    // Fallback a versión responsive si falla
+                    e.currentTarget.src = getAssetUrl('logos/USS_VcM_logo_responsive.png');
                   }}
                 />
               </div>

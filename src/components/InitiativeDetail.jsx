@@ -18,6 +18,7 @@ import ProjectsTable from './ProjectsTable';
 import DocumentListView from './DocumentListView';
 import IndicatorsReportView from './IndicatorsReportView';
 import JSZip from 'jszip';
+import { getAssetUrl } from '../utils/assetHelper';
 
 export default function InitiativeDetail({ pth, onBack, onOpenDocument }) {
   const [activeTab, setActiveTab] = useState('matriz'); // 'matriz', 'postulacion', 'cierre', 'estudiantes', 'organizaciones', 'indicadores'
@@ -141,6 +142,13 @@ export default function InitiativeDetail({ pth, onBack, onOpenDocument }) {
               <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">
                 Programa Territorial Hito
               </span>
+              <div className="hidden sm:inline-flex items-center gap-1.5 ml-2 px-2 py-0.5 rounded-lg bg-slate-50 border border-slate-200">
+                <img 
+                  src={getAssetUrl('logos/logo-vcm-uss.png')} 
+                  alt="USS VcM" 
+                  className="h-4 w-auto object-contain" 
+                />
+              </div>
             </div>
             <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
               {pth.nombre}

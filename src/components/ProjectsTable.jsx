@@ -181,7 +181,7 @@ export default function ProjectsTable({ pth, onOpenDocument }) {
             const docPost = p.documentos.formularioPostulacion || {
               disponible: true,
               estado: 'Disponible',
-              archivo: `/documentos/${pth.id}/formularios-postulacion/Formulario_Postulacion_${p.codigo}.pdf`,
+              archivo: `documentos/${pth.id}/formularios-postulacion/Formulario_Postulacion_${p.codigo}.pdf`,
               tamano: '1.8 MB',
               fecha: `Mar ${p.ano}`
             };
@@ -394,7 +394,7 @@ export default function ProjectsTable({ pth, onOpenDocument }) {
             const docPost = p.documentos.formularioPostulacion || {
               disponible: true,
               estado: 'Disponible',
-              archivo: `/documentos/${pth.id}/formularios-postulacion/Formulario_Postulacion_${p.codigo}.pdf`,
+              archivo: `documentos/${pth.id}/formularios-postulacion/Formulario_Postulacion_${p.codigo}.pdf`,
               tamano: '1.8 MB',
               fecha: `Mar ${p.ano}`
             };

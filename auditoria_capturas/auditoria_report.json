@@ -1,0 +1,230 @@
+{
+  "totalTests": 21,
+  "totalButtonsTested": 48,
+  "pdfRequestsTotal": 187,
+  "pdfRequests200": 187,
+  "pdfRequests404": 0,
+  "notFoundErrors": [],
+  "captures": [
+    {
+      "filename": "01_login_modal_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\01_login_modal_desktop.png",
+      "description": "Pantalla inicial con LoginModal institucional"
+    },
+    {
+      "filename": "02_login_error_chilean_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\02_login_error_chilean_desktop.png",
+      "description": "Validación de error con RUT no autorizado o inválido"
+    },
+    {
+      "filename": "03_login_chilean_student_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\03_login_chilean_student_desktop.png",
+      "description": "Sesión iniciada con estudiante nacional (Pilar Abuhadba)"
+    },
+    {
+      "filename": "04_home_banner_and_logos_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\04_home_banner_and_logos_desktop.png",
+      "description": "Header y Banner de bienvenida con logos institucionales nítidos"
+    },
+    {
+      "filename": "05_logout_screen_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\05_logout_screen_desktop.png",
+      "description": "Retorno exitoso a la pantalla de Login tras cerrar sesión"
+    },
+    {
+      "filename": "06_login_foreign_passport_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\06_login_foreign_passport_desktop.png",
+      "description": "Sesión iniciada con pasaporte extranjero (Rina Arana de Serrano)"
+    },
+    {
+      "filename": "07_foreign_student_header_badge_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\07_foreign_student_header_badge_desktop.png",
+      "description": "Detalle de badge \"Estudiante Extranjero\" en Header"
+    },
+    {
+      "filename": "08_login_admin_password_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\08_login_admin_password_desktop.png",
+      "description": "Manejo de error con clave de administración errónea"
+    },
+    {
+      "filename": "09_admin_dashboard_golden_badge_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\09_admin_dashboard_golden_badge_desktop.png",
+      "description": "Dashboard activo en Modo Administrador con Badge Dorado"
+    },
+    {
+      "filename": "10_pth_selector_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\10_pth_selector_desktop.png",
+      "description": "Selector completo con los 5 PTH y 4 Proyectos Emblemáticos"
+    },
+    {
+      "filename": "11_pth1_adulto_mayor_detail_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\11_pth1_adulto_mayor_detail_desktop.png",
+      "description": "Detalle de PTH Más Personas Mayores y navegación por pestañas"
+    },
+    {
+      "filename": "12_pth2_mas_azul_detail_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\12_pth2_mas_azul_detail_desktop.png",
+      "description": "Detalle de PTH Más Azul con matriz de proyectos e indicadores"
+    },
+    {
+      "filename": "13_pth3_mas_parques_detail_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\13_pth3_mas_parques_detail_desktop.png",
+      "description": "Detalle de PTH Más Parques"
+    },
+    {
+      "filename": "14_pth3_mas_parques_project_4829_modal_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\14_pth3_mas_parques_project_4829_modal_desktop.png",
+      "description": "Visor PDF con Formulario de Postulación ID 4829 cargado sin 404"
+    },
+    {
+      "filename": "15_pth3_project_4829_cierre_pdf_modal_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\15_pth3_project_4829_cierre_pdf_modal_desktop.png",
+      "description": "Visor PDF con Informe de Cierre ID 4829 cargado sin 404"
+    },
+    {
+      "filename": "16_pth3_project_4829_encuesta_estudiantes_modal_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\16_pth3_project_4829_encuesta_estudiantes_modal_desktop.png",
+      "description": "Visor PDF con Encuesta de Estudiantes ID 4829 cargada sin 404"
+    },
+    {
+      "filename": "17_pth4_turismo_sostenible_detail_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\17_pth4_turismo_sostenible_detail_desktop.png",
+      "description": "Detalle de PTH Más Turismo Sostenible"
+    },
+    {
+      "filename": "18_pth5_sinergia_territorial_detail_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\18_pth5_sinergia_territorial_detail_desktop.png",
+      "description": "Detalle de PTH Más Sinergia Territorial"
+    },
+    {
+      "filename": "19_continuidad_pamuss_detail_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\19_continuidad_pamuss_detail_desktop.png",
+      "description": "Detalle de Continuidad PAMUSS con sus 5 versiones históricas"
+    },
+    {
+      "filename": "20_continuidad_pamuss_id_4406_surveys_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\20_continuidad_pamuss_id_4406_surveys_desktop.png",
+      "description": "Tarjetas de evidencias de ID 4406 con botones Ver Encuesta activos"
+    },
+    {
+      "filename": "21_continuidad_pamuss_id_4406_encuesta_estudiantes_modal_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\21_continuidad_pamuss_id_4406_encuesta_estudiantes_modal_desktop.png",
+      "description": "Modal con Encuesta de Estudiantes ID 4406 en PAMUSS"
+    },
+    {
+      "filename": "22_continuidad_pamuss_id_4406_encuesta_org_modal_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\22_continuidad_pamuss_id_4406_encuesta_org_modal_desktop.png",
+      "description": "Modal con Encuesta de Organizaciones ID 4406 en PAMUSS"
+    },
+    {
+      "filename": "23_continuidad_pamuss_id_1742_no_aplicada_state_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\23_continuidad_pamuss_id_1742_no_aplicada_state_desktop.png",
+      "description": "Versión ID 1742 mostrando estado \"No aplicada en este año\" en gris tenue"
+    },
+    {
+      "filename": "24_continuidad_cet_reinsercion_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\24_continuidad_cet_reinsercion_desktop.png",
+      "description": "Detalle de Continuidad CET con 4 versiones ejecutadas"
+    },
+    {
+      "filename": "25_continuidad_bomberos_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\25_continuidad_bomberos_desktop.png",
+      "description": "Detalle de Continuidad Bomberos con 5 versiones ejecutadas"
+    },
+    {
+      "filename": "26_continuidad_adolescentes_desktop.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\26_continuidad_adolescentes_desktop.png",
+      "description": "Detalle de Continuidad Adolescentes con 5 versiones ejecutadas"
+    },
+    {
+      "filename": "27_mobile_login_view.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\27_mobile_login_view.png",
+      "description": "Pantalla de Login adaptada a Viewport Móvil (390x844)"
+    },
+    {
+      "filename": "28_mobile_home_dashboard.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\28_mobile_home_dashboard.png",
+      "description": "Dashboard de inicio y bienvenida en Viewport Móvil"
+    },
+    {
+      "filename": "29_mobile_pth_detail.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\29_mobile_pth_detail.png",
+      "description": "Vista de PTH Más Parques con tarjetas móviles responsivas"
+    },
+    {
+      "filename": "30_mobile_continuidad_pamuss.png",
+      "path": "C:\\Users\\oyarc\\OneDrive - Universidad San Sebastian\\VCM\\Sistema Acceso Proyectos diplomado\\auditoria_capturas\\30_mobile_continuidad_pamuss.png",
+      "description": "Vista móvil de Proyecto de Continuidad PAMUSS"
+    }
+  ],
+  "logs": [
+    "[00:11:50] ================================================================",
+    "[00:11:50] INICIANDO AUDITORÍA INTEGRAL PLAYWRIGHT (MS EDGE) - PORTAL VCM USS",
+    "[00:11:50] ================================================================",
+    "[00:11:51] Navegador Microsoft Edge (Chromium) inicializado correctamente.",
+    "[00:11:51] --- TEST 1: Carga inicial y validación de LoginModal ---",
+    "[00:11:51] 📸 Captura guardada: 01_login_modal_desktop.png - Pantalla inicial con LoginModal institucional",
+    "[00:11:51] --- TEST 2: Manejo de error con RUT no válido (7.777.777-7) ---",
+    "[00:11:52] 📸 Captura guardada: 02_login_error_chilean_desktop.png - Validación de error con RUT no autorizado o inválido",
+    "[00:11:52] --- TEST 3: Login exitoso Estudiante Chileno (17.405.679-K) ---",
+    "[00:11:52] 📸 Captura guardada: 03_login_chilean_student_desktop.png - Sesión iniciada con estudiante nacional (Pilar Abuhadba)",
+    "[00:11:52] --- TEST 4: Verificación de nitidez de logos oficiales en Header y Banner ---",
+    "[00:11:52] 📸 Captura guardada: 04_home_banner_and_logos_desktop.png - Header y Banner de bienvenida con logos institucionales nítidos",
+    "[00:11:52] --- TEST 5: Cerrar sesión segura ---",
+    "[00:11:52] 📸 Captura guardada: 05_logout_screen_desktop.png - Retorno exitoso a la pantalla de Login tras cerrar sesión",
+    "[00:11:52] --- TEST 6: Login exitoso Estudiante Extranjero (Pasaporte B02454716) ---",
+    "[00:11:53] 📸 Captura guardada: 06_login_foreign_passport_desktop.png - Sesión iniciada con pasaporte extranjero (Rina Arana de Serrano)",
+    "[00:11:53] 📸 Captura guardada: 07_foreign_student_header_badge_desktop.png - Detalle de badge \"Estudiante Extranjero\" en Header",
+    "[00:11:53] --- TEST 7: Login exitoso Modo Administrador ---",
+    "[00:11:53] 📸 Captura guardada: 08_login_admin_password_desktop.png - Manejo de error con clave de administración errónea",
+    "[00:11:53] 📸 Captura guardada: 09_admin_dashboard_golden_badge_desktop.png - Dashboard activo en Modo Administrador con Badge Dorado",
+    "[00:11:53] --- TEST 8: Auditoría de los 5 Programas Territoriales Hito (PTH) ---",
+    "[00:11:53] 📸 Captura guardada: 10_pth_selector_desktop.png - Selector completo con los 5 PTH y 4 Proyectos Emblemáticos",
+    "[00:11:53] Entrando a PTH 1: Más Personas Mayores Activas...",
+    "[00:11:55] 📸 Captura guardada: 11_pth1_adulto_mayor_detail_desktop.png - Detalle de PTH Más Personas Mayores y navegación por pestañas",
+    "[00:11:55] Entrando a PTH 2: Más Azul...",
+    "[00:11:55] 📸 Captura guardada: 12_pth2_mas_azul_detail_desktop.png - Detalle de PTH Más Azul con matriz de proyectos e indicadores",
+    "[00:11:55] --- TEST 9: PTH 3 Más Parques y Auditoría Exhaustiva de Proyecto ID 4829 ---",
+    "[00:11:55] 📸 Captura guardada: 13_pth3_mas_parques_detail_desktop.png - Detalle de PTH Más Parques",
+    "[00:11:55] Abriendo Postulación ID 4829...",
+    "[00:11:55] 📸 Captura guardada: 14_pth3_mas_parques_project_4829_modal_desktop.png - Visor PDF con Formulario de Postulación ID 4829 cargado sin 404",
+    "[00:11:55] Abriendo Informe de Cierre ID 4829...",
+    "[00:11:56] 📸 Captura guardada: 15_pth3_project_4829_cierre_pdf_modal_desktop.png - Visor PDF con Informe de Cierre ID 4829 cargado sin 404",
+    "[00:11:56] Abriendo Encuesta de Estudiantes ID 4829...",
+    "[00:11:56] 📸 Captura guardada: 16_pth3_project_4829_encuesta_estudiantes_modal_desktop.png - Visor PDF con Encuesta de Estudiantes ID 4829 cargada sin 404",
+    "[00:11:56] Entrando a PTH 4: Más Turismo Sostenible...",
+    "[00:11:56] 📸 Captura guardada: 17_pth4_turismo_sostenible_detail_desktop.png - Detalle de PTH Más Turismo Sostenible",
+    "[00:11:56] Entrando a PTH 5: Más Sinergia Territorial...",
+    "[00:11:56] 📸 Captura guardada: 18_pth5_sinergia_territorial_detail_desktop.png - Detalle de PTH Más Sinergia Territorial",
+    "[00:11:56] --- TEST 10: Continuidad PAMUSS - Validación ID 4406 y estados de encuestas ---",
+    "[00:11:56] 📸 Captura guardada: 19_continuidad_pamuss_detail_desktop.png - Detalle de Continuidad PAMUSS con sus 5 versiones históricas",
+    "[00:11:56] 📸 Captura guardada: 20_continuidad_pamuss_id_4406_surveys_desktop.png - Tarjetas de evidencias de ID 4406 con botones Ver Encuesta activos",
+    "[00:11:56] Abriendo Encuesta de Estudiantes ID 4406...",
+    "[00:11:57] 📸 Captura guardada: 21_continuidad_pamuss_id_4406_encuesta_estudiantes_modal_desktop.png - Modal con Encuesta de Estudiantes ID 4406 en PAMUSS",
+    "[00:11:57] Abriendo Encuesta de Organizaciones ID 4406...",
+    "[00:11:57] 📸 Captura guardada: 22_continuidad_pamuss_id_4406_encuesta_org_modal_desktop.png - Modal con Encuesta de Organizaciones ID 4406 en PAMUSS",
+    "[00:11:57] Estado 'No aplicada' visible en ID 1742: true",
+    "[00:11:57] 📸 Captura guardada: 23_continuidad_pamuss_id_1742_no_aplicada_state_desktop.png - Versión ID 1742 mostrando estado \"No aplicada en este año\" en gris tenue",
+    "[00:11:57] --- TEST 11: Auditoría de Continuidad CET, Bomberos y Adolescentes ---",
+    "[00:11:57] 📸 Captura guardada: 24_continuidad_cet_reinsercion_desktop.png - Detalle de Continuidad CET con 4 versiones ejecutadas",
+    "[00:11:57] 📸 Captura guardada: 25_continuidad_bomberos_desktop.png - Detalle de Continuidad Bomberos con 5 versiones ejecutadas",
+    "[00:11:57] 📸 Captura guardada: 26_continuidad_adolescentes_desktop.png - Detalle de Continuidad Adolescentes con 5 versiones ejecutadas",
+    "[00:11:57] -------------------------------------------------------------",
+    "[00:11:57] FASE 2: AUDITORÍA EN VIEWPORT MOBILE (390x844)",
+    "[00:11:57] -------------------------------------------------------------",
+    "[00:11:58] --- TEST 12: Carga en vista móvil y Login ---",
+    "[00:11:58] 📸 Captura guardada: 27_mobile_login_view.png - Pantalla de Login adaptada a Viewport Móvil (390x844)",
+    "[00:11:59] 📸 Captura guardada: 28_mobile_home_dashboard.png - Dashboard de inicio y bienvenida en Viewport Móvil",
+    "[00:11:59] --- TEST 13: Detalle de PTH en vista móvil ---",
+    "[00:11:59] 📸 Captura guardada: 29_mobile_pth_detail.png - Vista de PTH Más Parques con tarjetas móviles responsivas",
+    "[00:11:59] --- TEST 14: Detalle de Continuidad PAMUSS en vista móvil ---",
+    "[00:11:59] 📸 Captura guardada: 30_mobile_continuidad_pamuss.png - Vista móvil de Proyecto de Continuidad PAMUSS",
+    "[00:11:59] -------------------------------------------------------------",
+    "[00:11:59] FASE 3: BARRIDO HTTP DIRECTO DE TODOS LOS 201 PDFs DEL CATÁLOGO",
+    "[00:11:59] -------------------------------------------------------------",
+    "[00:11:59] Verificando acceso HTTP de 182 PDFs únicos registrados...",
+    "[00:11:59] Resultado barrido HTTP de PDFs: 182 exitosos (200 OK), 0 errores.",
+    "[00:12:00] [Static Server] Servidor cerrado."
+  ],
+  "verdict": "APROBADO CON DISTINCIÓN MÁXIMA (0 ERRORES)"
+}

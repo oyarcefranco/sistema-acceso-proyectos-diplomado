@@ -9,6 +9,7 @@ import {
   Users, 
   GraduationCap
 } from 'lucide-react';
+import { getAssetUrl } from '../utils/assetHelper';
 
 export default function PDFModalViewer({ documentData, onClose }) {
   useEffect(() => {
@@ -33,9 +34,10 @@ export default function PDFModalViewer({ documentData, onClose }) {
     nombreDescarga 
   } = documentData;
 
-  const resolvedUrl = explicitArchivoUrl || (archivo ? (archivo.startsWith('/') ? archivo : '/' + archivo) : '');
-  const isReal = explicitIsRealPdf !== undefined ? explicitIsRealPdf : (Boolean(resolvedUrl) && resolvedUrl.toLowerCase().endsWith('.pdf'));
-  const effectiveDownloadName = nombreDescarga || (resolvedUrl ? resolvedUrl.split('/').pop() : `${tipo?.replace(/\s+/g, '_') || 'documento'}.pdf`);
+  const rawPath = explicitArchivoUrl || archivo;
+  const resolvedUrl = rawPath ? getAssetUrl(rawPath) : '';
+  const isReal = explicitIsRealPdf !== undefined ? explicitIsRealPdf : (Boolean(rawPath) && rawPath.toLowerCase().endsWith('.pdf'));
+  const effectiveDownloadName = nombreDescarga || (rawPath ? rawPath.split('/').pop() : `${tipo?.replace(/\s+/g, '_') || 'documento'}.pdf`);
 
   const handleDownload = () => {
     if (isReal && resolvedUrl) {
@@ -155,7 +157,7 @@ export default function PDFModalViewer({ documentData, onClose }) {
                 <div className="border-b-2 border-uss-navy pb-4 mb-6 flex items-start justify-between">
                   <div className="flex items-center gap-3">
                     <img 
-                      src="/logos/logo-vcm-uss.png" 
+                      src={getAssetUrl('logos/logo-vcm-uss.png')} 
                       alt="USS VcM" 
                       className="h-10 w-auto object-contain hidden sm:block p-1 bg-slate-50 rounded-lg border border-slate-200/80" 
                     />

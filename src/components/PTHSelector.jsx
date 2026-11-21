@@ -20,6 +20,7 @@ import {
   BarChart3,
   Archive
 } from 'lucide-react';
+import { getAssetUrl } from '../utils/assetHelper';
 
 const iconMap = {
   'pth-mas-personas-mayores': Users,
@@ -44,36 +45,56 @@ export default function PTHSelector({
       {/* ========================================================= */}
       <div className="bg-gradient-to-r from-uss-navy-deep via-uss-navy to-uss-blue rounded-3xl p-6 sm:p-8 text-white shadow-xl relative overflow-hidden">
         <div className="absolute -right-10 -bottom-10 w-64 h-64 bg-white/5 rounded-full blur-2xl pointer-events-none"></div>
-        <div className="relative z-10 max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-sky-200 text-xs font-semibold backdrop-blur-md mb-4 border border-white/10">
-            <Sparkles className="w-3.5 h-3.5 text-uss-yellow" />
-            <span>Diplomado en Vinculación con el Medio · Evaluación Final</span>
+        <div className="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-sky-200 text-xs font-semibold backdrop-blur-md mb-4 border border-white/10">
+              <Sparkles className="w-3.5 h-3.5 text-uss-yellow" />
+              <span>Diplomado en Vinculación con el Medio · Evaluación Final</span>
+            </div>
+
+            <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
+              Bienvenido/a, {user.nombre}
+            </h1>
+
+            {/* Texto Oficial Requerido por Consuelo ('Editar sistema.docx') */}
+            <p className="mt-2.5 text-sm sm:text-base text-slate-200 leading-relaxed font-normal">
+              Este portal consolida las evidencias oficiales de la iniciativa de VcM a evaluar. Pueden acceder y revisar los formularios de postulación de los Proyectos, los informes de avance y cierre y reportes de encuestas de estudiantes y organizaciones externas existentes.
+            </p>
+
+            <div className="mt-6 flex flex-wrap items-center gap-3 text-xs text-sky-100">
+              <div className="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-xl backdrop-blur-sm border border-white/10">
+                <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
+                <span>5 Programas Territoriales Hito (PTH)</span>
+              </div>
+              <div className="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-xl backdrop-blur-sm border border-white/10">
+                <History className="w-3.5 h-3.5 text-purple-300" />
+                <span>4 Proyectos Colaborativos Emblemáticos (19 Versiones Oficiales)</span>
+              </div>
+              {user.isAdmin && (
+                <div className="flex items-center gap-1.5 bg-amber-400/20 text-amber-200 px-3 py-1.5 rounded-xl backdrop-blur-sm border border-amber-400/30 font-bold">
+                  <ShieldCheck className="w-3.5 h-3.5 text-uss-yellow" />
+                  <span>Modo Administrador Activo</span>
+                </div>
+              )}
+            </div>
           </div>
 
-          <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
-            Bienvenido/a, {user.nombre}
-          </h1>
-
-          {/* Texto Oficial Requerido por Consuelo ('Editar sistema.docx') */}
-          <p className="mt-2.5 text-sm sm:text-base text-slate-200 leading-relaxed font-normal">
-            Este portal consolida las evidencias oficiales de la iniciativa de VcM a evaluar. Pueden acceder y revisar los formularios de postulación de los Proyectos, los informes de avance y cierre y reportes de encuestas de estudiantes y organizaciones externas existentes.
-          </p>
-
-          <div className="mt-6 flex flex-wrap items-center gap-3 text-xs text-sky-100">
-            <div className="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-xl backdrop-blur-sm border border-white/10">
-              <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
-              <span>5 Programas Territoriales Hito (PTH)</span>
-            </div>
-            <div className="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-xl backdrop-blur-sm border border-white/10">
-              <History className="w-3.5 h-3.5 text-purple-300" />
-              <span>4 Proyectos Colaborativos Emblemáticos (19 Informes Oficiales)</span>
-            </div>
-            {user.isAdmin && (
-              <div className="flex items-center gap-1.5 bg-amber-400/20 text-amber-200 px-3 py-1.5 rounded-xl backdrop-blur-sm border border-amber-400/30 font-bold">
-                <ShieldCheck className="w-3.5 h-3.5 text-uss-yellow" />
-                <span>Modo Administrador Activo</span>
-              </div>
-            )}
+          {/* Logo Institucional Oficial USS en el Banner */}
+          <div className="hidden lg:flex flex-col items-center justify-center p-5 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-inner flex-shrink-0 min-w-[200px]">
+            <img 
+              src={getAssetUrl('logos/logo-uss-white.png')} 
+              alt="Universidad San Sebastián" 
+              className="h-14 w-auto object-contain mb-2 drop-shadow-md"
+              onError={(e) => {
+                e.currentTarget.src = getAssetUrl('logos/logo-vcm-uss.png');
+              }}
+            />
+            <span className="text-[11px] font-extrabold uppercase tracking-widest text-sky-200 text-center">
+              Vinculación con el Medio
+            </span>
+            <span className="text-[9px] text-slate-300 tracking-wider uppercase mt-0.5">
+              Dirección General
+            </span>
           </div>
         </div>
       </div>

@@ -1,0 +1,1734 @@
+{
+  "logos": {
+    "logo-vcm-uss.png": {
+      "existe": true,
+      "tamano_bytes": 113277,
+      "es_valido": true,
+      "ruta_relativa": "logos/logo-vcm-uss.png"
+    },
+    "vcm-fondo-blanco.png": {
+      "existe": true,
+      "tamano_bytes": 52726,
+      "es_valido": true,
+      "ruta_relativa": "logos/vcm-fondo-blanco.png"
+    },
+    "logo-uss-white.png": {
+      "existe": true,
+      "tamano_bytes": 62313,
+      "es_valido": true,
+      "ruta_relativa": "logos/logo-uss-white.png"
+    },
+    "USS_VcM_logo_responsive.png": {
+      "existe": true,
+      "tamano_bytes": 33531,
+      "es_valido": true,
+      "ruta_relativa": "logos/USS_VcM_logo_responsive.png"
+    }
+  },
+  "continuidad": {
+    "programas": [
+      {
+        "id": "pc-garantias-salud-reinsercion",
+        "nombre": "Garantías en Salud y Promoción de Vida Sana para Personas en Proceso de Reinserción del CET",
+        "cantidad_versiones": 4
+      },
+      {
+        "id": "pc-mas-salud-bomberos",
+        "nombre": "Más Salud para Bomberos",
+        "cantidad_versiones": 5
+      },
+      {
+        "id": "pc-programa-adulto-mayor",
+        "nombre": "Programa del Adulto Mayor (PAMUSS)",
+        "cantidad_versiones": 5
+      },
+      {
+        "id": "pc-afectividad-salud-adolescentes",
+        "nombre": "Afectividad y Promoción de la Salud en Adolescentes",
+        "cantidad_versiones": 5
+      }
+    ],
+    "versiones_total": 19,
+    "encuestas_estudiantes": {
+      "disponibles": 14,
+      "no_disponibles": 5,
+      "verificados": 14,
+      "fallos": 0
+    },
+    "encuestas_organizaciones": {
+      "disponibles": 9,
+      "no_disponibles": 10,
+      "verificados": 9,
+      "fallos": 0
+    },
+    "detalle_versiones": [
+      {
+        "programa": "pc-garantias-salud-reinsercion",
+        "idNumero": "2057",
+        "ano": 2021,
+        "sede": "Concepción",
+        "archivo_principal_valido": true,
+        "estudiantes": {
+          "disponible": true,
+          "archivo": "documentos/continuidad/ID_2057/Encuesta_Estudiantes_ID_2057.pdf",
+          "estado": "Validado",
+          "tamano_bytes": 737140,
+          "paginas": 19,
+          "valido": true
+        },
+        "organizaciones": {
+          "disponible": false,
+          "archivo": null,
+          "estado": "No disponible",
+          "tamano_bytes": 0,
+          "paginas": 0,
+          "valido": true
+        }
+      },
+      {
+        "programa": "pc-garantias-salud-reinsercion",
+        "idNumero": "2671",
+        "ano": 2022,
+        "sede": "Concepción",
+        "archivo_principal_valido": true,
+        "estudiantes": {
+          "disponible": true,
+          "archivo": "documentos/continuidad/ID_2671/Encuesta_Estudiantes_ID_2671.pdf",
+          "estado": "Validado",
+          "tamano_bytes": 1071237,
+          "paginas": 21,
+          "valido": true
+        },
+        "organizaciones": {
+          "disponible": true,
+          "archivo": "documentos/continuidad/ID_2671/Encuesta_Organizaciones_ID_2671.pdf",
+          "estado": "Validado",
+          "tamano_bytes": 1032221,
+          "paginas": 24,
+          "valido": true
+        }
+      },
+      {
+        "programa": "pc-garantias-salud-reinsercion",
+        "idNumero": "3015",
+        "ano": 2023,
+        "sede": "Concepción",
+        "archivo_principal_valido": true,
+        "estudiantes": {
+          "disponible": true,
+          "archivo": "documentos/continuidad/ID_3015/Encuesta_Estudiantes_ID_3015.pdf",
+          "estado": "Validado",
+          "tamano_bytes": 868920,
+          "paginas": 19,
+          "valido": true
+        },
+        "organizaciones": {
+          "disponible": false,
+          "archivo": null,
+          "estado": "No disponible",
+          "tamano_bytes": 0,
+          "paginas": 0,
+          "valido": true
+        }
+      },
+      {
+        "programa": "pc-garantias-salud-reinsercion",
+        "idNumero": "4397",
+        "ano": 2025,
+        "sede": "Concepción",
+        "archivo_principal_valido": true,
+        "estudiantes": {
+          "disponible": true,
+          "archivo": "documentos/continuidad/ID_4397/Encuesta_Estudiantes_ID_4397.pdf",
+          "estado": "Validado",
+          "tamano_bytes": 996537,
+          "paginas": 25,
+          "valido": true
+        },
+        "organizaciones": {
+          "disponible": true,
+          "archivo": "documentos/continuidad/ID_4397/Encuesta_Organizaciones_ID_4397.pdf",
+          "estado": "Validado",
+          "tamano_bytes": 518785,
+          "paginas": 13,
+          "valido": true
+        }
+      },
+      {
+        "programa": "pc-mas-salud-bomberos",
+        "idNumero": "2451",
+        "ano": 2022,
+        "sede": "Patagonia",
+        "archivo_principal_valido": true,
+        "estudiantes": {
+          "disponible": true,
+          "archivo": "documentos/continuidad/ID_2451/Encuesta_Estudiantes_ID_2451.pdf",
+          "estado": "Validado",
+          "tamano_bytes": 1060171,
+          "paginas": 21,
+          "valido": true
+        },
+        "organizaciones": {
+          "disponible": true,
+          "archivo": "documentos/continuidad/ID_2451/Encuesta_Organizaciones_ID_2451.pdf",
+          "estado": "Validado",
+          "tamano_bytes": 1031854,
+          "paginas": 24,
+          "valido": true
+        }
+      },
+      {
+        "programa": "pc-mas-salud-bomberos",
+        "idNumero": "2765",
+        "ano": 2022,
+        "sede": "Patagonia",
+        "archivo_principal_valido": true,
+        "estudiantes": {
+          "disponible": false,
+          "archivo": null,
+          "estado": "No disponible",
+          "tamano_bytes": 0,
+          "paginas": 0,
+          "valido": true
+        },
+        "organizaciones": {
+          "disponible": false,
+          "archivo": null,
+          "estado": "No disponible",
+          "tamano_bytes": 0,
+          "paginas": 0,
+          "valido": true
+        }
+      },
+      {
+        "programa": "pc-mas-salud-bomberos",
+        "idNumero": "2986",
+        "ano": 2023,
+        "sede": "Patagonia",
+        "archivo_principal_valido": true,
+        "estudiantes": {
+          "disponible": true,
+          "archivo": "documentos/continuidad/ID_2986/Encuesta_Estudiantes_ID_2986.pdf",
+          "estado": "Validado",
+          "tamano_bytes": 839543,
+          "paginas": 19,
+          "valido": true
+        },
+        "organizaciones": {
+          "disponible": false,
+          "archivo": null,
+          "estado": "No disponible",
+          "tamano_bytes": 0,
+          "paginas": 0,
+          "valido": true
+        }
+      },
+      {
+        "programa": "pc-mas-salud-bomberos",
+        "idNumero": "3473",
+        "ano": 2024,
+        "sede": "Patagonia",
+        "archivo_principal_valido": true,
+        "estudiantes": {
+          "disponible": true,
+          "archivo": "documentos/continuidad/ID_3473/Encuesta_Estudiantes_ID_3473.pdf",
+          "estado": "Validado",
+          "tamano_bytes": 1261080,
+          "paginas": 33,
+          "valido": true
+        },
+        "organizaciones": {
+          "disponible": false,
+          "archivo": null,
+          "estado": "No disponible",
+          "tamano_bytes": 0,
+          "paginas": 0,
+          "valido": true
+        }
+      },
+      {
+        "programa": "pc-mas-salud-bomberos",
+        "idNumero": "4267",
+        "ano": 2025,
+        "sede": "Patagonia",
+        "archivo_principal_valido": true,
+        "estudiantes": {
+          "disponible": true,
+          "archivo": "documentos/continuidad/ID_4267/Encuesta_Estudiantes_ID_4267.pdf",
+          "estado": "Validado",
+          "tamano_bytes": 1007579,
+          "paginas": 25,
+          "valido": true
+        },
+        "organizaciones": {
+          "disponible": true,
+          "archivo": "documentos/continuidad/ID_4267/Encuesta_Organizaciones_ID_4267.pdf",
+          "estado": "Validado",
+          "tamano_bytes": 518591,
+          "paginas": 13,
+          "valido": true
+        }
+      },
+      {
+        "programa": "pc-programa-adulto-mayor",
+        "idNumero": "1742",
+        "ano": 2020,
+        "sede": "Valdivia",
+        "archivo_principal_valido": true,
+        "estudiantes": {
+          "disponible": false,
+          "archivo": null,
+          "estado": "No disponible",
+          "tamano_bytes": 0,
+          "paginas": 0,
+          "valido": true
+        },
+        "organizaciones": {
+          "disponible": false,
+          "archivo": null,
+          "estado": "No disponible",
+          "tamano_bytes": 0,
+          "paginas": 0,
+          "valido": true
+        }
+      },
+      {
+        "programa": "pc-programa-adulto-mayor",
+        "idNumero": "2115",
+        "ano": 2021,
+        "sede": "Valdivia",
+        "archivo_principal_valido": true,
+        "estudiantes": {
+          "disponible": false,
+          "archivo": null,
+          "estado": "No disponible",
+          "tamano_bytes": 0,
+          "paginas": 0,
+          "valido": true
+        },
+        "organizaciones": {
+          "disponible": false,
+          "archivo": null,
+          "estado": "No disponible",
+          "tamano_bytes": 0,
+          "paginas": 0,
+          "valido": true
+        }
+      },
+      {
+        "programa": "pc-programa-adulto-mayor",
+        "idNumero": "2580",
+        "ano": 2022,
+        "sede": "Valdivia",
+        "archivo_principal_valido": true,
+        "estudiantes": {
+          "disponible": true,
+          "archivo": "documentos/continuidad/ID_2580/Encuesta_Estudiantes_ID_2580.pdf",
+          "estado": "Validado",
+          "tamano_bytes": 1028552,
+          "paginas": 21,
+          "valido": true
+        },
+        "organizaciones": {
+          "disponible": true,
+          "archivo": "documentos/continuidad/ID_2580/Encuesta_Organizaciones_ID_2580.pdf",
+          "estado": "Validado",
+          "tamano_bytes": 1030310,
+          "paginas": 24,
+          "valido": true
+        }
+      },
+      {
+        "programa": "pc-programa-adulto-mayor",
+        "idNumero": "2974",
+        "ano": 2023,
+        "sede": "Valdivia",
+        "archivo_principal_valido": true,
+        "estudiantes": {
+          "disponible": true,
+          "archivo": "documentos/continuidad/ID_2974/Encuesta_Estudiantes_ID_2974.pdf",
+          "estado": "Validado",
+          "tamano_bytes": 836400,
+          "paginas": 19,
+          "valido": true
+        },
+        "organizaciones": {
+          "disponible": true,
+          "archivo": "documentos/continuidad/ID_2974/Encuesta_Organizaciones_ID_2974.pdf",
+          "estado": "Validado",
+          "tamano_bytes": 1031157,
+          "paginas": 24,
+          "valido": true
+        }
+      },
+      {
+        "programa": "pc-programa-adulto-mayor",
+        "idNumero": "4406",
+        "ano": 2025,
+        "sede": "Valdivia",
+        "archivo_principal_valido": true,
+        "estudiantes": {
+          "disponible": true,
+          "archivo": "documentos/continuidad/ID_4406/Encuesta_Estudiantes_ID_4406.pdf",
+          "estado": "Validado",
+          "tamano_bytes": 989272,
+          "paginas": 25,
+          "valido": true
+        },
+        "organizaciones": {
+          "disponible": true,
+          "archivo": "documentos/continuidad/ID_4406/Encuesta_Organizaciones_ID_4406.pdf",
+          "estado": "Validado",
+          "tamano_bytes": 526769,
+          "paginas": 13,
+          "valido": true
+        }
+      },
+      {
+        "programa": "pc-afectividad-salud-adolescentes",
+        "idNumero": "2050",
+        "ano": 2021,
+        "sede": "Santiago",
+        "archivo_principal_valido": true,
+        "estudiantes": {
+          "disponible": false,
+          "archivo": null,
+          "estado": "No disponible",
+          "tamano_bytes": 0,
+          "paginas": 0,
+          "valido": true
+        },
+        "organizaciones": {
+          "disponible": false,
+          "archivo": null,
+          "estado": "No disponible",
+          "tamano_bytes": 0,
+          "paginas": 0,
+          "valido": true
+        }
+      },
+      {
+        "programa": "pc-afectividad-salud-adolescentes",
+        "idNumero": "2648",
+        "ano": 2022,
+        "sede": "Santiago",
+        "archivo_principal_valido": true,
+        "estudiantes": {
+          "disponible": true,
+          "archivo": "documentos/continuidad/ID_2648/Encuesta_Estudiantes_ID_2648.pdf",
+          "estado": "Validado",
+          "tamano_bytes": 1057761,
+          "paginas": 21,
+          "valido": true
+        },
+        "organizaciones": {
+          "disponible": false,
+          "archivo": null,
+          "estado": "No disponible",
+          "tamano_bytes": 0,
+          "paginas": 0,
+          "valido": true
+        }
+      },
+      {
+        "programa": "pc-afectividad-salud-adolescentes",
+        "idNumero": "3211",
+        "ano": 2023,
+        "sede": "Santiago",
+        "archivo_principal_valido": true,
+        "estudiantes": {
+          "disponible": false,
+          "archivo": null,
+          "estado": "No disponible",
+          "tamano_bytes": 0,
+          "paginas": 0,
+          "valido": true
+        },
+        "organizaciones": {
+          "disponible": false,
+          "archivo": null,
+          "estado": "No disponible",
+          "tamano_bytes": 0,
+          "paginas": 0,
+          "valido": true
+        }
+      },
+      {
+        "programa": "pc-afectividad-salud-adolescentes",
+        "idNumero": "3623",
+        "ano": 2024,
+        "sede": "Santiago",
+        "archivo_principal_valido": true,
+        "estudiantes": {
+          "disponible": true,
+          "archivo": "documentos/continuidad/ID_3623/Encuesta_Estudiantes_ID_3623.pdf",
+          "estado": "Validado",
+          "tamano_bytes": 1218875,
+          "paginas": 33,
+          "valido": true
+        },
+        "organizaciones": {
+          "disponible": true,
+          "archivo": "documentos/continuidad/ID_3623/Encuesta_Organizaciones_ID_3623.pdf",
+          "estado": "Validado",
+          "tamano_bytes": 645743,
+          "paginas": 17,
+          "valido": true
+        }
+      },
+      {
+        "programa": "pc-afectividad-salud-adolescentes",
+        "idNumero": "4303",
+        "ano": 2025,
+        "sede": "Santiago",
+        "archivo_principal_valido": true,
+        "estudiantes": {
+          "disponible": true,
+          "archivo": "documentos/continuidad/ID_4303/Encuesta_Estudiantes_ID_4303.pdf",
+          "estado": "Validado",
+          "tamano_bytes": 960410,
+          "paginas": 25,
+          "valido": true
+        },
+        "organizaciones": {
+          "disponible": true,
+          "archivo": "documentos/continuidad/ID_4303/Encuesta_Organizaciones_ID_4303.pdf",
+          "estado": "Validado",
+          "tamano_bytes": 521333,
+          "paginas": 13,
+          "valido": true
+        }
+      }
+    ]
+  },
+  "pth": {
+    "total_pths": 5,
+    "total_proyectos": 64,
+    "proyectos_auditados": [
+      {
+        "id": "3428",
+        "nombre": "Acompañamiento integral del paciente oncológico y familia III Versión.",
+        "ano": 2024,
+        "pth": "PTH-MPMA",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_3428.pdf",
+            "valido": true,
+            "tamano": 1766030,
+            "paginas": 13
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_3428.pdf",
+            "valido": true,
+            "tamano": 2955346,
+            "paginas": 19
+          }
+        }
+      },
+      {
+        "id": "3434",
+        "nombre": "Salud mental en personas mayores",
+        "ano": 2024,
+        "pth": "PTH-MPMA",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_3434.pdf",
+            "valido": true,
+            "tamano": 2113235,
+            "paginas": 16
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_3434.pdf",
+            "valido": true,
+            "tamano": 3185306,
+            "paginas": 19
+          }
+        }
+      },
+      {
+        "id": "3440",
+        "nombre": "Fortaleciendo el bienestar y cuidado integral de la persona mayor institucionalizada",
+        "ano": 2024,
+        "pth": "PTH-MPMA",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_3440.pdf",
+            "valido": true,
+            "tamano": 1977936,
+            "paginas": 15
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_3440.pdf",
+            "valido": true,
+            "tamano": 2692726,
+            "paginas": 17
+          }
+        }
+      },
+      {
+        "id": "3442",
+        "nombre": "Fortalecimiento de la red social de Personas Mayores del CVT de San José de la Mariquina",
+        "ano": 2024,
+        "pth": "PTH-MPMA",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_3442.pdf",
+            "valido": true,
+            "tamano": 2036968,
+            "paginas": 15
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_3442.pdf",
+            "valido": true,
+            "tamano": 2708595,
+            "paginas": 18
+          }
+        }
+      },
+      {
+        "id": "3568",
+        "nombre": "Vitalidad Dorada: Salud y bienestar a través de una intervención interdisciplinar.",
+        "ano": 2024,
+        "pth": "PTH-MPMA",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_3568.pdf",
+            "valido": true,
+            "tamano": 2172437,
+            "paginas": 16
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_3568.pdf",
+            "valido": true,
+            "tamano": 4565869,
+            "paginas": 32
+          }
+        }
+      },
+      {
+        "id": "3583",
+        "nombre": "Programa piloto de atención farmacéutica: una mirada integral desde los fármacos a la alimentación",
+        "ano": 2024,
+        "pth": "PTH-MPMA",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_3583.pdf",
+            "valido": true,
+            "tamano": 1949202,
+            "paginas": 15
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_3583.pdf",
+            "valido": true,
+            "tamano": 2333442,
+            "paginas": 16
+          }
+        }
+      },
+      {
+        "id": "3995",
+        "nombre": "\"Conociendo mis capacidades para mantenerme independiente\"",
+        "ano": 2024,
+        "pth": "PTH-MPMA",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_3995.pdf",
+            "valido": true,
+            "tamano": 1530592,
+            "paginas": 11
+          }
+        }
+      },
+      {
+        "id": "4002",
+        "nombre": "Promoviendo la salud integral de personas mayores del ELEAM Los Ríos de Valdivia.",
+        "ano": 2024,
+        "pth": "PTH-MPMA",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_4002.pdf",
+            "valido": true,
+            "tamano": 1490682,
+            "paginas": 11
+          }
+        }
+      },
+      {
+        "id": "4003",
+        "nombre": "La aplicación de la tecnología digital para mejorar la cognición de las personas mayores.",
+        "ano": 2024,
+        "pth": "PTH-MPMA",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_4003.pdf",
+            "valido": true,
+            "tamano": 2085537,
+            "paginas": 16
+          }
+        }
+      },
+      {
+        "id": "4211",
+        "nombre": "Conociendo mis capacidades para mantenerme independiente",
+        "ano": 2025,
+        "pth": "PTH-MPMA",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_4211.pdf",
+            "valido": true,
+            "tamano": 1861639,
+            "paginas": 14
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_4211.pdf",
+            "valido": true,
+            "tamano": 3020198,
+            "paginas": 19
+          }
+        }
+      },
+      {
+        "id": "4235",
+        "nombre": "Escuela de Cuidadores: Una formación integral para asistentes del cuidado de la Región de los Ríos",
+        "ano": 2025,
+        "pth": "PTH-MPMA",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_4235.pdf",
+            "valido": true,
+            "tamano": 2093111,
+            "paginas": 15
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_4235.pdf",
+            "valido": true,
+            "tamano": 3345546,
+            "paginas": 20
+          }
+        }
+      },
+      {
+        "id": "4406",
+        "nombre": "Programa del Adulto Mayor de la Universidad San Sebastián 2025",
+        "ano": 2025,
+        "pth": "PTH-MPMA",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_4406.pdf",
+            "valido": true,
+            "tamano": 2257097,
+            "paginas": 16
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_4406.pdf",
+            "valido": true,
+            "tamano": 3025321,
+            "paginas": 19
+          }
+        }
+      },
+      {
+        "id": "4447",
+        "nombre": "Acompañamiento integral del paciente oncológico y familia IV versión.",
+        "ano": 2025,
+        "pth": "PTH-MPMA",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_4447.pdf",
+            "valido": true,
+            "tamano": 3115399,
+            "paginas": 23
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_4447.pdf",
+            "valido": true,
+            "tamano": 3390842,
+            "paginas": 21
+          }
+        }
+      },
+      {
+        "id": "4509",
+        "nombre": "Vitalidad Dorada II: Investigación y acción interdisciplinar. Consolidando resultados para el bienestar.",
+        "ano": 2025,
+        "pth": "PTH-MPMA",
+        "docs": {}
+      },
+      {
+        "id": "4605",
+        "nombre": "Centinela nos acerca a Las Coloradas",
+        "ano": 2025,
+        "pth": "PTH-MPMA",
+        "docs": {}
+      },
+      {
+        "id": "4631",
+        "nombre": "Torrencial: Más personas mayores activas, v2",
+        "ano": 2025,
+        "pth": "PTH-MPMA",
+        "docs": {}
+      },
+      {
+        "id": "4692",
+        "nombre": "Valdivia Sonríe con CARITAS",
+        "ano": 2025,
+        "pth": "PTH-MPMA",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_4692.pdf",
+            "valido": true,
+            "tamano": 3251019,
+            "paginas": 26
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_4692.pdf",
+            "valido": true,
+            "tamano": 3070154,
+            "paginas": 20
+          }
+        }
+      },
+      {
+        "id": "4709",
+        "nombre": "Más AMA Valdivia, con una sonrisa a la vida del Adulto Mayor",
+        "ano": 2025,
+        "pth": "PTH-MPMA",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_4709.pdf",
+            "valido": true,
+            "tamano": 2528706,
+            "paginas": 20
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_4709.pdf",
+            "valido": true,
+            "tamano": 3629150,
+            "paginas": 24
+          }
+        }
+      },
+      {
+        "id": "4746",
+        "nombre": "Fortalecimiento de la red social de Personas Mayores del Condominio de Viviendas Tuteladas de la comuna  Río Bueno",
+        "ano": 2025,
+        "pth": "PTH-MPMA",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_4746.pdf",
+            "valido": true,
+            "tamano": 2429495,
+            "paginas": 19
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_4746.pdf",
+            "valido": true,
+            "tamano": 2299096,
+            "paginas": 15
+          }
+        }
+      },
+      {
+        "id": "4786",
+        "nombre": "Más sonrisas y salud integral en personas mayores del ELEAM Los Ríos de Valdivia.",
+        "ano": 2025,
+        "pth": "PTH-MPMA",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_4786.pdf",
+            "valido": true,
+            "tamano": 1470894,
+            "paginas": 11
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_4786.pdf",
+            "valido": true,
+            "tamano": 2143687,
+            "paginas": 14
+          }
+        }
+      },
+      {
+        "id": "4832",
+        "nombre": "RED CuiDEM: Fortaleciendo la Atención Integral a Personas con Demencia en Valdivia (Apoyo al GES 85).",
+        "ano": 2025,
+        "pth": "PTH-MPMA",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_4832.pdf",
+            "valido": true,
+            "tamano": 2074963,
+            "paginas": 16
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_4832.pdf",
+            "valido": true,
+            "tamano": 3598573,
+            "paginas": 27
+          }
+        }
+      },
+      {
+        "id": "4835",
+        "nombre": "Fortaleciendo el bienestar y cuidado integral de la persona mayor institucionalizada 2025.",
+        "ano": 2025,
+        "pth": "PTH-MPMA",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/postulacion/Postulacion_ID_4835.pdf",
+            "valido": true,
+            "tamano": 2026994,
+            "paginas": 15
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-personas-mayores/cierre/Informe_Cierre_ID_4835.pdf",
+            "valido": true,
+            "tamano": 2626838,
+            "paginas": 16
+          }
+        }
+      },
+      {
+        "id": "4930",
+        "nombre": "Tejiendo Bienestar para un Envejecimiento Saludable",
+        "ano": 2025,
+        "pth": "PTH-MPMA",
+        "docs": {}
+      },
+      {
+        "id": "3480",
+        "nombre": "Evaluación técnica, económica y de interacción social del Huillín-Guardián.",
+        "ano": 2024,
+        "pth": "PTH-MAZ",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-azul/postulacion/Postulacion_ID_3480.pdf",
+            "valido": true,
+            "tamano": 1743255,
+            "paginas": 13
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-azul/cierre/Informe_Cierre_ID_3480.pdf",
+            "valido": true,
+            "tamano": 3097790,
+            "paginas": 23
+          },
+          "encuestaEstudiantes": {
+            "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_3480.pdf",
+            "valido": true,
+            "tamano": 1224955,
+            "paginas": 33
+          }
+        }
+      },
+      {
+        "id": "3485",
+        "nombre": "Vigías del Mar 2.0",
+        "ano": 2024,
+        "pth": "PTH-MAZ",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-azul/postulacion/Postulacion_ID_3485.pdf",
+            "valido": true,
+            "tamano": 1890957,
+            "paginas": 13
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-azul/cierre/Informe_Cierre_ID_3485.pdf",
+            "valido": true,
+            "tamano": 2552351,
+            "paginas": 17
+          },
+          "encuestaEstudiantes": {
+            "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_3485.pdf",
+            "valido": true,
+            "tamano": 1198440,
+            "paginas": 33
+          }
+        }
+      },
+      {
+        "id": "3557",
+        "nombre": "Caracterización participativa de las descargas residuales del Hospital de Puerto Montt para apoyar la formación científica de estudiantes de Química y Farmacia y Medicina Veterinaria de la sede de La Patagonia",
+        "ano": 2024,
+        "pth": "PTH-MAZ",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-azul/postulacion/Postulacion_ID_3557.pdf",
+            "valido": true,
+            "tamano": 1507231,
+            "paginas": 11
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-azul/cierre/Informe_Cierre_ID_3557.pdf",
+            "valido": true,
+            "tamano": 2051691,
+            "paginas": 13
+          },
+          "encuestaEstudiantes": {
+            "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_3557.pdf",
+            "valido": true,
+            "tamano": 1278198,
+            "paginas": 33
+          }
+        }
+      },
+      {
+        "id": "3574",
+        "nombre": "Desperdicio Cero",
+        "ano": 2024,
+        "pth": "PTH-MAZ",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-azul/postulacion/Postulacion_ID_3574.pdf",
+            "valido": true,
+            "tamano": 2415878,
+            "paginas": 19
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-azul/cierre/Informe_Cierre_ID_3574.pdf",
+            "valido": true,
+            "tamano": 2909829,
+            "paginas": 20
+          }
+        }
+      },
+      {
+        "id": "3781",
+        "nombre": "Sistema de monitoreo sobre la calidad del agua en el Lago Puyehue",
+        "ano": 2024,
+        "pth": "PTH-MAZ",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-azul/postulacion/Postulacion_ID_3781.pdf",
+            "valido": true,
+            "tamano": 1868785,
+            "paginas": 14
+          },
+          "encuestaEstudiantes": {
+            "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_3781.pdf",
+            "valido": true,
+            "tamano": 1258455,
+            "paginas": 33
+          },
+          "encuestaOrganizaciones": {
+            "archivo": "documentos/pth/pth-mas-azul/encuestas-organizaciones/Encuesta_Organizaciones_ID_3781.pdf",
+            "valido": true,
+            "tamano": 638412,
+            "paginas": 17
+          }
+        }
+      },
+      {
+        "id": "3970",
+        "nombre": "Laboratorio científico al aíre libre: Humedal Urbano Luis Ebel como modelo de enseñanza para la ciencia y la educación medioambiental",
+        "ano": 2024,
+        "pth": "PTH-MAZ",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-azul/postulacion/Postulacion_ID_3970.pdf",
+            "valido": true,
+            "tamano": 1489193,
+            "paginas": 11
+          },
+          "encuestaEstudiantes": {
+            "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_3970.pdf",
+            "valido": true,
+            "tamano": 1248932,
+            "paginas": 33
+          }
+        }
+      },
+      {
+        "id": "4242",
+        "nombre": "Estrategias para la mitigación de la contaminación por plásticos en el Seno de Reloncaví: Integrando investigación internacional y políticas públicas para la conservación ambiental.",
+        "ano": 2025,
+        "pth": "PTH-MAZ",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-azul/postulacion/Postulacion_ID_4242.pdf",
+            "valido": true,
+            "tamano": 2558728,
+            "paginas": 19
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-azul/cierre/Informe_Cierre_ID_4242.pdf",
+            "valido": true,
+            "tamano": 3827201,
+            "paginas": 27
+          },
+          "encuestaEstudiantes": {
+            "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_4242.pdf",
+            "valido": true,
+            "tamano": 1013919,
+            "paginas": 25
+          }
+        }
+      },
+      {
+        "id": "4261",
+        "nombre": "Lagoenlinea 2.0: Un enfoque integral para la gestión y conservación de los ecosistemas lacustres.",
+        "ano": 2025,
+        "pth": "PTH-MAZ",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-azul/postulacion/Postulacion_ID_4261.pdf",
+            "valido": true,
+            "tamano": 2778662,
+            "paginas": 22
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-azul/cierre/Informe_Cierre_ID_4261.pdf",
+            "valido": true,
+            "tamano": 4058598,
+            "paginas": 30
+          },
+          "encuestaEstudiantes": {
+            "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_4261.pdf",
+            "valido": true,
+            "tamano": 1048760,
+            "paginas": 25
+          }
+        }
+      },
+      {
+        "id": "4437",
+        "nombre": "Desperdicio Cero II: Patagonia Sustentabilidad en Acción",
+        "ano": 2025,
+        "pth": "PTH-MAZ",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-azul/postulacion/Postulacion_ID_4437.pdf",
+            "valido": true,
+            "tamano": 4318818,
+            "paginas": 34
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-azul/cierre/Informe_Cierre_ID_4437.pdf",
+            "valido": true,
+            "tamano": 4106417,
+            "paginas": 28
+          },
+          "encuestaEstudiantes": {
+            "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_4437.pdf",
+            "valido": true,
+            "tamano": 967908,
+            "paginas": 25
+          }
+        }
+      },
+      {
+        "id": "4463",
+        "nombre": "Impacto de la permisología en la implementación de infraestructura verde en la región de los lagos: una exploración interdisciplinaria",
+        "ano": 2025,
+        "pth": "PTH-MAZ",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-azul/postulacion/Postulacion_ID_4463.pdf",
+            "valido": true,
+            "tamano": 1926009,
+            "paginas": 13
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-azul/cierre/Informe_Cierre_ID_4463.pdf",
+            "valido": true,
+            "tamano": 3121275,
+            "paginas": 21
+          }
+        }
+      },
+      {
+        "id": "4735",
+        "nombre": "Ecos del Sur: Relatos de Hualaihué",
+        "ano": 2025,
+        "pth": "PTH-MAZ",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-azul/postulacion/Postulacion_ID_4735.pdf",
+            "valido": true,
+            "tamano": 2212181,
+            "paginas": 15
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-azul/cierre/Informe_Cierre_ID_4735.pdf",
+            "valido": true,
+            "tamano": 2294326,
+            "paginas": 15
+          },
+          "encuestaEstudiantes": {
+            "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_4735.pdf",
+            "valido": true,
+            "tamano": 996007,
+            "paginas": 25
+          }
+        }
+      },
+      {
+        "id": "3393",
+        "nombre": "Observatorio Socioecológico de los Parques de la Patagonia: Caso PN Alerce Andino",
+        "ano": 2024,
+        "pth": "PTH-MPQ",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-parques/postulacion/Postulacion_ID_3393.pdf",
+            "valido": true,
+            "tamano": 1950263,
+            "paginas": 14
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-parques/cierre/Informe_Cierre_ID_3393.pdf",
+            "valido": true,
+            "tamano": 2738789,
+            "paginas": 17
+          },
+          "encuestaEstudiantes": {
+            "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_3393.pdf",
+            "valido": true,
+            "tamano": 1194296,
+            "paginas": 33
+          }
+        }
+      },
+      {
+        "id": "3527",
+        "nombre": "Turberas de Púlpito: diseño de infraestructuras de bajo impacto en humedales protegidos",
+        "ano": 2024,
+        "pth": "PTH-MPQ",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-parques/postulacion/Postulacion_ID_3527.pdf",
+            "valido": true,
+            "tamano": 1546111,
+            "paginas": 11
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-parques/cierre/Informe_Cierre_ID_3527.pdf",
+            "valido": true,
+            "tamano": 2463030,
+            "paginas": 16
+          },
+          "encuestaEstudiantes": {
+            "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_3527.pdf",
+            "valido": true,
+            "tamano": 638317,
+            "paginas": 17
+          }
+        }
+      },
+      {
+        "id": "3827",
+        "nombre": "\"TE FALTA SUR\", creando conciencia sobre el impacto que el contacto con la naturaleza (Vitamina \"N\") genera en la salud y bienestar de las personas",
+        "ano": 2024,
+        "pth": "PTH-MPQ",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-parques/postulacion/Postulacion_ID_3827.pdf",
+            "valido": true,
+            "tamano": 2006232,
+            "paginas": 14
+          },
+          "encuestaEstudiantes": {
+            "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_3827.pdf",
+            "valido": true,
+            "tamano": 1226577,
+            "paginas": 33
+          }
+        }
+      },
+      {
+        "id": "4436",
+        "nombre": "PUERTO MONTT 2050. Prospectivas y proyectos de infraestructura verde y cultural para la construcción participativa de la Visión de Ciudad",
+        "ano": 2025,
+        "pth": "PTH-MPQ",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-parques/postulacion/Postulacion_ID_4436.pdf",
+            "valido": true,
+            "tamano": 2594247,
+            "paginas": 19
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-parques/cierre/Informe_Cierre_ID_4436.pdf",
+            "valido": true,
+            "tamano": 5044411,
+            "paginas": 32
+          },
+          "encuestaEstudiantes": {
+            "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_4436.pdf",
+            "valido": true,
+            "tamano": 1008146,
+            "paginas": 25
+          }
+        }
+      },
+      {
+        "id": "4576",
+        "nombre": "Vive consciente, Educación Financiera y emprendimiento para todos.",
+        "ano": 2025,
+        "pth": "PTH-MPQ",
+        "docs": {
+          "encuestaEstudiantes": {
+            "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_4576.pdf",
+            "valido": true,
+            "tamano": 1013689,
+            "paginas": 25
+          }
+        }
+      },
+      {
+        "id": "4733",
+        "nombre": "Fortalecimiento del programa piloto de separación de residuos orgánicos y compostaje mediante una alianza entre la Universidad San Sebastián y la Ilustre Municipalidad de Puerto Montt",
+        "ano": 2025,
+        "pth": "PTH-MPQ",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-parques/postulacion/Postulacion_ID_4733.pdf",
+            "valido": true,
+            "tamano": 2361256,
+            "paginas": 19
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-parques/cierre/Informe_Cierre_ID_4733.pdf",
+            "valido": true,
+            "tamano": 2509800,
+            "paginas": 17
+          },
+          "encuestaEstudiantes": {
+            "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_4733.pdf",
+            "valido": true,
+            "tamano": 518733,
+            "paginas": 13
+          }
+        }
+      },
+      {
+        "id": "4829",
+        "nombre": "Observatorio Socioecológico de los Parques de la Patagonia - Caso PN Hornopirén",
+        "ano": 2025,
+        "pth": "PTH-MPQ",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-parques/postulacion/Postulacion_ID_4829.pdf",
+            "valido": true,
+            "tamano": 1656118,
+            "paginas": 12
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-parques/cierre/Informe_Cierre_ID_4829.pdf",
+            "valido": true,
+            "tamano": 1977960,
+            "paginas": 13
+          },
+          "encuestaEstudiantes": {
+            "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_4829.pdf",
+            "valido": true,
+            "tamano": 974822,
+            "paginas": 25
+          }
+        }
+      },
+      {
+        "id": "4925",
+        "nombre": "Arquitectura para aves | Sistemas estructurales aplicados",
+        "ano": 2025,
+        "pth": "PTH-MPQ",
+        "docs": {
+          "encuestaEstudiantes": {
+            "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_4925.pdf",
+            "valido": true,
+            "tamano": 518837,
+            "paginas": 13
+          }
+        }
+      },
+      {
+        "id": "4927",
+        "nombre": "Día de los Cerros 2025: Jornada de Croquis Patrimonial, de Casa Pauly al Cerro Campanario.",
+        "ano": 2025,
+        "pth": "PTH-MPQ",
+        "docs": {
+          "encuestaEstudiantes": {
+            "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_4927.pdf",
+            "valido": true,
+            "tamano": 518682,
+            "paginas": 13
+          }
+        }
+      },
+      {
+        "id": "4935",
+        "nombre": "Turberas de Púlpito: workshop internacional \"Raíces y Oficios\"",
+        "ano": 2025,
+        "pth": "PTH-MPQ",
+        "docs": {}
+      },
+      {
+        "id": "3456",
+        "nombre": "EVALUACIÓN DE SOSTENIBILIDAD PARA LA GESTIÓN DE DESTINOS TURÍSTICOS",
+        "ano": 2024,
+        "pth": "PTH-MTS",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-turismo-sostenible/postulacion/Postulacion_ID_3456.pdf",
+            "valido": true,
+            "tamano": 2526373,
+            "paginas": 17
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-turismo-sostenible/cierre/Informe_Cierre_ID_3456.pdf",
+            "valido": true,
+            "tamano": 3078749,
+            "paginas": 22
+          }
+        }
+      },
+      {
+        "id": "3501",
+        "nombre": "RUTA TURÍSTICA INTERACTIVA: FORTALECIMIENTO DE LA IDENTIDAD DE UN DESTINO, APLICADO A TAGUA TAGUA - ALMAHUE",
+        "ano": 2024,
+        "pth": "PTH-MTS",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-turismo-sostenible/postulacion/Postulacion_ID_3501.pdf",
+            "valido": true,
+            "tamano": 2430378,
+            "paginas": 14
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-turismo-sostenible/cierre/Informe_Cierre_ID_3501.pdf",
+            "valido": true,
+            "tamano": 2475324,
+            "paginas": 16
+          }
+        }
+      },
+      {
+        "id": "3645",
+        "nombre": "Elaboración de acciones de buenas de prácticas constructivas sustentables para alojamientos de montaña, que identifiquen e incorporen acciones en su materialidad que puedan ser utilizadas por Direcciones de Obras Municipales u otras instituciones de indole nacional. Caso Pueblo Farellones",
+        "ano": 2024,
+        "pth": "PTH-MTS",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-turismo-sostenible/postulacion/Postulacion_ID_3645.pdf",
+            "valido": true,
+            "tamano": 1859344,
+            "paginas": 13
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-turismo-sostenible/cierre/Informe_Cierre_ID_3645.pdf",
+            "valido": true,
+            "tamano": 2222339,
+            "paginas": 15
+          }
+        }
+      },
+      {
+        "id": "4372",
+        "nombre": "Monitoreo de Sostenibilidad y de Proyectos Turísticos de Destinos",
+        "ano": 2025,
+        "pth": "PTH-MTS",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-turismo-sostenible/postulacion/Postulacion_ID_4372.pdf",
+            "valido": true,
+            "tamano": 2174107,
+            "paginas": 15
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-turismo-sostenible/cierre/Informe_Cierre_ID_4372.pdf",
+            "valido": true,
+            "tamano": 2312285,
+            "paginas": 16
+          }
+        }
+      },
+      {
+        "id": "4373",
+        "nombre": "Fortalecimiento de la Gestión Turística Municipal. Fase Avanzada",
+        "ano": 2025,
+        "pth": "PTH-MTS",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-turismo-sostenible/postulacion/Postulacion_ID_4373.pdf",
+            "valido": true,
+            "tamano": 2244904,
+            "paginas": 15
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-turismo-sostenible/cierre/Informe_Cierre_ID_4373.pdf",
+            "valido": true,
+            "tamano": 2615755,
+            "paginas": 19
+          }
+        }
+      },
+      {
+        "id": "4400",
+        "nombre": "CERRO EDUCA: HABILITACIÓN DE SENDEROS PARA LA EDUCACIÓN AMBIENTAL",
+        "ano": 2025,
+        "pth": "PTH-MTS",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-turismo-sostenible/postulacion/Postulacion_ID_4400.pdf",
+            "valido": true,
+            "tamano": 2273880,
+            "paginas": 18
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-turismo-sostenible/cierre/Informe_Cierre_ID_4400.pdf",
+            "valido": true,
+            "tamano": 3050718,
+            "paginas": 21
+          }
+        }
+      },
+      {
+        "id": "4584",
+        "nombre": "Ruta Turística Interactiva: Fortalecimiento de la identidad de un destino, aplicado a navidad",
+        "ano": 2025,
+        "pth": "PTH-MTS",
+        "docs": {}
+      },
+      {
+        "id": "4954",
+        "nombre": "Rehabilitación Ecoturística del Parque Ñilhue, sendero y sector Vallecito",
+        "ano": 2025,
+        "pth": "PTH-MTS",
+        "docs": {}
+      },
+      {
+        "id": "3605",
+        "nombre": "LABORATORIOS VIRTUALES PARA LA EDUCACIÓN EN CIENCIAS - REGIÓN DE LOS RÍOS",
+        "ano": 2024,
+        "pth": "PTH-MST",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/postulacion/Postulacion_ID_3605.pdf",
+            "valido": true,
+            "tamano": 2090924,
+            "paginas": 14
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/cierre/Informe_Cierre_ID_3605.pdf",
+            "valido": true,
+            "tamano": 1947584,
+            "paginas": 13
+          }
+        }
+      },
+      {
+        "id": "4259",
+        "nombre": "Centro de biomasa comunitario: innovación local en Corral",
+        "ano": 2025,
+        "pth": "PTH-MST",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/postulacion/Postulacion_ID_4259.pdf",
+            "valido": true,
+            "tamano": 1052959,
+            "paginas": 8
+          }
+        }
+      },
+      {
+        "id": "4428",
+        "nombre": "DESCUBRIENDO EL MUNDO FINANCIERO, matemáticas para el futuro",
+        "ano": 2025,
+        "pth": "PTH-MST",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/postulacion/Postulacion_ID_4428.pdf",
+            "valido": true,
+            "tamano": 2238634,
+            "paginas": 17
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/cierre/Informe_Cierre_ID_4428.pdf",
+            "valido": true,
+            "tamano": 3033338,
+            "paginas": 20
+          }
+        }
+      },
+      {
+        "id": "4432",
+        "nombre": "ROBÓTICA EDUCATIVA DESDE EL ENFOQUE STEAM: Una oportunidad para reducir brechas de género en el aprendizaje lógico matemático.",
+        "ano": 2025,
+        "pth": "PTH-MST",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/postulacion/Postulacion_ID_4432.pdf",
+            "valido": true,
+            "tamano": 2937991,
+            "paginas": 23
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/cierre/Informe_Cierre_ID_4432.pdf",
+            "valido": true,
+            "tamano": 3292879,
+            "paginas": 22
+          }
+        }
+      },
+      {
+        "id": "4629",
+        "nombre": "Emerge Chile desde Paillaco y Los Lagos",
+        "ano": 2025,
+        "pth": "PTH-MST",
+        "docs": {}
+      },
+      {
+        "id": "4633",
+        "nombre": "Los pequeños cultivadores: Huertos escolares en Valdivia",
+        "ano": 2025,
+        "pth": "PTH-MST",
+        "docs": {}
+      },
+      {
+        "id": "4673",
+        "nombre": "Diagnóstico y educación comunitaria sobre alimentación y uso del agua en población infantil y adulta mayor en sector Rural de la Aguada, comuna de Corral",
+        "ano": 2025,
+        "pth": "PTH-MST",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/postulacion/Postulacion_ID_4673.pdf",
+            "valido": true,
+            "tamano": 2518914,
+            "paginas": 20
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/cierre/Informe_Cierre_ID_4673.pdf",
+            "valido": true,
+            "tamano": 3465337,
+            "paginas": 24
+          }
+        }
+      },
+      {
+        "id": "4690",
+        "nombre": "Alimentos Seguros: Prevención y Control de Enfermedades Transmitidas por Alimentos en la Región de Los Ríos.",
+        "ano": 2025,
+        "pth": "PTH-MST",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/postulacion/Postulacion_ID_4690.pdf",
+            "valido": true,
+            "tamano": 1680219,
+            "paginas": 12
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/cierre/Informe_Cierre_ID_4690.pdf",
+            "valido": true,
+            "tamano": 2067041,
+            "paginas": 15
+          }
+        }
+      },
+      {
+        "id": "4729",
+        "nombre": "Innovación cosmética antienvejecimiento sostenible a partir de hongos nativos de la Región de los Ríos: Un espacio de formación científica interdisciplinaria para estudiantes de Educación Media.",
+        "ano": 2025,
+        "pth": "PTH-MST",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/postulacion/Postulacion_ID_4729.pdf",
+            "valido": true,
+            "tamano": 2661000,
+            "paginas": 20
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/cierre/Informe_Cierre_ID_4729.pdf",
+            "valido": true,
+            "tamano": 2603559,
+            "paginas": 19
+          }
+        }
+      },
+      {
+        "id": "4745",
+        "nombre": "Diagnóstico de Sostenibilidad Empresarial en La Región de Los Ríos.",
+        "ano": 2025,
+        "pth": "PTH-MST",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/postulacion/Postulacion_ID_4745.pdf",
+            "valido": true,
+            "tamano": 1553478,
+            "paginas": 11
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/cierre/Informe_Cierre_ID_4745.pdf",
+            "valido": true,
+            "tamano": 2221126,
+            "paginas": 15
+          }
+        }
+      },
+      {
+        "id": "4792",
+        "nombre": "Autismo desde Todos los Ángulos: Educación para la Acción",
+        "ano": 2025,
+        "pth": "PTH-MST",
+        "docs": {}
+      },
+      {
+        "id": "4833",
+        "nombre": "Cuídate y Cuida: hacia un consumidor de alimentos responsable",
+        "ano": 2025,
+        "pth": "PTH-MST",
+        "docs": {
+          "formularioPostulacion": {
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/postulacion/Postulacion_ID_4833.pdf",
+            "valido": true,
+            "tamano": 1812477,
+            "paginas": 13
+          },
+          "informeCierre": {
+            "archivo": "documentos/pth/pth-mas-sinergia-territorial/cierre/Informe_Cierre_ID_4833.pdf",
+            "valido": true,
+            "tamano": 2669344,
+            "paginas": 18
+          }
+        }
+      }
+    ],
+    "id_4829_auditado": true,
+    "id_4829_detalle": {
+      "id": "4829",
+      "nombre": "Observatorio Socioecológico de los Parques de la Patagonia - Caso PN Hornopirén",
+      "ano": 2025,
+      "pth": "PTH-MPQ",
+      "documentos": {
+        "formularioPostulacion": {
+          "archivo": "documentos/pth/pth-mas-parques/postulacion/Postulacion_ID_4829.pdf",
+          "valido": true,
+          "tamano": 1656118,
+          "paginas": 12
+        },
+        "informeCierre": {
+          "archivo": "documentos/pth/pth-mas-parques/cierre/Informe_Cierre_ID_4829.pdf",
+          "valido": true,
+          "tamano": 1977960,
+          "paginas": 13
+        },
+        "encuestaEstudiantes": {
+          "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_4829.pdf",
+          "valido": true,
+          "tamano": 974822,
+          "paginas": 25
+        }
+      },
+      "todos_validos": true
+    },
+    "documentos_totales": 124,
+    "documentos_validos": 124,
+    "documentos_fallidos": 0
+  },
+  "urls_y_rutas": {
+    "total_referencias_dist": 383,
+    "rutas_validas": 383,
+    "rutas_invalidas": 0,
+    "errores": []
+  },
+  "tasa_error_global": 0.0
+}

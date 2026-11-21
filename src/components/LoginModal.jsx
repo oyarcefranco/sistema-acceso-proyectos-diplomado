@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { formatRut, cleanRut, validateRut, normalizeDoc } from '../utils/rutValidator';
+import { getAssetUrl } from '../utils/assetHelper';
 import whitelist from '../data/whitelist.json';
 import { 
   ShieldCheck, 
@@ -155,12 +156,11 @@ export default function LoginModal({ onLoginSuccess }) {
           {/* Logo Oficial VcM USS */}
           <div className="inline-flex items-center justify-center bg-white p-2.5 rounded-2xl shadow-md mb-3.5">
             <img 
-              src="/logos/logo-vcm-uss.png" 
+              src={getAssetUrl('logos/logo-vcm-uss.png')} 
               alt="Logo Vinculación con el Medio USS" 
               className="h-11 sm:h-12 w-auto object-contain"
               onError={(e) => {
-                // Fallback si por alguna razón falla el render de la imagen
-                e.currentTarget.style.display = 'none';
+                e.currentTarget.src = getAssetUrl('logos/USS_VcM_logo_responsive.png');
               }}
             />
           </div>
