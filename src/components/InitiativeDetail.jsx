@@ -14,6 +14,7 @@ import {
   CheckCircle2,
   FileCheck
 } from 'lucide-react';
+import * as XLSX from 'xlsx';
 import ProjectsTable from './ProjectsTable';
 import DocumentListView from './DocumentListView';
 import IndicatorsReportView from './IndicatorsReportView';
@@ -24,27 +25,100 @@ export default function InitiativeDetail({ pth, onBack, onOpenDocument }) {
   const [activeTab, setActiveTab] = useState('matriz'); // 'matriz', 'postulacion', 'cierre', 'estudiantes', 'organizaciones', 'indicadores'
   const [isZipping, setIsZipping] = useState(false);
 
-  // Descarga del consolidado en Excel (CSV)
+  // Descarga del consolidado en formato nativo Microsoft Excel (.xlsx) con columnas separadas y autoajustadas
   const handleDownloadExcel = () => {
-    let csv = '\uFEFF'; // BOM para que Excel abra UTF-8 con acentos correctamente en Windows
-    csv += 'Iniciativa,Código,Año,Sede,Línea de Acción,Proyecto,N° Organizaciones,N° Estudiantes,N° Académicos,Formulario Postulación,Informe Cierre,Encuesta Estudiantes,Encuesta Organizaciones\n';
+    const headers = [
+      'Iniciativa',
+      'Código',
+      'Año',
+      'Sede',
+      'Línea de Acción',
+      'Nombre del Proyecto',
+      'N° Organizaciones',
+      'N° Estudiantes',
+      'N° Académicos',
+      'Formulario Postulación',
+      'Informe Cierre',
+      'Encuesta Estudiantes',
+      'Encuesta Organizaciones'
+    ];
 
-    pth.proyectos.forEach((p) => {
-      const docPost = p.documentos.formularioPostulacion?.disponible ? 'Disponible' : (p.documentos.formularioPostulacion?.estado || 'No registrado');
-      const docCie = p.documentos.informeCierre?.disponible ? 'Finalizado' : (p.documentos.informeCierre?.estado || 'Pendiente');
-      const docEst = p.documentos.encuestaEstudiantes?.disponible ? (p.documentos.encuestaEstudiantes.esEspecifico ? 'Específica' : `Reporte PTH ${p.ano}`) : 'No disponible';
-      const docOrg = p.documentos.encuestaOrganizaciones?.disponible ? (p.documentos.encuestaOrganizaciones.esEspecifico ? 'Específica' : `Reporte PTH ${p.ano}`) : 'No disponible';
-      
-      csv += `"${pth.nombre}","${p.codigo}",${p.ano},"${p.sede}","${p.lineaAccion}","${p.nombre}",${p.indicadores.organizaciones},${p.indicadores.estudiantes},${p.indicadores.academicos},"${docPost}","${docCie}","${docEst}","${docOrg}"\n`;
+    const data = [
+      headers,
+      ...pth.proyectos.map((p) => {
+        const docPost = p.documentos.formularioPostulacion?.disponible ? 'Disponible' : (p.documentos.formularioPostulacion?.estado || 'No registrado');
+        const docCie = p.documentos.informeCierre?.disponible ? 'Finalizado' : (p.documentos.informeCierre?.estado || 'Pendiente');
+        const docEst = p.documentos.encuestaEstudiantes?.disponible ? (p.documentos.encuestaEstudiantes.esEspecifico ? 'Específica' : `Reporte PTH ${p.ano}`) : 'No disponible';
+        const docOrg = p.documentos.encuestaOrganizaciones?.disponible ? (p.documentos.encuestaOrganizaciones.esEspecifico ? 'Específica' : `Reporte PTH ${p.ano}`) : 'No disponible';
+
+        return [
+          pth.nombre,
+          p.codigo,
+          p.ano,
+          p.sede,
+          p.lineaAccion || 'General',
+          p.nombre,
+          p.indicadores?.organizaciones || 0,
+          p.indicadores?.estudiantes || 0,
+          p.indicadores?.academicos || 0,
+          docPost,
+          docCie,
+          docEst,
+          docOrg
+        ];
+      })
+    ];
+
+    const wb = XLSX.utils.book_new();
+    const ws = XLSX.utils.aoa_to_sheet(data);
+
+    // Configuración de anchos de columna para evitar textos cortados
+    ws['!cols'] = [
+      { wch: 28 }, // Iniciativa
+      { wch: 12 }, // Código
+      { wch: 8 },  // Año
+      { wch: 16 }, // Sede
+      { wch: 32 }, // Línea de Acción
+      { wch: 55 }, // Nombre del Proyecto
+      { wch: 18 }, // N° Organizaciones
+      { wch: 16 }, // N° Estudiantes
+      { wch: 16 }, // N° Académicos
+      { wch: 24 }, // Formulario Postulación
+      { wch: 20 }, // Informe Cierre
+      { wch: 24 }, // Encuesta Estudiantes
+      { wch: 26 }  // Encuesta Organizaciones
+    ];
+
+    XLSX.utils.book_append_sheet(wb, ws, 'Listado Proyectos');
+
+    // Hoja 2: Resumen oficial por Línea de Acción
+    const resumenPorLinea = pth.lineasDeAccion.map((linea) => {
+      const proyectosLinea = pth.proyectos.filter((p) => p.lineaAccion === linea);
+      return [
+        linea,
+        proyectosLinea.length,
+        proyectosLinea.reduce((acc, p) => acc + (p.indicadores?.organizaciones || 0), 0),
+        proyectosLinea.reduce((acc, p) => acc + (p.indicadores?.estudiantes || 0), 0),
+        proyectosLinea.reduce((acc, p) => acc + (p.indicadores?.academicos || 0), 0)
+      ];
     });
 
-    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = `Listado_Proyectos_${pth.sigla}_2024_2025.csv`;
-    link.click();
-    URL.revokeObjectURL(url);
+    const dataResumen = [
+      ['Línea de Acción', 'Cantidad de Proyectos', 'Total Organizaciones', 'Total Estudiantes', 'Total Académicos'],
+      ...resumenPorLinea,
+      ['TOTAL GENERAL', pth.proyectos.length, pth.totales.organizaciones, pth.totales.estudiantes, pth.totales.academicos]
+    ];
+    const wsResumen = XLSX.utils.aoa_to_sheet(dataResumen);
+    wsResumen['!cols'] = [
+      { wch: 35 },
+      { wch: 22 },
+      { wch: 22 },
+      { wch: 20 },
+      { wch: 20 }
+    ];
+    XLSX.utils.book_append_sheet(wb, wsResumen, 'Resumen Líneas de Acción');
+
+    XLSX.writeFile(wb, `Listado_Proyectos_${pth.sigla}_2024_2025.xlsx`);
   };
 
   // Descarga del expediente completo en un único archivo ZIP
@@ -55,13 +129,39 @@ export default function InitiativeDetail({ pth, onBack, onOpenDocument }) {
       const folderName = `Expediente_${pth.sigla}_2024_2025`;
       const rootFolder = zip.folder(folderName);
 
-      // 1. Agregar Planilla Excel/CSV consolidada
-      let csv = '\uFEFF';
-      csv += 'Iniciativa,Código,Año,Sede,Línea de Acción,Proyecto,N° Organizaciones,N° Estudiantes,N° Académicos,Formulario Postulación,Informe Cierre,Encuesta Estudiantes,Encuesta Organizaciones\n';
-      pth.proyectos.forEach((p) => {
-        csv += `"${pth.nombre}","${p.codigo}",${p.ano},"${p.sede}","${p.lineaAccion}","${p.nombre}",${p.indicadores.organizaciones},${p.indicadores.estudiantes},${p.indicadores.academicos},"Disponible","Finalizado","Validado","Validado"\n`;
-      });
-      rootFolder.file('00_Listado_Consolidado_Proyectos_e_Indicadores.csv', csv);
+      // 1. Agregar Planilla Excel nativa (.xlsx) consolidada en la raíz del ZIP
+      const excelHeaders = [
+        'Iniciativa', 'Código', 'Año', 'Sede', 'Línea de Acción', 'Nombre del Proyecto',
+        'N° Organizaciones', 'N° Estudiantes', 'N° Académicos',
+        'Formulario Postulación', 'Informe Cierre', 'Encuesta Estudiantes', 'Encuesta Organizaciones'
+      ];
+      const excelData = [
+        excelHeaders,
+        ...pth.proyectos.map((p) => [
+          pth.nombre,
+          p.codigo,
+          p.ano,
+          p.sede,
+          p.lineaAccion || 'General',
+          p.nombre,
+          p.indicadores?.organizaciones || 0,
+          p.indicadores?.estudiantes || 0,
+          p.indicadores?.academicos || 0,
+          p.documentos.formularioPostulacion?.disponible ? 'Disponible' : 'No registrado',
+          p.documentos.informeCierre?.disponible ? 'Finalizado' : 'Pendiente',
+          p.documentos.encuestaEstudiantes?.disponible ? 'Validado' : 'No disponible',
+          p.documentos.encuestaOrganizaciones?.disponible ? 'Validado' : 'No disponible'
+        ])
+      ];
+      const zipWb = XLSX.utils.book_new();
+      const zipWs = XLSX.utils.aoa_to_sheet(excelData);
+      zipWs['!cols'] = [
+        { wch: 28 }, { wch: 12 }, { wch: 8 }, { wch: 16 }, { wch: 32 }, { wch: 55 },
+        { wch: 18 }, { wch: 16 }, { wch: 16 }, { wch: 24 }, { wch: 20 }, { wch: 24 }, { wch: 26 }
+      ];
+      XLSX.utils.book_append_sheet(zipWb, zipWs, 'Proyectos');
+      const excelBuffer = XLSX.write(zipWb, { bookType: 'xlsx', type: 'array' });
+      rootFolder.file('00_Listado_Consolidado_Proyectos_e_Indicadores.xlsx', excelBuffer);
 
       // 2. Crear carpetas ordenadas
       const fPostulaciones = rootFolder.folder('01_Formularios_de_Postulacion');

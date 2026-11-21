@@ -18,8 +18,10 @@ import {
   Clock,
   ArrowUpDown,
   FileCheck,
-  AlertCircle
+  AlertCircle,
+  FileSpreadsheet
 } from 'lucide-react';
+import * as XLSX from 'xlsx';
 import JSZip from 'jszip';
 import { getAssetUrl } from '../utils/assetHelper';
 
@@ -32,6 +34,54 @@ export default function ContinuityProjectDetail({ project, onBack, onOpenDocumen
     return sortOrder === 'desc' ? b.ano - a.ano : a.ano - b.ano;
   });
 
+  // Descarga de ficha histórica en formato nativo Microsoft Excel (.xlsx)
+  const handleDownloadExcel = () => {
+    const wb = XLSX.utils.book_new();
+    const headers = [
+      'Iniciativa Emblemática',
+      'Sede',
+      'Año de Ejecución',
+      'Código ID',
+      'Tipo de Proyecto',
+      'Período',
+      'Carreras Participantes',
+      'Formulario Postulación',
+      'Informe Cierre',
+      'Encuesta Estudiantes',
+      'Encuesta Organizaciones'
+    ];
+    const rows = project.versiones.map((ver) => [
+      project.nombre,
+      project.sede,
+      ver.ano,
+      ver.codigo,
+      ver.tipo,
+      ver.periodo,
+      ver.carreras.join('; '),
+      ver.documentos?.formularioPostulacion?.disponible ? 'Disponible' : 'No disponible',
+      ver.documentos?.informeCierre?.disponible ? 'Finalizado' : 'Pendiente',
+      ver.documentos?.encuestaEstudiantes?.disponible ? 'Disponible' : 'No aplicada en este año',
+      ver.documentos?.encuestaOrganizaciones?.disponible ? 'Disponible' : 'No aplicada en este año'
+    ]);
+
+    const ws = XLSX.utils.aoa_to_sheet([headers, ...rows]);
+    ws['!cols'] = [
+      { wch: 35 },
+      { wch: 15 },
+      { wch: 16 },
+      { wch: 12 },
+      { wch: 28 },
+      { wch: 35 },
+      { wch: 45 },
+      { wch: 22 },
+      { wch: 20 },
+      { wch: 24 },
+      { wch: 26 }
+    ];
+    XLSX.utils.book_append_sheet(wb, ws, 'Historial Versiones');
+    XLSX.writeFile(wb, `Historial_${project.nombre.replace(/[^a-zA-Z0-9]/g, '_')}_2020_2025.xlsx`);
+  };
+
   // Descarga del expediente histórico completo en ZIP con PDFs reales (Informes y Formularios)
   const handleDownloadAllZip = async () => {
     setIsZipping(true);
@@ -41,6 +91,35 @@ export default function ContinuityProjectDetail({ project, onBack, onOpenDocumen
       const rootFolder = zip.folder(folderName);
       const folderCierres = rootFolder.folder('01_Informes_de_Cierre');
       const folderPostulaciones = rootFolder.folder('02_Formularios_de_Postulacion');
+
+      // 0. Planilla Excel nativa (.xlsx) consolidada
+      const zipExcelHeaders = [
+        'Iniciativa Emblemática', 'Sede', 'Año de Ejecución', 'Código ID', 'Tipo de Proyecto',
+        'Período', 'Carreras Participantes', 'Formulario Postulación', 'Informe Cierre',
+        'Encuesta Estudiantes', 'Encuesta Organizaciones'
+      ];
+      const zipExcelRows = project.versiones.map((ver) => [
+        project.nombre,
+        project.sede,
+        ver.ano,
+        ver.codigo,
+        ver.tipo,
+        ver.periodo,
+        ver.carreras.join('; '),
+        ver.documentos?.formularioPostulacion?.disponible ? 'Disponible' : 'No disponible',
+        ver.documentos?.informeCierre?.disponible ? 'Finalizado' : 'Pendiente',
+        ver.documentos?.encuestaEstudiantes?.disponible ? 'Disponible' : 'No aplicada en este año',
+        ver.documentos?.encuestaOrganizaciones?.disponible ? 'Disponible' : 'No aplicada en este año'
+      ]);
+      const zipWb = XLSX.utils.book_new();
+      const zipWs = XLSX.utils.aoa_to_sheet([zipExcelHeaders, ...zipExcelRows]);
+      zipWs['!cols'] = [
+        { wch: 35 }, { wch: 15 }, { wch: 16 }, { wch: 12 }, { wch: 28 },
+        { wch: 35 }, { wch: 45 }, { wch: 22 }, { wch: 20 }, { wch: 24 }, { wch: 26 }
+      ];
+      XLSX.utils.book_append_sheet(zipWb, zipWs, 'Historial');
+      const zipBuffer = XLSX.write(zipWb, { bookType: 'xlsx', type: 'array' });
+      rootFolder.file('00_Historial_Cronologico_Versiones.xlsx', zipBuffer);
 
       // Crear archivo índice de versiones
       let readme = `UNIVERSIDAD SAN SEBASTIÁN - VINCULACIÓN CON EL MEDIO\n`;
@@ -170,16 +249,25 @@ export default function ContinuityProjectDetail({ project, onBack, onOpenDocumen
             </div>
           </div>
 
-          {/* Botón de Descarga Consolidada de todos los informes y formularios */}
+          {/* Botones de Descarga Consolidada */}
           <div className="flex flex-col sm:flex-row lg:flex-col gap-2.5 flex-shrink-0 w-full lg:w-auto">
+            <button
+              onClick={handleDownloadExcel}
+              className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs transition shadow-sm cursor-pointer"
+              title="Descargar historial consolidado en Microsoft Excel (.xlsx)"
+            >
+              <FileSpreadsheet className="w-4 h-4 text-emerald-200" />
+              <span>Descargar Historial (Excel)</span>
+            </button>
+
             <button
               onClick={handleDownloadAllZip}
               disabled={isZipping}
-              className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-uss-navy hover:bg-uss-blue text-white font-bold text-xs transition shadow-sm cursor-pointer disabled:opacity-70"
+              className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-uss-navy hover:bg-uss-blue text-white font-bold text-xs transition shadow-sm cursor-pointer disabled:opacity-70"
               title="Descargar todos los informes y formularios en un archivo ZIP"
             >
               <Archive className="w-4 h-4 text-sky-300" />
-              <span>{isZipping ? 'Comprimiendo Evidencias...' : 'Descargar Expediente Completo (ZIP)'}</span>
+              <span>{isZipping ? 'Comprimiendo Evidencias...' : 'Descargar Expediente (ZIP)'}</span>
             </button>
 
             <div className="p-3 bg-purple-50 rounded-xl border border-purple-200 text-center">

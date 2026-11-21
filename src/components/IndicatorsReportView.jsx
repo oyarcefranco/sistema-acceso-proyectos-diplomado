@@ -6,8 +6,10 @@ import {
   GraduationCap, 
   Download, 
   TrendingUp, 
-  Layers 
+  Layers,
+  FileSpreadsheet
 } from 'lucide-react';
+import * as XLSX from 'xlsx';
 
 export default function IndicatorsReportView({ pth }) {
   // Calcular métricas agrupadas por Línea de Acción
@@ -25,19 +27,62 @@ export default function IndicatorsReportView({ pth }) {
     };
   });
 
-  const exportarCSV = () => {
-    let csv = 'Código,Año,Línea de Acción,Proyecto,Sede,N° Organizaciones,N° Estudiantes,N° Académicos\n';
-    pth.proyectos.forEach((p) => {
-      csv += `"${p.codigo}","${p.ano}","${p.lineaAccion}","${p.nombre}","${p.sede}",${p.indicadores.organizaciones},${p.indicadores.estudiantes},${p.indicadores.academicos}\n`;
-    });
+  const exportarExcel = () => {
+    const wb = XLSX.utils.book_new();
 
-    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `Indicadores_${pth.sigla}_2024_2025.csv`;
-    a.click();
-    URL.revokeObjectURL(url);
+    // Hoja 1: Resumen por Línea de Acción
+    const headersResumen = ['Línea de Acción', 'N° Proyectos', 'N° Organizaciones', 'N° Estudiantes', 'N° Académicos'];
+    const rowsResumen = agrupadoPorLinea.map((l) => [
+      l.linea,
+      l.cantidadProyectos,
+      l.organizaciones,
+      l.estudiantes,
+      l.academicos
+    ]);
+    rowsResumen.push([
+      'TOTAL GENERAL',
+      pth.proyectos.length,
+      pth.totales.organizaciones,
+      pth.totales.estudiantes,
+      pth.totales.academicos
+    ]);
+
+    const wsResumen = XLSX.utils.aoa_to_sheet([headersResumen, ...rowsResumen]);
+    wsResumen['!cols'] = [
+      { wch: 35 },
+      { wch: 15 },
+      { wch: 20 },
+      { wch: 18 },
+      { wch: 18 }
+    ];
+    XLSX.utils.book_append_sheet(wb, wsResumen, 'Resumen Líneas de Acción');
+
+    // Hoja 2: Detalle de Indicadores por Proyecto
+    const headersDetalle = ['Código', 'Año', 'Línea de Acción', 'Proyecto', 'Sede', 'N° Organizaciones', 'N° Estudiantes', 'N° Académicos'];
+    const rowsDetalle = pth.proyectos.map((p) => [
+      p.codigo,
+      p.ano,
+      p.lineaAccion,
+      p.nombre,
+      p.sede,
+      p.indicadores.organizaciones,
+      p.indicadores.estudiantes,
+      p.indicadores.academicos
+    ]);
+    const wsDetalle = XLSX.utils.aoa_to_sheet([headersDetalle, ...rowsDetalle]);
+    wsDetalle['!cols'] = [
+      { wch: 12 },
+      { wch: 8 },
+      { wch: 32 },
+      { wch: 55 },
+      { wch: 16 },
+      { wch: 18 },
+      { wch: 16 },
+      { wch: 16 }
+    ];
+    XLSX.utils.book_append_sheet(wb, wsDetalle, 'Detalle Proyectos');
+
+    XLSX.writeFile(wb, `Indicadores_${pth.sigla}_2024_2025.xlsx`);
   };
 
   return (
@@ -55,11 +100,12 @@ export default function IndicatorsReportView({ pth }) {
             </p>
           </div>
           <button
-            onClick={exportarCSV}
+            onClick={exportarExcel}
             className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold transition cursor-pointer shadow-xs"
+            title="Descargar libro Excel (.xlsx) con resumen y detalle"
           >
-            <Download className="w-4 h-4" />
-            <span>Descargar Indicadores (CSV)</span>
+            <FileSpreadsheet className="w-4 h-4 text-emerald-200" />
+            <span>Descargar Indicadores (Excel)</span>
           </button>
         </div>
 
