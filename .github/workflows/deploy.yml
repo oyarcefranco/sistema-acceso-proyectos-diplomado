@@ -13,13 +13,11 @@ permissions:
 
 concurrency:
   group: 'pages'
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  # Trabajo de compilación y empaquetado del sitio Vite
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -28,8 +26,11 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'npm'
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
 
       - name: Install dependencies
         run: npm ci
@@ -37,11 +38,19 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Upload artifact
+      - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: './dist'
 
+  # Trabajo de despliegue en GitHub Pages (ejecuta tras completar el build)
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
