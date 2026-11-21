@@ -48,7 +48,7 @@ export default function IndicatorsReportView({ pth }) {
           <div>
             <h3 className="text-base font-bold text-slate-900 flex items-center gap-2">
               <BarChart3 className="w-5 h-5 text-uss-blue" />
-              Consolidado de Indicadores Oficiales (Gestión Cristóbal)
+              Consolidado de Indicadores Oficiales de Impacto Territorial
             </h3>
             <p className="text-xs text-slate-500 mt-0.5">
               Métricas de impacto y cobertura por proyecto y línea de acción correspondientes a los períodos 2024 y 2025.

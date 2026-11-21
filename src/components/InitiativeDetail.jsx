@@ -32,8 +32,8 @@ export default function InitiativeDetail({ pth, onBack, onOpenDocument }) {
     pth.proyectos.forEach((p) => {
       const docPost = p.documentos.formularioPostulacion?.disponible ? 'Disponible' : (p.documentos.formularioPostulacion?.estado || 'No registrado');
       const docCie = p.documentos.informeCierre?.disponible ? 'Finalizado' : (p.documentos.informeCierre?.estado || 'Pendiente');
-      const docEst = p.documentos.encuestaEstudiantes?.disponible ? 'Validado' : (p.documentos.encuestaEstudiantes?.estado || 'Pendiente');
-      const docOrg = p.documentos.encuestaOrganizaciones?.disponible ? 'Validado' : (p.documentos.encuestaOrganizaciones?.estado || 'Pendiente');
+      const docEst = p.documentos.encuestaEstudiantes?.disponible ? (p.documentos.encuestaEstudiantes.esEspecifico ? 'Específica' : `Reporte PTH ${p.ano}`) : 'No disponible';
+      const docOrg = p.documentos.encuestaOrganizaciones?.disponible ? (p.documentos.encuestaOrganizaciones.esEspecifico ? 'Específica' : `Reporte PTH ${p.ano}`) : 'No disponible';
       
       csv += `"${pth.nombre}","${p.codigo}",${p.ano},"${p.sede}","${p.lineaAccion}","${p.nombre}",${p.indicadores.organizaciones},${p.indicadores.estudiantes},${p.indicadores.academicos},"${docPost}","${docCie}","${docEst}","${docOrg}"\n`;
     });
@@ -322,7 +322,7 @@ export default function InitiativeDetail({ pth, onBack, onOpenDocument }) {
           }`}
         >
           <BarChart3 className="w-4 h-4 text-amber-400" />
-          <span>Indicadores Cristóbal</span>
+          <span>Indicadores de Impacto VcM</span>
         </button>
       </div>
 

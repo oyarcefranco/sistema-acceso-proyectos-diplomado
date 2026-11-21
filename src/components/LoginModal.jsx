@@ -108,7 +108,7 @@ export default function LoginModal({ onLoginSuccess }) {
       });
 
       if (user) {
-        // Si el usuario es administrador reconocido (Franco, Consuelo, Cristóbal, etc.)
+        // Si el usuario es administrador reconocido (Franco, Consuelo, Equipo Directivo, etc.)
         const isAdmin = user.isAdmin || user.rol?.includes('Administrador') || normInput === '123456785';
         const finalUser = {
           ...user,

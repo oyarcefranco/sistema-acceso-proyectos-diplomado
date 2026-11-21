@@ -232,7 +232,7 @@ export default function ProjectsTable({ pth, onOpenDocument }) {
                   </div>
                 </div>
 
-                {/* Métricas Cristóbal en Móvil */}
+                {/* Métricas de Impacto VcM en Móvil */}
                 <div className="grid grid-cols-3 gap-2 text-center bg-slate-50/90 p-2.5 rounded-xl border border-slate-200/60">
                   <div className="bg-white p-1.5 rounded-lg border border-slate-200/50 shadow-2xs">
                     <div className="text-xs font-extrabold text-slate-800">{p.indicadores.organizaciones}</div>
@@ -312,21 +312,25 @@ export default function ProjectsTable({ pth, onOpenDocument }) {
                   {docEst.disponible ? (
                     <button
                       onClick={() => onOpenDocument({
-                        tipo: 'Reporte Validado Encuesta Estudiantes',
+                        tipo: docEst.tipoReporte || (docEst.esEspecifico ? 'Reporte Validado Encuesta Estudiantes' : `Reporte General Estudiantes (${pth.sigla} ${p.ano})`),
                         proyecto: p,
                         pth,
                         archivo: docEst.archivo,
                         tamano: docEst.tamano,
-                        fecha: docEst.fecha
+                        nombreDescarga: docEst.nombreDescarga
                       })}
-                      className="w-full flex items-center justify-between p-2.5 rounded-xl bg-blue-50/80 hover:bg-blue-100 border border-blue-200 text-xs font-semibold text-blue-900 transition cursor-pointer"
+                      className={`w-full flex items-center justify-between p-2.5 rounded-xl border text-xs font-semibold transition cursor-pointer ${
+                        docEst.esEspecifico
+                          ? 'bg-blue-50/80 hover:bg-blue-100 border-blue-200 text-blue-900'
+                          : 'bg-sky-50/80 hover:bg-sky-100 border-sky-300 text-sky-950'
+                      }`}
                     >
                       <span className="flex items-center gap-1.5">
                         <GraduationCap className="w-4 h-4 text-uss-blue" />
                         <span>Encuesta Estudiantes</span>
                       </span>
                       <span className="inline-flex items-center gap-1 bg-white px-2 py-0.5 rounded text-[10px] font-bold text-blue-700 border border-blue-200 shadow-2xs">
-                        <Eye className="w-3 h-3" /> Ver PDF
+                        <Eye className="w-3 h-3" /> {docEst.esEspecifico ? 'Ver PDF' : 'Reporte PTH'}
                       </span>
                     </button>
                   ) : (
@@ -335,8 +339,8 @@ export default function ProjectsTable({ pth, onOpenDocument }) {
                         <GraduationCap className="w-4 h-4 text-slate-400" />
                         <span>Encuesta Estudiantes</span>
                       </span>
-                      <span className="text-[10px] bg-slate-200/70 px-2 py-0.5 rounded text-slate-600 font-medium">
-                        {docEst.estado}
+                      <span className="text-[10px] bg-slate-100 px-2 py-0.5 rounded text-slate-500 font-medium">
+                        {docEst.estado || 'No disponible'}
                       </span>
                     </div>
                   )}
@@ -345,21 +349,25 @@ export default function ProjectsTable({ pth, onOpenDocument }) {
                   {docOrg.disponible ? (
                     <button
                       onClick={() => onOpenDocument({
-                        tipo: 'Reporte Validado Encuesta Organizaciones',
+                        tipo: docOrg.tipoReporte || (docOrg.esEspecifico ? 'Reporte Validado Encuesta Organizaciones' : `Reporte General Organizaciones (${pth.sigla} ${p.ano})`),
                         proyecto: p,
                         pth,
                         archivo: docOrg.archivo,
                         tamano: docOrg.tamano,
-                        fecha: docOrg.fecha
+                        nombreDescarga: docOrg.nombreDescarga
                       })}
-                      className="w-full flex items-center justify-between p-2.5 rounded-xl bg-emerald-50/80 hover:bg-emerald-100 border border-emerald-200 text-xs font-semibold text-emerald-900 transition cursor-pointer"
+                      className={`w-full flex items-center justify-between p-2.5 rounded-xl border text-xs font-semibold transition cursor-pointer ${
+                        docOrg.esEspecifico
+                          ? 'bg-emerald-50/80 hover:bg-emerald-100 border-emerald-200 text-emerald-900'
+                          : 'bg-teal-50/80 hover:bg-teal-100 border-teal-300 text-teal-950'
+                      }`}
                     >
                       <span className="flex items-center gap-1.5">
                         <Building2 className="w-4 h-4 text-emerald-600" />
                         <span>Encuesta Organizaciones</span>
                       </span>
                       <span className="inline-flex items-center gap-1 bg-white px-2 py-0.5 rounded text-[10px] font-bold text-emerald-700 border border-emerald-200 shadow-2xs">
-                        <Eye className="w-3 h-3" /> Ver PDF
+                        <Eye className="w-3 h-3" /> {docOrg.esEspecifico ? 'Ver PDF' : 'Reporte PTH'}
                       </span>
                     </button>
                   ) : (
@@ -368,8 +376,8 @@ export default function ProjectsTable({ pth, onOpenDocument }) {
                         <Building2 className="w-4 h-4 text-slate-400" />
                         <span>Encuesta Organizaciones</span>
                       </span>
-                      <span className="text-[10px] bg-amber-100 px-2 py-0.5 rounded text-amber-800 font-medium">
-                        {docOrg.estado}
+                      <span className="text-[10px] bg-slate-100 px-2 py-0.5 rounded text-slate-500 font-medium">
+                        {docOrg.estado || 'No disponible'}
                       </span>
                     </div>
                   )}
@@ -443,7 +451,7 @@ export default function ProjectsTable({ pth, onOpenDocument }) {
                   </div>
                 </div>
 
-                {/* Columna 2: Indicadores Cristóbal (Tarjetas nítidas) */}
+                {/* Columna 2: Indicadores Oficiales de Impacto VcM */}
                 <div className="flex items-center gap-2 flex-shrink-0 bg-slate-50 p-2.5 rounded-xl border border-slate-200/70">
                   <div className="text-center px-2 py-1 bg-white rounded-lg border border-slate-200/60 shadow-2xs min-w-[62px]">
                     <div className="text-sm font-extrabold text-slate-800">{p.indicadores.organizaciones}</div>
@@ -523,22 +531,26 @@ export default function ProjectsTable({ pth, onOpenDocument }) {
                     {docEst.disponible ? (
                       <button
                         onClick={() => onOpenDocument({
-                          tipo: 'Reporte Validado Encuesta Estudiantes',
+                          tipo: docEst.tipoReporte || (docEst.esEspecifico ? 'Reporte Validado Encuesta Estudiantes' : `Reporte General Estudiantes (${pth.sigla} ${p.ano})`),
                           proyecto: p,
                           pth,
                           archivo: docEst.archivo,
                           tamano: docEst.tamano,
-                          fecha: docEst.fecha
+                          nombreDescarga: docEst.nombreDescarga
                         })}
-                        className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200 text-xs font-bold transition cursor-pointer shadow-2xs"
-                        title="Ver reporte oficial validado"
+                        className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-bold transition cursor-pointer shadow-2xs ${
+                          docEst.esEspecifico
+                            ? 'bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200'
+                            : 'bg-sky-50 text-sky-800 hover:bg-sky-100 border border-sky-300'
+                        }`}
+                        title={docEst.esEspecifico ? "Ver encuesta oficial específica de este proyecto" : `Ver reporte general de encuesta a estudiantes (${pth.sigla} ${p.ano})`}
                       >
                         <Eye className="w-3 h-3" />
-                        <span>Validado</span>
+                        <span>{docEst.esEspecifico ? 'Validado' : 'Reporte PTH'}</span>
                       </button>
                     ) : (
                       <span className="text-[10px] text-slate-400 bg-slate-100 px-2 py-0.5 rounded font-medium">
-                        {docEst.estado}
+                        {docEst.estado || 'No disponible'}
                       </span>
                     )}
                   </div>
@@ -552,22 +564,26 @@ export default function ProjectsTable({ pth, onOpenDocument }) {
                     {docOrg.disponible ? (
                       <button
                         onClick={() => onOpenDocument({
-                          tipo: 'Reporte Validado Encuesta Organizaciones',
+                          tipo: docOrg.tipoReporte || (docOrg.esEspecifico ? 'Reporte Validado Encuesta Organizaciones' : `Reporte General Organizaciones (${pth.sigla} ${p.ano})`),
                           proyecto: p,
                           pth,
                           archivo: docOrg.archivo,
                           tamano: docOrg.tamano,
-                          fecha: docOrg.fecha
+                          nombreDescarga: docOrg.nombreDescarga
                         })}
-                        className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-100 border border-emerald-200 text-xs font-bold transition cursor-pointer shadow-2xs"
-                        title="Ver reporte oficial validado"
+                        className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-bold transition cursor-pointer shadow-2xs ${
+                          docOrg.esEspecifico
+                            ? 'bg-emerald-50 text-emerald-700 hover:bg-emerald-100 border border-emerald-200'
+                            : 'bg-teal-50 text-teal-800 hover:bg-teal-100 border border-teal-300'
+                        }`}
+                        title={docOrg.esEspecifico ? "Ver encuesta oficial específica a organizaciones" : `Ver reporte general de encuesta a organizaciones (${pth.sigla} ${p.ano})`}
                       >
                         <Eye className="w-3 h-3" />
-                        <span>Validado</span>
+                        <span>{docOrg.esEspecifico ? 'Validado' : 'Reporte PTH'}</span>
                       </button>
                     ) : (
-                      <span className="text-[10px] text-amber-800 bg-amber-50 px-2 py-0.5 rounded border border-amber-200 font-medium">
-                        {docOrg.estado}
+                      <span className="text-[10px] text-slate-400 bg-slate-100 px-2 py-0.5 rounded font-medium">
+                        {docOrg.estado || 'No disponible'}
                       </span>
                     )}
                   </div>

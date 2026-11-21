@@ -113,25 +113,32 @@ export default function DocumentListView({ pth, docTypeKey, title, docLabel, onO
               {/* Acciones */}
               <div className="flex items-center gap-2 self-end md:self-center flex-shrink-0">
                 {doc.disponible ? (
-                  <>
+                  <div className="flex items-center gap-2">
+                    <span className={`text-[10px] font-bold px-2 py-0.5 rounded border ${
+                      doc.esEspecifico
+                        ? 'bg-emerald-50 text-emerald-700 border-emerald-200'
+                        : 'bg-sky-50 text-sky-800 border-sky-300'
+                    }`}>
+                      {doc.esEspecifico ? 'Específico' : `Reporte PTH ${proyecto.ano}`}
+                    </span>
                     <button
                       onClick={() => onOpenDocument({
-                        tipo: title,
+                        tipo: doc.tipoReporte || title,
                         proyecto,
                         pth,
                         archivo: doc.archivo,
                         tamano: doc.tamano,
-                        fecha: doc.fecha
+                        nombreDescarga: doc.nombreDescarga
                       })}
                       className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-uss-navy hover:bg-uss-blue text-white text-xs font-semibold transition cursor-pointer shadow-xs"
                     >
                       <Eye className="w-3.5 h-3.5" />
                       <span>Ver Documento</span>
                     </button>
-                  </>
+                  </div>
                 ) : (
-                  <span className="text-xs text-slate-500 bg-slate-100 px-3 py-1.5 rounded-xl font-medium">
-                    {doc.estado}
+                  <span className="text-xs text-slate-400 bg-slate-100 px-3 py-1.5 rounded-xl font-medium">
+                    {doc.estado || 'No disponible'}
                   </span>
                 )}
               </div>

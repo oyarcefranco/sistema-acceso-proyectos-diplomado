@@ -220,7 +220,7 @@ export default function PDFModalViewer({ documentData, onClose }) {
                   </div>
                 </div>
 
-                {/* Indicadores Clave de Cristóbal asociados al proyecto */}
+                {/* Indicadores Clave de Impacto asociados al proyecto */}
                 <div className="mb-6">
                   <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">
                     1. Indicadores de Cobertura y Participación

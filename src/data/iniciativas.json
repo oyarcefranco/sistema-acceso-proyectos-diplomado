@@ -80,15 +80,19 @@
             "nombreDescarga": "Informe_Cierre_ID_3428_2024.pdf"
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2024",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/reportes-generales/PTH_Más_personas_mayores_activas_encuesta_estudiantes_2024.pdf",
+            "tamano": "1.2 MB",
+            "nombreDescarga": "Reporte_General_Estudiantes_pth-mas-personas-mayores_2024.pdf"
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -130,15 +134,19 @@
             "nombreDescarga": "Informe_Cierre_ID_3434_2024.pdf"
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2024",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/reportes-generales/PTH_Más_personas_mayores_activas_encuesta_estudiantes_2024.pdf",
+            "tamano": "1.2 MB",
+            "nombreDescarga": "Reporte_General_Estudiantes_pth-mas-personas-mayores_2024.pdf"
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -180,15 +188,19 @@
             "nombreDescarga": "Informe_Cierre_ID_3440_2024.pdf"
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2024",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/reportes-generales/PTH_Más_personas_mayores_activas_encuesta_estudiantes_2024.pdf",
+            "tamano": "1.2 MB",
+            "nombreDescarga": "Reporte_General_Estudiantes_pth-mas-personas-mayores_2024.pdf"
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -230,15 +242,19 @@
             "nombreDescarga": "Informe_Cierre_ID_3442_2024.pdf"
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2024",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/reportes-generales/PTH_Más_personas_mayores_activas_encuesta_estudiantes_2024.pdf",
+            "tamano": "1.2 MB",
+            "nombreDescarga": "Reporte_General_Estudiantes_pth-mas-personas-mayores_2024.pdf"
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -280,15 +296,19 @@
             "nombreDescarga": "Informe_Cierre_ID_3568_2024.pdf"
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2024",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/reportes-generales/PTH_Más_personas_mayores_activas_encuesta_estudiantes_2024.pdf",
+            "tamano": "1.2 MB",
+            "nombreDescarga": "Reporte_General_Estudiantes_pth-mas-personas-mayores_2024.pdf"
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -330,15 +350,19 @@
             "nombreDescarga": "Informe_Cierre_ID_3583_2024.pdf"
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2024",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/reportes-generales/PTH_Más_personas_mayores_activas_encuesta_estudiantes_2024.pdf",
+            "tamano": "1.2 MB",
+            "nombreDescarga": "Reporte_General_Estudiantes_pth-mas-personas-mayores_2024.pdf"
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -377,15 +401,19 @@
             "archivo": null
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2024",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/reportes-generales/PTH_Más_personas_mayores_activas_encuesta_estudiantes_2024.pdf",
+            "tamano": "1.2 MB",
+            "nombreDescarga": "Reporte_General_Estudiantes_pth-mas-personas-mayores_2024.pdf"
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -424,15 +452,19 @@
             "archivo": null
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2024",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/reportes-generales/PTH_Más_personas_mayores_activas_encuesta_estudiantes_2024.pdf",
+            "tamano": "1.2 MB",
+            "nombreDescarga": "Reporte_General_Estudiantes_pth-mas-personas-mayores_2024.pdf"
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -471,15 +503,19 @@
             "archivo": null
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2024",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/reportes-generales/PTH_Más_personas_mayores_activas_encuesta_estudiantes_2024.pdf",
+            "tamano": "1.2 MB",
+            "nombreDescarga": "Reporte_General_Estudiantes_pth-mas-personas-mayores_2024.pdf"
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -521,15 +557,19 @@
             "nombreDescarga": "Informe_Cierre_ID_4211_2025.pdf"
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2025",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/reportes-generales/PTH_Más_personas_mayores_activas_encuesta_estudiantes_2025.pdf",
+            "tamano": "1.0 MB",
+            "nombreDescarga": "Reporte_General_Estudiantes_pth-mas-personas-mayores_2025.pdf"
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -571,15 +611,19 @@
             "nombreDescarga": "Informe_Cierre_ID_4235_2025.pdf"
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2025",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/reportes-generales/PTH_Más_personas_mayores_activas_encuesta_estudiantes_2025.pdf",
+            "tamano": "1.0 MB",
+            "nombreDescarga": "Reporte_General_Estudiantes_pth-mas-personas-mayores_2025.pdf"
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -621,16 +665,22 @@
             "nombreDescarga": "Informe_Cierre_ID_4406_2025.pdf"
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
-            "esEspecifico": false,
-            "archivo": null
+            "disponible": true,
+            "estado": "Validado",
+            "esEspecifico": true,
+            "tipoReporte": "Encuesta Específica",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/encuestas-estudiantes/Encuesta_Estudiantes_ID_4406.pdf",
+            "tamano": "966.1 KB",
+            "nombreDescarga": "Encuesta_Estudiantes_ID_4406_2025.pdf"
           },
           "encuestaOrganizaciones": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
-            "esEspecifico": false,
-            "archivo": null
+            "disponible": true,
+            "estado": "Validado",
+            "esEspecifico": true,
+            "tipoReporte": "Encuesta Específica",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/encuestas-organizaciones/Encuesta_Organizaciones_ID_4406.pdf",
+            "tamano": "514.4 KB",
+            "nombreDescarga": "Encuesta_Organizaciones_ID_4406_2025.pdf"
           }
         }
       },
@@ -671,15 +721,19 @@
             "nombreDescarga": "Informe_Cierre_ID_4447_2025.pdf"
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2025",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/reportes-generales/PTH_Más_personas_mayores_activas_encuesta_estudiantes_2025.pdf",
+            "tamano": "1.0 MB",
+            "nombreDescarga": "Reporte_General_Estudiantes_pth-mas-personas-mayores_2025.pdf"
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -715,15 +769,19 @@
             "archivo": null
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2025",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/reportes-generales/PTH_Más_personas_mayores_activas_encuesta_estudiantes_2025.pdf",
+            "tamano": "1.0 MB",
+            "nombreDescarga": "Reporte_General_Estudiantes_pth-mas-personas-mayores_2025.pdf"
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -759,15 +817,19 @@
             "archivo": null
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2025",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/reportes-generales/PTH_Más_personas_mayores_activas_encuesta_estudiantes_2025.pdf",
+            "tamano": "1.0 MB",
+            "nombreDescarga": "Reporte_General_Estudiantes_pth-mas-personas-mayores_2025.pdf"
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -803,15 +865,19 @@
             "archivo": null
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2025",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/reportes-generales/PTH_Más_personas_mayores_activas_encuesta_estudiantes_2025.pdf",
+            "tamano": "1.0 MB",
+            "nombreDescarga": "Reporte_General_Estudiantes_pth-mas-personas-mayores_2025.pdf"
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -853,15 +919,19 @@
             "nombreDescarga": "Informe_Cierre_ID_4692_2025.pdf"
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2025",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/reportes-generales/PTH_Más_personas_mayores_activas_encuesta_estudiantes_2025.pdf",
+            "tamano": "1.0 MB",
+            "nombreDescarga": "Reporte_General_Estudiantes_pth-mas-personas-mayores_2025.pdf"
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -903,15 +973,19 @@
             "nombreDescarga": "Informe_Cierre_ID_4709_2025.pdf"
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2025",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/reportes-generales/PTH_Más_personas_mayores_activas_encuesta_estudiantes_2025.pdf",
+            "tamano": "1.0 MB",
+            "nombreDescarga": "Reporte_General_Estudiantes_pth-mas-personas-mayores_2025.pdf"
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -953,15 +1027,19 @@
             "nombreDescarga": "Informe_Cierre_ID_4746_2025.pdf"
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2025",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/reportes-generales/PTH_Más_personas_mayores_activas_encuesta_estudiantes_2025.pdf",
+            "tamano": "1.0 MB",
+            "nombreDescarga": "Reporte_General_Estudiantes_pth-mas-personas-mayores_2025.pdf"
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -1003,15 +1081,19 @@
             "nombreDescarga": "Informe_Cierre_ID_4786_2025.pdf"
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2025",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/reportes-generales/PTH_Más_personas_mayores_activas_encuesta_estudiantes_2025.pdf",
+            "tamano": "1.0 MB",
+            "nombreDescarga": "Reporte_General_Estudiantes_pth-mas-personas-mayores_2025.pdf"
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -1053,15 +1135,19 @@
             "nombreDescarga": "Informe_Cierre_ID_4832_2025.pdf"
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2025",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/reportes-generales/PTH_Más_personas_mayores_activas_encuesta_estudiantes_2025.pdf",
+            "tamano": "1.0 MB",
+            "nombreDescarga": "Reporte_General_Estudiantes_pth-mas-personas-mayores_2025.pdf"
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -1103,15 +1189,19 @@
             "nombreDescarga": "Informe_Cierre_ID_4835_2025.pdf"
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2025",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/reportes-generales/PTH_Más_personas_mayores_activas_encuesta_estudiantes_2025.pdf",
+            "tamano": "1.0 MB",
+            "nombreDescarga": "Reporte_General_Estudiantes_pth-mas-personas-mayores_2025.pdf"
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -1147,15 +1237,19 @@
             "archivo": null
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2025",
+            "archivo": "documentos/pth/pth-mas-personas-mayores/reportes-generales/PTH_Más_personas_mayores_activas_encuesta_estudiantes_2025.pdf",
+            "tamano": "1.0 MB",
+            "nombreDescarga": "Reporte_General_Estudiantes_pth-mas-personas-mayores_2025.pdf"
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -1262,16 +1356,19 @@
             "disponible": true,
             "estado": "Validado",
             "esEspecifico": true,
+            "tipoReporte": "Encuesta Específica",
             "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_3480.pdf",
-            "tamano": "1.2 MB",
-            "paginas": 33,
+            "tamano": "1196.2 KB",
             "nombreDescarga": "Encuesta_Estudiantes_ID_3480_2024.pdf"
           },
           "encuestaOrganizaciones": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2024",
+            "archivo": "documentos/pth/pth-mas-azul/reportes-generales/PTH_Más_azul_Encuesta_organizaciones_2024.pdf",
+            "tamano": "629.5 KB",
+            "nombreDescarga": "Reporte_General_Organizaciones_pth-mas-azul_2024.pdf"
           }
         }
       },
@@ -1315,16 +1412,19 @@
             "disponible": true,
             "estado": "Validado",
             "esEspecifico": true,
+            "tipoReporte": "Encuesta Específica",
             "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_3485.pdf",
-            "tamano": "1.1 MB",
-            "paginas": 33,
+            "tamano": "1170.4 KB",
             "nombreDescarga": "Encuesta_Estudiantes_ID_3485_2024.pdf"
           },
           "encuestaOrganizaciones": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2024",
+            "archivo": "documentos/pth/pth-mas-azul/reportes-generales/PTH_Más_azul_Encuesta_organizaciones_2024.pdf",
+            "tamano": "629.5 KB",
+            "nombreDescarga": "Reporte_General_Organizaciones_pth-mas-azul_2024.pdf"
           }
         }
       },
@@ -1368,16 +1468,19 @@
             "disponible": true,
             "estado": "Validado",
             "esEspecifico": true,
+            "tipoReporte": "Encuesta Específica",
             "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_3557.pdf",
-            "tamano": "1.2 MB",
-            "paginas": 33,
+            "tamano": "1248.2 KB",
             "nombreDescarga": "Encuesta_Estudiantes_ID_3557_2024.pdf"
           },
           "encuestaOrganizaciones": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2024",
+            "archivo": "documentos/pth/pth-mas-azul/reportes-generales/PTH_Más_azul_Encuesta_organizaciones_2024.pdf",
+            "tamano": "629.5 KB",
+            "nombreDescarga": "Reporte_General_Organizaciones_pth-mas-azul_2024.pdf"
           }
         }
       },
@@ -1418,16 +1521,22 @@
             "nombreDescarga": "Informe_Cierre_ID_3574_2024.pdf"
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2024",
+            "archivo": "documentos/pth/pth-mas-azul/reportes-generales/PTH_Más_azul_estudiantes_2024_1.pdf",
+            "tamano": "1.2 MB",
+            "nombreDescarga": "Reporte_General_Estudiantes_pth-mas-azul_2024.pdf"
           },
           "encuestaOrganizaciones": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2024",
+            "archivo": "documentos/pth/pth-mas-azul/reportes-generales/PTH_Más_azul_Encuesta_organizaciones_2024.pdf",
+            "tamano": "629.5 KB",
+            "nombreDescarga": "Reporte_General_Organizaciones_pth-mas-azul_2024.pdf"
           }
         }
       },
@@ -1468,18 +1577,18 @@
             "disponible": true,
             "estado": "Validado",
             "esEspecifico": true,
+            "tipoReporte": "Encuesta Específica",
             "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_3781.pdf",
-            "tamano": "1.2 MB",
-            "paginas": 33,
+            "tamano": "1229.0 KB",
             "nombreDescarga": "Encuesta_Estudiantes_ID_3781_2024.pdf"
           },
           "encuestaOrganizaciones": {
             "disponible": true,
             "estado": "Validado",
             "esEspecifico": true,
+            "tipoReporte": "Encuesta Específica",
             "archivo": "documentos/pth/pth-mas-azul/encuestas-organizaciones/Encuesta_Organizaciones_ID_3781.pdf",
             "tamano": "623.4 KB",
-            "paginas": 17,
             "nombreDescarga": "Encuesta_Organizaciones_ID_3781_2024.pdf"
           }
         }
@@ -1521,16 +1630,19 @@
             "disponible": true,
             "estado": "Validado",
             "esEspecifico": true,
+            "tipoReporte": "Encuesta Específica",
             "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_3970.pdf",
-            "tamano": "1.2 MB",
-            "paginas": 33,
+            "tamano": "1219.7 KB",
             "nombreDescarga": "Encuesta_Estudiantes_ID_3970_2024.pdf"
           },
           "encuestaOrganizaciones": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2024",
+            "archivo": "documentos/pth/pth-mas-azul/reportes-generales/PTH_Más_azul_Encuesta_organizaciones_2024.pdf",
+            "tamano": "629.5 KB",
+            "nombreDescarga": "Reporte_General_Organizaciones_pth-mas-azul_2024.pdf"
           }
         }
       },
@@ -1574,16 +1686,19 @@
             "disponible": true,
             "estado": "Validado",
             "esEspecifico": true,
+            "tipoReporte": "Encuesta Específica",
             "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_4242.pdf",
             "tamano": "990.2 KB",
-            "paginas": 25,
             "nombreDescarga": "Encuesta_Estudiantes_ID_4242_2025.pdf"
           },
           "encuestaOrganizaciones": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2025",
+            "archivo": "documentos/pth/pth-mas-azul/reportes-generales/PTH_Más_azul_Encuesta_organizaciones_2025.pdf",
+            "tamano": "541.2 KB",
+            "nombreDescarga": "Reporte_General_Organizaciones_pth-mas-azul_2025.pdf"
           }
         }
       },
@@ -1627,16 +1742,19 @@
             "disponible": true,
             "estado": "Validado",
             "esEspecifico": true,
+            "tipoReporte": "Encuesta Específica",
             "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_4261.pdf",
-            "tamano": "1.0 MB",
-            "paginas": 25,
+            "tamano": "1024.2 KB",
             "nombreDescarga": "Encuesta_Estudiantes_ID_4261_2025.pdf"
           },
           "encuestaOrganizaciones": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2025",
+            "archivo": "documentos/pth/pth-mas-azul/reportes-generales/PTH_Más_azul_Encuesta_organizaciones_2025.pdf",
+            "tamano": "541.2 KB",
+            "nombreDescarga": "Reporte_General_Organizaciones_pth-mas-azul_2025.pdf"
           }
         }
       },
@@ -1680,16 +1798,19 @@
             "disponible": true,
             "estado": "Validado",
             "esEspecifico": true,
+            "tipoReporte": "Encuesta Específica",
             "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_4437.pdf",
             "tamano": "945.2 KB",
-            "paginas": 25,
             "nombreDescarga": "Encuesta_Estudiantes_ID_4437_2025.pdf"
           },
           "encuestaOrganizaciones": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2025",
+            "archivo": "documentos/pth/pth-mas-azul/reportes-generales/PTH_Más_azul_Encuesta_organizaciones_2025.pdf",
+            "tamano": "541.2 KB",
+            "nombreDescarga": "Reporte_General_Organizaciones_pth-mas-azul_2025.pdf"
           }
         }
       },
@@ -1730,16 +1851,22 @@
             "nombreDescarga": "Informe_Cierre_ID_4463_2025.pdf"
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2025",
+            "archivo": "documentos/pth/pth-mas-azul/reportes-generales/PTH_Más_azul_encuesta_estudiantes_2025_1.pdf",
+            "tamano": "1.0 MB",
+            "nombreDescarga": "Reporte_General_Estudiantes_pth-mas-azul_2025.pdf"
           },
           "encuestaOrganizaciones": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2025",
+            "archivo": "documentos/pth/pth-mas-azul/reportes-generales/PTH_Más_azul_Encuesta_organizaciones_2025.pdf",
+            "tamano": "541.2 KB",
+            "nombreDescarga": "Reporte_General_Organizaciones_pth-mas-azul_2025.pdf"
           }
         }
       },
@@ -1783,16 +1910,19 @@
             "disponible": true,
             "estado": "Validado",
             "esEspecifico": true,
+            "tipoReporte": "Encuesta Específica",
             "archivo": "documentos/pth/pth-mas-azul/encuestas-estudiantes/Encuesta_Estudiantes_ID_4735.pdf",
             "tamano": "972.7 KB",
-            "paginas": 25,
             "nombreDescarga": "Encuesta_Estudiantes_ID_4735_2025.pdf"
           },
           "encuestaOrganizaciones": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2025",
+            "archivo": "documentos/pth/pth-mas-azul/reportes-generales/PTH_Más_azul_Encuesta_organizaciones_2025.pdf",
+            "tamano": "541.2 KB",
+            "nombreDescarga": "Reporte_General_Organizaciones_pth-mas-azul_2025.pdf"
           }
         }
       }
@@ -1898,16 +2028,19 @@
             "disponible": true,
             "estado": "Validado",
             "esEspecifico": true,
+            "tipoReporte": "Encuesta Específica",
             "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_3393.pdf",
-            "tamano": "1.1 MB",
-            "paginas": 33,
+            "tamano": "1166.3 KB",
             "nombreDescarga": "Encuesta_Estudiantes_ID_3393_2024.pdf"
           },
           "encuestaOrganizaciones": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2024",
+            "archivo": "documentos/pth/pth-mas-parques/reportes-generales/PTH_Más_parques_Encuesta_organizaciones_2024_1.pdf",
+            "tamano": "629.5 KB",
+            "nombreDescarga": "Reporte_General_Organizaciones_pth-mas-parques_2024.pdf"
           }
         }
       },
@@ -1951,16 +2084,19 @@
             "disponible": true,
             "estado": "Validado",
             "esEspecifico": true,
+            "tipoReporte": "Encuesta Específica",
             "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_3527.pdf",
             "tamano": "623.4 KB",
-            "paginas": 17,
             "nombreDescarga": "Encuesta_Estudiantes_ID_3527_2024.pdf"
           },
           "encuestaOrganizaciones": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
-            "esEspecifico": false,
-            "archivo": null
+            "disponible": true,
+            "estado": "Validado",
+            "esEspecifico": true,
+            "tipoReporte": "Encuesta Específica",
+            "archivo": "documentos/pth/pth-mas-parques/encuestas-organizaciones/Encuesta_Organizaciones_ID_3527.pdf",
+            "tamano": "623.4 KB",
+            "nombreDescarga": "Encuesta_Organizaciones_ID_3527_2024.pdf"
           }
         }
       },
@@ -2001,16 +2137,19 @@
             "disponible": true,
             "estado": "Validado",
             "esEspecifico": true,
+            "tipoReporte": "Encuesta Específica",
             "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_3827.pdf",
-            "tamano": "1.2 MB",
-            "paginas": 33,
+            "tamano": "1197.8 KB",
             "nombreDescarga": "Encuesta_Estudiantes_ID_3827_2024.pdf"
           },
           "encuestaOrganizaciones": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2024",
+            "archivo": "documentos/pth/pth-mas-parques/reportes-generales/PTH_Más_parques_Encuesta_organizaciones_2024_1.pdf",
+            "tamano": "629.5 KB",
+            "nombreDescarga": "Reporte_General_Organizaciones_pth-mas-parques_2024.pdf"
           }
         }
       },
@@ -2054,16 +2193,19 @@
             "disponible": true,
             "estado": "Validado",
             "esEspecifico": true,
+            "tipoReporte": "Encuesta Específica",
             "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_4436.pdf",
             "tamano": "984.5 KB",
-            "paginas": 25,
             "nombreDescarga": "Encuesta_Estudiantes_ID_4436_2025.pdf"
           },
           "encuestaOrganizaciones": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2025",
+            "archivo": "documentos/pth/pth-mas-parques/reportes-generales/PTH_Más_parques_Encuesta_organizaciones_2025_1.pdf",
+            "tamano": "541.2 KB",
+            "nombreDescarga": "Reporte_General_Organizaciones_pth-mas-parques_2025.pdf"
           }
         }
       },
@@ -2101,16 +2243,19 @@
             "disponible": true,
             "estado": "Validado",
             "esEspecifico": true,
+            "tipoReporte": "Encuesta Específica",
             "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_4576.pdf",
             "tamano": "989.9 KB",
-            "paginas": 25,
             "nombreDescarga": "Encuesta_Estudiantes_ID_4576_2025.pdf"
           },
           "encuestaOrganizaciones": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2025",
+            "archivo": "documentos/pth/pth-mas-parques/reportes-generales/PTH_Más_parques_Encuesta_organizaciones_2025_1.pdf",
+            "tamano": "541.2 KB",
+            "nombreDescarga": "Reporte_General_Organizaciones_pth-mas-parques_2025.pdf"
           }
         }
       },
@@ -2154,16 +2299,19 @@
             "disponible": true,
             "estado": "Validado",
             "esEspecifico": true,
+            "tipoReporte": "Encuesta Específica",
             "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_4733.pdf",
             "tamano": "506.6 KB",
-            "paginas": 13,
             "nombreDescarga": "Encuesta_Estudiantes_ID_4733_2025.pdf"
           },
           "encuestaOrganizaciones": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
-            "esEspecifico": false,
-            "archivo": null
+            "disponible": true,
+            "estado": "Validado",
+            "esEspecifico": true,
+            "tipoReporte": "Encuesta Específica",
+            "archivo": "documentos/pth/pth-mas-parques/encuestas-organizaciones/Encuesta_Organizaciones_ID_4733.pdf",
+            "tamano": "506.6 KB",
+            "nombreDescarga": "Encuesta_Organizaciones_ID_4733_2025.pdf"
           }
         }
       },
@@ -2207,16 +2355,19 @@
             "disponible": true,
             "estado": "Validado",
             "esEspecifico": true,
+            "tipoReporte": "Encuesta Específica",
             "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_4829.pdf",
             "tamano": "952.0 KB",
-            "paginas": 25,
             "nombreDescarga": "Encuesta_Estudiantes_ID_4829_2025.pdf"
           },
           "encuestaOrganizaciones": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2025",
+            "archivo": "documentos/pth/pth-mas-parques/reportes-generales/PTH_Más_parques_Encuesta_organizaciones_2025_1.pdf",
+            "tamano": "541.2 KB",
+            "nombreDescarga": "Reporte_General_Organizaciones_pth-mas-parques_2025.pdf"
           }
         }
       },
@@ -2254,16 +2405,19 @@
             "disponible": true,
             "estado": "Validado",
             "esEspecifico": true,
+            "tipoReporte": "Encuesta Específica",
             "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_4925.pdf",
             "tamano": "506.7 KB",
-            "paginas": 13,
             "nombreDescarga": "Encuesta_Estudiantes_ID_4925_2025.pdf"
           },
           "encuestaOrganizaciones": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
-            "esEspecifico": false,
-            "archivo": null
+            "disponible": true,
+            "estado": "Validado",
+            "esEspecifico": true,
+            "tipoReporte": "Encuesta Específica",
+            "archivo": "documentos/pth/pth-mas-parques/encuestas-organizaciones/Encuesta_Organizaciones_ID_4925.pdf",
+            "tamano": "506.7 KB",
+            "nombreDescarga": "Encuesta_Organizaciones_ID_4925_2025.pdf"
           }
         }
       },
@@ -2301,16 +2455,19 @@
             "disponible": true,
             "estado": "Validado",
             "esEspecifico": true,
+            "tipoReporte": "Encuesta Específica",
             "archivo": "documentos/pth/pth-mas-parques/encuestas-estudiantes/Encuesta_Estudiantes_ID_4927.pdf",
             "tamano": "506.5 KB",
-            "paginas": 13,
             "nombreDescarga": "Encuesta_Estudiantes_ID_4927_2025.pdf"
           },
           "encuestaOrganizaciones": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
-            "esEspecifico": false,
-            "archivo": null
+            "disponible": true,
+            "estado": "Validado",
+            "esEspecifico": true,
+            "tipoReporte": "Encuesta Específica",
+            "archivo": "documentos/pth/pth-mas-parques/encuestas-organizaciones/Encuesta_Organizaciones_ID_4927.pdf",
+            "tamano": "506.5 KB",
+            "nombreDescarga": "Encuesta_Organizaciones_ID_4927_2025.pdf"
           }
         }
       },
@@ -2345,16 +2502,22 @@
             "archivo": null
           },
           "encuestaEstudiantes": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2025",
+            "archivo": "documentos/pth/pth-mas-parques/reportes-generales/PTH_Más_parques_encuesta_estudiantes_2025_2.pdf",
+            "tamano": "1.0 MB",
+            "nombreDescarga": "Reporte_General_Estudiantes_pth-mas-parques_2025.pdf"
           },
           "encuestaOrganizaciones": {
-            "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "disponible": true,
+            "estado": "Reporte PTH",
             "esEspecifico": false,
-            "archivo": null
+            "tipoReporte": "Reporte General PTH 2025",
+            "archivo": "documentos/pth/pth-mas-parques/reportes-generales/PTH_Más_parques_Encuesta_organizaciones_2025_1.pdf",
+            "tamano": "541.2 KB",
+            "nombreDescarga": "Reporte_General_Organizaciones_pth-mas-parques_2025.pdf"
           }
         }
       }
@@ -2425,14 +2588,16 @@
           },
           "encuestaEstudiantes": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -2475,14 +2640,16 @@
           },
           "encuestaEstudiantes": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -2525,14 +2692,16 @@
           },
           "encuestaEstudiantes": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -2575,14 +2744,16 @@
           },
           "encuestaEstudiantes": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -2625,14 +2796,16 @@
           },
           "encuestaEstudiantes": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -2675,14 +2848,16 @@
           },
           "encuestaEstudiantes": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -2719,14 +2894,16 @@
           },
           "encuestaEstudiantes": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -2763,14 +2940,16 @@
           },
           "encuestaEstudiantes": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -2842,14 +3021,16 @@
           },
           "encuestaEstudiantes": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -2889,14 +3070,16 @@
           },
           "encuestaEstudiantes": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -2939,14 +3122,16 @@
           },
           "encuestaEstudiantes": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -2989,14 +3174,16 @@
           },
           "encuestaEstudiantes": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -3033,14 +3220,16 @@
           },
           "encuestaEstudiantes": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -3077,14 +3266,16 @@
           },
           "encuestaEstudiantes": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -3127,14 +3318,16 @@
           },
           "encuestaEstudiantes": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -3177,14 +3370,16 @@
           },
           "encuestaEstudiantes": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -3227,14 +3422,16 @@
           },
           "encuestaEstudiantes": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -3277,14 +3474,16 @@
           },
           "encuestaEstudiantes": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -3321,14 +3520,16 @@
           },
           "encuestaEstudiantes": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
@@ -3371,14 +3572,16 @@
           },
           "encuestaEstudiantes": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           },
           "encuestaOrganizaciones": {
             "disponible": false,
-            "estado": "Ver reporte general PTH",
+            "estado": "No disponible",
             "esEspecifico": false,
+            "tipoReporte": null,
             "archivo": null
           }
         }
