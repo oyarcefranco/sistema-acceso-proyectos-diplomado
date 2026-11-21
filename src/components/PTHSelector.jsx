@@ -38,6 +38,13 @@ const pthImageMap = {
   'pth-mas-sinergia-territorial': 'imagenes/pth/mas-sinergia.jpg',
 };
 
+const continuityImageMap = {
+  'pc-garantias-salud-reinsercion': 'imagenes/continuidad/garantias-salud-reinsercion-cet.jpg',
+  'pc-mas-salud-bomberos': 'imagenes/continuidad/mas-salud-bomberos.jpg',
+  'pc-programa-adulto-mayor': 'imagenes/continuidad/programa-adulto-mayor-pamuss.jpg',
+  'pc-afectividad-salud-adolescentes': 'imagenes/continuidad/afectividad-salud-adolescentes.jpg'
+};
+
 export default function PTHSelector({ 
   iniciativas, 
   proyectosContinuidad = [], 
@@ -197,35 +204,48 @@ export default function PTHSelector({
             <div
               key={proj.id}
               onClick={() => onSelectContinuityProject && onSelectContinuityProject(proj)}
-              className="group bg-white rounded-2xl border-2 border-slate-200 hover:border-purple-600 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden cursor-pointer transform hover:-translate-y-1 relative"
+              className="group bg-white rounded-2xl border-2 border-slate-200 hover:border-purple-600 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden cursor-pointer transform hover:-translate-y-1"
             >
-              {/* Barra lateral de acento púrpura */}
-              <div className="absolute top-0 left-0 bottom-0 w-2.5 bg-gradient-to-b from-purple-600 to-indigo-700" />
-
-              <div className="p-6 pl-7">
-                {/* Metadatos superiores */}
-                <div className="flex items-start justify-between gap-3 mb-3">
-                  <div className="flex flex-wrap items-center gap-1.5">
-                    <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-md bg-purple-50 text-purple-700 border border-purple-200 flex items-center gap-1">
-                      <History className="w-3 h-3" />
+              {/* Cabecera Visual con Imagen del Proyecto */}
+              <div className="relative h-44 w-full overflow-hidden bg-slate-900">
+                <img 
+                  src={getAssetUrl(continuityImageMap[proj.id] || 'imagenes/pth/banner-pth.jpg')}
+                  alt={proj.nombre}
+                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500 opacity-90"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/50 to-transparent" />
+                
+                {/* Badges superiores sobre la imagen */}
+                <div className="absolute top-3 left-3 right-3 flex items-center justify-between">
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded bg-purple-900/90 text-white backdrop-blur-xs border border-purple-400/30 flex items-center gap-1">
+                      <History className="w-3 h-3 text-purple-300" />
                       Continuidad
                     </span>
-                    <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 border border-slate-200 flex items-center gap-1">
-                      <MapPin className="w-3 h-3 text-slate-400" />
+                    <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-slate-900/80 text-slate-200 backdrop-blur-xs border border-white/20 flex items-center gap-1">
+                      <MapPin className="w-3 h-3 text-purple-300" />
                       {proj.sede}
                     </span>
                   </div>
-                  <span className="text-[11px] font-extrabold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded border border-emerald-200">
+                  <span className="text-[11px] font-extrabold text-white bg-emerald-600/90 px-2.5 py-0.5 rounded border border-emerald-400/40 shadow-xs backdrop-blur-xs">
                     {proj.totalVersiones} Versiones
                   </span>
                 </div>
 
-                {/* Título limpio sin sede */}
-                <h3 className="text-base font-bold text-slate-900 group-hover:text-purple-700 transition-colors leading-snug">
-                  {proj.nombre}
-                </h3>
+                {/* Título sobre la imagen */}
+                <div className="absolute bottom-3 left-3 right-3">
+                  <span className="text-[10px] font-bold text-purple-200 uppercase tracking-wider block mb-0.5 drop-shadow-sm">
+                    {proj.periodoTrayectoria}
+                  </span>
+                  <h3 className="text-base font-extrabold text-white leading-tight drop-shadow-md group-hover:text-purple-200 transition-colors line-clamp-1">
+                    {proj.nombre}
+                  </h3>
+                </div>
+              </div>
 
-                <p className="text-xs text-slate-600 mt-2 line-clamp-2 leading-relaxed">
+              <div className="p-5 flex-1 flex flex-col justify-between">
+                <p className="text-xs text-slate-600 line-clamp-2 leading-relaxed">
                   {proj.descripcion}
                 </p>
 
@@ -249,10 +269,10 @@ export default function PTHSelector({
               </div>
 
               {/* Footer de la tarjeta */}
-              <div className="bg-slate-50/90 px-6 pl-7 py-3.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-purple-900 group-hover:text-purple-700">
+              <div className="bg-slate-50/90 px-5 py-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-purple-900 group-hover:text-purple-700">
                 <span className="flex items-center gap-1.5">
-                  <FileText className="w-3.5 h-3.5 text-purple-600" />
-                  <span>Ver Expediente de Versiones ({proj.totalVersiones} IDs)</span>
+                  <Archive className="w-4 h-4 text-purple-600" />
+                  <span>Ver Trayectoria y Evidencias</span>
                 </span>
                 <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
               </div>
