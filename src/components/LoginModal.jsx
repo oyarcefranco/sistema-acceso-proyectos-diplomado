@@ -266,8 +266,8 @@ export default function LoginModal({ onLoginSuccess }) {
                     type="password"
                     value={adminPassword}
                     onChange={handleAdminPasswordChange}
-                    placeholder="Contraseña institucional (ej: VcmAdmin2026!)"
-                    className="w-full px-4 py-2.5 text-sm font-medium rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-uss-blue bg-white"
+                    placeholder="••••••••••••"
+                    className="w-full px-4 py-2.5 text-sm font-medium rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-uss-blue bg-white tracking-widest"
                     autoFocus
                   />
                 </div>
@@ -298,84 +298,6 @@ export default function LoginModal({ onLoginSuccess }) {
               )}
             </button>
           </form>
-
-          {/* Acceso Rápido para Demostración */}
-          <div className="mt-6 pt-5 border-t border-slate-100">
-            <div className="flex items-center justify-between mb-2.5">
-              <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
-                <Sparkles className="w-3.5 h-3.5 text-uss-yellow" />
-                <span>Acceso Rápido para Demostración</span>
-              </span>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-              {/* Acceso 1: Admin Franco Oyarce */}
-              <button
-                type="button"
-                onClick={() => handleQuickLogin({
-                  rut: '12.345.678-5',
-                  nombre: 'Dr. Franco Oyarce',
-                  rol: 'Administrador / Equipo VcM',
-                  tipo: 'Dirección General VcM',
-                  facultad: 'Facultad de Medicina y Ciencia',
-                  email: 'franco.oyarce@uss.cl',
-                  isAdmin: true
-                })}
-                className="text-left p-2.5 rounded-xl border border-purple-200 bg-purple-50/60 hover:bg-purple-100/70 transition text-xs flex flex-col group cursor-pointer"
-              >
-                <div className="flex items-center justify-between">
-                  <span className="font-extrabold text-purple-900 truncate">Dr. Franco Oyarce</span>
-                  <span className="text-[9px] font-black bg-purple-200 text-purple-900 px-1.5 py-0.2 rounded">ADMIN</span>
-                </div>
-                <span className="text-[10px] text-purple-700 font-mono mt-0.5">12.345.678-5</span>
-              </button>
-
-              {/* Acceso 2: Estudiante Nacional */}
-              <button
-                type="button"
-                onClick={() => handleQuickLogin({
-                  rut: '17.405.679-K',
-                  nombre: 'Pilar Abuhadba Venegas',
-                  rol: 'Estudiante Diplomado',
-                  tipo: 'Nacional',
-                  email: 'pilar.abuhadba@uss.cl',
-                  isAdmin: false
-                })}
-                className="text-left p-2.5 rounded-xl border border-sky-200 bg-sky-50/60 hover:bg-sky-100/70 transition text-xs flex flex-col group cursor-pointer"
-              >
-                <div className="flex items-center justify-between">
-                  <span className="font-extrabold text-sky-900 truncate">Pilar Abuhadba</span>
-                  <span className="text-[9px] font-bold bg-sky-200 text-sky-900 px-1.5 py-0.2 rounded">NACIONAL</span>
-                </div>
-                <span className="text-[10px] text-sky-700 font-mono mt-0.5">17.405.679-K</span>
-              </button>
-
-              {/* Acceso 3: Estudiante Internacional */}
-              <button
-                type="button"
-                onClick={() => handleQuickLogin({
-                  rut: 'B02454716',
-                  pasaporte: 'B02454716',
-                  nombre: 'Rina Arana de Serrano',
-                  rol: 'Estudiante Diplomado',
-                  tipo: 'Internacional',
-                  email: 'proyeccion01@ieproes.edu.sv',
-                  isAdmin: false
-                })}
-                className="text-left p-2.5 rounded-xl border border-emerald-200 bg-emerald-50/60 hover:bg-emerald-100/70 transition text-xs flex flex-col group cursor-pointer"
-              >
-                <div className="flex items-center justify-between">
-                  <span className="font-extrabold text-emerald-900 truncate">Rina Arana</span>
-                  <span className="text-[9px] font-bold bg-emerald-200 text-emerald-900 px-1.5 py-0.2 rounded">EXTRANJERO</span>
-                </div>
-                <span className="text-[10px] text-emerald-700 font-mono mt-0.5">B02454716</span>
-              </button>
-            </div>
-            
-            <p className="text-[11px] text-slate-400 mt-2.5 text-center">
-              Haz clic en cualquier perfil para ingresar inmediatamente con sus privilegios correspondientes.
-            </p>
-          </div>
 
         </div>
       </div>

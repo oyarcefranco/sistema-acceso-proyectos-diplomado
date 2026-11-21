@@ -48,7 +48,11 @@
           "comunas": 1,
           "carreras": 3,
           "estudiantes": 132,
-          "academicos": 7
+          "estudiantesUnicos": 127,
+          "academicos": 7,
+          "lider": "ACAD-031",
+          "carreraLider": "Nutrición y Dietética",
+          "pth": "Más Nutrición, Más Vida"
         },
         "documentos": {
           "informeCierre": {
@@ -83,7 +87,17 @@
             "paginas": null,
             "nombreDescarga": null
           }
-        }
+        },
+        "organizacionesParticipantes": [
+          {
+            "organizacion": "Centro de Educación y Trabajo de Concepción",
+            "nombreOriginal": "Centro de Educación y Trabajo de Concepción",
+            "rut": "610041140"
+          }
+        ],
+        "comunasParticipantes": [
+          "Tomé"
+        ]
       },
       {
         "id": "ID_2671",
@@ -114,7 +128,11 @@
           "comunas": 1,
           "carreras": 4,
           "estudiantes": 139,
-          "academicos": 6
+          "estudiantesUnicos": 12,
+          "academicos": 6,
+          "lider": "ACAD-031",
+          "carreraLider": "Nutrición y Dietética",
+          "pth": "Más Nutrición, Más Vida"
         },
         "documentos": {
           "informeCierre": {
@@ -149,7 +167,17 @@
             "paginas": 24,
             "nombreDescarga": "Encuesta_Organizaciones_ID_2671_2022.pdf"
           }
-        }
+        },
+        "organizacionesParticipantes": [
+          {
+            "organizacion": "Centro de Educación y Trabajo de Concepción",
+            "nombreOriginal": "Centro de Educación y Trabajo de Concepción",
+            "rut": "610041140"
+          }
+        ],
+        "comunasParticipantes": [
+          "Concepción"
+        ]
       },
       {
         "id": "ID_3015",
@@ -182,7 +210,11 @@
           "comunas": 1,
           "carreras": 5,
           "estudiantes": 123,
-          "academicos": 8
+          "estudiantesUnicos": 39,
+          "academicos": 8,
+          "lider": "ACAD-031",
+          "carreraLider": "Nutrición y Dietética",
+          "pth": "Más Nutrición, Más Vida"
         },
         "documentos": {
           "informeCierre": {
@@ -217,7 +249,17 @@
             "paginas": null,
             "nombreDescarga": null
           }
-        }
+        },
+        "organizacionesParticipantes": [
+          {
+            "organizacion": "Centro de Educación y Trabajo de Concepción",
+            "nombreOriginal": "Centro de Educación y Trabajo de Concepción",
+            "rut": "610041140"
+          }
+        ],
+        "comunasParticipantes": [
+          "Concepción"
+        ]
       },
       {
         "id": "ID_4397",
@@ -256,7 +298,11 @@
           "comunas": 1,
           "carreras": 8,
           "estudiantes": 235,
-          "academicos": 7
+          "estudiantesUnicos": 174,
+          "academicos": 7,
+          "lider": "ACAD-031",
+          "carreraLider": "Nutrición y Dietética",
+          "pth": "Más Nutrición, Más Vida"
         },
         "documentos": {
           "informeCierre": {
@@ -291,8 +337,42 @@
             "paginas": 13,
             "nombreDescarga": "Encuesta_Organizaciones_ID_4397_2025.pdf"
           }
-        }
+        },
+        "organizacionesParticipantes": [
+          {
+            "organizacion": "Centro de Educación y Trabajo de Concepción",
+            "nombreOriginal": "Centro de Educación y Trabajo de Concepción",
+            "rut": "610041140"
+          }
+        ],
+        "comunasParticipantes": [
+          "Concepción"
+        ]
       }
+    ],
+    "totalesConsolidados": {
+      "programaSede": "Concepción",
+      "ids": "2057, 2671, 3015, 4397",
+      "totalProyectos": 4,
+      "totalOrganizaciones": 1,
+      "totalComunas": 2,
+      "totalCarreras": 11,
+      "totalEstudiantesRepetidos": 629,
+      "totalEstudiantesUnicos": 352,
+      "totalAcademicosDistintos": 19,
+      "totalParticipacionesAcademicos": 28,
+      "pthAsociado": "Más Nutrición, Más Vida"
+    },
+    "organizacionesParticipantes": [
+      {
+        "organizacion": "Centro de Educación y Trabajo de Concepción",
+        "nombreOriginal": "Centro de Educación y Trabajo de Concepción",
+        "rut": "610041140"
+      }
+    ],
+    "comunasParticipantes": [
+      "Tomé",
+      "Concepción"
     ]
   },
   {
@@ -341,7 +421,11 @@
           "comunas": 1,
           "carreras": 3,
           "estudiantes": 248,
-          "academicos": 13
+          "estudiantesUnicos": 245,
+          "academicos": 13,
+          "lider": "ACAD-086",
+          "carreraLider": "Enfermería",
+          "pth": "Sin PTH"
         },
         "documentos": {
           "informeCierre": {
@@ -376,7 +460,27 @@
             "paginas": 24,
             "nombreDescarga": "Encuesta_Organizaciones_ID_2451_2022.pdf"
           }
-        }
+        },
+        "organizacionesParticipantes": [
+          {
+            "organizacion": "Cuerpo de Bomberos de Puerto Montt",
+            "nombreOriginal": "Cuerpo de Bomberos de Puerto Montt",
+            "rut": "815052005"
+          },
+          {
+            "organizacion": "Centro de Salud USS",
+            "nombreOriginal": "Centro de Salud USS",
+            "rut": "969175002"
+          },
+          {
+            "organizacion": "Sociedad Constructora Hurtado Limitada",
+            "nombreOriginal": "Sociedad Constructora Hurtado Limitada",
+            "rut": "788178603"
+          }
+        ],
+        "comunasParticipantes": [
+          "Puerto Montt"
+        ]
       },
       {
         "id": "ID_2765",
@@ -397,7 +501,11 @@
           "comunas": 1,
           "carreras": 0,
           "estudiantes": 0,
-          "academicos": 8
+          "estudiantesUnicos": 0,
+          "academicos": 8,
+          "lider": "ACAD-086",
+          "carreraLider": "Enfermería",
+          "pth": "Más Salud, Más Cerca"
         },
         "documentos": {
           "informeCierre": {
@@ -432,7 +540,22 @@
             "paginas": null,
             "nombreDescarga": null
           }
-        }
+        },
+        "organizacionesParticipantes": [
+          {
+            "organizacion": "Cuerpo de Bomberos de Puerto Montt",
+            "nombreOriginal": "Cuerpo de Bomberos de Puerto Montt",
+            "rut": "159964523"
+          },
+          {
+            "organizacion": "Sociedad Constructora Hurtado Limitada",
+            "nombreOriginal": "Sociedad Constructora Hurtado Limitada",
+            "rut": "100555352"
+          }
+        ],
+        "comunasParticipantes": [
+          "Puerto Montt"
+        ]
       },
       {
         "id": "ID_2986",
@@ -471,7 +594,11 @@
           "comunas": 2,
           "carreras": 8,
           "estudiantes": 255,
-          "academicos": 24
+          "estudiantesUnicos": 204,
+          "academicos": 24,
+          "lider": "ACAD-086",
+          "carreraLider": "Enfermería",
+          "pth": "Más Salud, Más Cerca"
         },
         "documentos": {
           "informeCierre": {
@@ -506,7 +633,33 @@
             "paginas": null,
             "nombreDescarga": null
           }
-        }
+        },
+        "organizacionesParticipantes": [
+          {
+            "organizacion": "Cuerpo de Bomberos Llanquihue",
+            "nombreOriginal": "Cuerpo de Bomberos Llanquihue",
+            "rut": "702786002"
+          },
+          {
+            "organizacion": "Cuerpo de Bomberos de Puerto Montt",
+            "nombreOriginal": "Cuerpo de Bomberos de Puerto Montt",
+            "rut": "815052005"
+          },
+          {
+            "organizacion": "Centro de Salud USS",
+            "nombreOriginal": "Centro de Salud USS",
+            "rut": "969175002"
+          },
+          {
+            "organizacion": "Municipalidad de Puerto Montt",
+            "nombreOriginal": "Municipalidad de Puerto Montt",
+            "rut": "692201000"
+          }
+        ],
+        "comunasParticipantes": [
+          "Puerto Montt",
+          "Llanquihue"
+        ]
       },
       {
         "id": "ID_3473",
@@ -539,7 +692,11 @@
           "comunas": 1,
           "carreras": 5,
           "estudiantes": 144,
-          "academicos": 17
+          "estudiantesUnicos": 68,
+          "academicos": 17,
+          "lider": "ACAD-086",
+          "carreraLider": "Enfermería",
+          "pth": "Más Salud, Más Cerca"
         },
         "documentos": {
           "informeCierre": {
@@ -574,7 +731,22 @@
             "paginas": null,
             "nombreDescarga": null
           }
-        }
+        },
+        "organizacionesParticipantes": [
+          {
+            "organizacion": "Centro de Salud USS",
+            "nombreOriginal": "Centro de Salud USS",
+            "rut": "969175002"
+          },
+          {
+            "organizacion": "Cuerpo de Bomberos de Puerto Montt",
+            "nombreOriginal": "Cuerpo de Bomberos de Puerto Montt",
+            "rut": "815052005"
+          }
+        ],
+        "comunasParticipantes": [
+          "Puerto Montt"
+        ]
       },
       {
         "id": "ID_4267",
@@ -605,7 +777,11 @@
           "comunas": 2,
           "carreras": 4,
           "estudiantes": 139,
-          "academicos": 13
+          "estudiantesUnicos": 137,
+          "academicos": 13,
+          "lider": "ACAD-086",
+          "carreraLider": "Enfermería",
+          "pth": "Más Salud, Más Cerca"
         },
         "documentos": {
           "informeCierre": {
@@ -640,8 +816,89 @@
             "paginas": 13,
             "nombreDescarga": "Encuesta_Organizaciones_ID_4267_2025.pdf"
           }
-        }
+        },
+        "organizacionesParticipantes": [
+          {
+            "organizacion": "Cuerpo de Bomberos Puerto Varas",
+            "nombreOriginal": "Cuerpo de Bomberos Puerto Varas",
+            "rut": "700072002"
+          },
+          {
+            "organizacion": "Clínica Puerto Varas",
+            "nombreOriginal": "Clínica Puerto Varas",
+            "rut": "764898419"
+          },
+          {
+            "organizacion": "Cuerpo de Bomberos de Puerto Montt",
+            "nombreOriginal": "Cuerpo de Bomberos de Puerto Montt",
+            "rut": "815052005"
+          },
+          {
+            "organizacion": "Centro de Salud USS",
+            "nombreOriginal": "Centro de Salud USS",
+            "rut": "969175002"
+          }
+        ],
+        "comunasParticipantes": [
+          "Puerto Montt",
+          "Puerto Varas"
+        ]
       }
+    ],
+    "totalesConsolidados": {
+      "programaSede": "Patagonia",
+      "ids": "2451, 2765, 2986, 3473, 4267",
+      "totalProyectos": 5,
+      "totalOrganizaciones": 7,
+      "totalComunas": 3,
+      "totalCarreras": 8,
+      "totalEstudiantesRepetidos": 786,
+      "totalEstudiantesUnicos": 654,
+      "totalAcademicosDistintos": 48,
+      "totalParticipacionesAcademicos": 75,
+      "pthAsociado": "Más Salud, Más Cerca; Sin PTH"
+    },
+    "organizacionesParticipantes": [
+      {
+        "organizacion": "Cuerpo de Bomberos de Puerto Montt",
+        "nombreOriginal": "Cuerpo de Bomberos de Puerto Montt",
+        "rut": "815052005"
+      },
+      {
+        "organizacion": "Centro de Salud USS",
+        "nombreOriginal": "Centro de Salud USS",
+        "rut": "969175002"
+      },
+      {
+        "organizacion": "Sociedad Constructora Hurtado Limitada",
+        "nombreOriginal": "Sociedad Constructora Hurtado Limitada",
+        "rut": "788178603"
+      },
+      {
+        "organizacion": "Cuerpo de Bomberos Llanquihue",
+        "nombreOriginal": "Cuerpo de Bomberos Llanquihue",
+        "rut": "702786002"
+      },
+      {
+        "organizacion": "Municipalidad de Puerto Montt",
+        "nombreOriginal": "Municipalidad de Puerto Montt",
+        "rut": "692201000"
+      },
+      {
+        "organizacion": "Cuerpo de Bomberos Puerto Varas",
+        "nombreOriginal": "Cuerpo de Bomberos Puerto Varas",
+        "rut": "700072002"
+      },
+      {
+        "organizacion": "Clínica Puerto Varas",
+        "nombreOriginal": "Clínica Puerto Varas",
+        "rut": "764898419"
+      }
+    ],
+    "comunasParticipantes": [
+      "Puerto Montt",
+      "Llanquihue",
+      "Puerto Varas"
     ]
   },
   {
@@ -691,7 +948,11 @@
           "comunas": 2,
           "carreras": 4,
           "estudiantes": 17,
-          "academicos": 11
+          "estudiantesUnicos": 17,
+          "academicos": 11,
+          "lider": "ACAD-087",
+          "carreraLider": "No informada",
+          "pth": "Más Personas Mayores Activas"
         },
         "documentos": {
           "informeCierre": {
@@ -726,7 +987,23 @@
             "paginas": null,
             "nombreDescarga": null
           }
-        }
+        },
+        "organizacionesParticipantes": [
+          {
+            "organizacion": "Radio Genoveva",
+            "nombreOriginal": "Radio Genoveva",
+            "rut": "7341752k"
+          },
+          {
+            "organizacion": "FONASA",
+            "nombreOriginal": "FONASA",
+            "rut": "616030000"
+          }
+        ],
+        "comunasParticipantes": [
+          "Valdivia",
+          "Máfil"
+        ]
       },
       {
         "id": "ID_2115",
@@ -759,7 +1036,11 @@
           "comunas": 1,
           "carreras": 5,
           "estudiantes": 51,
-          "academicos": 14
+          "estudiantesUnicos": 43,
+          "academicos": 14,
+          "lider": "ACAD-008",
+          "carreraLider": "Kinesiología",
+          "pth": "Más Personas Mayores Activas"
         },
         "documentos": {
           "informeCierre": {
@@ -794,7 +1075,17 @@
             "paginas": null,
             "nombreDescarga": null
           }
-        }
+        },
+        "organizacionesParticipantes": [
+          {
+            "organizacion": "FONASA",
+            "nombreOriginal": "FONASA",
+            "rut": "616030000"
+          }
+        ],
+        "comunasParticipantes": [
+          "Valdivia"
+        ]
       },
       {
         "id": "ID_2580",
@@ -825,7 +1116,11 @@
           "comunas": 1,
           "carreras": 4,
           "estudiantes": 154,
-          "academicos": 11
+          "estudiantesUnicos": 130,
+          "academicos": 11,
+          "lider": "ACAD-045",
+          "carreraLider": "Fonoaudiología",
+          "pth": "Más Personas Mayores Activas"
         },
         "documentos": {
           "informeCierre": {
@@ -860,7 +1155,22 @@
             "paginas": 24,
             "nombreDescarga": "Encuesta_Organizaciones_ID_2580_2022.pdf"
           }
-        }
+        },
+        "organizacionesParticipantes": [
+          {
+            "organizacion": "Servicio Nacional del Adulto Mayor",
+            "nombreOriginal": "Servicio Nacional del Adulto Mayor",
+            "rut": "619610008"
+          },
+          {
+            "organizacion": "FONASA",
+            "nombreOriginal": "FONASA",
+            "rut": "616030000"
+          }
+        ],
+        "comunasParticipantes": [
+          "Valdivia"
+        ]
       },
       {
         "id": "ID_2974",
@@ -891,7 +1201,11 @@
           "comunas": 1,
           "carreras": 4,
           "estudiantes": 218,
-          "academicos": 9
+          "estudiantesUnicos": 203,
+          "academicos": 9,
+          "lider": "ACAD-045",
+          "carreraLider": "Fonoaudiología",
+          "pth": "Más Personas Mayores Activas"
         },
         "documentos": {
           "informeCierre": {
@@ -926,7 +1240,22 @@
             "paginas": 24,
             "nombreDescarga": "Encuesta_Organizaciones_ID_2974_2023.pdf"
           }
-        }
+        },
+        "organizacionesParticipantes": [
+          {
+            "organizacion": "Servicio Nacional del Adulto Mayor",
+            "nombreOriginal": "Servicio Nacional del Adulto Mayor",
+            "rut": "619610008"
+          },
+          {
+            "organizacion": "Instituto Nacional de Capacitación Profesional",
+            "nombreOriginal": "Instituto Nacional de Capacitación Profesional",
+            "rut": "720120003"
+          }
+        ],
+        "comunasParticipantes": [
+          "Valdivia"
+        ]
       },
       {
         "id": "ID_4406",
@@ -955,7 +1284,11 @@
           "comunas": 1,
           "carreras": 3,
           "estudiantes": 54,
-          "academicos": 10
+          "estudiantesUnicos": 38,
+          "academicos": 10,
+          "lider": "ACAD-045",
+          "carreraLider": "Fonoaudiología",
+          "pth": "Más Personas Mayores Activas"
         },
         "documentos": {
           "informeCierre": {
@@ -990,8 +1323,72 @@
             "paginas": 13,
             "nombreDescarga": "Encuesta_Organizaciones_ID_4406_2025.pdf"
           }
-        }
+        },
+        "organizacionesParticipantes": [
+          {
+            "organizacion": "Consultorio Externo Valdivia",
+            "nombreOriginal": "Consultorio Externo Valdivia",
+            "rut": "616075004"
+          },
+          {
+            "organizacion": "Municipalidad de Valdivia",
+            "nombreOriginal": "Municipalidad de Valdivia",
+            "rut": "692001001"
+          }
+        ],
+        "comunasParticipantes": [
+          "Valdivia"
+        ]
       }
+    ],
+    "totalesConsolidados": {
+      "programaSede": "Valdivia",
+      "ids": "1742, 2115, 2580, 2974, 4406",
+      "totalProyectos": 5,
+      "totalOrganizaciones": 6,
+      "totalComunas": 2,
+      "totalCarreras": 7,
+      "totalEstudiantesRepetidos": 494,
+      "totalEstudiantesUnicos": 431,
+      "totalAcademicosDistintos": 33,
+      "totalParticipacionesAcademicos": 55,
+      "pthAsociado": "Más Personas Mayores Activas"
+    },
+    "organizacionesParticipantes": [
+      {
+        "organizacion": "Radio Genoveva",
+        "nombreOriginal": "Radio Genoveva",
+        "rut": "7341752k"
+      },
+      {
+        "organizacion": "FONASA",
+        "nombreOriginal": "FONASA",
+        "rut": "616030000"
+      },
+      {
+        "organizacion": "Servicio Nacional del Adulto Mayor",
+        "nombreOriginal": "Servicio Nacional del Adulto Mayor",
+        "rut": "619610008"
+      },
+      {
+        "organizacion": "Instituto Nacional de Capacitación Profesional",
+        "nombreOriginal": "Instituto Nacional de Capacitación Profesional",
+        "rut": "720120003"
+      },
+      {
+        "organizacion": "Consultorio Externo Valdivia",
+        "nombreOriginal": "Consultorio Externo Valdivia",
+        "rut": "616075004"
+      },
+      {
+        "organizacion": "Municipalidad de Valdivia",
+        "nombreOriginal": "Municipalidad de Valdivia",
+        "rut": "692001001"
+      }
+    ],
+    "comunasParticipantes": [
+      "Valdivia",
+      "Máfil"
     ]
   },
   {
@@ -1033,7 +1430,11 @@
           "comunas": 1,
           "carreras": 2,
           "estudiantes": 502,
-          "academicos": 3
+          "estudiantesUnicos": 396,
+          "academicos": 3,
+          "lider": "ACAD-029",
+          "carreraLider": "Obstetricia",
+          "pth": "Sin PTH"
         },
         "documentos": {
           "informeCierre": {
@@ -1068,7 +1469,17 @@
             "paginas": null,
             "nombreDescarga": null
           }
-        }
+        },
+        "organizacionesParticipantes": [
+          {
+            "organizacion": "Liceo Tajamar",
+            "nombreOriginal": "LICEO TAJAMAR (EX. B-42)",
+            "rut": "8930"
+          }
+        ],
+        "comunasParticipantes": [
+          "Providencia"
+        ]
       },
       {
         "id": "ID_2648",
@@ -1095,7 +1506,11 @@
           "comunas": 1,
           "carreras": 2,
           "estudiantes": 155,
-          "academicos": 4
+          "estudiantesUnicos": 154,
+          "academicos": 4,
+          "lider": "ACAD-033",
+          "carreraLider": "Obstetricia",
+          "pth": "Sin PTH"
         },
         "documentos": {
           "informeCierre": {
@@ -1130,7 +1545,22 @@
             "paginas": null,
             "nombreDescarga": null
           }
-        }
+        },
+        "organizacionesParticipantes": [
+          {
+            "organizacion": "Escuela Básica El Vergel",
+            "nombreOriginal": "Escuela Básica El Vergel",
+            "rut": "8931"
+          },
+          {
+            "organizacion": "Liceo Tajamar",
+            "nombreOriginal": "LICEO TAJAMAR (EX. B-42)",
+            "rut": "8930"
+          }
+        ],
+        "comunasParticipantes": [
+          "Providencia"
+        ]
       },
       {
         "id": "ID_3211",
@@ -1157,7 +1587,11 @@
           "comunas": 2,
           "carreras": 2,
           "estudiantes": 273,
-          "academicos": 5
+          "estudiantesUnicos": 156,
+          "academicos": 5,
+          "lider": "ACAD-033",
+          "carreraLider": "Obstetricia",
+          "pth": "Más Niñez y Adolescencia Saludable"
         },
         "documentos": {
           "informeCierre": {
@@ -1192,7 +1626,28 @@
             "paginas": null,
             "nombreDescarga": null
           }
-        }
+        },
+        "organizacionesParticipantes": [
+          {
+            "organizacion": "Liceo Tajamar",
+            "nombreOriginal": "LICEO TAJAMAR (EX. B-42)",
+            "rut": "8930"
+          },
+          {
+            "organizacion": "Liceo N°1 Javiera Carrera",
+            "nombreOriginal": "LICEO JAVIERA CARRERA",
+            "rut": "1908"
+          },
+          {
+            "organizacion": "Escuela Básica El Vergel",
+            "nombreOriginal": "Escuela Básica El Vergel",
+            "rut": "8931"
+          }
+        ],
+        "comunasParticipantes": [
+          "Santiago",
+          "Providencia"
+        ]
       },
       {
         "id": "ID_3623",
@@ -1219,7 +1674,11 @@
           "comunas": 2,
           "carreras": 2,
           "estudiantes": 362,
-          "academicos": 6
+          "estudiantesUnicos": 196,
+          "academicos": 6,
+          "lider": "ACAD-033",
+          "carreraLider": "Obstetricia",
+          "pth": "Más Niñez y Adolescencia Saludable"
         },
         "documentos": {
           "informeCierre": {
@@ -1254,7 +1713,23 @@
             "paginas": 17,
             "nombreDescarga": "Encuesta_Organizaciones_ID_3623_2024.pdf"
           }
-        }
+        },
+        "organizacionesParticipantes": [
+          {
+            "organizacion": "Liceo Tajamar",
+            "nombreOriginal": "LICEO TAJAMAR (EX. B-42)",
+            "rut": "8930"
+          },
+          {
+            "organizacion": "Liceo N°1 Javiera Carrera",
+            "nombreOriginal": "LICEO Nº 1 JAVIERA CARRERA (EX.A-1)",
+            "rut": "8487"
+          }
+        ],
+        "comunasParticipantes": [
+          "Santiago",
+          "Providencia"
+        ]
       },
       {
         "id": "ID_4303",
@@ -1283,7 +1758,11 @@
           "comunas": 1,
           "carreras": 3,
           "estudiantes": 514,
-          "academicos": 15
+          "estudiantesUnicos": 282,
+          "academicos": 15,
+          "lider": "ACAD-033",
+          "carreraLider": "Obstetricia",
+          "pth": "Más Niñez y Adolescencia Saludable"
         },
         "documentos": {
           "informeCierre": {
@@ -1318,8 +1797,52 @@
             "paginas": 13,
             "nombreDescarga": "Encuesta_Organizaciones_ID_4303_2025.pdf"
           }
-        }
+        },
+        "organizacionesParticipantes": [
+          {
+            "organizacion": "Liceo N°1 Javiera Carrera",
+            "nombreOriginal": "LICEO Nº 1 JAVIERA CARRERA (EX.A-1)",
+            "rut": "8487"
+          }
+        ],
+        "comunasParticipantes": [
+          "Santiago"
+        ]
       }
+    ],
+    "totalesConsolidados": {
+      "programaSede": "Santiago",
+      "ids": "2050, 2648, 3211, 3623, 4303",
+      "totalProyectos": 5,
+      "totalOrganizaciones": 3,
+      "totalComunas": 2,
+      "totalCarreras": 3,
+      "totalEstudiantesRepetidos": 1806,
+      "totalEstudiantesUnicos": 1184,
+      "totalAcademicosDistintos": 19,
+      "totalParticipacionesAcademicos": 33,
+      "pthAsociado": "Más Niñez y Adolescencia Saludable; Sin PTH"
+    },
+    "organizacionesParticipantes": [
+      {
+        "organizacion": "Liceo Tajamar",
+        "nombreOriginal": "LICEO TAJAMAR (EX. B-42)",
+        "rut": "8930"
+      },
+      {
+        "organizacion": "Escuela Básica El Vergel",
+        "nombreOriginal": "Escuela Básica El Vergel",
+        "rut": "8931"
+      },
+      {
+        "organizacion": "Liceo N°1 Javiera Carrera",
+        "nombreOriginal": "LICEO JAVIERA CARRERA",
+        "rut": "1908"
+      }
+    ],
+    "comunasParticipantes": [
+      "Providencia",
+      "Santiago"
     ]
   }
 ]

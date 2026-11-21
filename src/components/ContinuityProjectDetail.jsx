@@ -19,7 +19,8 @@ import {
   ArrowUpDown,
   FileCheck,
   AlertCircle,
-  FileSpreadsheet
+  FileSpreadsheet,
+  BarChart3
 } from 'lucide-react';
 import * as XLSX from 'xlsx';
 import JSZip from 'jszip';
@@ -28,6 +29,7 @@ import { getAssetUrl } from '../utils/assetHelper';
 export default function ContinuityProjectDetail({ project, onBack, onOpenDocument }) {
   const [sortOrder, setSortOrder] = useState('desc'); // 'desc' (más reciente primero) o 'asc'
   const [isZipping, setIsZipping] = useState(false);
+  const [activeTab, setActiveTab] = useState('cronologia'); // 'cronologia' o 'indicadores'
 
   // Ordenar versiones según año
   const sortedVersiones = [...project.versiones].sort((a, b) => {
@@ -280,64 +282,146 @@ export default function ContinuityProjectDetail({ project, onBack, onOpenDocumen
             </div>
           </div>
         </div>
+
+        {/* Tarjetas de Métricas Consolidadas Oficiales */}
+        {project.totalesConsolidados && (
+          <div className="mt-8 grid grid-cols-2 sm:grid-cols-5 gap-3 border-t border-slate-100 pt-6">
+            <div className="bg-slate-50 p-3.5 rounded-2xl border border-slate-200/70">
+              <span className="text-xs font-medium text-slate-500 block">Estudiantes Únicos</span>
+              <span className="text-xl font-extrabold text-uss-blue block mt-0.5">
+                {project.totalesConsolidados.totalEstudiantesUnicos}
+              </span>
+              <span className="text-[10px] text-slate-400 block mt-0.5">
+                {project.totalesConsolidados.totalEstudiantesRepetidos} participaciones
+              </span>
+            </div>
+
+            <div className="bg-slate-50 p-3.5 rounded-2xl border border-slate-200/70">
+              <span className="text-xs font-medium text-slate-500 block">Organizaciones</span>
+              <span className="text-xl font-extrabold text-emerald-700 block mt-0.5">
+                {project.totalesConsolidados.totalOrganizaciones}
+              </span>
+              <span className="text-[10px] text-slate-400 block mt-0.5">
+                Comunitarias & públicas
+              </span>
+            </div>
+
+            <div className="bg-slate-50 p-3.5 rounded-2xl border border-slate-200/70">
+              <span className="text-xs font-medium text-slate-500 block">Comunas Vinculadas</span>
+              <span className="text-xl font-extrabold text-indigo-700 block mt-0.5">
+                {project.totalesConsolidados.totalComunas}
+              </span>
+              <span className="text-[10px] text-slate-400 block mt-0.5 truncate" title={project.comunasParticipantes?.join(', ')}>
+                {project.comunasParticipantes?.join(', ') || project.sede}
+              </span>
+            </div>
+
+            <div className="bg-slate-50 p-3.5 rounded-2xl border border-slate-200/70">
+              <span className="text-xs font-medium text-slate-500 block">Académicos USS</span>
+              <span className="text-xl font-extrabold text-amber-600 block mt-0.5">
+                {project.totalesConsolidados.totalAcademicosDistintos}
+              </span>
+              <span className="text-[10px] text-slate-400 block mt-0.5">
+                {project.totalesConsolidados.totalParticipacionesAcademicos} participaciones
+              </span>
+            </div>
+
+            <div className="bg-slate-50 p-3.5 rounded-2xl border border-slate-200/70 col-span-2 sm:col-span-1">
+              <span className="text-xs font-medium text-slate-500 block">PTH Vinculado</span>
+              <span className="text-xs font-extrabold text-purple-900 block mt-1 line-clamp-2">
+                {project.totalesConsolidados.pthAsociado}
+              </span>
+            </div>
+          </div>
+        )}
       </div>
 
-      {/* Barra de control y ordenamiento del Desglose */}
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 bg-white p-4 rounded-2xl border border-slate-200 shadow-xs">
-        <div>
-          <h2 className="text-sm font-bold text-slate-900 flex items-center gap-2">
-            <Layers className="w-4 h-4 text-uss-blue" />
-            <span>Desglose Cronológico por ID y Año de Ejecución</span>
-          </h2>
-          <p className="text-xs text-slate-500 mt-0.5">
-            Cada año la iniciativa generó un código ID único en la plataforma VcM con su respectivo formulario de postulación e informe de cierre oficial.
-          </p>
-        </div>
-
-        {/* Toggle Orden Cronológico */}
+      {/* Selector de Pestaña: Expediente vs Indicadores */}
+      <div className="bg-white rounded-2xl p-1.5 border border-slate-200 shadow-xs flex items-center gap-1.5 overflow-x-auto">
         <button
-          onClick={() => setSortOrder(sortOrder === 'desc' ? 'asc' : 'desc')}
-          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-slate-100 text-xs font-semibold text-slate-700 transition cursor-pointer self-end sm:self-auto"
+          onClick={() => setActiveTab('cronologia')}
+          className={`px-4 py-2.5 rounded-xl text-xs font-bold transition flex items-center gap-2 cursor-pointer whitespace-nowrap ${
+            activeTab === 'cronologia'
+              ? 'bg-uss-navy text-white shadow-xs'
+              : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'
+          }`}
         >
-          <ArrowUpDown className="w-3.5 h-3.5 text-slate-500" />
-          <span>{sortOrder === 'desc' ? 'Más reciente primero (2025 → 2020)' : 'Más antiguo primero (2020 → 2025)'}</span>
+          <Layers className="w-4 h-4 text-purple-300" />
+          <span>Expediente Cronológico ({project.versiones.length} Versiones)</span>
+        </button>
+
+        <button
+          onClick={() => setActiveTab('indicadores')}
+          className={`px-4 py-2.5 rounded-xl text-xs font-bold transition flex items-center gap-2 cursor-pointer whitespace-nowrap ${
+            activeTab === 'indicadores'
+              ? 'bg-uss-navy text-white shadow-xs'
+              : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'
+          }`}
+        >
+          <BarChart3 className="w-4 h-4 text-emerald-400" />
+          <span>Indicadores de Impacto & Organizaciones</span>
         </button>
       </div>
 
-      {/* Línea de Tiempo / Tarjetas de cada Versión e ID */}
-      <div className="space-y-4">
-        {sortedVersiones.map((ver) => {
-          const docPost = ver.documentos?.formularioPostulacion || { disponible: false, estado: 'No registrado' };
-          const docCierre = ver.documentos?.informeCierre || {
-            disponible: true,
-            estado: 'Finalizado',
-            archivo: ver.archivo,
-            tamano: ver.tamano,
-            nombreDescarga: ver.nombreDescarga
-          };
-          const docEst = ver.documentos?.encuestaEstudiantes || { disponible: false, estado: 'No aplica' };
-          const docOrg = ver.documentos?.encuestaOrganizaciones || { disponible: false, estado: 'No aplica' };
+      {/* CONTENIDO PESTAÑA 1: CRONOLOGÍA DE VERSIONES */}
+      {activeTab === 'cronologia' && (
+        <div className="space-y-4">
+          {/* Barra de control y ordenamiento del Desglose */}
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 bg-white p-4 rounded-2xl border border-slate-200 shadow-xs">
+            <div>
+              <h2 className="text-sm font-bold text-slate-900 flex items-center gap-2">
+                <Layers className="w-4 h-4 text-uss-blue" />
+                <span>Desglose Cronológico por ID y Año de Ejecución</span>
+              </h2>
+              <p className="text-xs text-slate-500 mt-0.5">
+                Cada año la iniciativa generó un código ID único en la plataforma VcM con su respectivo formulario de postulación e informe de cierre oficial.
+              </p>
+            </div>
 
-          return (
-            <div
-              key={ver.id}
-              className="group bg-white rounded-2xl border-2 border-slate-200/90 hover:border-uss-blue shadow-xs hover:shadow-md transition-all duration-200 p-5 sm:p-6 relative overflow-hidden"
+            {/* Toggle Orden Cronológico */}
+            <button
+              onClick={() => setSortOrder(sortOrder === 'desc' ? 'asc' : 'desc')}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-slate-100 text-xs font-semibold text-slate-700 transition cursor-pointer self-end sm:self-auto"
             >
-              {/* Barra lateral de acento */}
-              <div className="absolute top-0 left-0 bottom-0 w-2.5 bg-gradient-to-b from-purple-600 to-indigo-700" />
+              <ArrowUpDown className="w-3.5 h-3.5 text-slate-500" />
+              <span>{sortOrder === 'desc' ? 'Más reciente primero (2025 → 2020)' : 'Más antiguo primero (2020 → 2025)'}</span>
+            </button>
+          </div>
 
-              <div className="pl-3 sm:pl-4 flex flex-col xl:flex-row xl:items-center justify-between gap-6">
-                
-                {/* Información de la Versión Ejecutada */}
-                <div className="space-y-2.5 max-w-2xl">
-                  <div className="flex flex-wrap items-center gap-2">
-                    <span className="text-sm font-extrabold px-3 py-1 rounded-lg bg-uss-navy text-white shadow-2xs">
-                      Año {ver.ano}
-                    </span>
-                    <span className="font-mono text-xs font-bold px-2.5 py-1 rounded-lg bg-sky-50 text-sky-800 border border-sky-200">
-                      {ver.codigo}
-                    </span>
-                    <span className="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 border border-slate-200">
+          {/* Línea de Tiempo / Tarjetas de cada Versión e ID */}
+          <div className="space-y-4">
+            {sortedVersiones.map((ver) => {
+              const docPost = ver.documentos?.formularioPostulacion || { disponible: false, estado: 'No registrado' };
+              const docCierre = ver.documentos?.informeCierre || {
+                disponible: true,
+                estado: 'Finalizado',
+                archivo: ver.archivo,
+                tamano: ver.tamano,
+                nombreDescarga: ver.nombreDescarga
+              };
+              const docEst = ver.documentos?.encuestaEstudiantes || { disponible: false, estado: 'No aplica' };
+              const docOrg = ver.documentos?.encuestaOrganizaciones || { disponible: false, estado: 'No aplica' };
+
+              return (
+                <div
+                  key={ver.id}
+                  className="group bg-white rounded-2xl border-2 border-slate-200/90 hover:border-uss-blue shadow-xs hover:shadow-md transition-all duration-200 p-5 sm:p-6 relative overflow-hidden"
+                >
+                  {/* Barra lateral de acento */}
+                  <div className="absolute top-0 left-0 bottom-0 w-2.5 bg-gradient-to-b from-purple-600 to-indigo-700" />
+
+                  <div className="pl-3 sm:pl-4 flex flex-col xl:flex-row xl:items-center justify-between gap-6">
+                    
+                    {/* Información de la Versión Ejecutada */}
+                    <div className="space-y-2.5 max-w-2xl">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="text-sm font-extrabold px-3 py-1 rounded-lg bg-uss-navy text-white shadow-2xs">
+                          Año {ver.ano}
+                        </span>
+                        <span className="font-mono text-xs font-bold px-2.5 py-1 rounded-lg bg-sky-50 text-sky-800 border border-sky-200">
+                          {ver.codigo}
+                        </span>
+                        <span className="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 border border-slate-200">
                       {ver.tipo}
                     </span>
                   </div>
@@ -647,7 +731,194 @@ export default function ContinuityProjectDetail({ project, onBack, onOpenDocumen
             </div>
           );
         })}
-      </div>
+          </div>
+        </div>
+      )}
+
+      {/* CONTENIDO PESTAÑA 2: INDICADORES OFICIALES Y ORGANIZACIONES */}
+      {activeTab === 'indicadores' && (
+        <div className="space-y-6">
+          {/* Cabecera de la sección con botón de descarga del Excel Oficial */}
+          <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div>
+              <h3 className="text-base font-bold text-slate-900 flex items-center gap-2">
+                <BarChart3 className="w-5 h-5 text-uss-blue" />
+                <span>Consolidado Oficial de Indicadores de Continuidad (2020–2025)</span>
+              </h3>
+              <p className="text-xs text-slate-500 mt-0.5">
+                Métricas oficiales de cobertura estudiantil (RUT únicos vs. participaciones), liderazgo docente, organizaciones y comunas.
+              </p>
+            </div>
+            <a
+              href={getAssetUrl('descargas/Consolidado_Proyectos_Continuidad_2020_2025.xlsx')}
+              download="Informe_Oficial_Proyectos_Colaborativos_Continuidad_USS.xlsx"
+              className="inline-flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition shadow-xs cursor-pointer flex-shrink-0"
+              title="Descargar libro Excel con base de datos completa de estudiantes, académicos y organizaciones"
+            >
+              <FileSpreadsheet className="w-4 h-4 text-emerald-200" />
+              <span>Descargar Planilla Oficial (Excel)</span>
+            </a>
+          </div>
+
+          {/* Tabla de Indicadores por Año y Versión (ID) */}
+          <div className="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden">
+            <div className="p-4 border-b border-slate-100 flex items-center justify-between">
+              <h4 className="text-xs font-bold text-slate-800 uppercase tracking-wider">
+                Desglose de Indicadores por Versión y Código ID
+              </h4>
+              <span className="text-xs text-slate-500 font-medium">
+                {project.versiones.length} versiones ejecutadas
+              </span>
+            </div>
+
+            <div className="overflow-x-auto">
+              <table className="w-full text-left border-collapse text-xs">
+                <thead>
+                  <tr className="bg-slate-50 border-b border-slate-200 text-[11px] font-bold text-slate-600">
+                    <th className="py-2.5 px-4">Código</th>
+                    <th className="py-2.5 px-3">Año</th>
+                    <th className="py-2.5 px-3">Líder Proyecto</th>
+                    <th className="py-2.5 px-3">Carrera Líder</th>
+                    <th className="py-2.5 px-3">PTH</th>
+                    <th className="py-2.5 px-2 text-center">N° Orgs</th>
+                    <th className="py-2.5 px-2 text-center">N° Comunas</th>
+                    <th className="py-2.5 px-2 text-center">N° Carreras</th>
+                    <th className="py-2.5 px-3 text-center">Estudiantes Únicos</th>
+                    <th className="py-2.5 px-3 text-center">Estudiantes Totales</th>
+                    <th className="py-2.5 px-2 text-center">Académicos</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-100">
+                  {sortedVersiones.map((ver) => {
+                    const ind = ver.indicadores || {};
+                    return (
+                      <tr key={ver.id} className="hover:bg-slate-50 transition">
+                        <td className="py-3 px-4 font-mono font-bold text-slate-800">{ver.codigo}</td>
+                        <td className="py-3 px-3 font-semibold text-slate-700">{ver.ano}</td>
+                        <td className="py-3 px-3 text-slate-700 font-medium">{ind.lider || 'ACAD-USS'}</td>
+                        <td className="py-3 px-3 text-slate-600 font-medium">{ind.carreraLider || 'Interdisciplinario'}</td>
+                        <td className="py-3 px-3 text-slate-500 text-[11px] max-w-[130px] truncate" title={ind.pth}>
+                          {ind.pth || 'Sin PTH'}
+                        </td>
+                        <td className="py-3 px-2 text-center font-bold text-slate-800">{ind.organizaciones || 0}</td>
+                        <td className="py-3 px-2 text-center font-bold text-slate-800">{ind.comunas || 0}</td>
+                        <td className="py-3 px-2 text-center font-bold text-slate-800">{ind.carreras || 0}</td>
+                        <td className="py-3 px-3 text-center font-bold text-uss-blue bg-blue-50/40">
+                          {ind.estudiantesUnicos || ind.estudiantes || 0}
+                        </td>
+                        <td className="py-3 px-3 text-center font-medium text-slate-600">
+                          {ind.estudiantes || 0}
+                        </td>
+                        <td className="py-3 px-2 text-center font-bold text-amber-700">{ind.academicos || 0}</td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+                {project.totalesConsolidados && (
+                  <tfoot>
+                    <tr className="bg-slate-100/80 font-bold text-slate-900 border-t-2 border-slate-300">
+                      <td colSpan={5} className="py-3 px-4 text-right">TOTALES ACUMULADOS EN TRAYECTORIA:</td>
+                      <td className="py-3 px-2 text-center">{project.totalesConsolidados.totalOrganizaciones}</td>
+                      <td className="py-3 px-2 text-center">{project.totalesConsolidados.totalComunas}</td>
+                      <td className="py-3 px-2 text-center">{project.totalesConsolidados.totalCarreras}</td>
+                      <td className="py-3 px-3 text-center text-uss-blue bg-blue-100/50">
+                        {project.totalesConsolidados.totalEstudiantesUnicos}
+                      </td>
+                      <td className="py-3 px-3 text-center text-slate-700">
+                        {project.totalesConsolidados.totalEstudiantesRepetidos}
+                      </td>
+                      <td className="py-3 px-2 text-center text-amber-700">
+                        {project.totalesConsolidados.totalAcademicosDistintos}
+                      </td>
+                    </tr>
+                  </tfoot>
+                )}
+              </table>
+            </div>
+          </div>
+
+          {/* Bloques de Organizaciones y Comunas Participantes */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {/* 1. Organizaciones Participantes */}
+            <div className="bg-white rounded-2xl border border-slate-200 shadow-xs p-5">
+              <div className="flex items-center justify-between pb-3 mb-3 border-b border-slate-100">
+                <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-2">
+                  <Building2 className="w-4 h-4 text-emerald-600" />
+                  <span>Organizaciones Externas Participantes</span>
+                </h4>
+                <span className="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+                  {project.organizacionesParticipantes?.length || 0} Organizaciones
+                </span>
+              </div>
+
+              {project.organizacionesParticipantes && project.organizacionesParticipantes.length > 0 ? (
+                <div className="space-y-2">
+                  {project.organizacionesParticipantes.map((org, i) => (
+                    <div key={i} className="p-2.5 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start justify-between gap-2">
+                      <div>
+                        <span className="text-xs font-bold text-slate-800 block">
+                          {org.organizacion}
+                        </span>
+                        {org.nombreOriginal && org.nombreOriginal !== org.organizacion && (
+                          <span className="text-[10px] text-slate-500 block">
+                            Registro: {org.nombreOriginal}
+                          </span>
+                        )}
+                      </div>
+                      {org.rut && (
+                        <span className="font-mono text-[10px] font-semibold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 flex-shrink-0">
+                          RUT/RBD: {org.rut}
+                        </span>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <p className="text-xs text-slate-500 italic">No se registran organizaciones detalladas en la base.</p>
+              )}
+            </div>
+
+            {/* 2. Comunas Vinculadas Territorialmente */}
+            <div className="bg-white rounded-2xl border border-slate-200 shadow-xs p-5">
+              <div className="flex items-center justify-between pb-3 mb-3 border-b border-slate-100">
+                <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-2">
+                  <MapPin className="w-4 h-4 text-indigo-600" />
+                  <span>Comunas Vinculadas Territorialmente</span>
+                </h4>
+                <span className="text-[11px] font-bold text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded border border-indigo-200">
+                  {project.comunasParticipantes?.length || 1} Comunas
+                </span>
+              </div>
+
+              {project.comunasParticipantes && project.comunasParticipantes.length > 0 ? (
+                <div className="flex flex-wrap gap-2">
+                  {project.comunasParticipantes.map((comuna, i) => (
+                    <div key={i} className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-indigo-50/70 border border-indigo-200 text-xs font-bold text-indigo-900">
+                      <MapPin className="w-3.5 h-3.5 text-indigo-500" />
+                      <span>{comuna}</span>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-xs font-semibold text-slate-700">
+                  <MapPin className="w-3.5 h-3.5 text-slate-400" />
+                  <span>Sede {project.sede}</span>
+                </div>
+              )}
+
+              {/* Mapeo Institucional */}
+              <div className="mt-5 p-3 rounded-xl bg-slate-50 border border-slate-200/80">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block mb-1">
+                  Programa Territorial Hito Asociado en VcM
+                </span>
+                <span className="text-xs font-extrabold text-purple-900 block">
+                  {project.totalesConsolidados?.pthAsociado || 'Programa Transversal'}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -30,6 +30,14 @@ const iconMap = {
   'pth-mas-sinergia-territorial': Network,
 };
 
+const pthImageMap = {
+  'pth-mas-personas-mayores': 'imagenes/pth/mas-personas-mayores.jpg',
+  'pth-mas-azul': 'imagenes/pth/mas-azul.jpg',
+  'pth-mas-parques': 'imagenes/pth/mas-parques.jpg',
+  'pth-mas-turismo-sostenible': 'imagenes/pth/mas-turismo.jpg',
+  'pth-mas-sinergia-territorial': 'imagenes/pth/mas-sinergia.jpg',
+};
+
 export default function PTHSelector({ 
   iniciativas, 
   proyectosContinuidad = [], 
@@ -275,28 +283,47 @@ export default function PTHSelector({
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {iniciativas.map((pth) => {
             const Icon = iconMap[pth.id] || Layers;
+            const imgSrc = getAssetUrl(pthImageMap[pth.id] || 'imagenes/pth/banner-pth.jpg');
             return (
               <div
                 key={pth.id}
                 onClick={() => onSelectInitiative(pth)}
                 className="group bg-white rounded-2xl border border-slate-200 hover:border-uss-blue shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden cursor-pointer transform hover:-translate-y-1"
               >
-                {/* Header de la tarjeta */}
-                <div className="p-6">
-                  <div className="flex items-start justify-between gap-3 mb-4">
-                    <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${pth.color.primary} flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform`}>
-                      <Icon className="w-6 h-6 text-white" />
-                    </div>
-                    <span className={`text-[11px] font-bold px-2.5 py-1 rounded-md border ${pth.color.badge}`}>
+                {/* Cabecera Visual con Fotografía Oficial de vcm.uss.cl */}
+                <div className="relative h-44 w-full overflow-hidden bg-slate-900">
+                  <img 
+                    src={imgSrc}
+                    alt={pth.nombre}
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500 opacity-90"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/50 to-transparent" />
+                  
+                  {/* Badge y Sigla sobre la imagen */}
+                  <div className="absolute top-3 left-3 right-3 flex items-center justify-between">
+                    <span className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded bg-slate-900/80 text-white backdrop-blur-xs border border-white/20">
+                      Programa Territorial Hito
+                    </span>
+                    <span className={`text-[11px] font-extrabold px-2.5 py-0.5 rounded-md border shadow-xs ${pth.color.badge} bg-white/95`}>
                       {pth.sigla}
                     </span>
                   </div>
 
-                  <h3 className="text-base font-bold text-slate-900 group-hover:text-uss-blue transition-colors line-clamp-1">
-                    {pth.nombre}
-                  </h3>
+                  {/* Icono y Título sobre la imagen */}
+                  <div className="absolute bottom-3 left-3 right-3 flex items-end gap-2.5">
+                    <div className={`w-9 h-9 rounded-lg bg-gradient-to-br ${pth.color.primary} flex items-center justify-center text-white shadow-md flex-shrink-0`}>
+                      <Icon className="w-5 h-5 text-white" />
+                    </div>
+                    <h3 className="text-sm sm:text-base font-extrabold text-white leading-tight drop-shadow-md group-hover:text-amber-200 transition-colors line-clamp-1">
+                      {pth.nombre}
+                    </h3>
+                  </div>
+                </div>
 
-                  <p className="text-xs text-slate-600 mt-2 line-clamp-3 leading-relaxed">
+                {/* Contenido descriptivo */}
+                <div className="p-5 flex-1 flex flex-col justify-between">
+                  <p className="text-xs text-slate-600 line-clamp-3 leading-relaxed">
                     {pth.descripcion}
                   </p>
                 </div>
